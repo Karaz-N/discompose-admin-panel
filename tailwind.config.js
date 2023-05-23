@@ -19,7 +19,7 @@ module.exports = {
         "primary-admin" : "#A92820",
         "menu-admin" : "#FCFCFC",
         "item-admin" : "#313131",
-
+        "item-admin-red" : "#DC251A",
       }
     },
   },

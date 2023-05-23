@@ -35,7 +35,7 @@ export default function Layout({ children }) {
       </header>
       <div className="flex flex-col md:flex-row flex-1">
         <aside
-          className={` bg-primary-admin w-full shadow-2xl ${
+          className={` bg-primary-admin w-full ${
             open ? "md:w-60" : "md:w-12"
           } duration-300`}
         >
