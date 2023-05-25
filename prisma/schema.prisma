@@ -1,0 +1,130 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch"]
+}
+
+datasource db {
+  provider = "postgres"
+  url      = env("DATABASE_URL")
+}
+
+// Utils
+model Place {
+  id String @id @default(cuid())
+
+  name            String?
+  latitude        Float?
+  longitude       Float?
+  Event           Event[]
+  Image           Image[]
+  manuscriptsFrom Manuscript[] @relation(name: "sent-from")
+  manuscriptsTo   Manuscript[] @relation(name: "received-to")
+  Print           Print[]
+}
+
+// Models
+model Document {
+  record String @id
+
+  associatedDocument Document?  @relation(fields: [documentRecord], references: [record], name: "association", onDelete: Cascade, onUpdate: Cascade)
+  documents          Document[] @relation(name: "association")
+  documentRecord     String
+  summary            String?
+  author             String?
+
+  link String?
+
+  event   Event?  @relation(fields: [eventId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  eventId String?
+
+  archive String?
+
+  image   Image?  @relation(fields: [imageId], references: [id], onDelete: SetNull)
+  imageId String?
+
+  manuscript   Manuscript? @relation(fields: [manuscriptId], references: [id], name: "manuscript-ref", onDelete: SetNull)
+  manuscriptId String?
+
+  eventMention    Manuscript? @relation(fields: [manuscriptEvent], references: [id], name: "otherEvent-ref", onDelete: SetNull)
+  manuscriptEvent String?
+
+  @@map("documents")
+}
+
+model Event {
+  id String @id @default(cuid())
+
+  year Int
+  type String
+
+  place Place @relation(fields: [placeId], references: [id])
+
+  documents Document[]
+  placeId   String
+
+  @@map("events")
+}
+
+model Image {
+  id String @id @default(cuid())
+
+  artist String?
+  author String?
+  title  String?
+
+  place Place? @relation(fields: [placeId], references: [id])
+
+  museum    String?
+  content   String?
+  date      String?
+  documents Document[]
+  placeId   String?
+
+  @@map("images")
+}
+
+model Manuscript {
+  id String @id @default(cuid())
+
+  author     String?
+  writtenAt  String?
+  receivedAt String?
+
+  // Discompose all places as coordinates
+  from    Place?  @relation(fields: [placeId], references: [id], name: "sent-from")
+  placeId String?
+
+  to        Place?  @relation(fields: [toPlaceId], references: [id], name: "received-to")
+  toPlaceId String?
+
+  recipient String?
+  language  String?
+  documents Document[] @relation(name: "manuscript-ref")
+
+  otherEvents Document[] @relation(name: "otherEvent-ref")
+
+  @@map("manuscripts")
+}
+
+model Print {
+  id String @id @default(cuid())
+
+  otherPlaces String[]
+  language    String?
+  title       String?
+  year        Int?
+  notes       String?
+
+  place Place? @relation(fields: [placeId], references: [id])
+
+  USTC        String?
+  writer      String?
+  information String?
+  dedicatee   String?
+  placeId     String?
+
+  @@map("prints")
+}
