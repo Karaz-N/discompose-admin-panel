@@ -11,23 +11,33 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Enums
+enum DocumentType {
+  Manuscript
+  Print
+  Image
+}
+
 // Utils
 model Place {
   id String @id @default(cuid())
 
-  name            String?
-  latitude        Float?
-  longitude       Float?
-  Event           Event[]
-  Image           Image[]
+  name      String?
+  latitude  Float?
+  longitude Float?
+
+  events          Event[]
+  images          Image[]
   manuscriptsFrom Manuscript[] @relation(name: "sent-from")
   manuscriptsTo   Manuscript[] @relation(name: "received-to")
-  Print           Print[]
+  prints          Print[]
 }
 
 // Models
 model Document {
   record String @id
+
+  type DocumentType
 
   associatedDocument Document?  @relation(fields: [documentRecord], references: [record], name: "association", onDelete: Cascade, onUpdate: Cascade)
   documents          Document[] @relation(name: "association")
@@ -48,6 +58,9 @@ model Document {
   manuscript   Manuscript? @relation(fields: [manuscriptId], references: [id], name: "manuscript-ref", onDelete: SetNull)
   manuscriptId String?
 
+  print   Print?  @relation(fields: [printId], references: [id], onDelete: SetNull)
+  printId String?
+
   eventMention    Manuscript? @relation(fields: [manuscriptEvent], references: [id], name: "otherEvent-ref", onDelete: SetNull)
   manuscriptEvent String?
 
@@ -57,10 +70,10 @@ model Document {
 model Event {
   id String @id @default(cuid())
 
-  year Int
-  type String
+  year Int?
+  type String?
 
-  place Place @relation(fields: [placeId], references: [id])
+  place Place? @relation(fields: [placeId], references: [id])
 
   documents Document[]
   placeId   String
@@ -125,6 +138,7 @@ model Print {
   information String?
   dedicatee   String?
   placeId     String?
+  Document    Document[]
 
   @@map("prints")
 }

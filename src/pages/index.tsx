@@ -1,6 +1,26 @@
 import Image from "next/image";
+import { Suspense, useState, useEffect } from "react";
+import { GetStaticProps } from "next";
+import { loadAllEvents, Counts } from "../db/queries";
 
-export default function Home() {
+type HomeProps = {
+  props: {
+    counts: Counts
+  }
+}
+
+export const getStaticProps: GetStaticProps = async (): Promise<HomeProps> => {
+  const counts = await loadAllEvents();
+
+  return {
+    props: {
+      counts,
+    },
+  }
+}
+
+
+export default function Home({ counts }) {
   return (
     <body className="p-8">
       <h1 className="uppercase mb-8 font-bold text-2xl">Dashboard</h1>
@@ -21,31 +41,51 @@ export default function Home() {
                 All Events
               </h1>
             </span>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.events}
+              </p>
+            </Suspense>
           </div>
           <div className="bg-menu-admin h-32 flex flex-col items-center justify-center">
             <h1 className="uppercase text-lg font-semibold text-item-admin-red">
               EARTHQUAKES
             </h1>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.earthquakes}
+              </p>
+            </Suspense>
           </div>
           <div className="bg-menu-admin h-32 flex flex-col items-center justify-center">
             <h1 className="uppercase text-lg font-semibold text-item-admin-red">
               FLOODS
             </h1>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.floods}
+              </p>
+            </Suspense>
           </div>
           <div className="bg-menu-admin h-32 flex flex-col items-center justify-center">
             <h1 className="uppercase text-lg font-semibold text-item-admin-red">
               HURRICANES
             </h1>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.hurricanes}
+              </p>
+            </Suspense>
           </div>
           <div className="bg-menu-admin h-32 flex flex-col items-center justify-center">
             <h1 className="uppercase text-lg text-center font-semibold text-item-admin-red">
               ERUPTIONS
             </h1>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.eruptions}
+              </p>
+            </Suspense>
           </div>
         </div>
 
@@ -64,7 +104,11 @@ export default function Home() {
                 All Documents
               </h1>
             </span>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.documents}
+              </p>
+            </Suspense>
           </div>
           <div className="bg-menu-admin h-32 flex flex-col items-center justify-center">
             <span className="flex">
@@ -79,7 +123,11 @@ export default function Home() {
                 IMAGES
               </h1>
             </span>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.images}
+              </p>
+            </Suspense>
           </div>
           <div className="bg-menu-admin h-32 flex flex-col items-center justify-center">
             <span className="flex">
@@ -94,7 +142,11 @@ export default function Home() {
                 MANUSCRIPTS
               </h1>
             </span>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.manuscripts}
+              </p>
+            </Suspense>
           </div>
           <div className="bg-menu-admin h-32 flex flex-col items-center justify-center">
             <span className="flex">
@@ -109,7 +161,11 @@ export default function Home() {
                 PRINTS
               </h1>
             </span>
-            <p className=" font-bold text-4xl mt-4 text-item-admin">100</p>
+            <Suspense>
+              <p className=" font-bold text-4xl mt-4 text-item-admin">
+                {counts.prints}
+              </p>
+            </Suspense>
           </div>
         </div>
       </div>
