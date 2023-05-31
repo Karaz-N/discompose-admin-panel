@@ -1,0 +1,4844 @@
+[
+  {
+    "id": "M-1638-CA-06F2",
+    "writtenAt": "1638-05-16",
+    "receivedAt": "",
+    "placeId": "Reggio Calabria",
+    "toPlaceId": "Rome",
+    "recipient": "Unknown",
+    "language": ""
+  },
+  {
+    "id": "M-1456-CSI-0678",
+    "writtenAt": "ca. 1600",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1538-MN-036F",
+    "writtenAt": "1538-10-10",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Imperial court",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1538-MN-0370",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "Imperial court",
+    "toPlaceId": "",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1538-MN-0371",
+    "writtenAt": "1538-10-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Imperial court",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1538-MN-0372",
+    "writtenAt": "1538-10",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Imperial court",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1538-MN-0373",
+    "writtenAt": "1538-10-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Imperial court",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1538-MN-0374",
+    "writtenAt": "1538",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Toledo, Pedro de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1538-MN-0375",
+    "writtenAt": "1538-08-14",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1538-MN-0677",
+    "writtenAt": "ca. 1600",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1539-AN-0376",
+    "writtenAt": "1539-02-19",
+    "receivedAt": "",
+    "placeId": "Annaba",
+    "toPlaceId": "",
+    "recipient": "Cobos, Francisco de los",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1539-AN-0377",
+    "writtenAt": "1539-02-19",
+    "receivedAt": "",
+    "placeId": "Annaba",
+    "toPlaceId": "",
+    "recipient": "Cobos, Francisco de los",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1539-AN-0378",
+    "writtenAt": "1539-02-19",
+    "receivedAt": "",
+    "placeId": "Annaba",
+    "toPlaceId": "",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1539-AN-0379",
+    "writtenAt": "1539-02-19",
+    "receivedAt": "",
+    "placeId": "Annaba",
+    "toPlaceId": "",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1539-AN-037A",
+    "writtenAt": "1539-02-28",
+    "receivedAt": "",
+    "placeId": "Annaba",
+    "toPlaceId": "",
+    "recipient": "Cobos, Francisco de los",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1539-AN-037B",
+    "writtenAt": "1539-02-28",
+    "receivedAt": "",
+    "placeId": "Annaba",
+    "toPlaceId": "",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1539-AN-037C",
+    "writtenAt": "1539-04-14",
+    "receivedAt": "",
+    "placeId": "Imperial court",
+    "toPlaceId": "",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1539-AN-037D",
+    "writtenAt": "1539-07-31",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1539-AN-037E",
+    "writtenAt": "1540-12-22",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "Charles V",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1542-ES-0681",
+    "writtenAt": "1542-12-20",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "Consejo de Estado",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1542-ES-0696",
+    "writtenAt": "1546-05-10",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Imperial court",
+    "recipient": "Charles V",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-069C",
+    "writtenAt": "1542-11-1542-12",
+    "receivedAt": "",
+    "placeId": "Modica",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1542-ES-069D",
+    "writtenAt": "1542",
+    "receivedAt": "",
+    "placeId": "Modica",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1542-ES-069E",
+    "writtenAt": "after 1693",
+    "receivedAt": "",
+    "placeId": "Syracuse ",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-069F",
+    "writtenAt": "after 1800",
+    "receivedAt": "",
+    "placeId": "Syracuse ",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-06A0",
+    "writtenAt": "1543-04-18",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Syracuse ",
+    "recipient": "Università of Syracuse",
+    "language": ""
+  },
+  {
+    "id": "M-1542-ES-06A2",
+    "writtenAt": "1545-04-19",
+    "receivedAt": "",
+    "placeId": "Syracuse ",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1542-ES-06A3",
+    "writtenAt": "1545-05-20",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Syracuse ",
+    "recipient": "Università of Syracuse",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-06A4",
+    "writtenAt": "1547-08-26",
+    "receivedAt": "",
+    "placeId": "Syracuse ",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-06A5",
+    "writtenAt": "1543-01-10",
+    "receivedAt": "",
+    "placeId": "Caltagirone",
+    "toPlaceId": "",
+    "recipient": "Bubei, Biagio; Albergini, Giacomo; Areni, Giovanni; Marcafava, Antonutto",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1542-ES-06A6",
+    "writtenAt": "1583-1603 Copy 1670",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-06A7",
+    "writtenAt": "1563-1580",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-06A8",
+    "writtenAt": "after 1700",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-06A9",
+    "writtenAt": "before 1647",
+    "receivedAt": "",
+    "placeId": "Unknown",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-06AA",
+    "writtenAt": "1515-1574 ed. 1902",
+    "receivedAt": "",
+    "placeId": "Catania",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1542-ES-06AC",
+    "writtenAt": "after 1542-12-10",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Ha-Cohen, Isaac",
+    "language": ""
+  },
+  {
+    "id": "M-1542-ES-06B5",
+    "writtenAt": "1543-03-07",
+    "receivedAt": "",
+    "placeId": "Strsbourg ",
+    "toPlaceId": "Basel",
+    "recipient": "Amerbach, Bonifacius",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1542-ES-06B7",
+    "writtenAt": "1542-12-27",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "Moncada, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1557-PA-037F",
+    "writtenAt": "1557-10-08",
+    "receivedAt": "1557-11-30",
+    "placeId": "Messina",
+    "toPlaceId": "Brussels",
+    "recipient": "Perrenot de Granvelle, Antoine",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1557-PA-0380",
+    "writtenAt": "1557-09-27",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "De Aragona Tagliavia, Carlo",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1560-CA-0381",
+    "writtenAt": "1560",
+    "receivedAt": "",
+    "placeId": "Valencia",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Catalan"
+  },
+  {
+    "id": "M-1568-NG-0382",
+    "writtenAt": "1568-03-09",
+    "receivedAt": "",
+    "placeId": "Guadalajara",
+    "toPlaceId": "",
+    "recipient": "Philip II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1570-FE-0383",
+    "writtenAt": "1570-12-14",
+    "receivedAt": "1571-01-02",
+    "placeId": "Genoa",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1575-VL-0667",
+    "writtenAt": "ca. 1628 It was finished around that time",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-0384",
+    "writtenAt": "[1595]",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-0536",
+    "writtenAt": "1582-03-23",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-05F1",
+    "writtenAt": "1583-02",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-05F2",
+    "writtenAt": "1584-04-01",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-05F5",
+    "writtenAt": "[1600]",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Rome",
+    "recipient": "Acquaviva, Claudio",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-05F7",
+    "writtenAt": "1582-01-28 the author erroneously writes 1583",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Lima",
+    "recipient": "Atienza, Juan de ",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-05F8",
+    "writtenAt": "1582-02-01",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-05F9",
+    "writtenAt": "1582-02-19",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-AE-0663",
+    "writtenAt": "ca. 1628 It was finished around that time",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1582-PE-060D",
+    "writtenAt": "1582-04-16",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Venice",
+    "recipient": "Senato of Venice",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1582-PE-0682",
+    "writtenAt": "1582-05-21",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Venice",
+    "recipient": "Senato of Venice",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1582-PE-0683",
+    "writtenAt": "1582-06-05",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Venice",
+    "recipient": "Senato of Venice",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1582-PE-0684",
+    "writtenAt": "1582-06-23",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Urbino",
+    "recipient": "Rovere, Francesco Maria II della",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1586-AN-0385",
+    "writtenAt": "1587-05-06",
+    "receivedAt": "",
+    "placeId": "Antigua",
+    "toPlaceId": "Court",
+    "recipient": "Philip II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1586-LE-0386",
+    "writtenAt": "1595-07-08",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1586-LE-0387",
+    "writtenAt": "1586",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1586-LE-0388",
+    "writtenAt": "1589-05-10",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1586-LE-05FA",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "Cartagena de Indias",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1586-LE-05FB",
+    "writtenAt": "1586-09-13",
+    "receivedAt": "",
+    "placeId": "Panama",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1586-LE-05FC",
+    "writtenAt": "1586-11-03",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1586-LE-05FD",
+    "writtenAt": "[1593]",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": ""
+  },
+  {
+    "id": "M-1586-LE-0664",
+    "writtenAt": "ca. 1628 It was finished around that time.",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1587-QU-0389",
+    "writtenAt": "1588-08-06",
+    "receivedAt": "",
+    "placeId": "Quito",
+    "toPlaceId": "Court",
+    "recipient": "Philip II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1587-QU-038A",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": ""
+  },
+  {
+    "id": "M-1589-MA-038B",
+    "writtenAt": "1589-07-13",
+    "receivedAt": "",
+    "placeId": "Manila",
+    "toPlaceId": "Court",
+    "recipient": "Philip II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1591-SM-038C",
+    "writtenAt": "1592-09-21",
+    "receivedAt": "",
+    "placeId": "Burgos",
+    "toPlaceId": "Mexico City",
+    "recipient": "Velasco, Luis de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1594-SS-038D",
+    "writtenAt": "1602-06-27",
+    "receivedAt": "",
+    "placeId": "Valladolid",
+    "toPlaceId": "",
+    "recipient": "Philip III",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1594-SS-038E",
+    "writtenAt": "1601-04-04",
+    "receivedAt": "",
+    "placeId": "San Salvador",
+    "toPlaceId": "Valladolid",
+    "recipient": "Philip III",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1594-SS-038F",
+    "writtenAt": "1604-05-03",
+    "receivedAt": "",
+    "placeId": "Guatemala",
+    "toPlaceId": "Valladolid",
+    "recipient": "Philip III",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1595-BA-05DF",
+    "writtenAt": "1595-06-07",
+    "receivedAt": "",
+    "placeId": "Barcelona",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Catalan"
+  },
+  {
+    "id": "M-1597-MC-0390",
+    "writtenAt": "1597-11-27",
+    "receivedAt": "1598-11-03",
+    "placeId": "Mexico City",
+    "toPlaceId": "Court",
+    "recipient": "Philip II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1599-CA-0661",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0391",
+    "writtenAt": "1600-03-01",
+    "receivedAt": "1600-03-01",
+    "placeId": "Lima",
+    "toPlaceId": "Lima",
+    "recipient": "Audiencia of Lima; Cabildo of Lima",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0392",
+    "writtenAt": "1600-05-08",
+    "receivedAt": "",
+    "placeId": "Callao (Lima)",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0393",
+    "writtenAt": "1601-03-30",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0394",
+    "writtenAt": "1603-12-23",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0395",
+    "writtenAt": "1601-09-18",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0396",
+    "writtenAt": "1602-03-27",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0397",
+    "writtenAt": "1602-03-30",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0398",
+    "writtenAt": "1604-09-25",
+    "receivedAt": "",
+    "placeId": "Valladolid",
+    "toPlaceId": "Valladolid",
+    "recipient": "Philip III",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0399",
+    "writtenAt": "1608-07-10",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip III",
+    "language": ""
+  },
+  {
+    "id": "M-1600-HU-039A",
+    "writtenAt": "1606-09-15",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-039B",
+    "writtenAt": "1621-04-07",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-064F",
+    "writtenAt": "before 1616",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-0662",
+    "writtenAt": "ca. 1628",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1600-HU-06ED",
+    "writtenAt": "[ca. 1605] It was finished around that time. The friar's journey took place between 1599 and 1605.",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1604-AE-039C",
+    "writtenAt": "[1605]",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1604-AE-039D",
+    "writtenAt": "1608-01-31",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1604-AE-039E",
+    "writtenAt": "1614-03-14",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1604-AE-039F",
+    "writtenAt": "1614-03-05",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1604-AE-05F3",
+    "writtenAt": "1614-03-05",
+    "receivedAt": "",
+    "placeId": "Arequipa",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1606-MO-065F",
+    "writtenAt": "ca. 1628 It was finished around that time.",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1609-LI-03A0",
+    "writtenAt": "1610-03-15",
+    "receivedAt": "1612-06-22",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1609-LI-03A1",
+    "writtenAt": "1610-03-27",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1609-LI-05FE",
+    "writtenAt": "1610-03-25",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Inquisitor General",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1609-RO-03A2",
+    "writtenAt": "1609-05-26",
+    "receivedAt": "1609-06-09",
+    "placeId": "Genoa",
+    "toPlaceId": "Court",
+    "recipient": "Philip III",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1617-BA-0654",
+    "writtenAt": "1617-12-20",
+    "receivedAt": "",
+    "placeId": "Lleida",
+    "toPlaceId": "",
+    "recipient": "Philip III",
+    "language": "Catalan"
+  },
+  {
+    "id": "M-1619-TR-03A3",
+    "writtenAt": "1619-06-17",
+    "receivedAt": "",
+    "placeId": "Panama",
+    "toPlaceId": "Court",
+    "recipient": "Philip III",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1619-TR-03A4",
+    "writtenAt": "[1620]",
+    "receivedAt": "",
+    "placeId": "Trujillo",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1619-TR-03A5",
+    "writtenAt": "1627-05-14",
+    "receivedAt": "",
+    "placeId": "Trujillo",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1619-TR-03A6",
+    "writtenAt": "1620",
+    "receivedAt": "",
+    "placeId": "Trujillo",
+    "toPlaceId": "Peru",
+    "recipient": "Fernández de Córdoba, Diego",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1619-TR-0660",
+    "writtenAt": "ca. 1628 It was finished around that time",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-03A7",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-03A8",
+    "writtenAt": "1627-08-09",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples; Lucera",
+    "recipient": "Camera della Sommaria; Udienza Provinciale",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-03A9",
+    "writtenAt": "1627-08-27",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Lucera",
+    "recipient": "Governor of Capitanata",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-03AA",
+    "writtenAt": "1627-09-13",
+    "receivedAt": "",
+    "placeId": "Pozzuoli",
+    "toPlaceId": "Naples",
+    "recipient": "Álvarez de Toledo, Antonio",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-03AB",
+    "writtenAt": "1627-09-20",
+    "receivedAt": "",
+    "placeId": "Sarno",
+    "toPlaceId": "Naples",
+    "recipient": "Álvarez de Toledo, Antonio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-03AC",
+    "writtenAt": "1627-09-20",
+    "receivedAt": "",
+    "placeId": "Scala",
+    "toPlaceId": "Naples",
+    "recipient": "Álvarez de Toledo, Antonio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-03AD",
+    "writtenAt": "1627-09-20",
+    "receivedAt": "",
+    "placeId": "Amalfi",
+    "toPlaceId": "Naples",
+    "recipient": "Álvarez de Toledo, Antonio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-03AE",
+    "writtenAt": "1627-09-20",
+    "receivedAt": "",
+    "placeId": "Lettere",
+    "toPlaceId": "Naples",
+    "recipient": "Álvarez de Toledo, Antonio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-03AF",
+    "writtenAt": "1627-09-21",
+    "receivedAt": "",
+    "placeId": "Nusco",
+    "toPlaceId": "Naples",
+    "recipient": "Álvarez de Toledo, Antonio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-03B0",
+    "writtenAt": "1627-09-27",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Álvarez de Toledo, Antonio",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1627-GA-03B1",
+    "writtenAt": "1627-11-05",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-03B2",
+    "writtenAt": "1628-10-02",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Udienza of Girifalco",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-03B3",
+    "writtenAt": "1634-07-25",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Naples",
+    "recipient": "Álvarez de Toledo, Antonio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-03B4",
+    "writtenAt": "[1627-09]",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-03B5",
+    "writtenAt": "1627-08-14",
+    "receivedAt": "",
+    "placeId": "Troia",
+    "toPlaceId": "Naples",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-03B6",
+    "writtenAt": "1694-08",
+    "receivedAt": "",
+    "placeId": "[Apulia]",
+    "toPlaceId": "Rome",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-068F",
+    "writtenAt": "after 1627-07-30",
+    "receivedAt": "",
+    "placeId": "San Severo",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-0691",
+    "writtenAt": "1600-1672",
+    "receivedAt": "",
+    "placeId": "San Severo",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-0692",
+    "writtenAt": "1628-09-07",
+    "receivedAt": "",
+    "placeId": "Serracapriola",
+    "toPlaceId": "",
+    "recipient": "Clero",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-0693",
+    "writtenAt": "1627",
+    "receivedAt": "",
+    "placeId": "Serracapriola",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1627-GA-0694",
+    "writtenAt": "1628-02-19",
+    "receivedAt": "",
+    "placeId": "San Severo",
+    "toPlaceId": "",
+    "recipient": "Marchese di San Giuliano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-0697",
+    "writtenAt": "1627-09-07",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Regia Camera della Sommaria",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1627-GA-0699",
+    "writtenAt": "1627-08-15",
+    "receivedAt": "",
+    "placeId": "Lucera",
+    "toPlaceId": "Naples",
+    "recipient": "Barrile, Giovan Angelo",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-069A",
+    "writtenAt": "1627-08-11",
+    "receivedAt": "",
+    "placeId": "San Severo",
+    "toPlaceId": "Naples",
+    "recipient": "Barrile, Giovan Angelo",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06BA",
+    "writtenAt": "1627",
+    "receivedAt": "",
+    "placeId": "San Severo",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06BB",
+    "writtenAt": "1631",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Auditor of the Foggia Sheep Custom House",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06BC",
+    "writtenAt": "1629-03-25",
+    "receivedAt": "",
+    "placeId": "Foggia",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06BD",
+    "writtenAt": "1629-04-04",
+    "receivedAt": "",
+    "placeId": "Foggia",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06BE",
+    "writtenAt": "1979 typewritten copy",
+    "receivedAt": "",
+    "placeId": "San Severo",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06BF",
+    "writtenAt": "1627-08-03",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Mantua",
+    "recipient": "Sbriggio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06C2",
+    "writtenAt": "1627-09-13",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06C3",
+    "writtenAt": "1660",
+    "receivedAt": "",
+    "placeId": "Foggia",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06C4",
+    "writtenAt": "1720-1730",
+    "receivedAt": "",
+    "placeId": "Troia",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1627-GA-06C5",
+    "writtenAt": "1629-01-18 or 1634-06-20",
+    "receivedAt": "",
+    "placeId": "Lucera",
+    "toPlaceId": "Rome",
+    "recipient": "Congregation for the Council",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1627-GA-06C6",
+    "writtenAt": "1647-03-23",
+    "receivedAt": "",
+    "placeId": "Rome; San Severo",
+    "toPlaceId": "Rome",
+    "recipient": "Congregation for the Council",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1627-GA-06C9",
+    "writtenAt": "1690-12-20",
+    "receivedAt": "",
+    "placeId": "Troia",
+    "toPlaceId": "Rome",
+    "recipient": "Congregation for the Council",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1628-MA-03B7",
+    "writtenAt": "1628",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1629-ME-03B8",
+    "writtenAt": "1630-11-06",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Mexico City",
+    "recipient": "Ramírez, Pedro",
+    "language": ""
+  },
+  {
+    "id": "M-1629-ME-03B9",
+    "writtenAt": "1630-11-06",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Mexico City",
+    "recipient": "Acevedo, Diego de",
+    "language": ""
+  },
+  {
+    "id": "M-1631-VE-03BA",
+    "writtenAt": "1631-12-16",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03BB",
+    "writtenAt": "1631-12-16",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03BC",
+    "writtenAt": "1631-12-16",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03BD",
+    "writtenAt": "1631-12-17",
+    "receivedAt": "",
+    "placeId": "Lecce",
+    "toPlaceId": "Naples",
+    "recipient": "Acevedo y Zúñiga, Manuel de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1631-VE-03BE",
+    "writtenAt": "1631-12-20",
+    "receivedAt": "",
+    "placeId": "Trani",
+    "toPlaceId": "Naples",
+    "recipient": "Acevedo y Zúñiga, Manuel de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1631-VE-03BF",
+    "writtenAt": "1631-12-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Marquis of Vico",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1631-VE-03C0",
+    "writtenAt": "1631-12-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Capua",
+    "recipient": "Judge of Capua",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1631-VE-03C1",
+    "writtenAt": "1631-12-23",
+    "receivedAt": "",
+    "placeId": "Foggia",
+    "toPlaceId": "Naples",
+    "recipient": "Acevedo y Zúñiga, Manuel de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03C2",
+    "writtenAt": "1631-12-28",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Foggia",
+    "recipient": "Dogana of Foggia",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1631-VE-03C3",
+    "writtenAt": "1632-01-13",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03C4",
+    "writtenAt": "1632-02-06",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03C5",
+    "writtenAt": "1632-03-01",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03C6",
+    "writtenAt": "1632-03-29",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03C7",
+    "writtenAt": "1632-03-31",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Governor of Somma",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03C8",
+    "writtenAt": "1632-03-31",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Marquis of Vico",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03C9",
+    "writtenAt": "1632-05-11",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03CA",
+    "writtenAt": "1632-05-19",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03CB",
+    "writtenAt": "1632-06-18",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Governor of Principato Ultra; Governor of Calabria Citra; Governor of Calabria Ultra; Governor of Abruzzo; Governor of Terra de Bari; Governor of Terra d’Otranto; Governor of Capitanata; Governor of Contado del Molise; Governor of Principato Citra; Governor of Basilicata",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03CC",
+    "writtenAt": "1632-10-29",
+    "receivedAt": "1632-10-30",
+    "placeId": "",
+    "toPlaceId": "Naples",
+    "recipient": "Acevedo y Zúñiga, Manuel de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03CD",
+    "writtenAt": "1632-10-30",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Foggia",
+    "recipient": "Dogana of Foggia",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-03CE",
+    "writtenAt": "1632-12-31",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Naples",
+    "recipient": "Acevedo y Zúñiga, Manuel de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1631-VE-03CF",
+    "writtenAt": "1635-03-10",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Governor of Capitanata; Governor of Contado di Molise",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1631-VE-0676",
+    "writtenAt": "1631-12-16-1631-12-23",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Estado",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1638-CA-03D0",
+    "writtenAt": "1638-04-22",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Capacelatro, Ettore",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-03D1",
+    "writtenAt": "1639-12-17",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-03D2",
+    "writtenAt": "1652-09-21",
+    "receivedAt": "",
+    "placeId": "Massa (Tuscany)",
+    "toPlaceId": "Madrid",
+    "recipient": "Méndez de Haro, Luis",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-03D3",
+    "writtenAt": "1651-12-02",
+    "receivedAt": "",
+    "placeId": "Cosenza",
+    "toPlaceId": "Madrid",
+    "recipient": "Méndez de Haro, Luis",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06D1",
+    "writtenAt": "1638-07-30",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1638-CA-06D2",
+    "writtenAt": "1638-08-12",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1638-CA-06D4",
+    "writtenAt": "1638-04-13",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06D5",
+    "writtenAt": "1639-05-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06D6",
+    "writtenAt": "1638-09-17",
+    "receivedAt": "",
+    "placeId": "Bisignano",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06D7",
+    "writtenAt": "1639-09-22",
+    "receivedAt": "",
+    "placeId": "San Pietro in Guarano",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06D8",
+    "writtenAt": "1640-03-02",
+    "receivedAt": "",
+    "placeId": "Cellara; Piane",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06D9",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "Figline; Francolise",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06DA",
+    "writtenAt": "1639-05-18",
+    "receivedAt": "",
+    "placeId": "Figline; Francolise; Cellara; Piane",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06DB",
+    "writtenAt": "1638-04-28",
+    "receivedAt": "",
+    "placeId": "Paola",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06DC",
+    "writtenAt": "1638-07-27",
+    "receivedAt": "",
+    "placeId": "Catanzaro",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06DD",
+    "writtenAt": "1639-06-10",
+    "receivedAt": "",
+    "placeId": "Sambiase",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06DE",
+    "writtenAt": "1638-07-28",
+    "receivedAt": "",
+    "placeId": "Amantea",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06DF",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "Galatro",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1638-CA-06E0",
+    "writtenAt": "1638-12-12",
+    "receivedAt": "",
+    "placeId": "Cosenza",
+    "toPlaceId": "Naples",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E1",
+    "writtenAt": "1639-01-09",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Marquis of Belmonte",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E2",
+    "writtenAt": "1639-02-04",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Núñez de Guzmán, Ramiro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E3",
+    "writtenAt": "1638-04-28",
+    "receivedAt": "",
+    "placeId": "Sant’Eufemia",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E4",
+    "writtenAt": "1638-04-28",
+    "receivedAt": "",
+    "placeId": "Pizzo",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E5",
+    "writtenAt": "1638-04-30",
+    "receivedAt": "",
+    "placeId": "Pizzo",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E6",
+    "writtenAt": "1638-05-10",
+    "receivedAt": "",
+    "placeId": "Tropea",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E7",
+    "writtenAt": "1638-05-28",
+    "receivedAt": "",
+    "placeId": "Nicotera",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E8",
+    "writtenAt": "1638-04-17",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06E9",
+    "writtenAt": "1638-04-28",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06EA",
+    "writtenAt": "1638-05-01",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06EB",
+    "writtenAt": "1638-05-08",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06EC",
+    "writtenAt": "1638-05-11",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06EE",
+    "writtenAt": "1638-05-15",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06F0",
+    "writtenAt": "1638-06-19",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-CA-06F1",
+    "writtenAt": "1638-04-03",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1638-SM-05EB",
+    "writtenAt": "[1638]",
+    "receivedAt": "",
+    "placeId": "São Miguel Island",
+    "toPlaceId": "",
+    "recipient": "Barros, Antonio de",
+    "language": ""
+  },
+  {
+    "id": "M-1639-CI-06EF",
+    "writtenAt": "1638-06-15",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Barberini, Francesco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1644-AL-03D4",
+    "writtenAt": "1644-09-06",
+    "receivedAt": "",
+    "placeId": "Albaida",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1644-PA-03D5",
+    "writtenAt": "1646-03-10",
+    "receivedAt": "1646-06-08",
+    "placeId": "Pamplona",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1645-MA-03D6",
+    "writtenAt": "1646-08-04",
+    "receivedAt": "",
+    "placeId": "Manila",
+    "toPlaceId": "",
+    "recipient": "Philip IV",
+    "language": ""
+  },
+  {
+    "id": "M-1646-GA-03D7",
+    "writtenAt": "1646-09-01",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Ponce de León, Rodrigo",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1646-ME-03D8",
+    "writtenAt": "1646-05-20",
+    "receivedAt": "1647-03-14",
+    "placeId": "Mexico City",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03D9",
+    "writtenAt": "1647-05-15",
+    "receivedAt": "1647-05-24",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "",
+    "recipient": "Mújica, Martín de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03DA",
+    "writtenAt": "1647-09-14",
+    "receivedAt": "",
+    "placeId": "Cuzco",
+    "toPlaceId": "Lima",
+    "recipient": "Villagómez y Vivanco, Pedro de ",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03DB",
+    "writtenAt": "1649-01-07",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Ovalle, Alonso de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03DC",
+    "writtenAt": "1665-07-12",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Rome",
+    "recipient": "San Miguel College's Rector; consultors in Santiago de Chile",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03DD",
+    "writtenAt": "1648-08-22",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Rome",
+    "recipient": "Carafa, Vincenzo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03DE",
+    "writtenAt": "1649-12-17",
+    "receivedAt": "",
+    "placeId": "Concepcion",
+    "toPlaceId": "Rome",
+    "recipient": "Carafa, Vincenzo",
+    "language": " the spreading devotion to San Francesco Javier (named the patron saint of Mendoza)'"
+  },
+  {
+    "id": "M-1647-SA-03DF",
+    "writtenAt": "1663-04-12",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Rome",
+    "recipient": "Oliva, Juan Pablo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03E0",
+    "writtenAt": "1684-03-20",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Rome",
+    "recipient": "De Noyelle, Charles",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03E1",
+    "writtenAt": "1648",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "Rome",
+    "recipient": "Father General [Vincenzo Carafa]",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03E2",
+    "writtenAt": "1647-06-07",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03E3",
+    "writtenAt": "1648-06-26",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03E4",
+    "writtenAt": "1649-07-28",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03E5",
+    "writtenAt": "1652-05-24",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1647-SA-03E6",
+    "writtenAt": "1657-05-21",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1648-MA-03E7",
+    "writtenAt": "1649-07-19",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1648-MA-03E8",
+    "writtenAt": "1648-05-01",
+    "receivedAt": "1649-07-16",
+    "placeId": "Manila",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1648-MA-03E9",
+    "writtenAt": "1649-04-17",
+    "receivedAt": "1649-11-17",
+    "placeId": "Acapulco",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1650-CU-03EA",
+    "writtenAt": "1651-06-10",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Rome",
+    "recipient": "PIccolomini, Francesco",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1650-CU-03EB",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "Cuzco",
+    "toPlaceId": "Lima",
+    "recipient": "Ocón, Juan Alonso de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1650-CU-03EC",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "Cuzco",
+    "toPlaceId": "Lima",
+    "recipient": "Ocón, Juan Alonso de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1650-CU-03ED",
+    "writtenAt": "1651-06-10",
+    "receivedAt": "",
+    "placeId": "Cuzco",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1650-CU-03EE",
+    "writtenAt": "1653-07-13",
+    "receivedAt": "",
+    "placeId": "Cuzco",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1650-VE-03EF",
+    "writtenAt": "1650-02-08",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1651-NA-03F0",
+    "writtenAt": "1651-09-21",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1654-CM-03F1",
+    "writtenAt": "1654-07-23",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1654-CM-03F2",
+    "writtenAt": "1654-07-30",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "Rome",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1654-CM-03F3",
+    "writtenAt": "1654-08-02",
+    "receivedAt": "",
+    "placeId": "Isola Liri",
+    "toPlaceId": "Naples",
+    "recipient": "Avellaneda y Haro, García de",
+    "language": " then on behalf of his subjects, he begs the Viceroy to grant tax relief to the inhabitants of the places concerned'"
+  },
+  {
+    "id": "M-1654-CM-03F4",
+    "writtenAt": "1654-08-30",
+    "receivedAt": "",
+    "placeId": "Isola Liri",
+    "toPlaceId": "Naples",
+    "recipient": "Avellaneda y Haro, García de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1654-CM-03F5",
+    "writtenAt": "1654-09-28",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Avellaneda y Haro, García de",
+    "language": " del successo di detti terremoti"
+  },
+  {
+    "id": "M-1655-LI-03F6",
+    "writtenAt": "1656-01-20",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1655-LI-03F7",
+    "writtenAt": "1656-06-17",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1657-CO-03F8",
+    "writtenAt": "1659-03-15",
+    "receivedAt": "",
+    "placeId": "Santiago de Chile",
+    "toPlaceId": "Rome",
+    "recipient": "Nickel, Goswino",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1658-MA-03F9",
+    "writtenAt": "1659-06-18",
+    "receivedAt": "",
+    "placeId": "Manila",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1658-MA-03FA",
+    "writtenAt": "",
+    "receivedAt": "1666-01-13",
+    "placeId": "Manila",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1659-CA-03FB",
+    "writtenAt": "1659-11-29",
+    "receivedAt": "1660-01",
+    "placeId": "Naples",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1659-CA-03FC",
+    "writtenAt": "1659-11-29",
+    "receivedAt": "1660-01",
+    "placeId": "Naples",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1659-CA-03FD",
+    "writtenAt": "1659-11-29",
+    "receivedAt": "1660-01",
+    "placeId": "Naples",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1659-CA-03FE",
+    "writtenAt": "1660-01-29",
+    "receivedAt": "1660-01-30",
+    "placeId": "Madrid",
+    "toPlaceId": "Madrid",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1659-CA-03FF",
+    "writtenAt": "1659-11-29",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "De Marinis, Antonio Donato",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1659-CA-067E",
+    "writtenAt": "1660-07-24",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "[Madrid]",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1659-CA-0680",
+    "writtenAt": "1660-07-24",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "[Madrid]",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1660-PI-0400",
+    "writtenAt": "1664-07-10",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Quito",
+    "recipient": "Audiencia of Quito",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1660-PI-0401",
+    "writtenAt": "1664-07-10",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Quito",
+    "recipient": "Bishop of Quito",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1660-VE-05CB",
+    "writtenAt": "1660",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1660-VE-0679",
+    "writtenAt": "1660-07-15",
+    "receivedAt": "1660-08-06",
+    "placeId": "Naples",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Italia",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1660-VE-067A",
+    "writtenAt": "1660-08-27",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "[Madrid]",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1660-VE-067B",
+    "writtenAt": "1660-08-25",
+    "receivedAt": "1660-09-30",
+    "placeId": "Naples",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Italia",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1660-VE-067D",
+    "writtenAt": "1660-10-30",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "[Madrid]",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1660-VE-067F",
+    "writtenAt": "1660-08-08",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "[Madrid]",
+    "recipient": "Philip IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1661-MA-054D",
+    "writtenAt": "[1661-10] Date inferred from the text, in h. 60r: Puede imprimirse. Madrid y octubre de 1661'",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "Madrid",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1661-MA-0550",
+    "writtenAt": "1661-09-22",
+    "receivedAt": "",
+    "placeId": "Malaga",
+    "toPlaceId": "Madrid",
+    "recipient": "Felipe IV",
+    "language": ""
+  },
+  {
+    "id": "M-1661-MA-0551",
+    "writtenAt": "1661-09-27",
+    "receivedAt": "",
+    "placeId": "Malaga",
+    "toPlaceId": "Madrid",
+    "recipient": "Felipe IV",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1661-MA-0552",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "Unknown",
+    "toPlaceId": "Unknown",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1662-QU-0402",
+    "writtenAt": "1664-07-10",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Quito",
+    "recipient": "Audiencia of Quito",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1667-RA-0403",
+    "writtenAt": "1667-11-09",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0404",
+    "writtenAt": "1669-03-06",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Palermo",
+    "recipient": "Tribunale del Real Patrimonio",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0405",
+    "writtenAt": "1669-03-15",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0406",
+    "writtenAt": "1669-03-22",
+    "receivedAt": "",
+    "placeId": "Catania",
+    "toPlaceId": "Palermo",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0407",
+    "writtenAt": "1669-03-22",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0408",
+    "writtenAt": "1669-03-22",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0409",
+    "writtenAt": "1669-03-26",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-040A",
+    "writtenAt": "1669-03-26",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-040B",
+    "writtenAt": "1669-03-26",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-040C",
+    "writtenAt": "1669-04-06",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-040D",
+    "writtenAt": "1669-04-06",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-040E",
+    "writtenAt": "1669-04-06",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Palermo",
+    "recipient": "Tribunal del Real Patrimonio",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-040F",
+    "writtenAt": "1669-04-07",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0410",
+    "writtenAt": "1669-04-07",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0411",
+    "writtenAt": "1669-04-08",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Palermo",
+    "recipient": "Tribunal del Real Patrimonio",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0412",
+    "writtenAt": "1669-04-09",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0413",
+    "writtenAt": "1669-04-14",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0414",
+    "writtenAt": "1669-04-14",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0415",
+    "writtenAt": "1669-04-19",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0416",
+    "writtenAt": "1669-04-21",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Senato of Catania",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0417",
+    "writtenAt": "1669-04-23",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0418",
+    "writtenAt": "1669-04-23",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Madrid",
+    "recipient": "Marianna of Austria",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0419",
+    "writtenAt": "1669-04-23",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Riggio, Stefano",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-041A",
+    "writtenAt": "1669-04-30",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Stefano Riggio, prince of Campofranco",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-041B",
+    "writtenAt": "1669-05-05",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Riggio, Stefano",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-041C",
+    "writtenAt": "1669-05-07",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Palermo",
+    "recipient": "Tribunal del Real Patrimonio",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-041D",
+    "writtenAt": "1669-05-10",
+    "receivedAt": "",
+    "placeId": "Catania",
+    "toPlaceId": "Palermo",
+    "recipient": "Fernández de La Cueva, Francisco",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-041E",
+    "writtenAt": "1669-05-10",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Palermo",
+    "recipient": "Tribunal del Real Patrimonio",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-041F",
+    "writtenAt": "1669-05-18",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Riggio, Stefano",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0420",
+    "writtenAt": "1669-05-18",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0421",
+    "writtenAt": "1669-05-26",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Estado",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0422",
+    "writtenAt": "1669-06-04",
+    "receivedAt": "1669-08-24",
+    "placeId": "Palermo",
+    "toPlaceId": "Madrid",
+    "recipient": "Mariana of Austria",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0423",
+    "writtenAt": "1669-06-07",
+    "receivedAt": "",
+    "placeId": "Catania",
+    "toPlaceId": "Palermo",
+    "recipient": "Fernández de La Cueva, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1669-ET-0424",
+    "writtenAt": "1669-06-11",
+    "receivedAt": "1669-06-15",
+    "placeId": "Catania",
+    "toPlaceId": "Palermo",
+    "recipient": "Fernández de La Cueva, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1669-ET-0425",
+    "writtenAt": "1669-06-19",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0426",
+    "writtenAt": "1669-06-19",
+    "receivedAt": "",
+    "placeId": "Catania",
+    "toPlaceId": "Palermo",
+    "recipient": "Fernández de La Cueva, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1669-ET-0427",
+    "writtenAt": "1669-06-22",
+    "receivedAt": "",
+    "placeId": "Catania",
+    "toPlaceId": "Palermo",
+    "recipient": "Fernández de La Cueva, Francisco",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0428",
+    "writtenAt": "1669-07-01",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Captain of Justice",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-0429",
+    "writtenAt": "1669-08-31",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Madrid",
+    "recipient": "Mariana of Austria",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-042A",
+    "writtenAt": "1669-10-08",
+    "receivedAt": "",
+    "placeId": "Catania",
+    "toPlaceId": "Palermo",
+    "recipient": "Fernández de La Cueva, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1669-ET-042B",
+    "writtenAt": "1669-10-01",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Catania",
+    "recipient": "Bonadies, Michelangelo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1669-ET-042C",
+    "writtenAt": "1669-12-14",
+    "receivedAt": "1670-01-08",
+    "placeId": "Catania",
+    "toPlaceId": "Palermo",
+    "recipient": "Fernández de La Cueva, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1674-LO-042D",
+    "writtenAt": "1674-09",
+    "receivedAt": "",
+    "placeId": "Murcia",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1677-MA-042E",
+    "writtenAt": "1678-06-04",
+    "receivedAt": "1679-09-04",
+    "placeId": "Manila",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1678-LI-042F",
+    "writtenAt": "1678-08-14",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1678-LI-062B",
+    "writtenAt": "1690-11-30",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Rome",
+    "recipient": "Innocenzo XI",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1679-BE-0430",
+    "writtenAt": "1680-06-05",
+    "receivedAt": "1681-06-28",
+    "placeId": "Manila",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1680-AN-0602",
+    "writtenAt": "[1680]",
+    "receivedAt": "",
+    "placeId": "Cordoba",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": ""
+  },
+  {
+    "id": "M-1680-AN-0603",
+    "writtenAt": "[1680]",
+    "receivedAt": "",
+    "placeId": "Malaga",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1684-CU-0431",
+    "writtenAt": "1684-07-12",
+    "receivedAt": "1685-02-27",
+    "placeId": "Cumaná",
+    "toPlaceId": "",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0432",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "Rome",
+    "recipient": "González de Santalla, Tirso",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0433",
+    "writtenAt": "1688-06-30",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Borja Centelles, Pascual Francisco de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0434",
+    "writtenAt": "1688-06-30",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Madrid",
+    "recipient": "Borja Centelles, Pascual Francisco de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0435",
+    "writtenAt": "1688-07-13",
+    "receivedAt": "",
+    "placeId": "Alicante",
+    "toPlaceId": "",
+    "recipient": "Silva Mendoza, Gregorio de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0436",
+    "writtenAt": "1687-12-08",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0437",
+    "writtenAt": "1687-12-08",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0438",
+    "writtenAt": "1687-12-08",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0439",
+    "writtenAt": "1687-12-08",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-043A",
+    "writtenAt": "1689",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "",
+    "recipient": "Portocarrero y Lasso de la Vega, Melchor",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-043B",
+    "writtenAt": "1688-07-05",
+    "receivedAt": "",
+    "placeId": "Amsterdam",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-043C",
+    "writtenAt": "1688-07",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1687-LI-043D",
+    "writtenAt": "1687-12-03",
+    "receivedAt": "1689-04",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-043E",
+    "writtenAt": "1688-07-01",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1687-LI-043F",
+    "writtenAt": "1688-07-29",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1687-LI-0440",
+    "writtenAt": "1688-08-05",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1687-LI-0441",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0442",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": ""
+  },
+  {
+    "id": "M-1687-LI-0443",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": ""
+  },
+  {
+    "id": "M-1687-LI-0444",
+    "writtenAt": "1688-09-05",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Lima",
+    "recipient": "Campo, Ignacio del",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0445",
+    "writtenAt": "1688-11-08",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Lima",
+    "recipient": "Campo, Ignacio del",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0446",
+    "writtenAt": "1687-10-29",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Franciscan Father General",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0447",
+    "writtenAt": "1687-12-08",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0448",
+    "writtenAt": "[1687]",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-0449",
+    "writtenAt": "1707-08-02",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Sarmiento Valladares, José",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1687-LI-044A",
+    "writtenAt": "1689-04-20",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-044B",
+    "writtenAt": "1688-07-07",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Duke of Gandía",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-044C",
+    "writtenAt": "1688-07-10",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Marquis of Tavara",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-044D",
+    "writtenAt": "1688-07-07",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Duke of Gandía",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-044E",
+    "writtenAt": "1688-08-21",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-044F",
+    "writtenAt": "1688-08-21",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0450",
+    "writtenAt": "1688-08-31",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0451",
+    "writtenAt": "1688-08-31",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0452",
+    "writtenAt": "1688-10-12",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0453",
+    "writtenAt": "1688-10-23",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0454",
+    "writtenAt": "1688-10-23",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1688-SA-0455",
+    "writtenAt": "1688-10-23",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0456",
+    "writtenAt": "1688-11-02",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0457",
+    "writtenAt": "1688-12-07",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0458",
+    "writtenAt": "1688-06-12",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0459",
+    "writtenAt": "1688-06-12",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-045A",
+    "writtenAt": "1688-06-26",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-045B",
+    "writtenAt": "1688-07-03",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-045C",
+    "writtenAt": "1688-07-17",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-045D",
+    "writtenAt": "1688-07-17",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-045E",
+    "writtenAt": "1688-07-24",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-045F",
+    "writtenAt": "1688-07-24",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0460",
+    "writtenAt": "1688-07-24",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0461",
+    "writtenAt": "1688-08-07",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0462",
+    "writtenAt": "1688-07-08",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0463",
+    "writtenAt": "1688-07-22",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0464",
+    "writtenAt": "1688-07-15",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0465",
+    "writtenAt": "1688-07-22",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0466",
+    "writtenAt": "1688-08-19",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0467",
+    "writtenAt": "1688-08-05",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Cybo-Malaspina, Alderano",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0468",
+    "writtenAt": "1688-06-13",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Madrid",
+    "recipient": "Durazzo, Marcello",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0469",
+    "writtenAt": "1688-06-13",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Madrid",
+    "recipient": "Durazzo, Marcello",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-046A",
+    "writtenAt": "1688-07-11",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Madrid",
+    "recipient": "Durazzo, Marcello",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-046B",
+    "writtenAt": "1688-08-08",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Madrid",
+    "recipient": "Durazzo, Marcello",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-046C",
+    "writtenAt": "1688-08-22",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Madrid",
+    "recipient": "Durazzo, Marcello",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-046D",
+    "writtenAt": "1688-09-05",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Madrid",
+    "recipient": "Durazzo, Marcello",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-046E",
+    "writtenAt": "1688-09-19",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Madrid",
+    "recipient": "Durazzo, Marcello",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-046F",
+    "writtenAt": "1688-06-09",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Benavides, Francisco de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-0470",
+    "writtenAt": "1688-06-12",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Benavides, Francisco de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-0471",
+    "writtenAt": "1688-06-10",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Benavides, Francisco de",
+    "language": "Latin"
+  },
+  {
+    "id": "M-1688-SA-0472",
+    "writtenAt": "1688-06-14",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0473",
+    "writtenAt": "1688-06-26",
+    "receivedAt": "",
+    "placeId": "Molise",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0474",
+    "writtenAt": "1688-06-28",
+    "receivedAt": "",
+    "placeId": "Capitanata",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0475",
+    "writtenAt": "1688-07-01",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0476",
+    "writtenAt": "1688-07-01",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0477",
+    "writtenAt": "1688-07-03",
+    "receivedAt": "",
+    "placeId": "Terra di Lavoro",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0478",
+    "writtenAt": "1688-07-03",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0479",
+    "writtenAt": "1688-07-08",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-047A",
+    "writtenAt": "1688-07-10",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-047B",
+    "writtenAt": "1688-07-12",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-047C",
+    "writtenAt": "1688-07-13",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-047D",
+    "writtenAt": "1688-07-14",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-047E",
+    "writtenAt": "1688-07-27",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-047F",
+    "writtenAt": "1688-08-11",
+    "receivedAt": "",
+    "placeId": "Principato Ultra",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0480",
+    "writtenAt": "1688-08-12",
+    "receivedAt": "",
+    "placeId": "Lucera",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0481",
+    "writtenAt": "1688-08-18",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0482",
+    "writtenAt": "1688-08-23",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Collaterale",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0483",
+    "writtenAt": "1688-08-26",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0484",
+    "writtenAt": "1688-08-28",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Salzano, Aniello",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0485",
+    "writtenAt": "1688-08-31",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0486",
+    "writtenAt": "1688-08-31",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0487",
+    "writtenAt": "1688-09-02",
+    "receivedAt": "",
+    "placeId": "Benevento",
+    "toPlaceId": "Naples",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0488",
+    "writtenAt": "1688-09-02",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0489",
+    "writtenAt": "1688-09-06",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-048A",
+    "writtenAt": "1688-09-09",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-048B",
+    "writtenAt": "1688-09-11",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-048C",
+    "writtenAt": "1688-09-16",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Province of the Kingdom",
+    "recipient": "Fiscal agents of the Provinces",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-048D",
+    "writtenAt": "1688-09-16",
+    "receivedAt": "",
+    "placeId": "Piedimonte d'Alife; Roccamonfina; Sora; Sessa",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-048E",
+    "writtenAt": "1688-09-16",
+    "receivedAt": "",
+    "placeId": "Montefusco; Salerno",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-048F",
+    "writtenAt": "1688-09-18",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0490",
+    "writtenAt": "1688-09-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Regia Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0491",
+    "writtenAt": "1688-09-22",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0492",
+    "writtenAt": "1688-09-27",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0493",
+    "writtenAt": "1688-09-30",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fiscal agent of Terra di Lavoro",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0494",
+    "writtenAt": "1688-10-05",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Principato Ultra",
+    "recipient": "Fiscal agent of Principato Ultra",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0495",
+    "writtenAt": "1688-10-06",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Cerreto",
+    "recipient": "Soldiers of Cerreto",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0496",
+    "writtenAt": "1688-10-06",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Carmine Monastery",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0497",
+    "writtenAt": "1688-10-09",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0498",
+    "writtenAt": "1688-10-29",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-0499",
+    "writtenAt": "1688-11-08",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-049A",
+    "writtenAt": "1688-11-08",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-049B",
+    "writtenAt": "1688-11-12",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Sora",
+    "recipient": "Fiscal agents of Sora",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-049C",
+    "writtenAt": "1688-11-15",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Lucera",
+    "recipient": "Fiscal agent of Contado di Molise",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-049D",
+    "writtenAt": "1688-11-18",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-049E",
+    "writtenAt": "1688-11-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-049F",
+    "writtenAt": "1688-12-09",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-04A0",
+    "writtenAt": "1688-12-18",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-04A1",
+    "writtenAt": "1688-12-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Benavides, Francisco de",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-04A2",
+    "writtenAt": "1688-06-24",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Lucera; Montefusco; Salerno",
+    "recipient": "Fiscal agent of Contado di Molise; Fiscal agent of Principato Ultra; fiscal agent of Principato Citra; Fiscal agent of Terra di Lavoro; fiscal agent of Capitanata; Commissario of Campagna",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1688-SA-04A3",
+    "writtenAt": "1688-06",
+    "receivedAt": "1688-07",
+    "placeId": "Naples",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-04A4",
+    "writtenAt": "1688-07-09",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-04A5",
+    "writtenAt": "1688-07-23",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-04A6",
+    "writtenAt": "1688-09-20",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Madrid",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-04A7",
+    "writtenAt": "1688-08-06",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "Duke of Infantado",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1688-SA-04A8",
+    "writtenAt": "1688-08-07",
+    "receivedAt": "",
+    "placeId": "Rome",
+    "toPlaceId": "Naples",
+    "recipient": "Muti Papazzurri, Giovanni",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1692-FL-04A9",
+    "writtenAt": "1692-09-24",
+    "receivedAt": "",
+    "placeId": "Liege",
+    "toPlaceId": "",
+    "recipient": "Duke of Infantado",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1692-JA-0606",
+    "writtenAt": "1693-01-22",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Roman Secretary of State",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1692-JA-0610",
+    "writtenAt": "1693-05-28",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Roman Secretary of State",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1692-JA-062A",
+    "writtenAt": "1693-12-10",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "Rome",
+    "recipient": "Roman Secretary of State",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1694-CF-04AA",
+    "writtenAt": "1694-06-13",
+    "receivedAt": "",
+    "placeId": "Cazorla",
+    "toPlaceId": "Seville",
+    "recipient": "Sevilla Cathedral Cabildo",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1694-IB-066A",
+    "writtenAt": "1695",
+    "receivedAt": "",
+    "placeId": "[Bitonto]",
+    "toPlaceId": "Rome",
+    "recipient": "González de Santalla, Tirso",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1698-QU-04AB",
+    "writtenAt": "1707-11-02",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Charles II",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1700-TA-0655",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": ""
+  },
+  {
+    "id": "M-1703-CI-04AC",
+    "writtenAt": "1703-01-22",
+    "receivedAt": "",
+    "placeId": "L'Aquila",
+    "toPlaceId": "Naples",
+    "recipient": "Consiglio Collaterale",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04AD",
+    "writtenAt": "1703-01-26",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04AE",
+    "writtenAt": "1703-01-27",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04AF",
+    "writtenAt": "1703-02-07",
+    "receivedAt": "",
+    "placeId": "L'Aquila",
+    "toPlaceId": "Naples",
+    "recipient": "Consiglio Collaterale",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B0",
+    "writtenAt": "1703-02-08",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Consiglio Collaterale",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B1",
+    "writtenAt": "1703-02-18",
+    "receivedAt": "",
+    "placeId": "L'Aquila",
+    "toPlaceId": "Naples",
+    "recipient": "Consiglio Collaterale",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B2",
+    "writtenAt": "1703-02-27",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B3",
+    "writtenAt": "1703-03-03",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B4",
+    "writtenAt": "1703-03-05",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B5",
+    "writtenAt": "1703-03-20",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B6",
+    "writtenAt": "1703-03-24",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B7",
+    "writtenAt": "1703-03-25",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B8",
+    "writtenAt": "1703-03-29",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04B9",
+    "writtenAt": "1703-04-27",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04BA",
+    "writtenAt": "1703-05-31",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04BB",
+    "writtenAt": "1703-06-19",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04BC",
+    "writtenAt": "1703-06-21",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04BD",
+    "writtenAt": "1703-06-21",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04BE",
+    "writtenAt": "1703-06-26",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04BF",
+    "writtenAt": "1703-08-06",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C0",
+    "writtenAt": "1703-08-09",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Camera della Sommaria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C1",
+    "writtenAt": "1703-08-21",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C2",
+    "writtenAt": "1703-09-13",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C3",
+    "writtenAt": "1703-09-13",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C4",
+    "writtenAt": "1703-09-13",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C5",
+    "writtenAt": "1703-10-16",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C6",
+    "writtenAt": "1703-10-30",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C7",
+    "writtenAt": "1703-11-14",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C8",
+    "writtenAt": "1703-11-22",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04C9",
+    "writtenAt": "1703-12-10",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04CA",
+    "writtenAt": "1704-02-09",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04CB",
+    "writtenAt": "1704-02-10",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04CC",
+    "writtenAt": "1704-02-29",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04CD",
+    "writtenAt": "1704-03-13",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "Naples",
+    "recipient": "Fernández Pacheco, Juan Manuel",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04CE",
+    "writtenAt": "1703-01-14",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04CF",
+    "writtenAt": "1703-02-02",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04D0",
+    "writtenAt": "1703-03-14",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04D1",
+    "writtenAt": "1703-03",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1703-CI-04D2",
+    "writtenAt": "1703-04-21",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1707-VE-04D3",
+    "writtenAt": "1707-07-27",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1707-VE-04D4",
+    "writtenAt": "1707-08-02",
+    "receivedAt": "",
+    "placeId": "Naples",
+    "toPlaceId": "",
+    "recipient": "",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04D5",
+    "writtenAt": "1726-09-01",
+    "receivedAt": "1726-09-05",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04D6",
+    "writtenAt": "1726-09-02",
+    "receivedAt": "1726-09-05",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04D7",
+    "writtenAt": "1726-09-02",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04D8",
+    "writtenAt": "1726-09-03",
+    "receivedAt": "1726-09-10",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04D9",
+    "writtenAt": "1726-09-03",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04DA",
+    "writtenAt": "1726-09-03",
+    "receivedAt": "1726-09-10",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04DB",
+    "writtenAt": "1726-09-03",
+    "receivedAt": "1726-09-10",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04DC",
+    "writtenAt": "1726-09-05",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04DD",
+    "writtenAt": "1726-09-05",
+    "receivedAt": "",
+    "placeId": "Trapani",
+    "toPlaceId": "Palermo",
+    "recipient": "Tribunal of Real Patrimonio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04DE",
+    "writtenAt": "1726-09-05",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04DF",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "1726-09-13",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04E0",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "1726-09-13",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04E1",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04E2",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04E3",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "1726-09-13",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04E4",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04E5",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04E6",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "1726-09-13",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04E7",
+    "writtenAt": "1726-09-06",
+    "receivedAt": "1726-09-13",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04E8",
+    "writtenAt": "1726-09-07",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Vienna",
+    "recipient": "Marquis de Rialp",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04E9",
+    "writtenAt": "1726-09-07",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Vienna",
+    "recipient": "Molina, Andrés de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04EA",
+    "writtenAt": "1726-09-07",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Vienna",
+    "recipient": "Prince Eugenio di Savoia",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04EB",
+    "writtenAt": "1726-09-07",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Naples",
+    "recipient": "von Althann, Michael Friedrich",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04EC",
+    "writtenAt": "1726-09-07",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Monreale",
+    "recipient": "Cienfuegos Villazón, Juan Álvaro",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04ED",
+    "writtenAt": "1726-09-09",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04EE",
+    "writtenAt": "1726-09-09",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Vienna",
+    "recipient": "Molina, Andrés de",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04EF",
+    "writtenAt": "1726-09-10",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Palermo",
+    "recipient": "Prince of Niscemi",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04F0",
+    "writtenAt": "1726-09-10",
+    "receivedAt": "1726-09-13",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F1",
+    "writtenAt": "1726-09-10",
+    "receivedAt": "1726-09-13",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F2",
+    "writtenAt": "1726-09-12",
+    "receivedAt": "1726-09-17",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F3",
+    "writtenAt": "1726-09-13",
+    "receivedAt": "1726-09-24",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F4",
+    "writtenAt": "1726-09-13",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F5",
+    "writtenAt": "1726-09-13",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F6",
+    "writtenAt": "1726-09-13",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F7",
+    "writtenAt": "1726-09-15",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Palermo",
+    "recipient": "Cavallari, Francesco Maria",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F8",
+    "writtenAt": "1726-09-16",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04F9",
+    "writtenAt": "1726-09-16",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Palermo",
+    "recipient": "Tribunale del Real Patrimonio",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04FA",
+    "writtenAt": "1726-09-17",
+    "receivedAt": "1726-09-24",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04FB",
+    "writtenAt": "1726-09-17",
+    "receivedAt": "1726-09-24",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04FC",
+    "writtenAt": "1726-09-17",
+    "receivedAt": "1726-09-24",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04FD",
+    "writtenAt": "1726-09-19",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Palermo",
+    "recipient": "Tribunal del Real Patrimonio",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-04FE",
+    "writtenAt": "1726-09-20",
+    "receivedAt": "1726-09-27",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-04FF",
+    "writtenAt": "1726-09-20",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Palermo",
+    "recipient": "Gasch, Giuseppe",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-0500",
+    "writtenAt": "1726-09-24",
+    "receivedAt": "1726-09-26",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-0501",
+    "writtenAt": "1726-09-24",
+    "receivedAt": "1726-10-01",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-0502",
+    "writtenAt": "1726-09-24",
+    "receivedAt": "1726-10-11",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-0503",
+    "writtenAt": "1726-09-24",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Palermo",
+    "recipient": "Drago, Casimiro",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1726-PA-0504",
+    "writtenAt": "1726-09-25",
+    "receivedAt": "1726-10-10",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-0505",
+    "writtenAt": "1726-09-27",
+    "receivedAt": "1726-10-18",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-0506",
+    "writtenAt": "1726-09-27",
+    "receivedAt": "1726-10-04",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-0507",
+    "writtenAt": "1726-09-27",
+    "receivedAt": "1726-10-04",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-0508",
+    "writtenAt": "1726-10-01",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-0509",
+    "writtenAt": "1726-10-01",
+    "receivedAt": "",
+    "placeId": "Palermo",
+    "toPlaceId": "Messina",
+    "recipient": "Fernández de Portocarrero y Mendoza, Francisco",
+    "language": "Italian"
+  },
+  {
+    "id": "M-1726-PA-050A",
+    "writtenAt": "1726-10-01",
+    "receivedAt": "",
+    "placeId": "Messina",
+    "toPlaceId": "Palermo",
+    "recipient": "Drago, Casimiro",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1730-SA-050B",
+    "writtenAt": "",
+    "receivedAt": "",
+    "placeId": "",
+    "toPlaceId": "",
+    "recipient": "Unknown",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1746-LI-050C",
+    "writtenAt": "1756-01-19",
+    "receivedAt": "",
+    "placeId": "Madrid",
+    "toPlaceId": "",
+    "recipient": "Ferdinand VI",
+    "language": "Spanish"
+  },
+  {
+    "id": "M-1746-LI-05C4",
+    "writtenAt": "1748-06-20",
+    "receivedAt": "",
+    "placeId": "Lima",
+    "toPlaceId": "Madrid",
+    "recipient": "Consejo de Indias",
+    "language": "Spanish"
+  }
+]
