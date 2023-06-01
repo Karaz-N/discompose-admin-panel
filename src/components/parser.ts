@@ -1,6 +1,6 @@
 import { exit } from "process";
 import { client } from "../db";
-import type { Manuscript, Event } from "../db";
+import type { Manuscript, Image, Print, Event } from "../db";
 import Papa, { ParseResult } from "papaparse";
 import * as fs from "fs";
 import { parse } from 'csv-parse/sync';
@@ -21,6 +21,52 @@ interface RawManuscript {
     "Other Events": string;
     "Link": string;
     "Analytic tags": string;
+    "Private notes": string;
+}
+
+interface RawImages {
+    "Record": string;
+    "Event": string;
+    "Artist": string;
+    "Description": string;
+    "Date": string;
+    "Museum/Institution": string;
+    "Medium and support": string;
+    "Dimensions": string;
+    "Related images or documents": string;
+    "Author": string;
+    "Recipient/dedicatee": string;
+    "Title": string;
+    "Printer": string;
+    "Place": string;
+    "Reference copy-ies": string;
+    "Inscriptions": string;
+    "Link": string;
+    "Analytic tags": string;
+    "Private notes": string;
+}
+
+interface RawPrinted {
+    "Record": string;
+    "Event": string;
+    "Author": string;
+    "Recipient/dedicatee information": string;
+    "Recipient/dedicatee": string;
+    "Title": string;
+    "Printer": string;
+    "Printer information": string;
+    "Place": string;
+    "Summary": string;
+    "Other places quoted by the printer": string;
+    "Year": string;
+    "Language": string;
+    "Form (prose/verses/mixed)": string;
+    "Identifier in USTC": string;
+    "Reference copy-ies": string;
+    "Digitised copy link": string;
+    "Related images and documents": string;
+    "Additional notes": string;
+    "Analaytic tags": string;
     "Private notes": string;
 }
 
