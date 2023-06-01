@@ -22,7 +22,7 @@ enum DocumentType {
 model Place {
   id String @id @default(cuid())
 
-  name      String?
+  name      String @unique
   latitude  Float?
   longitude Float?
 
@@ -128,7 +128,7 @@ model Print {
   otherPlaces String[]
   language    String?
   title       String?
-  year        Int?
+  year        String?
   notes       String?
 
   place Place? @relation(fields: [placeId], references: [id])

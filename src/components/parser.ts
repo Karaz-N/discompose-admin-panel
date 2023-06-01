@@ -1,6 +1,6 @@
 import { exit } from "process";
-import { client } from "../db";
-import type { Manuscript, Image, Print, Event } from "../db";
+// import { client } from "../db";
+import type { Manuscript, Image, Print, Event, Place } from "../db";
 import Papa, { ParseResult } from "papaparse";
 import * as fs from "fs";
 import { parse } from 'csv-parse/sync';
@@ -70,9 +70,9 @@ interface RawPrinted {
     "Private notes": string;
 }
 
-const parseData: () => Promise<Manuscript[]> = async () => {
+const parseData: () => Promise<Print[]> = async () => {
 
-    let data = new Array<Manuscript>();
+    let data = new Array<Print>();
 
     function preview_csv(e: any) {
         // if (!e.target.files.length) {
@@ -84,11 +84,11 @@ const parseData: () => Promise<Manuscript[]> = async () => {
 
         // read local `manuscripts.csv` file
 
-        const file = fs.readFileSync('./manuscripts3.csv', 'utf8')
+        const file = fs.readFileSync('./printed_.csv', 'utf8')
 
         let index = 2;
 
-        Papa.parse<RawManuscript>(file, {
+        Papa.parse<RawPrinted>(file, {
             header: true,
             delimiter: ";",
             skipEmptyLines: true,
@@ -111,19 +111,51 @@ const parseData: () => Promise<Manuscript[]> = async () => {
 
 
 
+                    // data.push({
+                    //     id: results.data["Record"],
+                    //     author: results.data["Author / sender"],
+                    //     writtenAt: results.data["Date of writing"],
+                    //     receivedAt: results.data["Date of receipt"],
+                    //     placeId: results.data["Start point"],
+                    //     toPlaceId: results.data["End point"],
+                    //     recipient: results.data["Recipient"],
+                    //     language: results.data["Language"],
+                    // })
+
+                    // data.push({
+                    //     id: results.data["Record"],
+                    //     artist: results.data["Artist"],
+                    //     author: results.data["Author"],
+                    //     title: results.data["Title"],
+                    //     museum: results.data["Museum/Institution"],
+                    //     content: results.data["Description"],
+                    //     date: results.data["Date"],
+                    //     placeId: results.data["Place"],
+                    // })
+
+                    let places = [results.data["Other places quoted by the printer"]]
+
+                    // remove null from places
+                    places = places.filter(function (el) {
+                        return el != null;
+                    });
+
                     data.push({
                         id: results.data["Record"],
-                        author: results.data["Author / sender"],
-                        writtenAt: results.data["Date of writing"],
-                        receivedAt: results.data["Date of receipt"],
-                        placeId: results.data["Start point"],
-                        toPlaceId: results.data["End point"],
-                        recipient: results.data["Recipient"],
+                        otherPlaces: places,
                         language: results.data["Language"],
+                        title: results.data["Title"],
+                        year: results.data["Year"],
+                        notes: results.data["Additional notes"],
+                        USTC: results.data["Identifier in USTC"],
+                        writer: results.data["Author"],
+                        information: results.data["Summary"],
+                        dedicatee: results.data["Recipient/dedicatee"],
+                        placeId: results.data["Place"],
                     })
                 }
             }
-        });
+        })
 
         // Papa.parse(file, {
         //     header: true,
@@ -141,9 +173,73 @@ const parseData: () => Promise<Manuscript[]> = async () => {
     return (data)
 }
 
-parseData().then((data) => {
-    fs.writeFileSync('./manuscripts.json', JSON.stringify(data, null, 2))
-}).catch((err) => {
-    // console.log(err)
-});
+// parseData().then((data) => {
+//     fs.writeFileSync('./manuscripts.json', JSON.stringify(data, null, 2))
+// }).catch((err) => {
+//     // console.log(err)
+// });
+
+import pkg from "nominatim-client";
+const { createClient } = pkg;
+
+const client = createClient({
+    useragent: "HELLO",
+    referer: "https://example.com"
+})
+
+
+// import node_geocoder from "node-geocoder";
+
+// const options: node_geocoder.Options = {
+//     provider: 'yandex',
+//     // apiKey: "a@net.it",
+// }
+// 
+// const client = node_geocoder(options);
+
+const geocode: (place: string) => Promise<any[]> = async (place) => {
+    // remove non-alphanumeric characters
+    place = place.replace(/[^a-zA-Z0-9 ]/g, "")
+    return await client.search({ q: place })
+}
+
+const file = fs.readFileSync('./place.csv', 'utf8')
+
+let PLACES = new Array<Place>();
+
+const _places = ["Naples"]
+
+// iterate through lines
+for (const line of _places) {
+    geocode(line).then((data) => {
+        const lat = data[0].lat;
+        const lon = data[0].lon;
+
+        const place: Place = {
+            id: '',
+            name: line.replace("\r", ""),
+            latitude: parseFloat(lat),
+            longitude: parseFloat(lon),
+        }
+
+        PLACES.push(place)
+
+        console.log(PLACES)
+
+        console.log(place)
+
+        // sleep for 1 second
+        setTimeout(() => { }, 2000)
+
+        fs.writeFileSync('./places.json', JSON.stringify(PLACES, null, 2))
+
+    }).catch((err) => {
+        console.log(err)
+    })
+}
+
+
+
+// write places to places.json
+
 

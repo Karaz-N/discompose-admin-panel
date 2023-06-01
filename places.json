@@ -1,0 +1,62 @@
+[
+  {
+    "id": "",
+    "name": "Valencia",
+    "latitude": 39.4697065,
+    "longitude": -0.3763353
+  },
+  {
+    "id": "",
+    "name": "Lima",
+    "latitude": -12.0621065,
+    "longitude": -77.0365256
+  },
+  {
+    "id": "",
+    "name": "Bilbao",
+    "latitude": 43.2630018,
+    "longitude": -2.9350039
+  },
+  {
+    "id": "",
+    "name": "Seville",
+    "latitude": 37.3886303,
+    "longitude": -5.9953403
+  },
+  {
+    "id": "",
+    "name": "Palermo",
+    "latitude": 38.1112268,
+    "longitude": 13.3524434
+  },
+  {
+    "id": "",
+    "name": "Barcelona",
+    "latitude": 41.3828939,
+    "longitude": 2.1774322
+  },
+  {
+    "id": "",
+    "name": "Valladolid",
+    "latitude": 41.6521328,
+    "longitude": -4.728562
+  },
+  {
+    "id": "",
+    "name": "Naples",
+    "latitude": 40.8358846,
+    "longitude": 14.2487679
+  },
+  {
+    "id": "",
+    "name": "Venice",
+    "latitude": 45.4371908,
+    "longitude": 12.3345898
+  },
+  {
+    "id": "",
+    "name": "Barcelona",
+    "latitude": 41.3828939,
+    "longitude": 2.1774322
+  }
+]
