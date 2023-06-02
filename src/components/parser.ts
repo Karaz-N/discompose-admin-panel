@@ -210,7 +210,7 @@ let PLACES = new Array<Place>();
 const _places = ["Naples"]
 
 // iterate through lines
-for (const line of _places) {
+for (const line of file.split("\n")) {
     geocode(line).then((data) => {
         const lat = data[0].lat;
         const lon = data[0].lon;
@@ -229,7 +229,7 @@ for (const line of _places) {
         console.log(place)
 
         // sleep for 1 second
-        setTimeout(() => { }, 2000)
+        setTimeout(() => { }, 5000)
 
         fs.writeFileSync('./places.json', JSON.stringify(PLACES, null, 2))
 
