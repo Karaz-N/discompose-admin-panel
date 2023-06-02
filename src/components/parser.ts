@@ -402,12 +402,16 @@ async function loadAndParse<T extends RawContentType>(filename: string): Promise
     return result
 }
 
-async function normaliseForDb<T extends RawContentType>(items: T[]): Promise<RefinedContent<T>[]> { return todo() }
+async function normaliseForDb<T extends RawContentType>(items: T[]): Promise<RefinedContent<T>[]> {
+    const mapping = getMapping(items)
+
+    const normalised = items.map(mapping)
+
+    return normalised
+}
 
 async function main() {
     const t = await loadAndParse<RawManuscript>("tiscatuscamadonna.etrusca")
-
-    const mapping = getMapping(t)
 
     const normalised = await normaliseForDb(t)
 }
