@@ -1,9 +1,9 @@
 import { exit } from "process";
-// import { client } from "../db";
+import { client as prisma } from "../db";
 import type { Manuscript, Image, Print, Event, Place } from "../db";
+import { DocumentType } from "../db";
 import Papa, { ParseResult } from "papaparse";
 import * as fs from "fs";
-import { parse } from 'csv-parse/sync';
 
 interface RawManuscript {
     "Record": string;
@@ -189,57 +189,227 @@ const client = createClient({
 
 
 // import node_geocoder from "node-geocoder";
-
 // const options: node_geocoder.Options = {
-//     provider: 'yandex',
-//     // apiKey: "a@net.it",
+// //     provider: 'yandex',
+// //     // apiKey: "a@net.it",
+// // }
+// // 
+// // const _client = node_geocoder(options);
+// 
+// const geocode: (place: string) => Promise<any[]> = async (place) => {
+//     // remove non-alphanumeric characters
+//     // place = place.replace(/[^a-zA-Z0-9 ]/g, "")
+//     return await client.search({ q: place })
 // }
 // 
-// const client = node_geocoder(options);
+// const file = fs.readFileSync('./place.csv', 'utf8')
+// 
+// let PLACES = new Array<Place>();
+// 
+// const _places = [
+//     'Bilbao', 'Lecce',
+//     'Genoa', 'Rimini',
+//     'Zaragoza', 'Cadiz',
+//     'Todi'
+// ]
+// 
+// // iterate through lines
+// for (const line of _places) {
+//     geocode(line).then((data) => {
+//         const lat = data[0].lat;
+//         const lon = data[0].lon;
+// 
+//         const place: Place = {
+//             id: '',
+//             name: line.replace("\r", ""),
+//             latitude: parseFloat(lat),
+//             longitude: parseFloat(lon),
+//         }
+// 
+//         PLACES.push(place)
+// 
+//         console.log(PLACES)
+// 
+//         console.log(place)
+// 
+//         // sleep for 1 second
+//         setTimeout(() => { }, 5000)
+// 
+//         fs.writeFileSync('./places_strange.json', JSON.stringify(PLACES, null, 2))
+// 
+//     }).catch((err) => {
+//         console.log(err)
+//     })
+// }
 
-const geocode: (place: string) => Promise<any[]> = async (place) => {
-    // remove non-alphanumeric characters
-    place = place.replace(/[^a-zA-Z0-9 ]/g, "")
-    return await client.search({ q: place })
+
+// let loadedPlaces = JSON.parse(fs.readFileSync('./places_strange.json', 'utf8'))
+// // exclude the `id` field
+// loadedPlaces = loadedPlaces.map(({ id, ...keepAttrs }) => keepAttrs)
+// 
+// // Only keep the first instance of each `name`
+// loadedPlaces = loadedPlaces.filter((place, index, self) =>
+//     index === self.findIndex((t) => (
+//         t.name === place.name
+//     ))
+// )
+// 
+// 
+// console.log(loadedPlaces)
+// 
+// const addProc = async () => {
+//     await prisma.place.createMany({
+//         data: loadedPlaces
+//     })
+// }
+// 
+// addProc().then(() => {
+//     console.log("DONE")
+// }).catch((err) => {
+//     console.log(err)
+// })
+
+// 
+
+// const placeNames = async () => {
+//     const places = await prisma.place.findMany({
+//         select: {
+//             name: true
+//         }
+//     })
+// 
+//     const names = places.map((place) => place.name)
+// 
+//     const namesFromCsv = fs.readFileSync('./place.csv', 'utf8').split("\r\n")
+// 
+//     const diff = namesFromCsv.filter((name) => !names.includes(name))
+// 
+//     console.log(diff)
+// 
+//     // fs.writeFileSync('./place_names.json', JSON.stringify(names, null, 2))
+// }
+// 
+// placeNames().then(() => {
+//     console.log("DONE")
+// }).catch((err) => {
+//     console.log(err)
+// })
+
+/**
+ * 1 - User loads a csv containing `manuscripts`, `images` or `prints`
+ * 2 - Such .csv file is parsed into its primitive database type and `document` type
+ * 3 - From the parsing, we extrapolate the `event` fields
+ * 4 - If a place is present, retrieve all places from db
+ * 4.1 - Otherwise, reverse look up the place coordinates and create a new entry
+ * 
+ * Resolution Order:
+ * # 0 Place
+ * # 1 Event
+ * # 2 Document
+ * # 3 DocumentType (manuscript, image or print)
+ */
+
+function todo<T>(): T {
+    throw "PLEASE IMPLEMENT ME"
 }
 
-const file = fs.readFileSync('./place.csv', 'utf8')
+type RawContentType = RawImages | RawManuscript | RawPrinted;
+type RefinedContent<T extends RawContentType> = T extends RawImages ? Image : T extends RawManuscript ? Manuscript : Print;
+type Mapping<T extends RawContentType> = (value: T) => RefinedContent<T>
 
-let PLACES = new Array<Place>();
-
-const _places = ["Naples"]
-
-// iterate through lines
-for (const line of file.split("\n")) {
-    geocode(line).then((data) => {
-        const lat = data[0].lat;
-        const lon = data[0].lon;
-
-        const place: Place = {
-            id: '',
-            name: line.replace("\r", ""),
-            latitude: parseFloat(lat),
-            longitude: parseFloat(lon),
-        }
-
-        PLACES.push(place)
-
-        console.log(PLACES)
-
-        console.log(place)
-
-        // sleep for 1 second
-        setTimeout(() => { }, 5000)
-
-        fs.writeFileSync('./places.json', JSON.stringify(PLACES, null, 2))
-
-    }).catch((err) => {
-        console.log(err)
-    })
+const isManuscript = (value: RawContentType): value is RawManuscript => {
+    return "End point" in value
 }
 
+const isImage = (value: RawContentType): value is RawImages => {
+    return "Museum/Institution" in value
+}
 
+const isPrint = (value: RawContentType): value is RawPrinted => {
+    return "Identifier in USTC" in value
+}
 
-// write places to places.json
+const manuscriptMapping: Mapping<RawManuscript> = (value: RawManuscript): Manuscript => {
+    return {
+        id: value["Record"],
+        author: value["Author / sender"],
+        writtenAt: value["Date of writing"],
+        receivedAt: value["Date of receipt"],
+        placeId: value["Start point"],
+        toPlaceId: value["End point"],
+        recipient: value["Recipient"],
+        language: value["Language"],
+    }
+}
 
+const imageMapping: Mapping<RawImages> = (value: RawImages): Image => {
+    return {
+        id: value["Record"],
+        artist: value["Artist"],
+        author: value["Author"],
+        title: value["Title"],
+        museum: value["Museum/Institution"],
+        content: value["Description"],
+        date: value["Date"],
+        placeId: value["Place"],
+    }
+}
 
+const printMapping: Mapping<RawPrinted> = (value: RawPrinted): Print => {
+    let places = [value["Other places quoted by the printer"]]
+
+    // remove null from places
+    places = places.filter(function (el) {
+        return el != null;
+    });
+
+    return {
+        id: value["Record"],
+        otherPlaces: places,
+        language: value["Language"],
+        title: value["Title"],
+        year: value["Year"],
+        notes: value["Additional notes"],
+        USTC: value["Identifier in USTC"],
+        writer: value["Author"],
+        information: value["Summary"],
+        dedicatee: value["Recipient/dedicatee"],
+        placeId: value["Place"],
+    }
+}
+
+const getMapping = <T extends RawContentType>(els: T[]): Mapping<T> => {
+    const first = els[0]
+
+    if (isManuscript(first)) {
+        return manuscriptMapping as Mapping<T>
+    } else if (isImage(first)) {
+        return imageMapping as Mapping<T>
+    } else if (isPrint(first)) {
+        return printMapping as Mapping<T>
+    } else {
+        throw "Unknown type"
+    }
+}
+
+async function parse<T extends RawContentType>(contents: string): Promise<T[]> { return todo() }
+
+async function loadAndParse<T extends RawContentType>(filename: string): Promise<T[]> {
+    const file = fs.readFileSync(filename, 'utf8')
+
+    const result = parse<T>(file)
+
+    return result
+}
+
+async function normaliseForDb<T extends RawContentType>(items: T[]): Promise<RefinedContent<T>[]> { return todo() }
+
+async function main() {
+    const t = await loadAndParse<RawManuscript>("tiscatuscamadonna.etrusca")
+
+    const mapping = getMapping(t)
+
+    const normalised = await normaliseForDb(t)
+}
+
+main().then().catch().finally()

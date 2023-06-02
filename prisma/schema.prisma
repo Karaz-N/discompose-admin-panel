@@ -9,10 +9,12 @@ datasource db {
 }
 
 model Place {
-  id              String       @id @default(cuid())
-  name            String       @unique
-  latitude        Float?
-  longitude       Float?
+  id String @id @default(cuid())
+
+  name      String @unique
+  latitude  Float?
+  longitude Float?
+
   events          Event[]
   images          Image[]
   manuscriptsFrom Manuscript[] @relation("sent-from")
@@ -21,7 +23,8 @@ model Place {
 }
 
 model Document {
-  record             String       @id
+  record String @id
+
   documentRecord     String
   summary            String?
   author             String?
@@ -45,7 +48,8 @@ model Document {
 }
 
 model Event {
-  id        String     @id @default(cuid())
+  id String @id @default(cuid())
+
   year      Int?
   type      String?
   placeId   String
@@ -56,7 +60,8 @@ model Event {
 }
 
 model Image {
-  id        String     @id @default(cuid())
+  id String @id @default(cuid())
+
   artist    String?
   author    String?
   title     String?
@@ -71,7 +76,8 @@ model Image {
 }
 
 model Manuscript {
-  id          String     @id @default(cuid())
+  id String @id @default(cuid())
+
   author      String?
   writtenAt   String?
   receivedAt  String?
@@ -88,7 +94,8 @@ model Manuscript {
 }
 
 model Print {
-  id          String     @id @default(cuid())
+  id String @id @default(cuid())
+
   otherPlaces String[]
   language    String?
   title       String?

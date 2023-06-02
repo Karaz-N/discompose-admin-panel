@@ -1,0 +1,44 @@
+[
+  {
+    "id": "",
+    "name": "Todi",
+    "latitude": 42.7824434,
+    "longitude": 12.4062554
+  },
+  {
+    "id": "",
+    "name": "Bilbao",
+    "latitude": 43.2630018,
+    "longitude": -2.9350039
+  },
+  {
+    "id": "",
+    "name": "Rimini",
+    "latitude": 43.9470982,
+    "longitude": 12.630768610516004
+  },
+  {
+    "id": "",
+    "name": "Cadiz",
+    "latitude": 36.5297438,
+    "longitude": -6.2928976
+  },
+  {
+    "id": "",
+    "name": "Genoa",
+    "latitude": 44.40726,
+    "longitude": 8.9338624
+  },
+  {
+    "id": "",
+    "name": "Zaragoza",
+    "latitude": 41.6521342,
+    "longitude": -0.8809428
+  },
+  {
+    "id": "",
+    "name": "Lecce",
+    "latitude": 40.152217300000004,
+    "longitude": 18.2260628338229
+  }
+]
