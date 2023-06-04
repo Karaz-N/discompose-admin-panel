@@ -91,4 +91,16 @@ const parsed: ParsedEvent = {
     category: last as "Earthquake" | "Flood" | "Hurricane" | "Eruption"
 }
 
+function parseEvent(id: string): ParsedEvent {
+    const [first, ...rest] = id.split(" ")
+    const last = rest.pop()
+    const territory = rest.join(" ")
+
+    return {
+        year: parseInt(first),
+        place: territory,
+        category: last as "Earthquake" | "Flood" | "Hurricane" | "Eruption"
+    }
+}
+
 console.log(parsed)

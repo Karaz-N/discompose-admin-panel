@@ -21,33 +21,25 @@ export const loadAllEvents: () => Promise<Counts> = async () => {
 
     const earthquakes = await client.event.count({
         where: {
-            type: {
-                contains: "earthquake",
-            },
+            type: "EARTHQUAKE"
         }
     });
 
     const floods = await client.event.count({
         where: {
-            type: {
-                contains: "flood",
-            },
+            type: "FLOOD"
         }
     });
 
     const hurricanes = await client.event.count({
         where: {
-            type: {
-                contains: "hurricane",
-            },
+            type: "HURRICANE"
         }
     });
 
     const eruptions = await client.event.count({
         where: {
-            type: {
-                contains: "eruption",
-            },
+            type: "ERUPTION"
         }
     });
 

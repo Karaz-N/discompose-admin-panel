@@ -1,0 +1,379 @@
+!! | REMOVE DUPLICATES | !!
+!! | FIND UNIQUE EVENTS | !!
+!! | GET PLACE NAMES | !!
+!! | LOAD PLACES TO DB | !!
+prisma:info Starting a postgresql pool with 9 connections.
+!! | MAKE UNGODLY ABOMINATION | !!
+!! | ADD EVENTS TO DB | !!
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+Encountered 74 errors while adding events to db
+<! == [ R E S U L T ] == !>

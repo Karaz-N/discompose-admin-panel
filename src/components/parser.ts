@@ -1,6 +1,6 @@
 import { exit } from "process";
 import { client as prisma } from "../db";
-import type { Manuscript, Image, Print, Event, Place } from "../db";
+import type { Manuscript, Image, Print, Event, Place, Document } from "../db";
 import { DocumentType } from "../db";
 import Papa, { ParseResult } from "papaparse";
 import * as fs from "fs";
@@ -9,7 +9,7 @@ interface RawManuscript {
     "Record": string;
     "Event": string;
     "Archive": string;
-    "Author / sender": string;
+    "Author/sender": string;
     "Recipient": string;
     "Date of writing": string;
     "Start point": string;
@@ -295,7 +295,7 @@ const client = createClient({
 //     console.log(err)
 // })
 
-/**
+/*
  * 1 - User loads a csv containing `manuscripts`, `images` or `prints`
  * 2 - Such .csv file is parsed into its primitive database type and `document` type
  * 3 - From the parsing, we extrapolate the `event` fields
@@ -313,12 +313,87 @@ function todo<T>(): T {
     throw "PLEASE IMPLEMENT ME"
 }
 
+async function atodo<T>(): Promise<T> {
+    throw "PLEASE IMPLEMENT ME"
+}
+
+type Never = never;
 type RawContentType = RawImages | RawManuscript | RawPrinted;
-type RefinedContent<T extends RawContentType> = T extends RawImages ? Image : T extends RawManuscript ? Manuscript : Print;
-type Mapping<T extends RawContentType> = (value: T) => RefinedContent<T>
+type RefinedContent<T extends RawContentType> = T extends RawImages ? Image : T extends RawManuscript ? Manuscript : T extends RawPrinted ? Print : Never;
+type Mapping<T extends RawContentType> = (value: T) => Promise<RefinedContent<T>>
+
+type OnlyImages = Omit<RawImages, keyof RawManuscript | keyof RawPrinted>
+type OnlyManuscript = Omit<RawManuscript, keyof RawImages | keyof RawPrinted>
+type OnlyPrinted = Omit<RawPrinted, keyof RawImages | keyof RawManuscript>
+
+type EventTypes = "EARTHQUAKE" | "FLOOD" | "HURRICANE" | "ERUPTION"
+
+interface ParsedEvent {
+    year: number,
+    place: string,
+    category: EventTypes
+}
+
+function parseEvent(id: string): ParsedEvent {
+    const [first, ...rest] = id.split(" ")
+    const last = rest.pop()
+    const territory = rest.join(" ")
+
+    if (last === undefined) {
+        throw "Invalid event"
+    }
+
+    return {
+        year: parseInt(first),
+        place: territory,
+        category: last.toUpperCase() as EventTypes
+    }
+}
+
+const geocode: (place: string) => Promise<any[]> = async (place) => {
+    // remove non-alphanumeric characters
+    // place = place.replace(/[^a-zA-Z0-9 ]/g, "")
+    return await client.search({ q: place })
+}
+
+async function addPlace(place: string) {
+    // check if place exists in db
+    const exists = await prisma.place.findUnique({
+        where: {
+            name: place
+        }
+    })
+
+    if (exists === null) {
+        const data = await geocode(place)
+
+        try {
+            const lat = data[0].lat;
+            const lon = data[0].lon;
+
+            const placeObj = {
+                name: place,
+                latitude: parseFloat(lat),
+                longitude: parseFloat(lon),
+            }
+
+            await prisma.place.create(
+                {
+                    data: placeObj
+                }
+            )
+        } catch (e: unknown) {
+            console.log(e)
+        }
+    }
+}
+
+function isSameEvent(p1: ParsedEvent, p2: ParsedEvent): boolean {
+    return p1.year === p2.year && p1.place === p2.place && p1.category === p2.category
+}
 
 const isManuscript = (value: RawContentType): value is RawManuscript => {
-    return "End point" in value
+    return 'Archive' in value
 }
 
 const isImage = (value: RawContentType): value is RawImages => {
@@ -329,20 +404,34 @@ const isPrint = (value: RawContentType): value is RawPrinted => {
     return "Identifier in USTC" in value
 }
 
-const manuscriptMapping: Mapping<RawManuscript> = (value: RawManuscript): Manuscript => {
+const manuscriptMapping: Mapping<RawManuscript> = async (value: RawManuscript): Promise<Manuscript> => {
+
+
+    const fromPlace = await prisma.place.findUnique({
+        where: {
+            name: value["Start point"]
+        },
+    })
+
+    const toPlace = await prisma.place.findUnique({
+        where: {
+            name: value["End point"]
+        },
+    })
+
     return {
         id: value["Record"],
-        author: value["Author / sender"],
+        author: value["Author/sender"],
         writtenAt: value["Date of writing"],
         receivedAt: value["Date of receipt"],
-        placeId: value["Start point"],
-        toPlaceId: value["End point"],
+        placeId: fromPlace?.id ?? null,
+        toPlaceId: toPlace?.id ?? null,
         recipient: value["Recipient"],
         language: value["Language"],
     }
 }
 
-const imageMapping: Mapping<RawImages> = (value: RawImages): Image => {
+const imageMapping: Mapping<RawImages> = async (value: RawImages): Promise<Image> => {
     return {
         id: value["Record"],
         artist: value["Artist"],
@@ -355,7 +444,7 @@ const imageMapping: Mapping<RawImages> = (value: RawImages): Image => {
     }
 }
 
-const printMapping: Mapping<RawPrinted> = (value: RawPrinted): Print => {
+const printMapping: Mapping<RawPrinted> = async (value: RawPrinted): Promise<Print> => {
     let places = [value["Other places quoted by the printer"]]
 
     // remove null from places
@@ -392,7 +481,83 @@ const getMapping = <T extends RawContentType>(els: T[]): Mapping<T> => {
     }
 }
 
-async function parse<T extends RawContentType>(contents: string): Promise<T[]> { return todo() }
+async function parse<T extends RawContentType>(contents: string): Promise<T[]> {
+    const result = Papa.parse<T>(contents, {
+        header: true,
+        delimiter: ";",
+        skipEmptyLines: "greedy",
+        dynamicTyping: false,
+    })
+
+    console.log("!! | REMOVE DUPLICATES | !!")
+
+    // remove duplicates
+    const events = result.data.map((value) => parseEvent(value["Event"]))
+
+    console.log("!! | FIND UNIQUE EVENTS | !!")
+
+    const uniqueEvents = events.filter((value, index, self) => {
+        return index === self.findIndex((t) => (
+            isSameEvent(t, value)
+        ))
+    })
+
+    console.log("!! | GET PLACE NAMES | !!")
+
+    const places = uniqueEvents.map((value) => value.place)
+
+    console.log("!! | LOAD PLACES TO DB | !!")
+
+    // add places to db
+    for (const place of places) {
+        await addPlace(place)
+    }
+
+    console.log("!! | MAKE UNGODLY ABOMINATION | !!")
+
+
+    const dbEvents = uniqueEvents.map((value) => {
+        return {
+            year: value.year,
+            place: {
+                connect: {
+                    name: value.place
+                }
+            },
+            type: value.category
+        }
+    })
+
+    console.log("!! | ADD EVENTS TO DB | !!")
+
+    let erCount = 0;
+
+    // add events to db
+    for (const event of dbEvents) {
+        try {
+            await prisma.event.create({
+                data: event
+            })
+        } catch (e: unknown) {
+            erCount++;
+            // console.log(e)
+        }
+    }
+
+    console.log(`Encountered ${erCount} errors while adding events to db`)
+
+    if (result.errors.length !== 0) {
+        console.log("<! == [ E R R O R ] == !>")
+        console.log(result.errors)
+
+        exit(1)
+    } else {
+        console.log("<! == [ R E S U L T ] == !>")
+
+        return result.data
+    }
+    // return todo()
+}
 
 async function loadAndParse<T extends RawContentType>(filename: string): Promise<T[]> {
     const file = fs.readFileSync(filename, 'utf8')
@@ -407,13 +572,27 @@ async function normaliseForDb<T extends RawContentType>(items: T[]): Promise<Ref
 
     const normalised = items.map(mapping)
 
-    return normalised
+    const awaited = await Promise.all(normalised)
+
+    return awaited
 }
 
 async function main() {
-    const t = await loadAndParse<RawManuscript>("tiscatuscamadonna.etrusca")
+    const t = await loadAndParse<RawManuscript>("manuscripts3.csv")
+
+    // console.log(t)
 
     const normalised = await normaliseForDb(t)
+
+    const results = await prisma.manuscript.createMany({
+        data: normalised
+    })
+
+    // const _ = await prisma.manuscript.create(
+    //     {
+    //         data: normalised[0]
+    //     }
+    // )
 }
 
 main().then().catch().finally()

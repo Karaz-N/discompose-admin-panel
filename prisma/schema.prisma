@@ -9,17 +9,18 @@ datasource db {
 }
 
 model Place {
-  id String @id @default(cuid())
+  id String @id(map: "Place_pkey") @default(cuid())
 
-  name      String @unique
-  latitude  Float?
-  longitude Float?
-
+  name            String       @unique(map: "Place_name_key")
+  latitude        Float?
+  longitude       Float?
   events          Event[]
   images          Image[]
   manuscriptsFrom Manuscript[] @relation("sent-from")
   manuscriptsTo   Manuscript[] @relation("received-to")
   prints          Print[]
+
+  @@map("places")
 }
 
 model Document {
@@ -51,11 +52,12 @@ model Event {
   id String @id @default(cuid())
 
   year      Int?
-  type      String?
+  type      EventType
   placeId   String
   documents Document[]
   place     Place      @relation(fields: [placeId], references: [id])
 
+  @@unique([year, type, placeId])
   @@map("events")
 }
 
@@ -116,4 +118,13 @@ enum DocumentType {
   Manuscript
   Print
   Image
+}
+
+enum EventType {
+  EARTHQUAKE
+  FLOOD
+  HURRICANE
+  ERUPTION
+  FIRE
+  STORM
 }
