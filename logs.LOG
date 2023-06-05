@@ -3,6 +3,8 @@
 !! | GET PLACE NAMES | !!
 !! | LOAD PLACES TO DB | !!
 prisma:info Starting a postgresql pool with 9 connections.
+Ciociaria and Marsica could not be geocoded
+Catalonia Locust could not be geocoded
 !! | MAKE UNGODLY ABOMINATION | !!
 !! | ADD EVENTS TO DB | !!
 prisma:error 
@@ -194,7 +196,67 @@ prisma:error
 Invalid `prisma.event.create()` invocation:
 
 
+An operation failed because it depends on one or more records that were required but not found. No 'Place' record(s) (needed to inline the relation on 'Event' record(s)) was found for a nested connect on one-to-many relation 'EventToPlace'.
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
 Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+An operation failed because it depends on one or more records that were required but not found. No 'Place' record(s) (needed to inline the relation on 'Event' record(s)) was found for a nested connect on one-to-many relation 'EventToPlace'.
 prisma:error 
 Invalid `prisma.event.create()` invocation:
 
@@ -375,5 +437,2350 @@ Invalid `prisma.event.create()` invocation:
 
 
 Unique constraint failed on the fields: (`year`,`type`,`placeId`)
-Encountered 74 errors while adding events to db
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+prisma:error 
+Invalid `prisma.event.create()` invocation:
+
+
+Unique constraint failed on the fields: (`year`,`type`,`placeId`)
+Encountered 101 errors while adding events to db
 <! == [ R E S U L T ] == !>
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-021E with record I-1538-MN-021E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-021F with record I-1538-MN-021F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-0220 with record I-1538-MN-0220
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-0221 with record I-1538-MN-0221
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-05E6 with record I-1538-MN-05E6
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-05E7 with record I-1538-MN-05E7
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-065C with record I-1538-MN-065C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-0687 with record I-1538-MN-0687
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-0688 with record I-1538-MN-0688
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-0689 with record I-1538-MN-0689
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1538-MN-0690 with record I-1538-MN-0690
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1541-GU-0222 with record I-1541-GU-0222
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1541-GU-0223 with record I-1541-GU-0223
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1542-ES-06AB with record I-1542-ES-06AB
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1557-PA-0224 with record I-1557-PA-0224
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1575-PA-0225 with record I-1575-PA-0225
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1575-PA-0226 with record I-1575-PA-0226
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1589-CO-0517 with record I-1589-CO-0517
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1589-PA-0227 with record I-1589-PA-0227
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1597-VA-0228 with record I-1597-VA-0228
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1599-LO-0229 with record I-1599-LO-0229
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1600-HU-022A with record I-1600-HU-022A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1600-HU-0653 with record I-1600-HU-0653
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1600-HU-0656 with record I-1600-HU-0656
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1603-SE-022B with record I-1603-SE-022B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1603-SE-022C with record I-1603-SE-022C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1608-SE-022D with record I-1608-SE-022D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1608-SE-022E with record I-1608-SE-022E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1608-SE-0510 with record I-1608-SE-0510
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1609-LI-022F with record I-1609-LI-022F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1614-GR-0230 with record I-1614-GR-0230
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1614-TI-0231 with record I-1614-TI-0231
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1614-TI-0232 with record I-1614-TI-0232
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1617-BA-0233 with record I-1617-BA-0233
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1617-BA-061A with record I-1617-BA-061A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1618-SE-053E with record I-1618-SE-053E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1619-AN-0234 with record I-1619-AN-0234
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1619-AN-0235 with record I-1619-AN-0235
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1621-QU-0236 with record I-1621-QU-0236
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-0237 with record I-1624-PA-0237
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-0238 with record I-1624-PA-0238
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-0239 with record I-1624-PA-0239
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-023A with record I-1624-PA-023A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-023B with record I-1624-PA-023B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-023C with record I-1624-PA-023C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-023D with record I-1624-PA-023D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-023E with record I-1624-PA-023E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-PA-023F with record I-1624-PA-023F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1624-ZA-0240 with record I-1624-ZA-0240
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1625-BA-0518 with record I-1625-BA-0518
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1626-SA-0241 with record I-1626-SA-0241
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-0242 with record I-1627-GA-0242
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-0243 with record I-1627-GA-0243
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-0244 with record I-1627-GA-0244
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-0245 with record I-1627-GA-0245
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-0246 with record I-1627-GA-0246
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-0247 with record I-1627-GA-0247
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-0248 with record I-1627-GA-0248
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-0249 with record I-1627-GA-0249
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-024A with record I-1627-GA-024A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-024B with record I-1627-GA-024B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-06B8 with record I-1627-GA-06B8
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-06C8 with record I-1627-GA-06C8
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1627-GA-06CE with record I-1627-GA-06CE
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1628-MA-024C with record I-1628-MA-024C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1628-MA-024D with record I-1628-MA-024D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1628-MA-024E with record I-1628-MA-024E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1629-GR-024F with record I-1629-GR-024F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1629-GR-0250 with record I-1629-GR-0250
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1630-SM-0251 with record I-1630-SM-0251
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-MA-0252 with record I-1631-MA-0252
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0253 with record I-1631-VE-0253
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0254 with record I-1631-VE-0254
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0255 with record I-1631-VE-0255
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0256 with record I-1631-VE-0256
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0257 with record I-1631-VE-0257
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0258 with record I-1631-VE-0258
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0259 with record I-1631-VE-0259
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-025A with record I-1631-VE-025A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-025B with record I-1631-VE-025B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-025C with record I-1631-VE-025C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-025D with record I-1631-VE-025D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-025E with record I-1631-VE-025E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-025F with record I-1631-VE-025F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0260 with record I-1631-VE-0260
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0261 with record I-1631-VE-0261
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0262 with record I-1631-VE-0262
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0263 with record I-1631-VE-0263
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0264 with record I-1631-VE-0264
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0265 with record I-1631-VE-0265
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0266 with record I-1631-VE-0266
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0267 with record I-1631-VE-0267
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0268 with record I-1631-VE-0268
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0269 with record I-1631-VE-0269
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-026A with record I-1631-VE-026A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-026B with record I-1631-VE-026B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-026C with record I-1631-VE-026C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-026D with record I-1631-VE-026D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-026E with record I-1631-VE-026E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-026F with record I-1631-VE-026F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0270 with record I-1631-VE-0270
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0271 with record I-1631-VE-0271
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0272 with record I-1631-VE-0272
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0273 with record I-1631-VE-0273
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0274 with record I-1631-VE-0274
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0275 with record I-1631-VE-0275
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0276 with record I-1631-VE-0276
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0277 with record I-1631-VE-0277
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0278 with record I-1631-VE-0278
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0279 with record I-1631-VE-0279
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-027A with record I-1631-VE-027A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-027B with record I-1631-VE-027B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-027C with record I-1631-VE-027C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-027D with record I-1631-VE-027D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-027E with record I-1631-VE-027E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-027F with record I-1631-VE-027F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0280 with record I-1631-VE-0280
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0281 with record I-1631-VE-0281
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0282 with record I-1631-VE-0282
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0283 with record I-1631-VE-0283
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0284 with record I-1631-VE-0284
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0285 with record I-1631-VE-0285
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0286 with record I-1631-VE-0286
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0287 with record I-1631-VE-0287
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0288 with record I-1631-VE-0288
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0289 with record I-1631-VE-0289
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-028A with record I-1631-VE-028A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-028B with record I-1631-VE-028B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-028C with record I-1631-VE-028C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-028D with record I-1631-VE-028D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-028E with record I-1631-VE-028E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-028F with record I-1631-VE-028F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0290 with record I-1631-VE-0290
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0291 with record I-1631-VE-0291
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0292 with record I-1631-VE-0292
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0293 with record I-1631-VE-0293
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0294 with record I-1631-VE-0294
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0295 with record I-1631-VE-0295
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0296 with record I-1631-VE-0296
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0297 with record I-1631-VE-0297
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0298 with record I-1631-VE-0298
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0299 with record I-1631-VE-0299
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-029A with record I-1631-VE-029A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-029B with record I-1631-VE-029B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-029C with record I-1631-VE-029C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-029D with record I-1631-VE-029D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-029E with record I-1631-VE-029E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-029F with record I-1631-VE-029F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A0 with record I-1631-VE-02A0
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A1 with record I-1631-VE-02A1
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A2 with record I-1631-VE-02A2
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A3 with record I-1631-VE-02A3
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A4 with record I-1631-VE-02A4
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A5 with record I-1631-VE-02A5
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A6 with record I-1631-VE-02A6
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A7 with record I-1631-VE-02A7
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A8 with record I-1631-VE-02A8
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02A9 with record I-1631-VE-02A9
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02AA with record I-1631-VE-02AA
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02AB with record I-1631-VE-02AB
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02AC with record I-1631-VE-02AC
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02AD with record I-1631-VE-02AD
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02AE with record I-1631-VE-02AE
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02AF with record I-1631-VE-02AF
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02B0 with record I-1631-VE-02B0
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-02B1 with record I-1631-VE-02B1
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-050D with record I-1631-VE-050D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-0528 with record I-1631-VE-0528
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1631-VE-061B with record I-1631-VE-061B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1636-ET-02B2 with record I-1636-ET-02B2
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1636-MA-02B3 with record I-1636-MA-02B3
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1637-MA-061E with record I-1637-MA-061E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-CA-02B4 with record I-1638-CA-02B4
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-CA-02B5 with record I-1638-CA-02B5
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-CA-02B6 with record I-1638-CA-02B6
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-CA-02B7 with record I-1638-CA-02B7
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-CA-02B8 with record I-1638-CA-02B8
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-CA-02B9 with record I-1638-CA-02B9
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-CA-02BA with record I-1638-CA-02BA
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-CA-02BB with record I-1638-CA-02BB
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-SM-02BC with record I-1638-SM-02BC
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1638-SM-02BD with record I-1638-SM-02BD
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1646-PA-0533 with record I-1646-PA-0533
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1647-SA-02BE with record I-1647-SA-02BE
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1647-SA-02BF with record I-1647-SA-02BF
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1649-SE-02C0 with record I-1649-SE-02C0
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1650-CU-02C1 with record I-1650-CU-02C1
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1650-CU-02C2 with record I-1650-CU-02C2
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1650-CU-02C3 with record I-1650-CU-02C3
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1654-CM-02C4 with record I-1654-CM-02C4
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1655-LI-02C5 with record I-1655-LI-02C5
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02C6 with record I-1656-NA-02C6
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02C7 with record I-1656-NA-02C7
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02C8 with record I-1656-NA-02C8
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02C9 with record I-1656-NA-02C9
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02CA with record I-1656-NA-02CA
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02CB with record I-1656-NA-02CB
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02CC with record I-1656-NA-02CC
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02CD with record I-1656-NA-02CD
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02CE with record I-1656-NA-02CE
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02CF with record I-1656-NA-02CF
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02D0 with record I-1656-NA-02D0
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02D1 with record I-1656-NA-02D1
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02D2 with record I-1656-NA-02D2
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-02D3 with record I-1656-NA-02D3
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-05EC with record I-1656-NA-05EC
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1656-NA-065E with record I-1656-NA-065E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1660-VE-02D4 with record I-1660-VE-02D4
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1660-VE-061C with record I-1660-VE-061C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1668-QU-02D5 with record I-1668-QU-02D5
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02D6 with record I-1669-ET-02D6
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02D7 with record I-1669-ET-02D7
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02D8 with record I-1669-ET-02D8
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02D9 with record I-1669-ET-02D9
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02DA with record I-1669-ET-02DA
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02DB with record I-1669-ET-02DB
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02DC with record I-1669-ET-02DC
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02DD with record I-1669-ET-02DD
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-02DE with record I-1669-ET-02DE
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1669-ET-0519 with record I-1669-ET-0519
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1671-CA-02DF with record I-1671-CA-02DF
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1672-AB-02E0 with record I-1672-AB-02E0
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1677-FU-02E1 with record I-1677-FU-02E1
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1679-AN-02E2 with record I-1679-AN-02E2
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1679-AN-02E3 with record I-1679-AN-02E3
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1679-AN-0514 with record I-1679-AN-0514
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1682-VE-02E4 with record I-1682-VE-02E4
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1682-VE-02E5 with record I-1682-VE-02E5
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1682-VE-02E6 with record I-1682-VE-02E6
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1682-VE-061D with record I-1682-VE-061D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1684-SE-02E7 with record I-1684-SE-02E7
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1687-CA-02E8 with record I-1687-CA-02E8
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1687-CA-02E9 with record I-1687-CA-02E9
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1687-CA-02EA with record I-1687-CA-02EA
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1687-CA-02EB with record I-1687-CA-02EB
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1687-CA-02EC with record I-1687-CA-02EC
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1687-CA-02ED with record I-1687-CA-02ED
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02EE with record I-1688-SA-02EE
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02EF with record I-1688-SA-02EF
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F0 with record I-1688-SA-02F0
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F1 with record I-1688-SA-02F1
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F2 with record I-1688-SA-02F2
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F3 with record I-1688-SA-02F3
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F4 with record I-1688-SA-02F4
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F6 with record I-1688-SA-02F6
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F7 with record I-1688-SA-02F7
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F8 with record I-1688-SA-02F8
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02F9 with record I-1688-SA-02F9
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02FA with record I-1688-SA-02FA
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02FB with record I-1688-SA-02FB
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02FC with record I-1688-SA-02FC
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-02FD with record I-1688-SA-02FD
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1688-SA-050E with record I-1688-SA-050E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1689-VE-02FE with record I-1689-VE-02FE
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1692-JA-050F with record I-1692-JA-050F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1693-ES-02FF with record I-1693-ES-02FF
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1693-ES-0300 with record I-1693-ES-0300
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1693-ES-0301 with record I-1693-ES-0301
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1693-ES-0302 with record I-1693-ES-0302
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1693-ES-0303 with record I-1693-ES-0303
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1694-IB-0304 with record I-1694-IB-0304
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1694-IB-0305 with record I-1694-IB-0305
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1694-IB-0306 with record I-1694-IB-0306
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1694-VE-0307 with record I-1694-VE-0307
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1694-VE-0308 with record I-1694-VE-0308
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1698-JA-0309 with record I-1698-JA-0309
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1703-CI-030A with record I-1703-CI-030A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1703-CI-030B with record I-1703-CI-030B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1703-CI-030C with record I-1703-CI-030C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1703-CI-030D with record I-1703-CI-030D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1703-CI-030E with record I-1703-CI-030E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1719-PE-030F with record I-1719-PE-030F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1719-PE-0310 with record I-1719-PE-0310
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1719-VA-0311 with record I-1719-VA-0311
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1726-PA-0312 with record I-1726-PA-0312
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1726-PA-0313 with record I-1726-PA-0313
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1726-PA-0314 with record I-1726-PA-0314
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1727-ME-0315 with record I-1727-ME-0315
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1730-VE-0316 with record I-1730-VE-0316
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1731-NA-0317 with record I-1731-NA-0317
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1731-VA-0318 with record I-1731-VA-0318
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1732-IR-0319 with record I-1732-IR-0319
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1732-IR-031A with record I-1732-IR-031A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1732-IR-031B with record I-1732-IR-031B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1732-IR-031C with record I-1732-IR-031C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1732-IR-031D with record I-1732-IR-031D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1732-IR-031E with record I-1732-IR-031E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1736-SE-031F with record I-1736-SE-031F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1736-SE-0320 with record I-1736-SE-0320
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1736-SE-0321 with record I-1736-SE-0321
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1736-SE-0322 with record I-1736-SE-0322
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1737-ME-0323 with record I-1737-ME-0323
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1737-SE-0324 with record I-1737-SE-0324
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1737-VE-0325 with record I-1737-VE-0325
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1737-VE-0326 with record I-1737-VE-0326
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1737-VE-0327 with record I-1737-VE-0327
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1742-XA-0328 with record I-1742-XA-0328
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1743-LE-0329 with record I-1743-LE-0329
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1746-LI-032A with record I-1746-LI-032A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1746-LI-032B with record I-1746-LI-032B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1746-LI-0513 with record I-1746-LI-0513
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1746-VA-032C with record I-1746-VA-032C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1748-MO-032D with record I-1748-MO-032D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1748-MO-032E with record I-1748-MO-032E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1748-MO-032F with record I-1748-MO-032F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1748-MO-0527 with record I-1748-MO-0527
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1751-EL-0330 with record I-1751-EL-0330
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1751-VA-0331 with record I-1751-VA-0331
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1751-VE-0332 with record I-1751-VE-0332
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1752-CA-0333 with record I-1752-CA-0333
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-02F5 with record I-1755-LI-02F5
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0334 with record I-1755-LI-0334
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0335 with record I-1755-LI-0335
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0336 with record I-1755-LI-0336
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0337 with record I-1755-LI-0337
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0338 with record I-1755-LI-0338
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0339 with record I-1755-LI-0339
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-033A with record I-1755-LI-033A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-033B with record I-1755-LI-033B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-033C with record I-1755-LI-033C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-033D with record I-1755-LI-033D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-033E with record I-1755-LI-033E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-033F with record I-1755-LI-033F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0340 with record I-1755-LI-0340
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0341 with record I-1755-LI-0341
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0342 with record I-1755-LI-0342
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0343 with record I-1755-LI-0343
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0344 with record I-1755-LI-0344
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0345 with record I-1755-LI-0345
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0346 with record I-1755-LI-0346
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0347 with record I-1755-LI-0347
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0348 with record I-1755-LI-0348
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0349 with record I-1755-LI-0349
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-034A with record I-1755-LI-034A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-034B with record I-1755-LI-034B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-034C with record I-1755-LI-034C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-034D with record I-1755-LI-034D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-034E with record I-1755-LI-034E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-034F with record I-1755-LI-034F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0350 with record I-1755-LI-0350
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0351 with record I-1755-LI-0351
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1755-LI-0512 with record I-1755-LI-0512
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1756-VA-0352 with record I-1756-VA-0352
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1756-VA-0353 with record I-1756-VA-0353
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1756-VA-0354 with record I-1756-VA-0354
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1759-SE-0355 with record I-1759-SE-0355
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1761-SE-0356 with record I-1761-SE-0356
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1765-NSE-0524 with record I-1765-NSE-0524
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1766-VE-065B with record I-1766-VE-065B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1767-CA-0357 with record I-1767-CA-0357
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1768-NSE-0523 with record I-1768-NSE-0523
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1768-NSE-0358 with record I-1768-NSE-0358
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1768-NSE-0525 with record I-1768-NSE-0525
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1768-NSE-0526 with record I-1768-NSE-0526
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1768-NSE-0529 with record I-1768-NSE-0529
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1768-NSE-052A with record I-1768-NSE-052A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1768-NSE-052B with record I-1768-NSE-052B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1773-TU-0359 with record I-1773-TU-0359
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1773-TU-035A with record I-1773-TU-035A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1774-VE-035B with record I-1774-VE-035B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1775-PA-035C with record I-1775-PA-035C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1775-PA-035D with record I-1775-PA-035D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1776-VA-035E with record I-1776-VA-035E
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1778-GR-035F with record I-1778-GR-035F
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1779-VE-0360 with record I-1779-VE-0360
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1779-VE-0361 with record I-1779-VE-0361
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1779-VE-0362 with record I-1779-VE-0362
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1783-ME-0363 with record I-1783-ME-0363
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1783-ME-057A with record I-1783-ME-057A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1785-BO-0364 with record I-1785-BO-0364
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1785-BO-0365 with record I-1785-BO-0365
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1785-BO-0366 with record I-1785-BO-0366
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1785-BO-0367 with record I-1785-BO-0367
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1785-BO-0368 with record I-1785-BO-0368
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1787-SA-0369 with record I-1787-SA-0369
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1787-SA-036A with record I-1787-SA-036A
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1787-TO-036B with record I-1787-TO-036B
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1788-VA-036C with record I-1788-VA-036C
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1790-OR-036D with record I-1790-OR-036D
+prisma:error 
+Invalid `prisma.document.create()` invocation:
+
+
+Foreign key constraint failed on the field: `documents_eventId_fkey (index)`
+>>> Failed to add document for image I-1790-OR-036E with record I-1790-OR-036E

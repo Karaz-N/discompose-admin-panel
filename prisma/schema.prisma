@@ -26,24 +26,27 @@ model Place {
 model Document {
   record String @id
 
-  documentRecord     String
-  summary            String?
-  author             String?
-  link               String?
-  eventId            String?
-  archive            String?
-  imageId            String?
-  manuscriptId       String?
-  manuscriptEvent    String?
-  printId            String?
-  type               DocumentType
-  associatedDocument Document     @relation("association", fields: [documentRecord], references: [record], onDelete: Cascade)
-  documents          Document[]   @relation("association")
-  event              Event?       @relation(fields: [eventId], references: [id], onDelete: Cascade)
-  image              Image?       @relation(fields: [imageId], references: [id])
-  eventMention       Manuscript?  @relation("otherEvent-ref", fields: [manuscriptEvent], references: [id])
-  manuscript         Manuscript?  @relation("manuscript-ref", fields: [manuscriptId], references: [id])
-  print              Print?       @relation(fields: [printId], references: [id])
+  summary String?
+  author  String?
+  link    String?
+  archive String?
+
+  associatedDocument Document?  @relation("association", fields: [documentRecord], references: [record], onDelete: Cascade)
+  documents          Document[] @relation("association")
+  documentRecord     String?
+
+  type         DocumentType
+  image        Image?       @relation(fields: [imageId], references: [id])
+  imageId      String?
+  manuscript   Manuscript?  @relation("manuscript-ref", fields: [manuscriptId], references: [id])
+  manuscriptId String?
+  print        Print?       @relation(fields: [printId], references: [id])
+  printId      String?
+
+  event           Event?      @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  eventId         String?
+  manuscriptEvent String?
+  eventMention    Manuscript? @relation("otherEvent-ref", fields: [manuscriptEvent], references: [id])
 
   @@map("documents")
 }
@@ -127,4 +130,6 @@ enum EventType {
   ERUPTION
   FIRE
   STORM
+  DROUGHT
+  PLAGUE
 }

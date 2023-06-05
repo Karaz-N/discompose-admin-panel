@@ -1,7 +1,7 @@
 "use server";
 
 import { PrismaClient } from "@prisma/client";
-import { DocumentType, Place, Document, Event, Image, Manuscript, Print } from "@prisma/client";
+import { DocumentType, Place, Document, Event, Image, Manuscript, Print, EventType } from "@prisma/client";
 
 export const client = new PrismaClient(
     {
@@ -28,5 +28,5 @@ export const client = new PrismaClient(
 
 export type Prisma = typeof client;
 
-export { DocumentType };
+export { DocumentType, EventType };
 export type { Place, Document, Event, Image, Manuscript, Print };

@@ -1,6 +1,6 @@
 import { exit } from "process";
 import { client as prisma } from "../db";
-import type { Manuscript, Image, Print, Event, Place, Document } from "../db";
+import type { Manuscript, Image, Print, Event, Place, Document, EventType } from "../db";
 import { DocumentType } from "../db";
 import Papa, { ParseResult } from "papaparse";
 import * as fs from "fs";
@@ -70,114 +70,6 @@ interface RawPrinted {
     "Private notes": string;
 }
 
-const parseData: () => Promise<Print[]> = async () => {
-
-    let data = new Array<Print>();
-
-    function preview_csv(e: any) {
-        // if (!e.target.files.length) {
-        //     alert("Please choose a csv file ... ")
-        //     return
-        // }
-
-        // const file = e.target.files[0] as File;
-
-        // read local `manuscripts.csv` file
-
-        const file = fs.readFileSync('./printed_.csv', 'utf8')
-
-        let index = 2;
-
-        Papa.parse<RawPrinted>(file, {
-            header: true,
-            delimiter: ";",
-            skipEmptyLines: true,
-            dynamicTyping: false,
-            step: function (results, parser) {
-                if (results.errors.length !== 0) {
-                    console.log("<! == [ E R R O R ] == !>")
-                    console.log(results.errors)
-
-                    console.log("LAST SUCCESSFULL LINE: " + index)
-
-                    exit(1)
-                }
-
-                if (results) {
-                    console.log("<! == [ R E S U L T ] == !>")
-                    // console.log(results.data)
-
-                    index++;
-
-
-
-                    // data.push({
-                    //     id: results.data["Record"],
-                    //     author: results.data["Author / sender"],
-                    //     writtenAt: results.data["Date of writing"],
-                    //     receivedAt: results.data["Date of receipt"],
-                    //     placeId: results.data["Start point"],
-                    //     toPlaceId: results.data["End point"],
-                    //     recipient: results.data["Recipient"],
-                    //     language: results.data["Language"],
-                    // })
-
-                    // data.push({
-                    //     id: results.data["Record"],
-                    //     artist: results.data["Artist"],
-                    //     author: results.data["Author"],
-                    //     title: results.data["Title"],
-                    //     museum: results.data["Museum/Institution"],
-                    //     content: results.data["Description"],
-                    //     date: results.data["Date"],
-                    //     placeId: results.data["Place"],
-                    // })
-
-                    let places = [results.data["Other places quoted by the printer"]]
-
-                    // remove null from places
-                    places = places.filter(function (el) {
-                        return el != null;
-                    });
-
-                    data.push({
-                        id: results.data["Record"],
-                        otherPlaces: places,
-                        language: results.data["Language"],
-                        title: results.data["Title"],
-                        year: results.data["Year"],
-                        notes: results.data["Additional notes"],
-                        USTC: results.data["Identifier in USTC"],
-                        writer: results.data["Author"],
-                        information: results.data["Summary"],
-                        dedicatee: results.data["Recipient/dedicatee"],
-                        placeId: results.data["Place"],
-                    })
-                }
-            }
-        })
-
-        // Papa.parse(file, {
-        //     header: true,
-        //     complete: function (results: ParseResult<Record<Manuscript, unknown>>[], undefined) {
-        //         if (results && results.length > 0) {
-        //             console.log(typeof (results))
-        //             console.log(results)
-        //         }
-        //     }
-        // });
-    }
-
-    preview_csv("cataldo")
-
-    return (data)
-}
-
-// parseData().then((data) => {
-//     fs.writeFileSync('./manuscripts.json', JSON.stringify(data, null, 2))
-// }).catch((err) => {
-//     // console.log(err)
-// });
 
 import pkg from "nominatim-client";
 const { createClient } = pkg;
@@ -186,114 +78,6 @@ const client = createClient({
     useragent: "HELLO",
     referer: "https://example.com"
 })
-
-
-// import node_geocoder from "node-geocoder";
-// const options: node_geocoder.Options = {
-// //     provider: 'yandex',
-// //     // apiKey: "a@net.it",
-// // }
-// // 
-// // const _client = node_geocoder(options);
-// 
-// const geocode: (place: string) => Promise<any[]> = async (place) => {
-//     // remove non-alphanumeric characters
-//     // place = place.replace(/[^a-zA-Z0-9 ]/g, "")
-//     return await client.search({ q: place })
-// }
-// 
-// const file = fs.readFileSync('./place.csv', 'utf8')
-// 
-// let PLACES = new Array<Place>();
-// 
-// const _places = [
-//     'Bilbao', 'Lecce',
-//     'Genoa', 'Rimini',
-//     'Zaragoza', 'Cadiz',
-//     'Todi'
-// ]
-// 
-// // iterate through lines
-// for (const line of _places) {
-//     geocode(line).then((data) => {
-//         const lat = data[0].lat;
-//         const lon = data[0].lon;
-// 
-//         const place: Place = {
-//             id: '',
-//             name: line.replace("\r", ""),
-//             latitude: parseFloat(lat),
-//             longitude: parseFloat(lon),
-//         }
-// 
-//         PLACES.push(place)
-// 
-//         console.log(PLACES)
-// 
-//         console.log(place)
-// 
-//         // sleep for 1 second
-//         setTimeout(() => { }, 5000)
-// 
-//         fs.writeFileSync('./places_strange.json', JSON.stringify(PLACES, null, 2))
-// 
-//     }).catch((err) => {
-//         console.log(err)
-//     })
-// }
-
-
-// let loadedPlaces = JSON.parse(fs.readFileSync('./places_strange.json', 'utf8'))
-// // exclude the `id` field
-// loadedPlaces = loadedPlaces.map(({ id, ...keepAttrs }) => keepAttrs)
-// 
-// // Only keep the first instance of each `name`
-// loadedPlaces = loadedPlaces.filter((place, index, self) =>
-//     index === self.findIndex((t) => (
-//         t.name === place.name
-//     ))
-// )
-// 
-// 
-// console.log(loadedPlaces)
-// 
-// const addProc = async () => {
-//     await prisma.place.createMany({
-//         data: loadedPlaces
-//     })
-// }
-// 
-// addProc().then(() => {
-//     console.log("DONE")
-// }).catch((err) => {
-//     console.log(err)
-// })
-
-// 
-
-// const placeNames = async () => {
-//     const places = await prisma.place.findMany({
-//         select: {
-//             name: true
-//         }
-//     })
-// 
-//     const names = places.map((place) => place.name)
-// 
-//     const namesFromCsv = fs.readFileSync('./place.csv', 'utf8').split("\r\n")
-// 
-//     const diff = namesFromCsv.filter((name) => !names.includes(name))
-// 
-//     console.log(diff)
-// 
-//     // fs.writeFileSync('./place_names.json', JSON.stringify(names, null, 2))
-// }
-// 
-// placeNames().then(() => {
-//     console.log("DONE")
-// }).catch((err) => {
-//     console.log(err)
-// })
 
 /*
  * 1 - User loads a csv containing `manuscripts`, `images` or `prints`
@@ -320,7 +104,7 @@ async function atodo<T>(): Promise<T> {
 type Never = never;
 type RawContentType = RawImages | RawManuscript | RawPrinted;
 type RefinedContent<T extends RawContentType> = T extends RawImages ? Image : T extends RawManuscript ? Manuscript : T extends RawPrinted ? Print : Never;
-type Mapping<T extends RawContentType> = (value: T) => Promise<RefinedContent<T>>
+type Mapping<T extends RawContentType> = (value: T) => Promise<[RefinedContent<T>, T]>
 
 type OnlyImages = Omit<RawImages, keyof RawManuscript | keyof RawPrinted>
 type OnlyManuscript = Omit<RawManuscript, keyof RawImages | keyof RawPrinted>
@@ -383,7 +167,7 @@ async function addPlace(place: string) {
                 }
             )
         } catch (e: unknown) {
-            console.log(e)
+            console.log(`${place} could not be geocoded`)
         }
     }
 }
@@ -404,8 +188,7 @@ const isPrint = (value: RawContentType): value is RawPrinted => {
     return "Identifier in USTC" in value
 }
 
-const manuscriptMapping: Mapping<RawManuscript> = async (value: RawManuscript): Promise<Manuscript> => {
-
+const manuscriptMapping: Mapping<RawManuscript> = async (value: RawManuscript): Promise<[Manuscript, RawManuscript]> => {
 
     const fromPlace = await prisma.place.findUnique({
         where: {
@@ -419,7 +202,7 @@ const manuscriptMapping: Mapping<RawManuscript> = async (value: RawManuscript): 
         },
     })
 
-    return {
+    return [{
         id: value["Record"],
         author: value["Author/sender"],
         writtenAt: value["Date of writing"],
@@ -428,11 +211,17 @@ const manuscriptMapping: Mapping<RawManuscript> = async (value: RawManuscript): 
         toPlaceId: toPlace?.id ?? null,
         recipient: value["Recipient"],
         language: value["Language"],
-    }
+    }, value]
 }
 
-const imageMapping: Mapping<RawImages> = async (value: RawImages): Promise<Image> => {
-    return {
+const imageMapping: Mapping<RawImages> = async (value: RawImages): Promise<[RefinedContent<RawImages>, RawImages]> => {
+    const place = await prisma.place.findUnique({
+        where: {
+            name: value["Place"]
+        },
+    })
+
+    return [{
         id: value["Record"],
         artist: value["Artist"],
         author: value["Author"],
@@ -440,19 +229,25 @@ const imageMapping: Mapping<RawImages> = async (value: RawImages): Promise<Image
         museum: value["Museum/Institution"],
         content: value["Description"],
         date: value["Date"],
-        placeId: value["Place"],
-    }
+        placeId: place?.id ?? null,
+    }, value]
 }
 
-const printMapping: Mapping<RawPrinted> = async (value: RawPrinted): Promise<Print> => {
+const printMapping: Mapping<RawPrinted> = async (value: RawPrinted): Promise<[Print, RawPrinted]> => {
     let places = [value["Other places quoted by the printer"]]
+
+    const place = await prisma.place.findUnique({
+        where: {
+            name: value["Place"]
+        },
+    })
 
     // remove null from places
     places = places.filter(function (el) {
         return el != null;
     });
 
-    return {
+    return [{
         id: value["Record"],
         otherPlaces: places,
         language: value["Language"],
@@ -463,19 +258,19 @@ const printMapping: Mapping<RawPrinted> = async (value: RawPrinted): Promise<Pri
         writer: value["Author"],
         information: value["Summary"],
         dedicatee: value["Recipient/dedicatee"],
-        placeId: value["Place"],
-    }
+        placeId: place?.id ?? null,
+    }, value]
 }
 
 const getMapping = <T extends RawContentType>(els: T[]): Mapping<T> => {
     const first = els[0]
 
     if (isManuscript(first)) {
-        return manuscriptMapping as Mapping<T>
+        return manuscriptMapping as unknown as Mapping<T>
     } else if (isImage(first)) {
-        return imageMapping as Mapping<T>
+        return imageMapping as unknown as Mapping<T>
     } else if (isPrint(first)) {
-        return printMapping as Mapping<T>
+        return printMapping as unknown as Mapping<T>
     } else {
         throw "Unknown type"
     }
@@ -535,12 +330,15 @@ async function parse<T extends RawContentType>(contents: string): Promise<T[]> {
     // add events to db
     for (const event of dbEvents) {
         try {
+
             await prisma.event.create({
                 data: event
-            })
+            });
+            // console.log("Managed to add event")
         } catch (e: unknown) {
             erCount++;
             // console.log(e)
+            // console.log("Failed to add event")
         }
     }
 
@@ -567,7 +365,7 @@ async function loadAndParse<T extends RawContentType>(filename: string): Promise
     return result
 }
 
-async function normaliseForDb<T extends RawContentType>(items: T[]): Promise<RefinedContent<T>[]> {
+async function normaliseForDb<T extends RawContentType>(items: T[]): Promise<[RefinedContent<T>, T][]> {
     const mapping = getMapping(items)
 
     const normalised = items.map(mapping)
@@ -578,16 +376,90 @@ async function normaliseForDb<T extends RawContentType>(items: T[]): Promise<Ref
 }
 
 async function main() {
-    const t = await loadAndParse<RawManuscript>("manuscripts3.csv")
-
-    // console.log(t)
-
+    const t = await loadAndParse<RawImages>("images_.csv")
+    // 
+    // // console.log(t)
+    // 
     const normalised = await normaliseForDb(t)
+    //
 
-    const results = await prisma.manuscript.createMany({
-        data: normalised
-    })
+    for (const [transformed, raw] of normalised) {
+        const inserted = await prisma.image.upsert({
+            where: {
+                id: transformed.id
+            },
+            create: transformed,
+            update: transformed
+        })
 
+        const event = parseEvent(raw["Event"])
+
+        const place = await prisma.place.findUnique({
+            where: {
+                name: event.place
+            },
+        })
+
+        if (place === null) {
+            console.log(`>>> Failed to find place ${event.place}`)
+            continue
+        }
+
+        const eventId = await prisma.event.findUnique({
+            where: {
+                year_type_placeId: {
+                    year: event.year,
+                    placeId: place.id,
+                    type: event.category
+                }
+            }
+        })
+
+        const document: Document = {
+            record: raw["Record"],
+            imageId: inserted.id,
+            type: DocumentType.Image,
+            summary: null,
+            author: raw["Author"],
+            link: raw["Link"],
+            eventId: raw["Event"],
+            documentRecord: null,
+            archive: null,
+            manuscriptId: null,
+            printId: null,
+            manuscriptEvent: null,
+        }
+
+        try {
+            await prisma.document.create({
+                data: document
+            })
+
+            console.log(
+                `>>> Managed to add document for image ${inserted.id} with record ${document.record}`
+            )
+        } catch (e) {
+            console.log(
+                `>>> Failed to add document for image ${inserted.id} with record ${document.record}`
+            )
+        }
+    }
+
+
+
+    // const results = await prisma.image.createMany({
+    //     data: normalised
+    // })
+
+    // const bug = await prisma.event.findMany({
+    //     where: {
+    //         place: {
+    //             name: "Earthquake"
+    //         }
+    //     }
+    // })
+
+    //console.log(bug)
     // const _ = await prisma.manuscript.create(
     //     {
     //         data: normalised[0]
