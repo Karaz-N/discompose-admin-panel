@@ -23,59 +23,54 @@ model Place {
   @@map("places")
 }
 
-model Document {
-  record String @id
-
-  summary String?
-  author  String?
-  link    String?
-  archive String?
-
-  associatedDocument Document?  @relation("association", fields: [documentRecord], references: [record], onDelete: Cascade)
-  documents          Document[] @relation("association")
-  documentRecord     String?
-
-  type         DocumentType
-  image        Image?       @relation(fields: [imageId], references: [id])
-  imageId      String?
-  manuscript   Manuscript?  @relation("manuscript-ref", fields: [manuscriptId], references: [id])
-  manuscriptId String?
-  print        Print?       @relation(fields: [printId], references: [id])
-  printId      String?
-
-  event           Event?      @relation(fields: [eventId], references: [id], onDelete: Cascade)
-  eventId         String?
-  manuscriptEvent String?
-  eventMention    Manuscript? @relation("otherEvent-ref", fields: [manuscriptEvent], references: [id])
-
-  @@map("documents")
-}
-
 model Event {
   id String @id @default(cuid())
 
-  year      Int?
-  type      EventType
-  placeId   String
-  documents Document[]
-  place     Place      @relation(fields: [placeId], references: [id])
+  year        Int?
+  type        EventType
+  placeId     String
+  place       Place        @relation(fields: [placeId], references: [id])
+  images      Image[]
+  manuscripts Manuscript[]
+  prints      Print[]
 
   @@unique([year, type, placeId])
   @@map("events")
 }
 
+model DocumentData {
+  id   String           @id
+  type DocumentCategory
+
+  image        Image?      @relation(fields: [imageId], references: [id])
+  imageId      String?
+  manuscript   Manuscript? @relation(fields: [manuscriptId], references: [id])
+  manuscriptId String?
+  print        Print?      @relation(fields: [printId], references: [id])
+  printId      String?
+}
+
 model Image {
   id String @id @default(cuid())
 
-  artist    String?
-  author    String?
-  title     String?
-  museum    String?
-  content   String?
-  date      String?
-  placeId   String?
-  documents Document[]
-  place     Place?     @relation(fields: [placeId], references: [id])
+  artist  String?
+  author  String?
+  title   String?
+  museum  String?
+  content String?
+  date    String?
+
+  summary String?
+  link    String?
+
+  event   Event?  @relation(fields: [eventId], references: [id])
+  eventId String?
+
+  place   Place?  @relation(fields: [placeId], references: [id])
+  placeId String?
+
+  // Contains the ids of associated documents
+  associatedDocuments DocumentData[]
 
   @@map("images")
 }
@@ -83,17 +78,26 @@ model Image {
 model Manuscript {
   id String @id @default(cuid())
 
-  author      String?
-  writtenAt   String?
-  receivedAt  String?
-  placeId     String?
+  author    String?
+  recipient String?
+  language  String?
+
+  summary String?
+  link    String?
+  archive String?
+
+  writtenAt  String?
+  receivedAt String?
+
+  from        Place?  @relation("sent-from", fields: [fromPlaceId], references: [id])
+  fromPlaceId String?
+  to          Place?  @relation("received-to", fields: [toPlaceId], references: [id])
   toPlaceId   String?
-  recipient   String?
-  language    String?
-  otherEvents Document[] @relation("otherEvent-ref")
-  documents   Document[] @relation("manuscript-ref")
-  from        Place?     @relation("sent-from", fields: [placeId], references: [id])
-  to          Place?     @relation("received-to", fields: [toPlaceId], references: [id])
+
+  event   Event?  @relation(fields: [eventId], references: [id])
+  eventId String?
+
+  associatedDocuments DocumentData[]
 
   @@map("manuscripts")
 }
@@ -101,7 +105,6 @@ model Manuscript {
 model Print {
   id String @id @default(cuid())
 
-  otherPlaces String[]
   language    String?
   title       String?
   year        String?
@@ -110,17 +113,28 @@ model Print {
   writer      String?
   information String?
   dedicatee   String?
-  placeId     String?
-  Document    Document[]
-  place       Place?     @relation(fields: [placeId], references: [id])
+
+  summary String?
+  author  String?
+  link    String?
+
+  event   Event?  @relation(fields: [eventId], references: [id])
+  eventId String?
+
+  placeId String?
+  place   Place?  @relation(fields: [placeId], references: [id])
+
+  otherPlaces String[]
+
+  associatedDocuments DocumentData[]
 
   @@map("prints")
 }
 
-enum DocumentType {
-  Manuscript
-  Print
-  Image
+enum DocumentCategory {
+  MANUSCRIPT
+  PRINT
+  IMAGE
 }
 
 enum EventType {
@@ -132,4 +146,6 @@ enum EventType {
   STORM
   DROUGHT
   PLAGUE
+  DELUGE
+  TORNADO
 }

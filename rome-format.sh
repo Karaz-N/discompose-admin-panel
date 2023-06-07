@@ -1,0 +1,1 @@
+npx rome format src/ --write

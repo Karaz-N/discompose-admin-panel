@@ -1,2 +1,0 @@
--- AlterTable
-ALTER TABLE "prints" ALTER COLUMN "year" SET DATA TYPE TEXT;

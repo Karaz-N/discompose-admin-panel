@@ -6,5 +6,5 @@
 -- the enum.
 
 
-ALTER TYPE "EventType" ADD VALUE 'FIRE';
-ALTER TYPE "EventType" ADD VALUE 'STORM';
+ALTER TYPE "EventType" ADD VALUE 'DELUGE';
+ALTER TYPE "EventType" ADD VALUE 'TORNADO';

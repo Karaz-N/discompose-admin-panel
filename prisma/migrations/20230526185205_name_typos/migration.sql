@@ -1,3 +1,0 @@
--- AlterTable
-ALTER TABLE "events" ALTER COLUMN "year" DROP NOT NULL,
-ALTER COLUMN "type" DROP NOT NULL;
