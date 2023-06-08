@@ -1,15 +1,6 @@
 "use server";
 
 import { PrismaClient } from "@prisma/client";
-import {
-	DocumentCategory,
-	Place,
-	Event,
-	Image,
-	Manuscript,
-	Print,
-	EventType,
-} from "@prisma/client";
 
 export const client = new PrismaClient({
 	log: [
@@ -33,6 +24,3 @@ export const client = new PrismaClient({
 });
 
 export type Prisma = typeof client;
-
-export { DocumentCategory, EventType };
-export type { Place, Event, Image, Manuscript, Print };

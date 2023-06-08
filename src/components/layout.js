@@ -49,6 +49,7 @@ export default function Layout({ children }) {
 								stroke="currentColor"
 								className="w-8 h-8  cursor-pointer"
 								onClick={() => setOpen(!open)}
+								onKeyUp={() => setOpen(!open)}
 							>
 								<path
 									strokeLinecap="round"
