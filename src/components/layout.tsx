@@ -2,11 +2,11 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-
+import React from "react";
 import { BsDatabaseFill } from "react-icons/bs";
 import { MdDashboard } from "react-icons/md";
 
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
   const [open, setOpen] = useState(true);
