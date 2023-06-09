@@ -1,0 +1,10 @@
+node_modules/
+commands/
+.dockerignore
+.git
+.gitignore
+*.csv
+rome.json
+places.json
+.env
+.esclintrc.js
