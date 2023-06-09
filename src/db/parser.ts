@@ -363,7 +363,7 @@ export const uploadManuscripts = async (filename: string): Promise<void> => {
 		return {
 			id: value.id,
 			type: DocumentCategory.MANUSCRIPT,
-			imageId: value.id,
+			manuscriptId: value.id,
 		};
 	});
 
@@ -421,7 +421,7 @@ export const uploadPrints = async (filename: string): Promise<void> => {
 		return {
 			id: value.id,
 			type: DocumentCategory.PRINT,
-			imageId: value.id,
+			printId: value.id,
 		};
 	});
 

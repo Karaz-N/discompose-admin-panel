@@ -42,11 +42,11 @@ model DocumentData {
   id   String           @id
   type DocumentCategory
 
-  image        Image?      @relation(fields: [imageId], references: [id])
+  image        Image?      @relation(fields: [imageId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   imageId      String?
-  manuscript   Manuscript? @relation(fields: [manuscriptId], references: [id])
+  manuscript   Manuscript? @relation(fields: [manuscriptId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   manuscriptId String?
-  print        Print?      @relation(fields: [printId], references: [id])
+  print        Print?      @relation(fields: [printId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   printId      String?
 }
 
