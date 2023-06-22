@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
+const TOKEN = "CATALDO";
+
 export default function Database() {
   const [image, setImage] = useState<File | null>(null);
   const { register, handleSubmit } = useForm();
@@ -11,13 +13,20 @@ export default function Database() {
     if (!image) return;
 
     body.append("file", image);
+    body.append("token", TOKEN);
 
     const res = await fetch(path, {
       method: "POST",
       body,
-    }).then((res) => res.json());
+    });
 
-    console.log(res);
+    if (res.status !== 200) {
+      // Redirect to login
+    }
+
+    const data = await res.json();
+
+    console.log(data);
   };
 
   return (

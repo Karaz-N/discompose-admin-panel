@@ -132,12 +132,12 @@ export type DocToCategory<T extends RefinedContents> = T extends Image
 /** Transform document category type into document type. */
 export type CategoryToDoc<T extends DocumentCategory> =
 	T extends DocumentCategories["IMAGE"]
-		? Image
-		: T extends DocumentCategories["MANUSCRIPT"]
-		? Manuscript
-		: T extends DocumentCategories["PRINT"]
-		? Print
-		: Never;
+	? Image
+	: T extends DocumentCategories["MANUSCRIPT"]
+	? Manuscript
+	: T extends DocumentCategories["PRINT"]
+	? Print
+	: Never;
 
 /** A callable that transforms an object of the `Raw` type into its `Refined` version. */
 export type Mapping<T extends RawContentType> = (
