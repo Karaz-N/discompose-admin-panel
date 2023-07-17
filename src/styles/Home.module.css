@@ -1,0 +1,46 @@
+.map {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E1DEDE;
+    position: relative;
+    z-index: 0;
+    /*border: 3px solid #73AD21;*/
+}
+
+.prova {
+    margin-top: -20px ;
+    display: flex;
+}
+
+.backDivOverlay {
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/*.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/pattern.png');
+    background-size: cover;
+    opacity: 1;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }*/
+
+  .mapOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/pattern.png"); /* Percorso dell'immagine filtro */
+    opacity: 1; /* Opacità dell'immagine filtro */
+    pointer-events: none; /* Assicura che l'overlay non interferisca con l'interazione della mappa */
+    z-index: 1;
+  }

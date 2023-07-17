@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import { LayoutStore } from "../../Store/store";
 
 export default function Database() {
   const [image, setImage] = useState<File | null>(null);
@@ -19,6 +21,12 @@ export default function Database() {
 
     console.log(res);
   };
+
+  // const setShowLayoutAdmin = LayoutStore((state) => state.setShow);
+
+  // useEffect(() => {
+  //     setShowLayoutAdmin(false);
+  // }, [])
 
   return (
     <>

@@ -6,8 +6,11 @@ import {
   loadDocumentCount,
   loadAllDocumentsCount,
   loadAllEventsCount,
+  loadAllEvents
 } from "../db/queries";
 import { DocumentCategory, EventType } from "@prisma/client";
+
+import { LayoutStore } from "../../Store/store";
 
 export const getServerSideProps = async () => {
   const allEventCount = loadAllEventsCount();
@@ -17,11 +20,19 @@ export const getServerSideProps = async () => {
   const allHurricanesCount = loadEventCount(EventType.HURRICANE);
   const allEruptionsCount = loadEventCount(EventType.ERUPTION);
 
+  const allEvents = loadAllEvents();
+
   const allDocumentCount = loadAllDocumentsCount();
 
   const allImagesCount = loadDocumentCount(DocumentCategory.IMAGE);
   const allManuscriptsCount = loadDocumentCount(DocumentCategory.MANUSCRIPT);
   const allPrintsCount = loadDocumentCount(DocumentCategory.PRINT);
+
+  // const setShowLayoutAdmin = LayoutStore((state) => state.setShow);
+
+  // useEffect(() => {
+  //     setShowLayoutAdmin(true);
+  // }, [])
 
   const [
     events,
@@ -33,6 +44,7 @@ export const getServerSideProps = async () => {
     images,
     manuscripts,
     prints,
+    alloEvents,
   ] = await Promise.all([
     allEventCount,
     allEarthquakesCount,
@@ -43,6 +55,7 @@ export const getServerSideProps = async () => {
     allImagesCount,
     allManuscriptsCount,
     allPrintsCount,
+    allEvents,
   ]);
 
   return {
@@ -57,6 +70,7 @@ export const getServerSideProps = async () => {
       images,
       manuscripts,
       prints,
+      alloEvents,
     },
   };
 };
@@ -64,6 +78,9 @@ export const getServerSideProps = async () => {
 type HomeProps = Awaited<ReturnType<typeof getServerSideProps>>["props"];
 
 export default function Home(props: HomeProps) {
+  useEffect(() => {
+    console.log(props.alloEvents);
+  })
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <div className="p-8">

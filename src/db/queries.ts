@@ -23,8 +23,8 @@ export const loadAllEventsCount = async (): Promise<number> => {
  *
  * @returns Every event in the database
  */
-export const loadAllEvents = async (): Promise<Event[]> => {
-	return await client.event.findMany();
+export const loadAllEvents = async () => {
+	return await client.event.findMany({include: {place: true}});
 };
 
 /**

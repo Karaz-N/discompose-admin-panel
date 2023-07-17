@@ -1,0 +1,63 @@
+.eventDivOverlay {
+    position: absolute;
+    width: 306px;
+    height: 260px;
+    right: 2rem;
+    top: 15rem;
+    z-index: 10000;
+}
+
+.eventDivOverlay li {
+    list-style: none;
+    cursor: pointer;
+    height: 40px;
+    color: #323232;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    background: white;
+    align-items: center;
+    display: flex;
+
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+.eventDivOverlay li.item0 {
+    background: #A92820;
+    color: #EEEEEE;
+}
+
+.eventDivOverlay li.item1 {
+    background: #A92820;
+    color: #EEEEEE;
+}
+
+.eventDivOverlay li.item2 {
+    background: #A92820;
+    color: #EEEEEE;
+}
+
+.eventDivOverlay li.item3 {
+    background: #A92820;
+    color: #EEEEEE;
+}
+
+.eventDivOverlay li:nth-child(1):hover {
+    background: #A92820;
+    color: #EEEEEE;
+}
+
+.eventDivOverlay li:nth-child(2):hover {
+    background: #A92820;
+    color: #EEEEEE;
+}
+
+.eventDivOverlay li:nth-child(3):hover {
+    background: #A92820;
+    color: #EEEEEE;
+}
+
+.eventDivOverlay li:nth-child(4):hover {
+    background: #A92820;
+    color: #EEEEEE;
+}

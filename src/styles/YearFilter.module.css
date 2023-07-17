@@ -1,0 +1,26 @@
+/* styles.module.css */
+
+/* Stile del rettangolo della maniglia */
+.customHandle {
+    width: 16px;
+    height: 40px;
+    background-color: #007bff; /* Cambia il colore azzurro in uno di tua scelta */
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  /* Stile del rombo sopra la maniglia */
+  .customHandle::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid #007bff; /* Cambia il colore azzurro in uno di tua scelta */
+  }
+  

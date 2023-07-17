@@ -1,0 +1,70 @@
+<div className="flex">
+        {<Sidebar open={open} />}
+
+        {/*METODO PER RENDERE GLI ELEMENTI SOVRAPPOSTI ALLA MAPPA TENENDO PERO' LA POSSIBILITA' DI INTERAGIRE CON ESSA, E' STATO NECESSARIO
+          AGGIUNGERE LA POSITION ABSOLUTE E LO Z-INDEX ANCHE ALLA SIDEBAR ED ALLA MAPPA COME CONTAINER ALL'INTERNO DELLA CLASSE CSS HOME MODULE
+          
+        <div className="absolute bottom-0 right-0 w-10 h-10 bg-deep-orange-800 z-10">Prova</div>*/}
+
+        {/*<Image
+          className=""
+          src="/logo_discompose.svg"
+          alt="Discompose Logo"
+          fill={true}
+      />*/}
+        <Image
+          className={style.logoDivOverlay}
+          src="/logo_discompose.svg"
+          alt="Discompose Logo"
+          width={100}
+          height={100}
+        />
+        {/*<div className={style.divOverlay}>Prova di un filtro</div>*/}
+        <EventFilter />
+        <div className={style.overlay}>
+          <Map open={open} switchToggle={changeToggle}></Map>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      {countriesData.map((country) => (
+        <ImageOverlay
+          key={country.code}
+          bounds={country.bounds}
+          url={`/Countries/countries-images/${country.code}.svg`}
+        />
+      ))}
+
+      <ZoomControl position="bottomright" />
+
+      {geom.map((geom) => (
+        //console.log(marker.geocode),
+        <Marker position={geom} eventHandlers={{ click: cliccalo }} />
+      ))}
+
+
+
+      {/*<TileLayer
+        attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+        url="https://api.maptiler.com/maps/backdrop/{z}/{x}/{y}.png?key=oUBbRBs0ooUdBPp28Pvc"
+      />*/}
+
+      {countriesData.map((country) => (
+        <ImageOverlay
+          key={country.code}
+          bounds={country.bounds}
+          url={`/Countries/countries-images/${country.code}.svg`}
+        />
+      ))}
+
+      <ZoomControl position="bottomright" />
+
+      {geom.map((geom) => (
+        //console.log(marker.geocode),
+        <Marker position={geom} eventHandlers={{ click: cliccalo }} />
+      ))}

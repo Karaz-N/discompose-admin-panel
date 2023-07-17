@@ -1,0 +1,122 @@
+[
+  {
+    "latitudine": 41.9028,
+    "longitudine": 12.4964,
+    "tipo_evento": "earthquake",
+    "luogo": "ES"
+  },
+  {
+    "latitudine": 44.4056,
+    "longitudine": 8.9463,
+    "tipo_evento": "flood",
+    "luogo": "IT"
+  },
+  {
+    "latitudine": 42.3636,
+    "longitudine": 14.1508,
+    "tipo_evento": "eruption",
+    "luogo": "US"
+  },
+  {
+    "latitudine": 40.8521,
+    "longitudine": 14.2681,
+    "tipo_evento": "hurricane",
+    "luogo": "US"
+  },
+  {
+    "latitudine": 45.4408,
+    "longitudine": 10.3285,
+    "tipo_evento": "earthquake",
+    "luogo": "ES"
+  },
+  {
+    "latitudine": 45.4642,
+    "longitudine": 9.1900,
+    "tipo_evento": "flood",
+    "luogo": "IT"
+  },
+  {
+    "latitudine": 43.7714,
+    "longitudine": 11.2541,
+    "tipo_evento": "eruption",
+    "luogo": "US"
+  },
+  {
+    "latitudine": 40.8777,
+    "longitudine": 8.7750,
+    "tipo_evento": "hurricane",
+    "luogo": "ES"
+  },
+  {
+    "latitudine": 41.1293,
+    "longitudine": 16.8639,
+    "tipo_evento": "earthquake",
+    "luogo": "IT"
+  },
+  {
+    "latitudine": 42.5466,
+    "longitudine": 12.6396,
+    "tipo_evento": "flood",
+    "luogo": "US"
+  },
+  {
+    "latitudine": 42.4818,
+    "longitudine": 14.2169,
+    "tipo_evento": "eruption",
+    "luogo": "ES"
+  },
+  {
+    "latitudine": 40.8240,
+    "longitudine": 17.2400,
+    "tipo_evento": "hurricane",
+    "luogo": "IT"
+  },
+  {
+    "latitudine": 44.4183,
+    "longitudine": 12.2035,
+    "tipo_evento": "earthquake",
+    "luogo": "US"
+  },
+  {
+    "latitudine": 40.6267,
+    "longitudine": 17.9399,
+    "tipo_evento": "flood",
+    "luogo": "IT"
+  },
+  {
+    "latitudine": 42.7786,
+    "longitudine": 11.2466,
+    "tipo_evento": "eruption",
+    "luogo": "US"
+  },
+  {
+    "latitudine": 40.7628,
+    "longitudine": 17.1747,
+    "tipo_evento": "hurricane",
+    "luogo": "ES"
+  },
+  {
+    "latitudine": 45.7035,
+    "longitudine": 9.7320,
+    "tipo_evento": "earthquake",
+    "luogo": "ES"
+  },
+  {
+    "latitudine": 42.3547,
+    "longitudine": 13.3986,
+    "tipo_evento": "flood",
+    "luogo": "IT"
+  },
+  {
+    "latitudine": 43.7092,
+    "longitudine": 10.3875,
+    "tipo_evento": "eruption",
+    "luogo": "US"
+  },
+  {
+    "latitudine": 40.8518,
+    "longitudine": 14.2681,
+    "tipo_evento": "hurricane",
+    "luogo": "ES"
+  }
+]

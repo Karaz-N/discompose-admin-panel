@@ -14,6 +14,7 @@ model Place {
   name            String       @unique(map: "Place_name_key")
   latitude        Float?
   longitude       Float?
+  countryCode     String?
   events          Event[]
   images          Image[]
   manuscriptsFrom Manuscript[] @relation("sent-from")
