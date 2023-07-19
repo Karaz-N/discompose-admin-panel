@@ -15,6 +15,10 @@ export default function Sidebar({ open }) {
     (state) => state.setDeselectedDocument
   );
 
+  const isSelectedDocument = useStore((state) => state.isSelectedDocument);
+
+  const sidebarClass = isSelectedDocument ? style.sidebarOpen : style.sidebarClosed;
+
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -25,11 +29,13 @@ export default function Sidebar({ open }) {
     setModalOpen(false);
   };
 
+  useEffect(() => {
+    console.log(open);
+  }, [open])
+
   return (
     <aside
-      className={` bg-deep-orange-700 h-screen ${
-        open ? "w-96" : "w-0"
-      } relative`}
+      className={`${style.sidebar} ${sidebarClass}`}
     >
       <div className={style.sidebarContainer}>
         <Image
@@ -80,11 +86,12 @@ export default function Sidebar({ open }) {
         </div>
 
         <button
+        className={style.closeButton}
           onClick={() => {
             setDeselectedDocument();
           }}
         >
-          <Image src={"/images/closeSidebar.svg"} width={11} height={20} alt="Close Sidebar" />
+          <Image className={style.closeButtonImg} src={"/images/closeSidebar.svg"} width={11} height={20} alt="Close Sidebar" />
         </button>
 
         <Modal isOpen={isModalOpen} onClose={closeModal}>

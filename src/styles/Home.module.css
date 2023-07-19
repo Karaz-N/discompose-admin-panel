@@ -1,15 +1,19 @@
 .map {
-    height: 100vh;
-    width: 100vw;
-    background-color: #E1DEDE;
-    position: relative;
-    z-index: 0;
-    /*border: 3px solid #73AD21;*/
+  height: 100vh;
+  width: 100vw;
+  background-color: #E1DEDE;
+  position: relative;
+  z-index: 0;
 }
 
-.prova {
-    margin-top: -20px ;
-    display: flex;
+.mapResized {
+  height: 100vh;
+  width: calc(100vw - 500px);
+  background-color: #E1DEDE;
+  position: relative;
+  z-index: 0;
+  flex: 1;
+  transition: width 0.3s ease;
 }
 
 .backDivOverlay {
@@ -33,14 +37,23 @@
     pointer-events: none;
   }*/
 
-  .mapOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/images/pattern.png"); /* Percorso dell'immagine filtro */
-    opacity: 1; /* Opacità dell'immagine filtro */
-    pointer-events: none; /* Assicura che l'overlay non interferisca con l'interazione della mappa */
-    z-index: 1;
-  }
+.mapOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/pattern.png");
+  /* Percorso dell'immagine filtro */
+  opacity: 1;
+  /* Opacità dell'immagine filtro */
+  pointer-events: none;
+  /* Assicura che l'overlay non interferisca con l'interazione della mappa */
+  z-index: 1;
+}
+
+.zoomControl{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}

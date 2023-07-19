@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "react";
 import { BsDatabaseFill } from "react-icons/bs";
 import { MdDashboard } from "react-icons/md";
@@ -27,11 +27,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     },
   ];
 
-  useEffect(() => {
-    console.log(router.pathname);
-  })
-
-  if(router.pathname !== "/map" ){
+  if (router.pathname === "/map" || router.pathname === "/login") {
+    return <>{children}</>;
+  } else {
     return (
       <div className="min-h-screen flex flex-col">
         <header className=" bg-menu-admin text-black sticky top-0 h-20 flex p-3 font-semibold">
@@ -105,12 +103,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </div>
     );
-  }else{
-    return(
-      <>
-      {children}
-      </>
-    )
   }
-  
 }

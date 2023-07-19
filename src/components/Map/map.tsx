@@ -27,6 +27,7 @@ export default function Map(open) {
   //PARAMETRI INIZIALI DELLA MAPPA
   const [selectedLatLng, setSelectedLatLng] = useState([22, -10]);
   const [country, setCountry] = useState();
+  const [prova, setProva] = useState(style.map);
   const zoomLevel = 2.5;
 
   //Colors of Countries
@@ -46,6 +47,8 @@ export default function Map(open) {
   const isSelectedEvent = useStore((state) => state.isSelectedEvent);
   const setSelectedEvent = useStore((state) => state.setSelectedEvent);
   const deselectEvent = useStore((state) => state.deselectEvent);
+  const isSelectedDocument = useStore((state) => state.isSelectedDocument);
+  
 
   
   const setSelectedDocument = useStore((state) => state.setSelectedDocument);
@@ -184,8 +187,9 @@ export default function Map(open) {
   }
 
   return (
-    <div>
+    <div className={style.rightView}>
       <div className={style.mapOverlay}></div>
+      
       <MapContainer
         className={style.map}
         center={selectedLatLng}
@@ -197,8 +201,8 @@ export default function Map(open) {
           zIndex: 0,
         }}
       >
-        <Reverse />
-
+        {!isSelectedDocument && <Reverse />}
+        
         <GeoJSON
           key={countrySelected}
           style={country ? stileGeoJsonSelected : stileGeoJSON}
