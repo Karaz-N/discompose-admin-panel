@@ -25,3 +25,32 @@ export const geocode: (place: string) => Promise<pkg.SearchResultItem[]> =
 		// place = place.replace(/[^a-zA-Z0-9 ]/g, "")
 		return await geocodeClient.search({ q: place });
 	};
+
+/**
+ * Get the ISO 3166-1 alpha-2 country code from coordinates
+ * 
+ * @param lat The latitude
+ * @param lon The longitude
+ * @returns A promise that resolves to the ISO 3166-1 alpha-2 country code
+ */
+export const isoFromCoordinates: (lat: number, lon: number) => Promise<string | null> =
+	async (lat, lon) => {
+		try {
+			const result = await geocodeClient.reverse({
+				lat,
+				lon,
+				// addressdetails: true,
+			});
+
+			// sleep per 0.5 seconds to avoid rate limiting
+			await new Promise((resolve) => setTimeout(resolve, 1000));
+
+			const address = result.address;
+
+			return address.country_code;
+		}
+
+		catch (e) {
+			return null;
+		}
+	};

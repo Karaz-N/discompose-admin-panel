@@ -80,12 +80,13 @@ const addPlace = async (place: string): Promise<Place | null> => {
 		}
 
 		try {
-			const { lat, lon } = data[0];
+			const { lat, lon, address } = data[0];
 
 			const placeObj = {
 				name: place,
 				latitude: parseFloat(lat),
 				longitude: parseFloat(lon),
+				countryCode: address?.country_code.toUpperCase(),
 			};
 
 			return await client.place.create({
