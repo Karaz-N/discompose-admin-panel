@@ -9,15 +9,37 @@ import EventFilter from "../components/event_filter";
 import { useStore } from "../../Store/store";
 import DocumentFilter from "../components/document_filter";
 
+import { loadAllEvents } from "../db/queries";
+
 import { LayoutStore } from "../../Store/store";
 
-export default function Home() {
+import { useFilterStore } from "../../Store/filterStore";
+
+export const getServerSideProps = async () => {
+    const events = await loadAllEvents();
+
+    return {
+        props: {
+            events: events,
+        },
+    }
+}
+
+type MapProps = Awaited<ReturnType<typeof getServerSideProps>>["props"];
+export default function Home(props: MapProps) {
   const [open, setOpen] = useState(false);
 
   const isSelectedCountry = useStore((state) => state.isSelectedCountry);
   const deselectCountry = useStore((state) => state.deselectCountry);
   const isSelectedEvent = useStore((state) => state.isSelectedEvent);
   const isSelectedDocument = useStore((state) => state.isSelectedDocument);
+
+  const setIso = useFilterStore((state) => state.setIso);
+
+  useEffect(() => {
+      var isobo = props.events.map((e) => e.place.countryCode.toUpperCase());
+      setIso(isobo);
+  }, []);
 
   //   const setShowLayoutAdmin = LayoutStore((state) => state.setShow);
 

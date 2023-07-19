@@ -23,12 +23,19 @@ import { useFilterStore } from "../../../Store/filterStore";
 
 import { useDocumentStore } from "../../../Store/documentStore";
 
-export default function Map(open) {
+import useSWR from "swr";
+
+
+export default function Map(props) {
   //PARAMETRI INIZIALI DELLA MAPPA
   const [selectedLatLng, setSelectedLatLng] = useState([22, -10]);
   const [country, setCountry] = useState();
   const [prova, setProva] = useState(style.map);
   const zoomLevel = 2.5;
+
+  
+
+  const { data, error } = useSWR("/api/events", (query: string) =>  fetch(query).then((response) => response.json()) )
 
   //Colors of Countries
   const includedCountries = "#A92820";
@@ -70,11 +77,12 @@ export default function Map(open) {
   const allDocument = useDocumentStore((state) => state.allDocument);
   const setAllDocument = useDocumentStore((state) => state.setAllDocument);
 
-  useEffect(() => {
-    addEvents(eventTest);
-    var arrayISO = eventTest.map((oggetto) => oggetto.luogo);
-    setIso(arrayISO);
-  }, []);
+  // useEffect(() => {
+  //   settù
+  //   // addEvents(data.events);
+  //   // var arrayISO = data.events.map((e) => e.place.countryCode);
+  //   // setIso(arrayISO);
+  // }, []);
 
   useEffect(() => {
     setAllDocument(allDocumentTest);
@@ -202,6 +210,8 @@ export default function Map(open) {
         }}
       >
         {!isSelectedDocument && <Reverse />}
+
+        <button onClick={() => console.log(iso)}>Ciao</button>
         
         <GeoJSON
           key={countrySelected}
