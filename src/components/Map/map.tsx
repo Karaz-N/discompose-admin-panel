@@ -19,17 +19,11 @@ import { useFilterStore } from "../../../Store/filterStore";
 
 import { useDocumentStore } from "../../../Store/documentStore";
 
-import useSWR from "swr";
-
 export default function Map() {
   //PARAMETRI INIZIALI DELLA MAPPA
   const [selectedLatLng, setSelectedLatLng] = useState([22, -10]);
   const [country, setCountry] = useState();
   const zoomLevel = 2.5;
-
-  const { data, error } = useSWR("/api/events", (query: string) =>
-    fetch(query).then((response) => response.json())
-  );
 
   //Colors of Countries
   const includedCountries = "#A92820";

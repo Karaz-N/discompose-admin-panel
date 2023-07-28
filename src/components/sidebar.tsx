@@ -9,6 +9,7 @@ import Modal from "./modal";
 
 import { useStore } from "../../Store/store";
 import { useDocumentStore } from "../../Store/documentStore";
+import { Image as ImageType, Manuscript, Print } from "@prisma/client";
 import ManuscriptCard from "./manuscript_card";
 
 export default function Sidebar({ open }) {
@@ -115,27 +116,41 @@ export default function Sidebar({ open }) {
 
         <Modal isOpen={isModalOpen} onClose={closeModal}></Modal>
         <ul className={style.contentContainer}>
-          {Manus.map((manus) => (
+          {filteredImageFromMap.map((image) => (
             <>
               <li className={style.contentItem} onClick={() => openModal()}>
-                <p>{"Manuscript from " + manus.Destinatario}</p>
+                <p>{"Image from " + image.author}</p>
                 <div className={style.contentItemDetails}>
-                  <p>{manus.Destinatario}</p>
-                  <p>{manus.DataScrittura}</p>
+                  <p>{image.author}</p>
+                  <p>{image.date}</p>
                 </div>
               </li>
-              <button
-                onClick={() => {
-                  // console.log(filteredPrintFromMap);
-                  // console.log(filteredImageFromMap);
-                  // console.log(eventData);
-                  console.log(filteredManuscriptFromMap);
-                }}
-              >
-                ciao
-              </button>
             </>
           ))}
+          {filteredManuscriptFromMap.map((manuscript) => (
+            <>
+              <li className={style.contentItem} onClick={() => openModal()}>
+                <p>{"Manuscript from " + manuscript.author}</p>
+                <div className={style.contentItemDetails}>
+                  <p>{manuscript.author}</p>
+                  <p>{manuscript.writtenAt}</p>
+                </div>
+              </li>
+            </>
+          ))}
+          {filteredPrintFromMap.map((print) => (
+            <>
+              <li className={style.contentItem} onClick={() => openModal()}>
+                <p>{"Print from " + print.author}</p>
+                <div className={style.contentItemDetails}>
+                  <p>{print.author}</p>
+                  <p>{print.year}</p>
+                </div>
+              </li>
+            </>
+          ))}
+           
+          <button onClick={() => {console.log(filteredImageFromMap.map((m) => {return {m: m.date}}))}}>ciao</button>
         </ul>
       </div>
     </aside>
