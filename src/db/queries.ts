@@ -7,6 +7,7 @@ import {
 	DocumentCategory,
 	DocumentData,
 	CategoryToDoc,
+	Place,
 } from "./models";
 
 /**
@@ -131,19 +132,24 @@ export const loadFullDocumentCount = async <T extends DocumentCategory>(
  */
 export const loadFullDocuments = async <T extends DocumentCategory>(
 	type: T,
-): Promise<CategoryToDoc<T>[]> => {
+) => {
 	if (type === DocumentCategory.MANUSCRIPT) {
-		const manuscripts = await client.manuscript.findMany();
-		return manuscripts as CategoryToDoc<T>[];
+		const manuscripts = await client.manuscript.findMany({include: {from: true, to: true, event: true}});
+		return manuscripts 
 	} else if (type === DocumentCategory.PRINT) {
-		const prints = await client.print.findMany();
-		return prints as CategoryToDoc<T>[];
+		const prints = await client.print.findMany({include: {place: true, event: true}});
+		return prints 
 	} else if (type === DocumentCategory.IMAGE) {
-		const images = await client.image.findMany();
-		return images as CategoryToDoc<T>[];
+		const images = await client.image.findMany({include: {place: true, event: true}});
+		return images
 	}
 	return [];
 };
+
+/**
+ * : Promise<CategoryToDoc<T>[]>
+ * as CategoryToDoc<T>[];
+ */
 
 /** Possible filters */
 type Filter = {

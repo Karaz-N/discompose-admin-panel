@@ -1,27 +1,10 @@
 import { create } from 'zustand'
-import { combine } from 'zustand/middleware'
-
-export const useCountryStore = create(
-  combine({ country: null } as { country: string | null }, (set) => ({
-    changeFocus: (to: string | null) => set((state) => ({ country: to })),
-  }))
-)
-
-const useAvailableEventsStore = create(
-  combine(
-    {
-      events: [] as string[],
-    }, (set) => ({
-      addEvents: (item : string) => set((state) => ({ events: [...state.events, item] })),
-    }))
-  )
-
-
 
 export const useFilterStore = create((set) => ({
   events: [],
   iso: [],
   filteredEvents: [],
+  temporaryFilteredEvents: [],
   fromYear: "1500",
   toYear: "1700",
   eventType: "",
@@ -41,7 +24,10 @@ export const useFilterStore = create((set) => ({
   filterByCountry: (country) => {
     set({ country: country });
     set((state) => ({
-      filteredEvents: state.events.filter((evento) => evento.luogo === country),
+      filteredEvents: state.events.filter((elemento) => elemento.place.hasOwnProperty("countryCode") && elemento.place.countryCode === country),
+    }));
+    set((state) => ({
+      temporaryFilteredEvents : state.filteredEvents
     }));
   },
 
@@ -55,14 +41,14 @@ export const useFilterStore = create((set) => ({
     set({ eventType: type });
     set((state) => ({
       filteredEvents: state.events.filter(
-        (evento) => evento.tipo_evento === type && evento.luogo === state.country
+        (evento) => evento.type === type && evento.place.hasOwnProperty("countryCode") && evento.place.countryCode === state.country
       ),
     }));
   },
 
   restoreEvents: () => {
     set((state) => ({
-        filteredEvents: state.events.filter((evento) => evento.luogo === state.country),
+        filteredEvents: state.events.filter((elemento) => elemento.place.hasOwnProperty("countryCode") && elemento.place.countryCode === state.country),
       }));
   },
 

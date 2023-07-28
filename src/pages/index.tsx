@@ -10,8 +10,6 @@ import {
 } from "../db/queries";
 import { DocumentCategory, EventType } from "@prisma/client";
 
-import { LayoutStore } from "../../Store/store";
-
 export const getServerSideProps = async () => {
   const allEventCount = loadAllEventsCount();
 
@@ -27,12 +25,6 @@ export const getServerSideProps = async () => {
   const allImagesCount = loadDocumentCount(DocumentCategory.IMAGE);
   const allManuscriptsCount = loadDocumentCount(DocumentCategory.MANUSCRIPT);
   const allPrintsCount = loadDocumentCount(DocumentCategory.PRINT);
-
-  // const setShowLayoutAdmin = LayoutStore((state) => state.setShow);
-
-  // useEffect(() => {
-  //     setShowLayoutAdmin(true);
-  // }, [])
 
   const [
     events,

@@ -1,0 +1,18 @@
+.bannerOverlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.textBanner {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-family: 'Cormorant Garamond', regular;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+}

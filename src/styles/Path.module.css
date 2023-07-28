@@ -1,0 +1,51 @@
+.waterFlow {
+    color: #323232;
+    weight: 2;
+    opacity: 1;
+    dash-array: 4, 5;
+}
+
+@keyframes Anim {
+    0% {
+        stroke: blue;
+    }
+
+    2% {
+        stroke: green;
+    }
+
+    50% {
+        stroke: red;
+    }
+
+    98% {
+        stroke: cyan;
+    }
+
+    100% {
+        stroke: yellow;
+    }
+}
+
+
+
+.waterFlowGradient {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: linear-gradient(45deg, blue, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: 3s linear infinite slide;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

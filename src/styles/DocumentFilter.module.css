@@ -14,12 +14,18 @@
     color: #323232;
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    padding: 0.5rem;
     background: white;
     align-items: center;
     display: flex;
 
     box-sizing: border-box;
     border: 1px solid #000000;
+}
+
+
+.menuElement {
+    padding: 1rem;
 }
 
 .eventDivOverlay li.item0 {

@@ -9,21 +9,30 @@ import EventFilter from "../components/event_filter";
 import { useStore } from "../../Store/store";
 import DocumentFilter from "../components/document_filter";
 
-import { loadAllEvents } from "../db/queries";
+import BannerText from "../components/Banner/banner_text";
 
-import { LayoutStore } from "../../Store/store";
+import { loadAllEvents, loadFullDocuments } from "../db/queries";
 
 import { useFilterStore } from "../../Store/filterStore";
+import { DocumentCategory } from "@prisma/client";
+
+import { useDocumentStore } from "../../Store/documentStore";
 
 export const getServerSideProps = async () => {
-    const events = await loadAllEvents();
+  const events = await loadAllEvents();
+  const manuscripts = await loadFullDocuments(DocumentCategory.MANUSCRIPT);
+  const prints = await loadFullDocuments(DocumentCategory.PRINT);
+  const images = await loadFullDocuments(DocumentCategory.IMAGE);
 
-    return {
-        props: {
-            events: events,
-        },
-    }
-}
+  return {
+    props: {
+      events: events,
+      manuscripts: manuscripts,
+      prints: prints,
+      images: images,
+    },
+  };
+};
 
 type MapProps = Awaited<ReturnType<typeof getServerSideProps>>["props"];
 export default function Home(props: MapProps) {
@@ -33,25 +42,31 @@ export default function Home(props: MapProps) {
   const deselectCountry = useStore((state) => state.deselectCountry);
   const isSelectedEvent = useStore((state) => state.isSelectedEvent);
   const isSelectedDocument = useStore((state) => state.isSelectedDocument);
+  const sidebarVisible = useStore((state) => state.sidebarVisible);
 
   const setIso = useFilterStore((state) => state.setIso);
+  const addEvents = useFilterStore((state) => state.addEvents);
+
+  const setAllManuscript = useDocumentStore((state) => state.setAllManuscript);
+  const setAllPrint = useDocumentStore((state) => state.setAllPrint);
+  const setAllImage = useDocumentStore((state) => state.setAllImage);
 
   useEffect(() => {
-      var isobo = props.events.map((e) => e.place.countryCode.toUpperCase());
-      setIso(isobo);
+    var isobo = props.events.map((e) => e.place.countryCode.toUpperCase());
+    setIso(isobo);
+    addEvents(props.events);
+    setAllManuscript(props.manuscripts);
+    setAllPrint(props.prints);
+    setAllImage(props.images);
   }, []);
-
-  //   const setShowLayoutAdmin = LayoutStore((state) => state.setShow);
-
-  //   useEffect(() => {
-  //       setShowLayoutAdmin(false);
-  //   }, [])
 
   return (
     <div className={style.container}>
-      {
-          <Sidebar open={isSelectedDocument} />
-      }
+      {sidebarVisible && (
+        <Sidebar open={false} />
+      )}
+
+      {!isSelectedCountry && <BannerText />}
 
       {!isSelectedDocument && (
         <Image

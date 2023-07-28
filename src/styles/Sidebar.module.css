@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
-.sidebarContainer {
-    width: 500px;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-
-    background-color: #EEEEEE;
-    height: 100%;
-}
-
 .closeButton {
     position: absolute;
     z-index: 1;
@@ -29,14 +19,35 @@
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
+    
+}
+
+.sidebarContainer {
+    width: 500px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    background-color: #EEEEEE;
+    height: 100%;
+
+    animation-duration: 1s;
+}
+
+.sidebarContainerOpen {
+    width: 500px;
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+
+.sidebarContainerClosed {
+    width: 0px;
+    animation-name: slideOut;
 }
 
 .sidebar {
     position: relative;
-    width: 500px;
+    width: 0px;
     transition: width 1s;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
 }
 
 .sidebarOpen {
@@ -146,7 +157,7 @@
 
 @keyframes slideIn {
     from {
-        width: 0;
+        width: 0px;
     }
 
     to {
@@ -160,6 +171,6 @@
     }
 
     to {
-        width: 0;
+        width: 0px;
     }
 }

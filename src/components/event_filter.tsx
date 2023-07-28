@@ -19,6 +19,9 @@ export default function EventFilter() {
   const filterByType = useFilterStore((state) => state.filterByType);
   const restoreEvents = useFilterStore((state) => state.restoreEvents);
 
+  const filteredEvents = useFilterStore((state) => state.filteredEvents);
+  const temporaryFilteredEvents = useFilterStore((state) => state.temporaryFilteredEvents);
+
   const handleItemClick = (index) => {
     setSelectedItem(index);
   };
@@ -45,12 +48,12 @@ export default function EventFilter() {
               height={16}
             />
           )}
-          {"(" + events.length + ")"}
+          {"(" + temporaryFilteredEvents.length + ")"}
           {eventType[0].toUpperCase()}
         </li>
         <li
           className={selectedItem === 1 ? style.item1 : ""}
-          onClick={() => {handleItemClick(1); filterByType(eventType[1]);}}
+          onClick={() => {handleItemClick(1); filterByType(eventType[1].toUpperCase());}}
         >
           {selectedItem === 1 ? (
             <Image
@@ -67,12 +70,12 @@ export default function EventFilter() {
               height={16}
             />
           )}
-          {"(" + events.filter((evento) => evento.tipo_evento === eventType[1]).length + ")"}
+          {"(" + temporaryFilteredEvents.filter((evento) => evento.type === (eventType[1]).toUpperCase()).length + ")"}
           {eventType[1].toUpperCase()}
         </li>
         <li
           className={selectedItem === 2 ? style.item2 : ""}
-          onClick={() => {handleItemClick(2); filterByType(eventType[2]);}}
+          onClick={() => {handleItemClick(2); filterByType(eventType[2].toUpperCase());}}
         >
           {selectedItem === 2 ? (
             <Image
@@ -89,12 +92,12 @@ export default function EventFilter() {
               height={16}
             />
           )}
-          {"(" + events.filter((evento) => evento.tipo_evento === eventType[2]).length + ")"}
+          {"(" + temporaryFilteredEvents.filter((evento) => evento.type === (eventType[2]).toUpperCase()).length + ")"}
           {eventType[2].toUpperCase()}
         </li>
         <li
           className={selectedItem === 3 ? style.item3 : ""}
-          onClick={() => {handleItemClick(3); filterByType(eventType[3]);}}
+          onClick={() => {handleItemClick(3); filterByType(eventType[3].toUpperCase());}}
         >
           {selectedItem === 3 ? (
             <Image
@@ -111,12 +114,12 @@ export default function EventFilter() {
               height={16}
             />
           )}
-          {"(" + events.filter((evento) => evento.tipo_evento === eventType[3]).length + ")"}
+          {"(" + temporaryFilteredEvents.filter((evento) => evento.type === (eventType[3]).toUpperCase()).length + ")"}
           {eventType[3].toUpperCase()}
         </li>
         <li
           className={selectedItem === 4 ? style.item4 : ""}
-          onClick={() => {handleItemClick(4); filterByType(eventType[4]);}}
+          onClick={() => {handleItemClick(4); filterByType(eventType[4].toUpperCase());}}
         >
           {selectedItem === 4 ? (
             <Image
@@ -133,7 +136,7 @@ export default function EventFilter() {
               height={16}
             />
           )}
-          {"(" + events.filter((evento) => evento.tipo_evento === eventType[4]).length + ")"}
+          {"(" + temporaryFilteredEvents.filter((evento) => evento.type === (eventType[4]).toUpperCase()).length + ")"}
           {eventType[4].toUpperCase()}
         </li>
       </ul>

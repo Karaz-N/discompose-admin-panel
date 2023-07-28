@@ -8,6 +8,7 @@ import Manus from "../../Test/manuscriptTest.json";
 import Modal from "./modal";
 
 import { useStore } from "../../Store/store";
+import { useDocumentStore } from "../../Store/documentStore";
 import ManuscriptCard from "./manuscript_card";
 
 export default function Sidebar({ open }) {
@@ -16,10 +17,28 @@ export default function Sidebar({ open }) {
   );
 
   const isSelectedDocument = useStore((state) => state.isSelectedDocument);
+  const sidebarVisible = useStore((state) => state.sidebarVisible);
+  const setSidebarVisible = useStore((state) => state.setSidebarVisible);
 
-  const sidebarClass = isSelectedDocument ? style.sidebarOpen : style.sidebarClosed;
+  const filteredPrintFromMap = useDocumentStore((state) => state.filteredPrintFromMap);
+  const filteredImageFromMap = useDocumentStore((state) => state.filteredImageFromMap);
+  const filteredManuscriptFromMap = useDocumentStore((state) => state.filteredManuscriptFromMap);
+  const filteredManuscript = useDocumentStore((state) => state.filteredManuscript);
+  const filteredImage = useDocumentStore((state) => state.filteredImage);
+
+  const eventData = useDocumentStore((state) => state.event);
+
+  const sidebarOpen = useStore((state) => state.sidebarOpen);
+  const setSidebarOpen = useStore((state) => state.setSidebarOpen);
+
+  const sidebarContainerClass = sidebarOpen
+    ? style.sidebarContainerOpen
+    : style.sidebarContainerClosed;
+  const sidebarClass = sidebarOpen ? style.sidebarOpen : style.sidebarClosed;
 
   const [isModalOpen, setModalOpen] = useState(false);
+
+  const concatenated = filteredImageFromMap.concat(filteredPrintFromMap);
 
   const openModal = () => {
     setModalOpen(true);
@@ -29,15 +48,9 @@ export default function Sidebar({ open }) {
     setModalOpen(false);
   };
 
-  useEffect(() => {
-    console.log(open);
-  }, [open])
-
   return (
-    <aside
-      className={`${style.sidebar} ${sidebarClass}`}
-    >
-      <div className={style.sidebarContainer}>
+    <aside className={`${style.sidebar} ${sidebarClass}`}>
+      <div className={`${style.sidebarContainer} ${sidebarContainerClass}`}>
         <Image
           src="/images/decorations/decorations_UpSx.svg"
           alt="Decoration"
@@ -80,23 +93,27 @@ export default function Sidebar({ open }) {
           height={80}
           className={style.decorationBR}
         />
-        <div class={style.headContainer}>
-          <h2>Titolo della Sidebar</h2>
-          <p>Testo informativo.</p>
+        <div className={style.headContainer}>
+          <h2>{(filteredImageFromMap.length + filteredPrintFromMap.length + filteredManuscriptFromMap.length) + " DOCUMENTS IN " + (concatenated.length > 0 ? concatenated[0].place.name.toUpperCase() : (filteredManuscriptFromMap[0]?.from.name.toUpperCase() ?? filteredManuscriptFromMap[0]?.to.name.toUppercase() ))}</h2>
+          <p>{"RELATED TO " + eventData.type + " IN " + eventData.place.name.toUpperCase()}</p>
         </div>
 
         <button
-        className={style.closeButton}
+          className={style.closeButton}
           onClick={() => {
-            setDeselectedDocument();
+            setSidebarOpen(!sidebarOpen);
           }}
         >
-          <Image className={style.closeButtonImg} src={"/images/closeSidebar.svg"} width={11} height={20} alt="Close Sidebar" />
+          <Image
+            className={style.closeButtonImg}
+            src={"/images/closeSidebar.svg"}
+            width={11}
+            height={20}
+            alt="Close Sidebar"
+          />
         </button>
 
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
-          
-        </Modal>
+        <Modal isOpen={isModalOpen} onClose={closeModal}></Modal>
         <ul className={style.contentContainer}>
           {Manus.map((manus) => (
             <>
@@ -107,6 +124,16 @@ export default function Sidebar({ open }) {
                   <p>{manus.DataScrittura}</p>
                 </div>
               </li>
+              <button
+                onClick={() => {
+                  // console.log(filteredPrintFromMap);
+                  // console.log(filteredImageFromMap);
+                  // console.log(eventData);
+                  console.log(filteredManuscriptFromMap);
+                }}
+              >
+                ciao
+              </button>
             </>
           ))}
         </ul>

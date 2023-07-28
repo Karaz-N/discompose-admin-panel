@@ -1,19 +1,15 @@
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import CustomMarker from "../CustomMapComponent/CustomMarker";
+import DocumentMarker from "../CustomMapComponent/DocumentMarker";
 import Image from "next/image";
 import * as turf from "@turf/turf";
-import { lineString, bezierSpline } from "@turf/turf";
 
 import mapData from "../../data/countries.json";
 
 import style from "../../styles/Home.module.css";
-
-import eventTest from "../../../Test/eventTest.json";
-import allDocumentTest from "../../../Test/documentTest.json";
-import manuscriptTest from "../../../Test/manuscriptTest.json";
 
 import { MapContainer, ZoomControl, GeoJSON, useMap } from "react-leaflet";
 
@@ -25,17 +21,15 @@ import { useDocumentStore } from "../../../Store/documentStore";
 
 import useSWR from "swr";
 
-
-export default function Map(props) {
+export default function Map() {
   //PARAMETRI INIZIALI DELLA MAPPA
   const [selectedLatLng, setSelectedLatLng] = useState([22, -10]);
   const [country, setCountry] = useState();
-  const [prova, setProva] = useState(style.map);
   const zoomLevel = 2.5;
 
-  
-
-  const { data, error } = useSWR("/api/events", (query: string) =>  fetch(query).then((response) => response.json()) )
+  const { data, error } = useSWR("/api/events", (query: string) =>
+    fetch(query).then((response) => response.json())
+  );
 
   //Colors of Countries
   const includedCountries = "#A92820";
@@ -50,46 +44,25 @@ export default function Map(props) {
   const setSelectedCountry = useStore((state) => state.setSelectedCountry);
   const isSelectedCountry = useStore((state) => state.isSelectedCountry);
   const deselectCountry = useStore((state) => state.deselectCountry);
+  const setSidebarVisible = useStore((state) => state.setSidebarVisible);
 
   const isSelectedEvent = useStore((state) => state.isSelectedEvent);
   const setSelectedEvent = useStore((state) => state.setSelectedEvent);
   const deselectEvent = useStore((state) => state.deselectEvent);
   const isSelectedDocument = useStore((state) => state.isSelectedDocument);
-  
-
-  
-  const setSelectedDocument = useStore((state) => state.setSelectedDocument);
-
-  const events = useFilterStore((state) => state.events);
-  const addEvents = useFilterStore((state) => state.addEvents);
   const filterByCountry = useFilterStore((state) => state.filterByCountry);
 
   //Filtri per eventi tramite store
 
   const filteredEvents = useFilterStore((state) => state.filteredEvents);
-  const setIso = useFilterStore((state) => state.setIso);
   const iso = useFilterStore((state) => state.iso);
   const restoreIso = useFilterStore((state) => state.restoreIso);
   const countrySelected = useFilterStore((state) => state.country);
 
   //Filtri Documenti tramite Store
-
-  const allDocument = useDocumentStore((state) => state.allDocument);
-  const setAllDocument = useDocumentStore((state) => state.setAllDocument);
-
-  // useEffect(() => {
-  //   settù
-  //   // addEvents(data.events);
-  //   // var arrayISO = data.events.map((e) => e.place.countryCode);
-  //   // setIso(arrayISO);
-  // }, []);
-
-  useEffect(() => {
-    setAllDocument(allDocumentTest);
-  }, [country]);
-
-  const codice_iso = ["IT", "ES", "US", "AF"];
-  const documentType = "manuscript";
+  const setFilter = useDocumentStore((state) => state.setFilter);
+  const setSelectedEventData = useDocumentStore((state) => state.setSelectedEventData);
+  const filteredManuscript = useStore((state) => state.filteredManuscript);
 
   const stileGeoJSON = (feature) => {
     const codiceISO_A2 = feature.properties.ISO_A2; // Presume che la proprietà "iso_a2" nella GeoJSON contenga i codici ISO_A2 dei paesi
@@ -155,7 +128,7 @@ export default function Map(props) {
       const map = country._map;
       setCountry(countryCode);
       setSelectedCountry();
-      filterByCountry(countryCode);
+      filterByCountry(countryCode.toLowerCase());
       console.log(countrySelected + "!!!");
       map.flyTo(center.reverse(), 4.5); // Zoom al centro del paese (puoi regolare il livello di zoom desiderato)
     }
@@ -177,6 +150,7 @@ export default function Map(props) {
                 restoreIso();
               } else if (isSelectedEvent) {
                 deselectEvent();
+                setSidebarVisible(false);
               } else {
                 console.log("Un saluto da Asternox");
               }
@@ -194,10 +168,15 @@ export default function Map(props) {
     );
   }
 
+  const handleMapDoubleClick = (e) => {
+    // Previeni lo zoom sulla doppia pressione
+    e.originalEvent.preventDefault();
+  };
+
   return (
     <div className={style.rightView}>
       <div className={style.mapOverlay}></div>
-      
+
       <MapContainer
         className={style.map}
         center={selectedLatLng}
@@ -211,8 +190,8 @@ export default function Map(props) {
       >
         {!isSelectedDocument && <Reverse />}
 
-        <button onClick={() => console.log(iso)}>Ciao</button>
-        
+        <button onClick={() => console.log(filteredManuscript)}>ciao</button>
+
         <GeoJSON
           key={countrySelected}
           style={country ? stileGeoJsonSelected : stileGeoJSON}
@@ -229,55 +208,19 @@ export default function Map(props) {
           !isSelectedEvent &&
           filteredEvents.map((event) => (
             <CustomMarker
-              position={[event.latitudine, event.longitudine]}
-              eventType={event.tipo_evento}
-              onClick={() => setSelectedEvent()}
+              position={[event.place.latitude, event.place.longitude]}
+              eventType={event.type.toLowerCase()}
+              onClick={() => {
+                setSelectedEvent();
+                setFilter(event.id, event);
+                setSelectedEventData(event);
+              }}
             />
           ))}
 
-        {isSelectedEvent &&
-          manuscriptTest.map((document) =>
-            documentType === "manuscript" ? (
-              <>
-                <GeoJSON
-                  style={lineStyle}
-                  data={bezierSpline(
-                    lineString([
-                      [document.PuntoPartenzaLng, document.PuntoPartenzaLat],
-                      [
-                        (document.PuntoPartenzaLng + document.PuntoArrivoLng) /
-                          2,
-                        (document.PuntoPartenzaLat + document.PuntoArrivoLat) /
-                          2 +
-                          getRandomValue(),
-                      ],
-                      [document.PuntoArrivoLng, document.PuntoArrivoLat],
-                    ], 5)
-                  )}
-                />
-                <CustomMarker
-                  position={[
-                    document.PuntoPartenzaLat,
-                    document.PuntoPartenzaLng,
-                  ]}
-                  eventType={"manuscript"}
-                />
-                <CustomMarker
-                  position={[document.PuntoArrivoLat, document.PuntoArrivoLng]}
-                  eventType={"manuscript"}
-                  onClick={() => setSelectedDocument()}
-                />
-              </>
-            ) : (
-              <CustomMarker
-                position={[
-                  document.PuntoPartenzaLat,
-                  document.PuntoPartenzaLng,
-                ]}
-                eventType={"manuscript"}
-              />
-            )
-          )}
+        {
+          isSelectedEvent && <DocumentMarker />
+        }
 
         <ZoomControl position="bottomright" />
       </MapContainer>

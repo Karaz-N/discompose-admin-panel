@@ -1,5 +1,6 @@
 import { Marker } from "react-leaflet";
 import L from "leaflet";
+import style from "../../styles/Marker.module.css";
 
 const CustomMarker = ({ position, eventType, onClick }) => {
   let iconUrl;
@@ -7,7 +8,7 @@ const CustomMarker = ({ position, eventType, onClick }) => {
 
   // Seleziona l'icona in base alla tipologia dell'evento
   switch (eventType) {
-    case "eartchquacke":
+    case "earthquake":
       iconUrl = "/marker/earthquake_marker.svg";
       break;
     case "flood":
@@ -21,15 +22,38 @@ const CustomMarker = ({ position, eventType, onClick }) => {
       break;
     case "image":
       iconUrl = "/marker/document_marker/image_marker.svg";
+      iconSize = [16, 16];
       break;
     case "manuscript":
       iconUrl = "/marker/document_marker/manuscript_marker.svg";
+      iconSize = [16, 16];
       break;
     case "print":
       iconUrl = "/marker/document_marker/print_marker.svg";
+      iconSize = [16, 16];
+      break;
+    case "selected_earthquake":
+      iconUrl = "/marker/animated_icon/animated_earthquake.gif";
+      iconSize = [30, 30];
+      break;
+    case "selected_flood":
+      iconUrl = "/marker/animated_icon/animated_flood.gif";
+      iconSize = [30, 30];
+      break;
+    case "selected_eruption":
+      iconUrl = "/marker/animated_icon/animated_eruption.gif";
+      iconSize = [30, 30];
+      break;
+    case "selected_fire":
+      iconUrl = "/marker/animated_icon/animated_eruption.gif";
+      iconSize = [30, 30];
+      break;
+    case "selected_hurricane":
+      iconUrl = "/marker/animated_icon/animated_hurricane.gif";
+      iconSize = [30, 30];
       break;
     default:
-      iconUrl = "/marker/earthquake_marker.svg";
+      iconUrl = "/marker/eruption_marker.svg";
   }
 
   const customIcon = new L.Icon({
@@ -47,8 +71,8 @@ const CustomMarker = ({ position, eventType, onClick }) => {
 
   return (
     <Marker
-      position={position}
       icon={customIcon}
+      position={position}
       eventHandlers={eventHandlers}
     />
   );
