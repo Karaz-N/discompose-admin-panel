@@ -15,14 +15,27 @@ import { loadAllEvents, loadFullDocuments } from "../db/queries";
 
 import { useFilterStore } from "../../Store/filterStore";
 import { DocumentCategory } from "@prisma/client";
-
+import {
+  Image as ImageT,
+  Print as PrintT,
+  Manuscript as ManuscriptT,
+  Place,
+} from "@prisma/client";
 import { useDocumentStore } from "../../Store/documentStore";
+
+type ImageType = ImageT & { place: Place };
+type Print = PrintT & { place: Place };
+type Manuscript = ManuscriptT & { to?: Place; from: Place };
 
 export const getServerSideProps = async () => {
   const events = await loadAllEvents();
-  const manuscripts = await loadFullDocuments(DocumentCategory.MANUSCRIPT);
-  const prints = await loadFullDocuments(DocumentCategory.PRINT);
-  const images = await loadFullDocuments(DocumentCategory.IMAGE);
+  const manuscripts = (await loadFullDocuments(
+    DocumentCategory.MANUSCRIPT
+  )) as Manuscript[];
+  const prints = (await loadFullDocuments(DocumentCategory.PRINT)) as Print[];
+  const images = (await loadFullDocuments(
+    DocumentCategory.IMAGE
+  )) as ImageType[];
 
   return {
     props: {
@@ -52,7 +65,7 @@ export default function Home(props: MapProps) {
   const setAllImage = useDocumentStore((state) => state.setAllImage);
 
   useEffect(() => {
-    var isobo = props.events.map((e) => e.place.countryCode.toUpperCase());
+    const isobo = props.events.map((e) => e.place.countryCode?.toUpperCase());
     setIso(isobo);
     addEvents(props.events);
     setAllManuscript(props.manuscripts);
@@ -62,9 +75,7 @@ export default function Home(props: MapProps) {
 
   return (
     <div className={style.container}>
-      {sidebarVisible && (
-        <Sidebar open={false} />
-      )}
+      {sidebarVisible && <Sidebar open={false} />}
 
       {!isSelectedCountry && <BannerText />}
 
@@ -82,7 +93,7 @@ export default function Home(props: MapProps) {
       {isSelectedCountry && !isSelectedEvent && <EventFilter />}
       {isSelectedEvent && !isSelectedDocument && <DocumentFilter />}
       <div className={style.mapModule}>
-        <Map open={open}></Map>
+        <Map open={open} />
       </div>
     </div>
   );

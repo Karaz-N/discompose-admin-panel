@@ -5,54 +5,56 @@ import * as crypto from "crypto";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
-    req: NextApiRequest,
-    res: NextApiResponse<{ status: String, token?: String }>,
+	req: NextApiRequest,
+	res: NextApiResponse<{ status: String; token?: String }>,
 ) {
-    const { method } = req;
+	const { method } = req;
 
-    if (method !== "POST") {
-        return res.status(405).json({ status: "Method not allowed" });
-    }
+	if (method !== "POST") {
+		return res.status(405).json({ status: "Method not allowed" });
+	}
 
-    const { email, password }: { email?: string, password?: string } = req.body;
+	const { email, password }: { email?: string; password?: string } = req.body;
 
-    if (!email || !password) {
-        return res.status(422).json({ status: "Email and password are required" });
-    }
+	if (!email || !password) {
+		return res.status(422).json({ status: "Email and password are required" });
+	}
 
-    const user = await client.user.findUnique({
-        where: {
-            email: email,
-        },
-    });
+	const user = await client.user.findUnique({
+		where: {
+			email: email,
+		},
+	});
 
-    if (!user) {
-        return res.status(422).json({ status: "Invalid credentials" });
-    }
+	if (!user) {
+		return res.status(422).json({ status: "Invalid credentials" });
+	}
 
-    const secret = process.env.JWT_SECRET || "SECRET NOT FOUND PLEASE UPDATE";
+	const secret = process.env.JWT_SECRET || "SECRET NOT FOUND PLEASE UPDATE";
 
-    const encrypted = crypto.createHmac('sha256', secret).update(password).digest('hex');
+	const encrypted = crypto
+		.createHmac("sha256", secret)
+		.update(password)
+		.digest("hex");
 
-    if (user.password !== encrypted) {
-        return res.status(422).json({ status: "Invalid credentials" });
-    }
+	if (user.password !== encrypted) {
+		return res.status(422).json({ status: "Invalid credentials" });
+	}
 
-    const session = await client.session.create({
-        data: {
-            user: {
-                connect: {
-                    id: user.id,
-                }
-            }
-        }
-    })
+	const session = await client.session.create({
+		data: {
+			user: {
+				connect: {
+					id: user.id,
+				},
+			},
+		},
+	});
 
+	const jwt = sign({ sessionId: session.id }, secret, {
+		expiresIn: "2h",
+		algorithm: "RS256",
+	});
 
-    const jwt = sign({ sessionId: session.id }, secret, {
-        expiresIn: "2h",
-        algorithm: 'RS256'
-    });
-
-    return res.status(200).json({ status: "Logged in", token: jwt });
+	return res.status(200).json({ status: "Logged in", token: jwt });
 }

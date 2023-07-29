@@ -25,7 +25,7 @@ export const loadAllEventsCount = async (): Promise<number> => {
  * @returns Every event in the database
  */
 export const loadAllEvents = async () => {
-	return await client.event.findMany({include: {place: true}});
+	return await client.event.findMany({ include: { place: true } });
 };
 
 /**
@@ -134,14 +134,20 @@ export const loadFullDocuments = async <T extends DocumentCategory>(
 	type: T,
 ) => {
 	if (type === DocumentCategory.MANUSCRIPT) {
-		const manuscripts = await client.manuscript.findMany({include: {from: true, to: true, event: true}});
-		return manuscripts 
+		const manuscripts = await client.manuscript.findMany({
+			include: { from: true, to: true, event: true },
+		});
+		return manuscripts;
 	} else if (type === DocumentCategory.PRINT) {
-		const prints = await client.print.findMany({include: {place: true, event: true}});
-		return prints 
+		const prints = await client.print.findMany({
+			include: { place: true, event: true },
+		});
+		return prints;
 	} else if (type === DocumentCategory.IMAGE) {
-		const images = await client.image.findMany({include: {place: true, event: true}});
-		return images
+		const images = await client.image.findMany({
+			include: { place: true, event: true },
+		});
+		return images;
 	}
 	return [];
 };

@@ -130,13 +130,18 @@ export type DocToCategory<T extends RefinedContents> = T extends Image
 	: Never;
 
 /** Transform document category type into document type. */
-export type CategoryToDoc<T extends DocumentCategory & ({event: Event | null, place: Place | null} | {event: Event | null, to: Place | null, from: Place | null})> =
-	T extends DocumentCategories["IMAGE"]
-	? (Image & {event: Event | null, place: Place | null})
+export type CategoryToDoc<
+	T extends DocumentCategory &
+		(
+			| { event: Event | null; place: Place | null }
+			| { event: Event | null; to: Place | null; from: Place | null }
+		),
+> = T extends DocumentCategories["IMAGE"]
+	? Image & { event: Event | null; place: Place | null }
 	: T extends DocumentCategories["MANUSCRIPT"]
-	? (Manuscript & {event: Event | null, to: Place | null, from: Place | null})
+	? Manuscript & { event: Event | null; to: Place | null; from: Place | null }
 	: T extends DocumentCategories["PRINT"]
-	? (Print & {event: Event | null, place: Place | null})
+	? Print & { event: Event | null; place: Place | null }
 	: Never;
 
 /** A callable that transforms an object of the `Raw` type into its `Refined` version. */

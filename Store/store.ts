@@ -1,9 +1,27 @@
 import { set } from "react-hook-form";
 import { create } from "zustand";
 
-import { combine } from 'zustand/middleware'
+import { combine } from "zustand/middleware";
 
-export const useStore = create((set) => ({
+type Store = {
+  isSelectedCountry: boolean;
+  isSelectedEvent: boolean;
+  isSelectedDocument: boolean;
+  selectedCountry: string;
+  sidebarVisible: boolean;
+  sidebarOpen: boolean;
+
+  setSelectedCountry: () => void;
+  deselectCountry: () => void;
+  setSelectedEvent: () => void;
+  deselectEvent: () => void;
+  setSelectedDocument: () => void;
+  setDeselectedDocument: () => void;
+  setSidebarVisible: (state: boolean) => void;
+  setSidebarOpen: (state: boolean) => void;
+}
+
+export const useStore = create<Store>((set) => ({
   isSelectedCountry: false,
   isSelectedEvent: false,
   isSelectedDocument: false,
@@ -42,11 +60,10 @@ export const useStore = create((set) => ({
   },
 }));
 
-
-
-export const LayoutStore = create(combine({show: true}, (set) => ({
-  setShow: (newsState: boolean) => {
-    set({ show: newsState });
-  }
-}))
-)
+export const LayoutStore = create(
+  combine({ show: true }, (set) => ({
+    setShow: (newsState: boolean) => {
+      set({ show: newsState });
+    },
+  })),
+);
