@@ -28,21 +28,24 @@ type Print = PrintT & { place: Place };
 type Manuscript = ManuscriptT & { to?: Place; from: Place };
 
 export const getServerSideProps = async () => {
-  const events = await loadAllEvents();
-  const manuscripts = (await loadFullDocuments(
-    DocumentCategory.MANUSCRIPT
-  )) as Manuscript[];
-  const prints = (await loadFullDocuments(DocumentCategory.PRINT)) as Print[];
-  const images = (await loadFullDocuments(
-    DocumentCategory.IMAGE
-  )) as ImageType[];
+  const eventsP = await loadAllEvents();
+  const manuscriptsP = loadFullDocuments(DocumentCategory.MANUSCRIPT);
+  const printsP = loadFullDocuments(DocumentCategory.PRINT);
+  const imagesP = loadFullDocuments(DocumentCategory.IMAGE);
+
+  const [events, manuscripts, prints, images] = await Promise.all([
+    eventsP,
+    manuscriptsP,
+    printsP,
+    imagesP,
+  ]);
 
   return {
     props: {
       events: events,
-      manuscripts: manuscripts,
-      prints: prints,
-      images: images,
+      manuscripts: manuscripts as Manuscript[],
+      prints: prints as Print[],
+      images: images as ImageType[],
     },
   };
 };
