@@ -9,10 +9,14 @@ import Modal from "./modal";
 
 import { useStore } from "../../Store/store";
 import { useDocumentStore } from "../../Store/documentStore";
-import { Image as ImageType, Manuscript, Print } from "@prisma/client";
-import ManuscriptCard from "./manuscript_card";
+import { Image as ImageType, Manuscript, Print, Place } from "@prisma/client";
+import { type } from "os";
 
-export default function Sidebar({ open }) {
+type ImageData = ImageType & { place: Place };
+type ManuscriptData = Manuscript & { to?: Place; from: Place };
+type PrintData = Print & { place: Place };
+
+export default function Sidebar() {
   const setDeselectedDocument = useStore(
     (state) => state.setDeselectedDocument
   );
@@ -46,6 +50,9 @@ export default function Sidebar({ open }) {
   const sidebarClass = sidebarOpen ? style.sidebarOpen : style.sidebarClosed;
 
   const [isModalOpen, setModalOpen] = useState(false);
+  const [doc, setDoc] = useState<ManuscriptData | PrintData | ImageData | undefined>(
+    undefined
+  );
 
   const concatenated = filteredImageFromMap.concat(filteredPrintFromMap);
 
@@ -138,14 +145,14 @@ export default function Sidebar({ open }) {
           />
         </button>
 
-        <Modal isOpen={isModalOpen} onClose={closeModal} />
+        {(doc !== undefined) && <Modal isOpen={isModalOpen} onClose={closeModal} data={doc} />}
         <ul className={style.contentContainer}>
           {filteredImageFromMap.map((image) => (
             <>
               <li
                 className={style.contentItem}
-                onClick={() => openModal()}
-                onKeyUp={() => openModal()}
+                onClick={() => {openModal(); setDoc(image)}}
+                onKeyUp={() => {openModal(); setDoc(image)}}
               >
                 <p>{`Image from ${image.author}`}</p>
                 <div className={style.contentItemDetails}>
@@ -159,8 +166,8 @@ export default function Sidebar({ open }) {
             <>
               <li
                 className={style.contentItem}
-                onClick={() => openModal()}
-                onKeyUp={() => openModal()}
+                onClick={() => {openModal(); setDoc(manuscript)}}
+                onKeyUp={() => {openModal(); setDoc(manuscript)}}
               >
                 <p>{`Manuscript from ${manuscript.author}`}</p>
                 <div className={style.contentItemDetails}>
@@ -174,8 +181,8 @@ export default function Sidebar({ open }) {
             <>
               <li
                 className={style.contentItem}
-                onClick={() => openModal()}
-                onKeyUp={() => openModal()}
+                onClick={() => {openModal(); setDoc(print)}}
+                onKeyUp={() => {openModal(); setDoc(print)}}
               >
                 <p>{`Print from ${print.author}`}</p>
                 <div className={style.contentItemDetails}>

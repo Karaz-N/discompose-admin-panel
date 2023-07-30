@@ -207,7 +207,7 @@ export const isRawPrint = (value: RawContentType): value is RawPrint => {
  *
  * @returns `true` if the value is a `Manuscript`, `false` otherwise.
  */
-export const isManuscript = (value: RefinedContents): value is Manuscript => {
+export const isManuscript = (value: {}): value is Manuscript => {
 	return "archive" in value;
 };
 
@@ -218,7 +218,7 @@ export const isManuscript = (value: RefinedContents): value is Manuscript => {
  *
  * @returns `true` if the value is a `Image`, `false` otherwise.
  */
-export const isImage = (value: RefinedContents): value is Image => {
+export const isImage = (value: {}): value is Image => {
 	return "museum" in value;
 };
 
@@ -229,6 +229,6 @@ export const isImage = (value: RefinedContents): value is Image => {
  *
  * @returns `true` if the value is a `Print`, `false` otherwise.
  */
-export const isPrint = (value: RefinedContents): value is Print => {
+export const isPrint = (value: {}): value is Print => {
 	return "USTC" in value;
 };

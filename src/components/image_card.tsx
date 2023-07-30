@@ -2,20 +2,20 @@ import React from "react";
 import style from "../styles/ManuscriptCard.module.css";
 import Image from "next/image";
 
-import { Manuscript as ManuscriptType, Place } from "@prisma/client";
+import { Image as ImageType, Place } from "@prisma/client";
 
-type Manuscript = ManuscriptType & { to?: Place; from: Place };
+type ImageData = ImageType & { place: Place };
 
-type ManuscriptCardProps = {
-  manuscript: Manuscript;
+type ImageCardProps = {
+  imageData: ImageData;
   onClose: () => void;
 }
 
-export default function ManuscriptCard({ onClose, manuscript } : ManuscriptCardProps) {
+export default function ImageCard({ onClose, imageData } : ImageCardProps) {
   return (
     <>
       <article className={style.container}>
-        <h1>{`Manuscript from ${manuscript.author || "-"}`}</h1>
+        <h1>{`Image from ${imageData.author || "-"}`}</h1>
 
         <nav className={style.lastColumn}>
           <button type="button">
@@ -44,39 +44,39 @@ export default function ManuscriptCard({ onClose, manuscript } : ManuscriptCardP
         <ul className={`${style.wideItem}`}>
           <li>
             <p>Author</p>
-            <p>{manuscript.author || "-"}</p>
+            <p>{imageData.author || "-"}</p>
           </li>
           <li>
-            <p>Departure Place</p>
-            <p>{manuscript.from?.name || "-"}</p>
+            <p>Title</p>
+            <p>{imageData.title || "-"}</p>
           </li>
           <li>
-            <p>Date of Writing</p>
-            <p>{manuscript.writtenAt || "-"}</p>
+            <p>Artist</p>
+            <p>{imageData.artist || "-"}</p>
           </li>
           <li>
-            <p>Recipient</p>
-            <p>{manuscript.recipient || "-"}</p>
+            <p>Museum</p>
+            <p>{imageData.museum || "-"}</p>
           </li>
           <li>
-            <p>Language</p>
-            <p>{manuscript.language || "-"}</p>
+            <p>Data</p>
+            <p>{imageData.date || "-"}</p>
           </li>
           <li>
-            <p>Archive</p>
-            <p>{manuscript.archive || "-"}</p>
+            <p>Place</p>
+            <p>{imageData.place.name || "-"}</p>
           </li>
           <li>
-            <p>Arrival Place</p>
-            <p>{manuscript.to?.name || "-"}</p>
+            <p>Content</p>
+            <p>{imageData.content || "-"}</p>
           </li>
           <li>
-            <p>Date of Receipt</p>
-            <p>{manuscript.receivedAt || "-"}</p>
+            <p>Summary</p>
+            <p>{imageData.summary || "-"}</p>
           </li>
           <li>
             <p>Link</p>
-            <p>{manuscript.link || "-"}</p>
+            <p>{imageData.link || "-"}</p>
           </li>
         </ul>
       </article>
