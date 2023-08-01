@@ -34,8 +34,8 @@ export default function ManuscriptCard({ onClose, manuscript } : ManuscriptCardP
           >
             <Image
               src={"/images/closeDocument.svg"}
-              width={10}
-              height={10}
+              width={14}
+              height={14}
               alt="close document card"
             />
           </button>

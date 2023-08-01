@@ -77,6 +77,12 @@
     overflow-y: auto;
 }
 
+.contentContainer p:not(:last-child){
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .contentItem {
     width: 350px;
     height: auto;

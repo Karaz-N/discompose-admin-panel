@@ -60,6 +60,8 @@ export default function Map() {
   );
   const filteredManuscript = useStore((state) => state.filteredManuscript);
 
+  const sidebarOpen = useStore((state) => state.sidebarOpen);
+
   const stileGeoJSON = (feature) => {
     const codiceISO_A2 = feature.properties.ISO_A2; // Presume che la proprietà "iso_a2" nella GeoJSON contenga i codici ISO_A2 dei paesi
     if (iso.includes(codiceISO_A2)) {
@@ -185,11 +187,11 @@ export default function Map() {
           zIndex: 0,
         }}
       >
-        {!isSelectedDocument && <Reverse />}
+        {!isSelectedDocument && !sidebarOpen && <Reverse />}
 
-        <button type="submit" onClick={() => console.log(filteredManuscript)}>
+        {/* <button type="submit" onClick={() => console.log(filteredManuscript)}>
           ciao
-        </button>
+        </button> */}
 
         <GeoJSON
           key={countrySelected}

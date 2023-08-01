@@ -59,6 +59,7 @@ export default function Home(props: MapProps) {
   const isSelectedEvent = useStore((state) => state.isSelectedEvent);
   const isSelectedDocument = useStore((state) => state.isSelectedDocument);
   const sidebarVisible = useStore((state) => state.sidebarVisible);
+  const sidebarOpen = useStore((state) => state.sidebarOpen);
 
   const setIso = useFilterStore((state) => state.setIso);
   const addEvents = useFilterStore((state) => state.addEvents);
@@ -82,7 +83,7 @@ export default function Home(props: MapProps) {
 
       {!isSelectedCountry && <BannerText />}
 
-      {!isSelectedDocument && (
+      {!isSelectedDocument && !sidebarOpen && (
         <Image
           className={style.logoDivOverlay}
           src="/logo_discompose.svg"
@@ -94,7 +95,7 @@ export default function Home(props: MapProps) {
 
       {/*<div className={style.divOverlay}>Prova di un filtro</div>*/}
       {isSelectedCountry && !isSelectedEvent && <EventFilter />}
-      {isSelectedEvent && !isSelectedDocument && <DocumentFilter />}
+      {isSelectedEvent && !isSelectedDocument && !sidebarOpen && <DocumentFilter />}
       <div className={style.mapModule}>
         <Map open={open} />
       </div>
