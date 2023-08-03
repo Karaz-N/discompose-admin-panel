@@ -2,8 +2,8 @@
     position: absolute;
     width: 306px;
     height: 260px;
-    right: 2rem;
-    top: 15rem;
+    right: 0;
+    top: 6rem;
     z-index: 10000;
 }
 
@@ -11,15 +11,21 @@
     list-style: none;
     cursor: pointer;
     height: 40px;
+    width: 270px;
     color: #323232;
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
     background: white;
     align-items: center;
     display: flex;
 
     box-sizing: border-box;
     border: 1px solid #000000;
+}
+
+.eventDivOverlay li img{
+    margin-right: 10px;
 }
 
 .eventDivOverlay li.item0 {
@@ -75,26 +81,3 @@
 .image1 {
     content: url("/marker/earthquake_marker.svg");
 }
-
-
-/*
-.eventDivOverlay li.item0 {
-    border: 2px solid #323232;
-}
-
-.eventDivOverlay li.item1 {
-    border: 2px solid #00770C;
-}
-
-.eventDivOverlay li.item2 {
-    border: 2px solid #009ABC;
-}
-
-.eventDivOverlay li.item3 {
-    border: 2px solid #203EA9;
-}
-
-.eventDivOverlay li.item4 {
-    border: 2px solid #A92820;
-}
-*/

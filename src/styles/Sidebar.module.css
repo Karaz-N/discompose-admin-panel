@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
 .closeButton {
     position: absolute;
@@ -19,7 +20,7 @@
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
-    
+
 }
 
 .sidebarContainer {
@@ -67,6 +68,16 @@
     flex-direction: column;
     align-items: center;
     padding-top: 10%;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.headContainer h2::first-letter{
+    font-size: 30px;
 }
 
 .contentContainer {
@@ -77,7 +88,7 @@
     overflow-y: auto;
 }
 
-.contentContainer p:not(:last-child){
+.contentContainer p:not(:last-child) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

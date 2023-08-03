@@ -27,7 +27,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     },
   ];
 
-  if (router.pathname === "/map" || router.pathname === "/login") {
+  if (router.pathname === "/map" || router.pathname === "/login" || router.pathname === "/home") {
     return <>{children}</>;
   } else {
     return (
