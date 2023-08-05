@@ -16,6 +16,22 @@
   animation: ripple 1s infinite ease-in-out; /* Animazione "ripple" di 1 secondo */
 }
 
+.documentEruptionMarker{
+  filter: invert(15%) sepia(79%) saturate(2798%) hue-rotate(350deg) brightness(101%) contrast(87%);
+}
+
+.documentFloodMarker{
+  filter: invert(17%) sepia(35%) saturate(6743%) hue-rotate(223deg) brightness(88%) contrast(85%);
+}
+
+.documentHurricaneMarker{
+  filter: invert(37%) sepia(62%) saturate(1669%) hue-rotate(161deg) brightness(97%) contrast(101%);
+}
+
+.documentEarthquakeMarker{
+  filter: invert(28%) sepia(65%) saturate(1259%) hue-rotate(93deg) brightness(97%) contrast(106%);
+}
+
 /* L'animazione "ripple" è definita come segue */
 @keyframes ripple {
   0% {

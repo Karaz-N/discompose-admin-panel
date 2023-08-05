@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/ManuscriptCard.module.css";
+import style from "../styles/ImageCard.module.css";
 import Image from "next/image";
 
 import { Image as ImageType, Place } from "@prisma/client";
@@ -34,8 +34,8 @@ export default function ImageCard({ onClose, imageData } : ImageCardProps) {
           >
             <Image
               src={"/images/closeDocument.svg"}
-              width={10}
-              height={10}
+              width={14}
+              height={14}
               alt="close document card"
             />
           </button>

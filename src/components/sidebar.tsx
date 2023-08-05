@@ -192,7 +192,7 @@ export default function Sidebar() {
               </li>
             </>
           ))}
-
+{/* 
           <button
             type="button"
             onClick={() => {
@@ -204,7 +204,7 @@ export default function Sidebar() {
             }}
           >
             ciao
-          </button>
+          </button> */}
         </ul>
       </div>
     </aside>

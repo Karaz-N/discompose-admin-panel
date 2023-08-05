@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.mainContainer {
+    background-color: #EEEEEE;
+    overflow-x: hidden;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.article h1 {
+    text-transform: uppercase;
+    align-self: flex-start;
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 680%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+.article h2 {
+    text-transform: uppercase;
+    color: #323232;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+.articleContainer {
+    max-width: 100%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 10%;
+    position: relative;
+}
+
+.articleContainer p {
+    width: 540px;
+    max-width: calc(100vw / 2);
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.firstImg {
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: auto;
+    top: 48%;
+    right: -15%;
+    z-index: 2;
+}
+
+.secondImg {
+    position: absolute;
+    display: block;
+    width: 60%;
+    height: auto;
+    top: 130%;
+    left: 0;
+    z-index: 1;
+}
+
+.articleContainer span {
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.specialContent {
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.externalLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.externalLink:hover {
+    border-bottom: 1px solid #323232;
+}
+
+.secondaryContainer {
+    margin-top: 20%;
+    margin-right: 8%;
+    width: 510px;
+    align-self: flex-end;
+}
+
+.secondaryTextContainer {
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.thirdContainer {
+    width: 829px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 3%;
+    position: relative;
+}
+
+.thirdContainer p {
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.thirdContainer img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    height: auto;
+    top: -205%;
+    left: -93%;
+    z-index: 1;
+}
+
+.subArticle {
+    color: #323232;
+    text-align: center;
+    margin-top: 25%;
+    width: 70rem;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    height: auto;
+}
+
+.circolationMap {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+    margin-bottom: 20%;
+}
+
+.dataWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dataRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.data {
+    color: #A92820;
+    font-family: Montserrat;
+    font-size: 77.518px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.876px;
+}
+
+.dataType {
+    text-transform: uppercase;
+    color: #323232;
+    font-family: Cormorant Garamond;
+    font-size: 38.306px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.915px;
+}
+
+.tempImg {
+    filter: invert(1);
+}
+
+/* Da 1440px a 1024px */
+@media (max-width: 1639px) {
+    .secondaryContainer {
+        margin-right: -10%;
+    }
+}
+
+/* Da 1024px a 768px */
+@media (max-width: 1024px) {
+
+    .article h1 {
+        text-transform: uppercase;
+        align-self: flex-start;
+        color: #323232;
+        font-family: Montserrat;
+        font-size: 480%;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 5px;
+        z-index: 2;
+    }
+
+    .article h2 {
+        text-transform: uppercase;
+        color: #323232;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 5px;
+        z-index: 2;
+    }
+
+    .articleContainer {
+        max-width: 100%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 5%;
+        position: relative;
+    }
+
+    .articleContainer p {
+        width: 440px;
+        max-width: calc(100vw / 2);
+        color: #323232;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1px;
+    }
+
+    .externalLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #323232;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+
+    .secondaryContainer {
+        width: 400px;
+    }
+
+    .secondaryTextContainer {
+        font-size: 16px;
+    }
+
+    .firstImg {
+        position: absolute;
+        display: block;
+        width: 55%;
+        height: auto;
+        top: 65%;
+        right: -5%;
+        z-index: 2;
+    }
+
+    .secondImg {
+        position: absolute;
+        display: block;
+        width: 55%;
+        height: auto;
+        top: 110%;
+        left: 4%;
+        z-index: 1;
+    }
+}
+
+/* Da 768px a 425px */
+@media (max-width: 767px) {
+    /* Inserisci qui le regole CSS per questo intervallo */
+}

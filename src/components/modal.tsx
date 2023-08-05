@@ -33,15 +33,15 @@ const Modal = ({ isOpen, onClose, data }: ModalProps) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden"; // Impedisce lo scrolling di sfondo quando la modale è aperta
-	  console.log(data);
+	  // console.log(data);
     } else {
       document.body.style.overflow = ""; // Ripristina lo scrolling di sfondo quando la modale è chiusa
-	  console.log(data);
+	  // console.log(data);
     }
   }, [isOpen]);
 
   return (
-    <div className={`${styles["modal-container"]} ${isOpen && styles.show}`}>
+    <div className={`${styles["modal-container"]} ${isOpen ? styles.show : ""}`}>
       <div className={`${styles.modal}`}>
         {isManuscript(data) && (
           <ManuscriptCard onClose={handleModalClose} manuscript={data} />
