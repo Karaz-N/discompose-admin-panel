@@ -1,6 +1,7 @@
 import { client } from "../../db";
 import { User, Session } from "@prisma/client";
 import { JwtPayload, verify } from "jsonwebtoken";
+import { setCookie } from 'cookies-next';
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
@@ -34,6 +35,11 @@ export default async function handler(
 		data: {
 			duration: 0,
 		},
+	});
+
+	setCookie("_session", "", {
+		httpOnly: true,
+		maxAge: 0,
 	});
 
 	return res.status(200).json({ status: "Succesfully logged out" });

@@ -2,23 +2,34 @@ import { client } from "../../db";
 import { User, Session } from "@prisma/client";
 import { sign } from "jsonwebtoken";
 import * as crypto from "crypto";
+import { setCookie } from 'cookies-next';
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
 	req: NextApiRequest,
-	res: NextApiResponse<{ status: String; token?: String }>,
+	res: NextApiResponse<{ status: string; token?: string; }>,
 ) {
 	const { method } = req;
+
+	const body = JSON.parse(req.body)
 
 	if (method !== "POST") {
 		return res.status(405).json({ status: "Method not allowed" });
 	}
 
-	const { email, password }: { email?: string; password?: string } = req.body;
+	const { email, password }: { email?: string; password?: string } = body;
 
 	if (!email || !password) {
 		return res.status(422).json({ status: "Email and password are required" });
 	}
+
+	const secret = process.env.JWT_SECRET || "SECRET NOT FOUND PLEASE UPDATE";
+
+	const encrypted = crypto
+		.createHmac("sha256", secret)
+		.update(password)
+		.digest("hex");
+
 
 	const user = await client.user.findUnique({
 		where: {
@@ -30,15 +41,8 @@ export default async function handler(
 		return res.status(422).json({ status: "Invalid credentials" });
 	}
 
-	const secret = process.env.JWT_SECRET || "SECRET NOT FOUND PLEASE UPDATE";
-
-	const encrypted = crypto
-		.createHmac("sha256", secret)
-		.update(password)
-		.digest("hex");
-
 	if (user.password !== encrypted) {
-		return res.status(422).json({ status: "Invalid credentials" });
+		return res.status(422).json({ status: "Password does not match" });
 	}
 
 	const session = await client.session.create({
@@ -52,9 +56,13 @@ export default async function handler(
 	});
 
 	const jwt = sign({ sessionId: session.id }, secret, {
-		expiresIn: "2h",
-		algorithm: "RS256",
+		expiresIn: "24h",
+		algorithm: "HS256",
 	});
+
+	console.log("TOKEN", jwt)
+
+
 
 	return res.status(200).json({ status: "Logged in", token: jwt });
 }
