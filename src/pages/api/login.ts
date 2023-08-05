@@ -4,6 +4,7 @@ import { sign } from "jsonwebtoken";
 import * as crypto from "crypto";
 import { setCookie } from 'cookies-next';
 import { NextApiRequest, NextApiResponse } from "next";
+import { panic } from "../../utils";
 
 export default async function handler(
 	req: NextApiRequest,
@@ -23,7 +24,7 @@ export default async function handler(
 		return res.status(422).json({ status: "Email and password are required" });
 	}
 
-	const secret = process.env.JWT_SECRET || "SECRET NOT FOUND PLEASE UPDATE";
+	const secret = process.env.JWT_SECRET || panic("SECRET NOT FOUND PLEASE UPDATE");
 
 	const encrypted = crypto
 		.createHmac("sha256", secret)
@@ -63,6 +64,7 @@ export default async function handler(
 	console.log("TOKEN", jwt)
 
 
+	res.setHeader('Set-Cookie', jwt)
 
 	return res.status(200).json({ status: "Logged in", token: jwt });
 }

@@ -4,10 +4,11 @@ import { sign } from "jsonwebtoken";
 import * as crypto from "crypto";
 import { setCookie } from 'cookies-next';
 import { NextApiRequest, NextApiResponse } from "next";
+import { panic } from "../../utils";
 
 export default async function handler(
 	req: NextApiRequest,
-	res: NextApiResponse<{ status: String; }>,
+	res: NextApiResponse<{ status: String; token?: string }>,
 ) {
 
 	const { method } = req;
@@ -28,7 +29,7 @@ export default async function handler(
 			.json({ status: "Email, username and password are required" });
 	}
 
-	const secret = process.env.JWT_SECRET || "SECRET NOT FOUND PLEASE UPDATE";
+	const secret = process.env.JWT_SECRET || panic("SECRET NOT FOUND PLEASE UPDATE");
 
 	const encrypted = crypto
 		.createHmac("sha256", secret)
@@ -58,10 +59,7 @@ export default async function handler(
 		algorithm: "RS256",
 	});
 
-	setCookie("_session", jwt, {
-		httpOnly: true,
-		maxAge: 24 * 60 * 60,
-	});
+	res.setHeader('Set-Cookie', jwt)
 
-	return res.status(200).json({ status: "Logged in" });
+	return res.status(200).json({ status: "Logged in", token: jwt });
 }

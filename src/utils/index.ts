@@ -1,3 +1,5 @@
+
+
 /**
  * Placeholder for a function that returns a value of type T.
  *
@@ -34,3 +36,8 @@ export const atodo = async <T>(): Promise<T> => {
 
 /** No reason why this type would be lower-case! */
 export type Never = never;
+
+
+export const panic = (message: string): never => {
+	throw new Error(message);
+}
