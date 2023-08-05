@@ -1,40 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+.boiler {
+    background-color: #EEEEEE;
+}
 
 .article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 
 .article h1 {
     text-transform: uppercase;
     color: #323232;
     font-family: Montserrat;
-    font-size: 140.411px;
+    font-size: 680%;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 7.021px;
-    margin-right: 45rem;
+    letter-spacing: 7px;
+    align-self: flex-start;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-.subtitle {
+.article h2 {
     text-transform: uppercase;
     color: #323232;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 140.411px;
+    font-size: 140px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 7.021px;
+    letter-spacing: 7px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3%;
+    gap: 50px
+}
+
+.internalSectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .content {
-    width: 540px;
-    height: 323px;
-    flex-shrink: 0;
+    width: auto;
+    max-width: calc(100vw / 2);
+    height: auto;
     color: #323232;
     font-family: Montserrat;
     font-size: 20px;
@@ -44,15 +68,7 @@
     letter-spacing: 1px;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10%;
-    gap: 50px
-}
-
-.externalLink {
+.specialContent {
     color: #323232;
     font-family: Montserrat;
     font-size: 20px;
@@ -60,13 +76,129 @@
     font-weight: bold;
     line-height: normal;
     letter-spacing: 1px;
-    width: 432px;
-    flex-shrink: 0;
-    padding: auto;
 }
 
-.internalSectionContainer{
+
+
+.externalLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.externalLink:hover {
+    border-bottom: 1px solid #323232;
+}
+
+
+
+.mapImage {
+    filter: invert(1);
+}
+
+.secondArticle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.secondaryText {
+    width: auto;
+    max-width: 100%;
+    height: 235px;
+    color: #323232;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+    margin-top: 15%;
+}
+
+.highlitedText {
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+}
+
+.circolationMap {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.prova {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+    margin-bottom: 20%;
+}
+
+.prova2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prova3 {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.data {
+    color: #A92820;
+    font-family: Montserrat;
+    font-size: 77.518px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.876px;
+}
+
+.dataType {
+    text-transform: uppercase;
+    color: #323232;
+    font-family: Cormorant Garamond;
+    font-size: 38.306px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.915px;
+}
+
+
+
+.secondSectionContent {
+    width: auto;
+    max-width: calc(100vw / 2);
+    height: 323px;
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    position: relative;
 }
