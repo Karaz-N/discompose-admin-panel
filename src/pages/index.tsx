@@ -9,6 +9,7 @@ import {
   loadAllEvents,
 } from "../db/queries";
 import { DocumentCategory, EventType } from "@prisma/client";
+import { useRouter } from "next/router";
 
 export const getServerSideProps = async () => {
   const allEventCount = loadAllEventsCount();
@@ -70,8 +71,13 @@ export const getServerSideProps = async () => {
 type HomeProps = Awaited<ReturnType<typeof getServerSideProps>>["props"];
 
 export default function Home(props: HomeProps) {
+  const { push } = useRouter();
   useEffect(() => {
     console.log(props.alloEvents);
+    if(!sessionStorage.getItem("CATALDO")){
+      
+      push("/login");
+    }
   });
   return (
     <Suspense fallback={<div>Loading...</div>}>

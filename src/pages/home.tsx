@@ -159,8 +159,8 @@ const Homepage = () => {
 
 			<footer>
 				<Image
-					className={style.tempImg}
-					src="/homepage_assets/footer_img.svg"
+					// className={style.tempImg}
+					src="/homepage_assets/footer_img.png"
 					alt="discompose-logo"
 					width={1921}
 					height={10}

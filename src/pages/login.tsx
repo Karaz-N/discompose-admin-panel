@@ -13,9 +13,10 @@ export default function Login() {
 
   return (
     <div className={style.container}>
-      <div className={style.sideImg}>Ciao</div>
+      
       <div className={style.login}>
-        <h2>Login</h2>
+        <h1>discompose</h1>
+        <h2>admin panel</h2>
         <form
           method="post"
           onSubmit={handleSubmit(async (data) => {
@@ -48,7 +49,7 @@ export default function Login() {
             type="password"
           />
           <button type="submit" value="submit">
-            Login
+            Accedi
           </button>
         </form>
       </div>
