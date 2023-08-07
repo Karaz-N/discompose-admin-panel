@@ -173,6 +173,7 @@ const Homepage = () => {
 					news and collect insightful information about the registered
 					documents!
 				</p>
+				<button type="button" className={style.mapButton}>vistin interactive map</button>
 			</footer>
 		</div>
 	);
