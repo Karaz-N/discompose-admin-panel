@@ -34,45 +34,28 @@
     letter-spacing: 6.4px;
     text-transform: uppercase;
     position: relative;
-    /* Per posizionare i pseudo-elementi rispetto all'h1 */
-    display: inline-block;
-    /* Per far sì che l'h1 abbia la larghezza solo del contenuto */
-    padding-bottom: 8px;
     padding-top: 30px;
 }
 
-.login h1::before {
-    content: '';
-    /* È necessario specificare il contenuto anche se vuoto */
+.login h1::after {
+    content: "";
     position: absolute;
-    /* Posiziona il bordo rispetto all'h1 */
-    bottom: 0;
-    /* Posiziona il bordo all'estremità inferiore dell'h1 */
-    left: 20%;
-    /* Modifica il valore per spostare il bordo più a sinistra o destra */
-    width: 60%;
-    /* Modifica la larghezza per controllare la lunghezza del bordo */
-    height: 2px;
-    /* Spessore del bordo */
-    background-color: black;
-    /* Colore del bordo */
+    bottom: -10px;
+    /* Regola questa proprietà per spostare il bordo in alto o in basso */
+    width: 50%;
+    /* Regola la lunghezza del bordo appuntito */
+    height: 0;
+    border-top: 2px solid #323232;
+    /* Colore e spessore del bordo */
+    transform: skewX(91deg);
+    /* Applica la trasformazione per ottenere l'effetto appuntito */
 }
 
 /* Pseudo-elemento dopo (::after) per creare l'effetto di assottigliamento ai lati */
 
 .login h1::after {
-    content: '';
-    /* È necessario specificare il contenuto anche se vuoto */
-    position: absolute;
-    /* Posiziona il bordo rispetto all'h1 */
-    bottom: 0;
-    /* Posiziona il bordo all'estremità inferiore dell'h1 */
-    left: 0;
-    right: 0;
-    height: 2px;
-    /* Spessore del bordo */
-    background: linear-gradient(to right, transparent, black, transparent);
-    /* Gradiente per l'effetto di assottigliamento */
+    right: 25%;
+    /* Sposta il bordo a destra */
 }
 
 .login h2 {

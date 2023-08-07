@@ -1,9 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #EEEEEE;
+    height: 100vh;
+    position: relative;
+}
+
+.headerImg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.headerContainer h1 {
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.headerContainer h2 {
+    color: #323232;
+    font-family: Cormorant Garamond;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 10px;
+}
+
+.headerContainer h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /* Regola questa proprietà per spostare il bordo in alto o in basso */
+    width: 50%;
+    /* Regola la lunghezza del bordo appuntito */
+    height: 0;
+    border-top: 2px solid #323232;
+    /* Colore e spessore del bordo */
+    transform: skewX(91deg);
+    /* Applica la trasformazione per ottenere l'effetto appuntito */
+}
+
+/* Regola la posizione del bordo per h1 */
+.headerContainer h1::after {
+    right: 25%;
+    /* Sposta il bordo a destra */
+}
+
+
 .mainContainer {
     background-color: #EEEEEE;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .article {
@@ -171,7 +236,7 @@
 .subArticle {
     color: #323232;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 20%;
     width: 70rem;
     text-align: center;
     font-family: Montserrat;
@@ -234,8 +299,53 @@
     letter-spacing: 1.915px;
 }
 
-.tempImg {
-    filter: invert(1);
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/homepage_assets/bg_footer.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 10%;
+}
+
+.footerContainer h1 {
+    align-self: flex-start;
+    color: #EEEEEE;
+    font-family: Montserrat;
+    font-size: 140.411px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 7.021px;
+    text-transform: uppercase;
+}
+
+.footerContainer h2 {
+    color: #EEEEEE;
+    font-family: Cormorant Garamond;
+    font-size: 140.411px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 7.021px;
+    text-transform: uppercase;
+}
+
+.footerContainer p {
+    width: 866px;
+    height: 96px;
+    color: #EEEEEE;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: 1px;
+    margin-top: 50px;
 }
 
 /* Da 1440px a 1024px */

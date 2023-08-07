@@ -5,6 +5,15 @@ import style from "../styles/HomepageVariant.module.css";
 const Homepage = () => {
 	return (
 		<div className={style.mainContainer}>
+			<header className={style.headerContainer}>
+				<h1>discompose</h1>
+				<h2>pathways</h2>
+				<img
+					src="/homepage_assets/complete_volcano.png"
+					alt="Background"
+					className={style.headerImg}
+				/>
+			</header>
 			<article className={style.article}>
 				<h1>about the</h1>
 				<h2>pathways</h2>
@@ -94,10 +103,7 @@ const Homepage = () => {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					<img
-						src="/homepage_assets/documents.svg"
-						alt="Prova"
-					/>
+					<img src="/homepage_assets/documents.svg" alt="Prova" />
 				</div>
 
 				<p className={style.subArticle}>
@@ -157,14 +163,16 @@ const Homepage = () => {
 				</div>
 			</article>
 
-			<footer>
-				<Image
-					// className={style.tempImg}
-					src="/homepage_assets/footer_img.png"
-					alt="discompose-logo"
-					width={1921}
-					height={10}
-				/>
+			<footer className={style.footerContainer}>
+				<h1>explore</h1>
+				<h2>the pathways</h2>
+				<p>
+					Navigate the interactive map and discover the natural disasters that
+					affected the territories of the Spanish Empire beetween the 15th and
+					18th centuries. Discover the pathways traced by the spreading of the
+					news and collect insightful information about the registered
+					documents!
+				</p>
 			</footer>
 		</div>
 	);
