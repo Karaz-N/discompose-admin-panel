@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.databaseContainer h1{
+    text-align: center;
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 30px;
+}
+
+.formContainer{
+    height: 77vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    background-color: #ffffff;
+    border: 1px solid #323232;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    width: 300px;
+    height: auto;
+    padding: 3%;
+    margin: 0 auto;
+}
+
+.formContainer form h1{
+    color: #323232;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 30px;
+}
+
+.formContainer input{
+    background-color: #EEEEEE;
+    border: 1px solid #323232;
+    border-radius: 4px;
+    padding: 2%;
+    margin-top: 10px;
+    font-family: Cormorant Garamond;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+}
+
+.formContainer button{
+    color: #EEEEEE;
+    background-color: #DC251A;
+    border-radius: 4px;
+    border: 1px solid #323232;
+    padding: 2%;
+    font-family: Cormorant Garamond;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.formContainer button:hover{
+    background-color: #e84a41;
+}

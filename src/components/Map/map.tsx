@@ -155,12 +155,6 @@ export default function Map() {
               }
             }}
           >
-            <Image
-              src="/images/back_button.svg"
-              alt="Turn Back"
-              width={55}
-              height={55}
-            />
           </button>
         )}
       </>

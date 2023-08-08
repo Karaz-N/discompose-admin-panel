@@ -349,6 +349,10 @@
 }
 
 .mapButton {
+    background-image: url('/homepage_assets/button_homepage.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 23rem;
     margin-top: 90px;
     padding: 1%;
     color: #EEEEEE;
@@ -360,13 +364,26 @@
     line-height: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
-    border: 2px solid #EEEEEE;
 }
 
-.mapButton:hover {
-    background-color: #EEEEEE;
-    color: #323232;
-    border: 2px solid #323232;
+.fixedMapButton{
+    width: auto;
+    padding: 1%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    background-color: #323232;
 }
 
 /* Da 1440px a 1024px */

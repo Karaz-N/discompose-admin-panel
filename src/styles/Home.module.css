@@ -17,11 +17,20 @@
 }
 
 .backDivOverlay {
+  background-image: url('/homepage_assets/back_button.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 55px;
   position: absolute;
   top: 6rem;
   left: 2rem;
   cursor: pointer;
   z-index: 10000;
+}
+
+.backDivOverlay:hover {
+  background-image: url('/homepage_assets/back_button_hover.svg');
 }
 
 /*.overlay {
@@ -52,7 +61,7 @@
   z-index: 1;
 }
 
-.zoomControl{
+.zoomControl {
   position: absolute;
   top: 100px;
   left: 100px;

@@ -1,10 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import style from "../styles/HomepageVariant.module.css";
+import { useRouter } from "next/router";
 
 const Homepage = () => {
+	const { push } = useRouter();
 	return (
 		<div className={style.mainContainer}>
+			<button
+				type="button"
+				className={style.fixedMapButton}
+				onClick={() => push("/map")}
+			>
+				go to map
+			</button>
 			<header className={style.headerContainer}>
 				<h1>discompose</h1>
 				<h2>pathways</h2>
@@ -173,7 +182,13 @@ const Homepage = () => {
 					news and collect insightful information about the registered
 					documents!
 				</p>
-				<button type="button" className={style.mapButton}>vistin interactive map</button>
+				<button
+					type="button"
+					className={style.mapButton}
+					onClick={() => push("/map")}
+				>
+					visit interactive map
+				</button>
 			</footer>
 		</div>
 	);
