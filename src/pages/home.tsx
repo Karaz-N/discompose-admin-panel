@@ -12,9 +12,9 @@ const Homepage = () => {
 				className={style.fixedMapButton}
 				onClick={() => push("/map")}
 			>
-				go to map
+				{"explore the pathways >"}
 			</button>
-			<header className={style.headerContainer}>
+			{/* <header className={style.headerContainer}>
 				<h1>discompose</h1>
 				<h2>pathways</h2>
 				<img
@@ -22,7 +22,7 @@ const Homepage = () => {
 					alt="Background"
 					className={style.headerImg}
 				/>
-			</header>
+			</header> */}
 			<article className={style.article}>
 				<h1>about the</h1>
 				<h2>pathways</h2>

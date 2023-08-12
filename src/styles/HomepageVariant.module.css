@@ -29,6 +29,8 @@
     letter-spacing: 6.4px;
     text-transform: uppercase;
     position: relative;
+
+    animation: fade-up 1s;
 }
 
 .headerContainer h2 {
@@ -42,6 +44,8 @@
     text-transform: uppercase;
     position: relative;
     margin-top: 10px;
+
+    animation: fade-down 1s;
 }
 
 .headerContainer h1::after {
@@ -77,6 +81,8 @@
     align-items: center;
     justify-content: center;
     padding: 5%;
+
+    animation: down-to-up 2s;
 }
 
 .article h1 {
@@ -90,6 +96,8 @@
     line-height: normal;
     letter-spacing: 5px;
     z-index: 2;
+
+    
 }
 
 .article h2 {
@@ -102,6 +110,8 @@
     line-height: normal;
     letter-spacing: 5px;
     z-index: 2;
+    
+    animation: down-to-up 2.2s;
 }
 
 .articleContainer {
@@ -113,6 +123,8 @@
     margin-right: 5%;
     gap: 10%;
     position: relative;
+
+    animation: down-to-up 2.4s;
 }
 
 .articleContainer p {
@@ -135,6 +147,8 @@
     top: 48%;
     right: -15%;
     z-index: 2;
+
+    animation: from-s-to-l 2.6s;
 }
 
 .secondImg {
@@ -145,6 +159,8 @@
     top: 130%;
     left: 0;
     z-index: 1;
+
+    animation: down-to-up 2.6s;
 }
 
 .articleContainer span {
@@ -369,7 +385,7 @@
 .fixedMapButton{
     width: auto;
     padding: 1%;
-    color: #EEEEEE;
+    color: #323232;
     text-align: center;
     font-family: Montserrat;
     font-size: 20px;
@@ -383,7 +399,53 @@
     right: 20px;
     cursor: pointer;
     z-index: 9999;
-    background-color: #323232;
+    background-color: #EEEEEE;
+    border: 1px solid #323232;
+}
+
+/*---ANIMATIONS---*/
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(0px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes down-to-up {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes from-s-to-l{
+    0% {
+        opacity: 0;
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: scale(0deg);
+    }
 }
 
 /* Da 1440px a 1024px */
