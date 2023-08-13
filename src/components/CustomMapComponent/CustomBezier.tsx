@@ -3,8 +3,8 @@ import * as turf from "@turf/turf";
 import { lineString, bezierSpline, bezier } from "@turf/turf";
 import { GeoJSON, Polyline } from "react-leaflet";
 import L from "leaflet";
-import style from "../../styles/Path.module.css";
 import ReactLeafletDriftMarker from "react-leaflet-drift-marker";
+import { useFilterStore } from "../../../Store/filterStore";
 
 const CustomBezier = ({
 	startLatitude,
@@ -20,6 +20,8 @@ const CustomBezier = ({
 		opacity: 1,
 		dashArray: "4, 5",
 	};
+
+	const trace = useFilterStore((state) => state.traceType);
 
 	/*All preliminar data for the construction of the bezier curve */
 	const controlPoint = [
@@ -70,29 +72,22 @@ const CustomBezier = ({
 	});
 
 	let iconUrl;
-	let iconSize = [12, 12]; // Dimensioni predefinite per l'icona
+	const iconSize = [12, 12]; // Dimensioni predefinite per l'icona
 
 	const customIcon = new L.Icon({
-		iconUrl: "/marker/path_marker/path_earthquake_marker.svg",
+		iconUrl: `/marker/path_marker/path_${trace}_marker.svg`,
 		iconSize,
 	});
 
 	return (
 		<>
-			{/* <button
-        onClick={() => {
-          console.log(path);
-        }}
-      >
-        ciao
-      </button> */}
 			<GeoJSON style={lineStyle} data={path} />
 			{isAnimated && (
 				<ReactLeafletDriftMarker
 					position={[path.coordinates[index][1], path.coordinates[index][0]]}
 					duration={5}
 					icon={customIcon}
-				></ReactLeafletDriftMarker>
+				/>
 			)}
 		</>
 	);

@@ -24,8 +24,14 @@
     border: 1px solid #000000;
 }
 
+/* .eventDivOverlay img{
+    background-color: aqua;
+    width: 10%;
+} */
+
 .eventDivOverlay li img{
     margin-right: 10px;
+    width: 8%;
 }
 
 .eventDivOverlay li.item0 {

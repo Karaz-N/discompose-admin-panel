@@ -101,12 +101,12 @@ export default function DocumentMarker() {
 											]}
 											eventType={"manuscript"}
 											onClick={() => {
-												setSidebarVisible(true);
-												setSidebarOpen(true);
-												setFilterFromMap(
-													manuscript.to.latitude,
-													manuscript.to.longitude,
-												);
+												// setSidebarVisible(true);
+												// setSidebarOpen(true);
+												// setFilterFromMap(
+												// 	manuscript.to.latitude,
+												// 	manuscript.to.longitude,
+												// );
 											}}
 										/>
 									</>

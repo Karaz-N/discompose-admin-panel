@@ -52,6 +52,7 @@ export default function Map() {
   const iso = useFilterStore((state) => state.iso);
   const restoreIso = useFilterStore((state) => state.restoreIso);
   const countrySelected = useFilterStore((state) => state.country);
+  const setTrace = useFilterStore((state) => state.setTraceType);
 
   //Filtri Documenti tramite Store
   const setFilter = useDocumentStore((state) => state.setFilter);
@@ -209,6 +210,7 @@ export default function Map() {
                 setSelectedEvent();
                 setFilter(event.id, event);
                 setSelectedEventData(event);
+                setTrace(event.type.toLowerCase());
               }}
             />
           ))}

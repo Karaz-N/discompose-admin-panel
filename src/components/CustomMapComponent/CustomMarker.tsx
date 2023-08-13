@@ -1,10 +1,13 @@
 import { Marker } from "react-leaflet";
 import L from "leaflet";
 import style from "../../styles/Marker.module.css";
+import { useFilterStore } from "../../../Store/filterStore";
 
 const CustomMarker = ({ position, eventType, onClick }) => {
 	let iconUrl;
 	let iconSize = [18, 18]; // Dimensioni predefinite per l'icona
+
+	const trace = useFilterStore((state) => state.traceType);
 
 	// Seleziona l'icona in base alla tipologia dell'evento
 	switch (eventType) {
@@ -21,15 +24,15 @@ const CustomMarker = ({ position, eventType, onClick }) => {
 			iconUrl = "/marker/hurricane_marker.svg";
 			break;
 		case "image":
-			iconUrl = "/marker/document_marker/image_marker.svg";
+			iconUrl = `/marker/document_marker/image_marker_variant_${trace}.svg`;
 			iconSize = [16, 16];
 			break;
 		case "manuscript":
-			iconUrl = "/marker/document_marker/manuscript_marker.svg";
+			iconUrl = `/marker/document_marker/manuscript_marker_variant_${trace}.svg`;
 			iconSize = [16, 16];
 			break;
 		case "print":
-			iconUrl = "/marker/document_marker/print_marker.svg";
+			iconUrl = `/marker/document_marker/print_marker_variant_${trace}.svg`;
 			iconSize = [16, 16];
 			break;
 		case "selected_earthquake":

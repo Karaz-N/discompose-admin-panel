@@ -13,6 +13,7 @@ type FilterStore = {
 	toYear: string;
 	eventType: EventType | "";
 	country: string;
+	traceType: string;
 
 	addEvents: (item: Event[]) => void;
 	changeFromYear: (year: string) => void;
@@ -24,6 +25,7 @@ type FilterStore = {
 	filterByType: (type: EventType) => void;
 	restoreEvents: () => void;
 	restoreIso: () => void;
+	setTraceType: (traceType: string) => void;
 };
 
 export const useFilterStore = create<FilterStore>((set) => ({
@@ -35,6 +37,7 @@ export const useFilterStore = create<FilterStore>((set) => ({
 	toYear: "1700",
 	eventType: "",
 	country: "",
+	traceType: "",
 
 	addEvents: (item) => set((state) => ({ events: item })),
 
@@ -94,4 +97,8 @@ export const useFilterStore = create<FilterStore>((set) => ({
 			country: state.iso,
 		}));
 	},
+
+	setTraceType: (traceType) => {
+		set({ traceType: traceType });
+	}
 }));

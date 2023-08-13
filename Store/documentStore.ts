@@ -78,6 +78,7 @@ export const useDocumentStore = create<DocumentStore>((set) => ({
   filteredManuscriptFromMap: [],
   filteredPrintFromMap: [],
   filteredImageFromMap: [],
+  
 
   setAllDocument: (document) => {
     set({ allDocument: document });
