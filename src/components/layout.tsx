@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const menuItems = [
     {
-      href: "/",
+      href: "/dashboard",
       icon: <MdDashboard />,
       title: "Dashboard",
     },
@@ -27,7 +27,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     },
   ];
 
-  if (router.pathname === "/map" || router.pathname === "/login" || router.pathname === "/home") {
+  if (router.pathname === "/map" || router.pathname === "/login" || router.pathname === "/") {
     return <>{children}</>;
   } else {
     return (

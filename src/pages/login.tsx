@@ -31,7 +31,7 @@ export default function Login() {
 
             if (jwt.token !== undefined) {
               sessionStorage.setItem("CATALDO", jwt.token);
-              push("/");
+              push("/dashboard");
             } else {
               // redirect
               push("/login");
