@@ -2,9 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import style from "../styles/HomepageVariant.module.css";
 import { useRouter } from "next/router";
+import { useInView } from 'react-intersection-observer';
 
 const Homepage = () => {
 	const { push } = useRouter();
+	const { ref: firstArticleRef, inView: articleIsVisible } = useInView({triggerOnce: true})
+	const { ref: secondArticleRef, inView: secondArticleIsVisible } = useInView({triggerOnce: true})
+
 	return (
 		<div className={style.mainContainer}>
 			<button
@@ -14,19 +18,49 @@ const Homepage = () => {
 			>
 				{"explore the pathways >"}
 			</button>
-			{/* <header className={style.headerContainer}>
+			<header className={style.headerContainer}>
 				<h1>discompose</h1>
 				<h2>pathways</h2>
 				<img
-					src="/homepage_assets/complete_volcano.png"
+					src="/homepage_assets/header_img/volcano.svg"
 					alt="Background"
 					className={style.headerImg}
 				/>
-			</header> */}
-			<article className={style.article}>
+				<img
+					src="/homepage_assets/header_img/fog_1.svg"
+					alt="Background"
+					className={style.headerImgFog1}
+				/>
+				<img
+					src="/homepage_assets/header_img/fog_2.svg"
+					alt="Background"
+					className={style.headerImgFog2}
+				/>
+				<img
+					src="/homepage_assets/header_img/fog_3.svg"
+					alt="Background"
+					className={style.headerImgFog3}
+				/>
+				<img
+					src="/homepage_assets/header_img/fog_4.svg"
+					alt="Background"
+					className={style.headerImgFog4}
+				/>
+				<img
+					src="/homepage_assets/header_img/fog_5.svg"
+					alt="Background"
+					className={style.headerImgFog5}
+				/>
+				<img
+					src="/homepage_assets/header_img/fog_6.svg"
+					alt="Background"
+					className={style.headerImgFog6}
+				/>
+			</header>
+			<article ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`}>
 				<h1>about the</h1>
-				<h2>pathways</h2>
-				<div className={style.articleContainer}>
+				<h2 className={articleIsVisible ? style.articleH2Animated : ""}>pathways</h2>
+				<div className={`${style.articleContainer} ${articleIsVisible ? style.articleContainerAnimated : ""}`}>
 					<div>
 						<p>
 							<span className={style.specialContent}>DISCOMPOSE PATHWAYS</span>{" "}
@@ -56,9 +90,24 @@ const Homepage = () => {
 						non-scholarly individuals with a more immersive and interactive
 						display of the findings of their research.
 					</p>
-					<img
+					{/* <img
 						className={style.firstImg}
 						src="/homepage_assets/arms.svg"
+						alt="Prova"
+					/> */}
+					<img
+						className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`}
+						src="/homepage_assets/arrow_dx.svg"
+						alt="Prova"
+					/>
+					<img
+						className={`${style.arrow_sx} ${articleIsVisible ? style.arrowSxAnimated : ""}`}
+						src="/homepage_assets/arrow_sx.svg"
+						alt="Prova"
+					/>
+					<img
+						className={style.crown}
+						src="/homepage_assets/crown.svg"
 						alt="Prova"
 					/>
 					<img
@@ -89,10 +138,10 @@ const Homepage = () => {
 				width={1920}
 				height={2158}
 			/>
-			<article className={style.article}>
-				<h1 style={{ alignSelf: "center", marginTop: "10%" }}>the news</h1>
-				<h2 style={{ alignSelf: "flex-end" }}>circulation</h2>
-				<div className={style.thirdContainer}>
+			<article className={`${style.article} ${secondArticleIsVisible ? style.articleAnimated : ""}`}>
+				<h1 ref={secondArticleRef}  style={{ alignSelf: "center", marginTop: "10%" }}>the news</h1>
+				<h2 className={`${secondArticleIsVisible ? style.articleH2Animated : ""}`} style={{ alignSelf: "flex-end" }}>circulation</h2>
+				<div className={`${style.thirdContainer} ${secondArticleIsVisible ? style.articleContainerAnimated : ""}`}>
 					<p>
 						What was a disaster for women and men in early modern Europe? What
 						were the causes and possible remedies? Through which social,
@@ -112,7 +161,10 @@ const Homepage = () => {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					<img src="/homepage_assets/documents.svg" alt="Prova" />
+					{/* <img className={`${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/documents.svg" alt="Prova" /> */}
+					<img className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_1.svg" alt="Prova" />
+					<img className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_2.svg" alt="Prova" />
+					<img className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_3.svg" alt="Prova" />
 				</div>
 
 				<p className={style.subArticle}>
