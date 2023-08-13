@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import style from "../styles/Admin.module.css";
 
-const TOKEN = "CATALDO";
+const TOKEN = "AAAAB3NzaC1yc2EAAAADAQABAAABAQDAS2qxT/1alrcQACD4alH6DB3s+Ar13yj77s/TWDnxJhFXxDyr5R1757jeCf6f4d+FFA0sufo7ovUeSd7sijHiLfDJOrCEWGMBtQRUHH8O6+fPgrgXekDwr5F/5OwokzBOIOWjpVxjXUaX3YiS/7csjEL9vGXyFMRtdPQ5ly1jUkhYL8MqUFZLLRU+KMdz5W6mmoFVFQwZmBTxwA37ZEmHdJZV4xD2gGw2tWQbi1uwJF5ZUyO3Ha/Rz4Oi5REz27CGVwjoHUQvmpqQO+sVsOJz2KAsz0WYW4Jelc7SVBQiZtC5A7sMGJFZJkZe1htt2I4cUnI6x+u67Xa5TRuI/lHL";
 
 export default function Database() {
 	const { push } = useRouter();
@@ -11,7 +11,7 @@ export default function Database() {
 	const { register, handleSubmit } = useForm();
 
 	useEffect(() => {
-		if (!sessionStorage.getItem("CATALDO")) {
+		if (!sessionStorage.getItem("acc_token")) {
 			push("/login");
 		}
 	});

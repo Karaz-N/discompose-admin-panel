@@ -30,7 +30,7 @@ export default function Login() {
             console.log(jwt.token);
 
             if (jwt.token !== undefined) {
-              sessionStorage.setItem("CATALDO", jwt.token);
+              sessionStorage.setItem("acc_token", jwt.token);
               push("/dashboard");
             } else {
               // redirect

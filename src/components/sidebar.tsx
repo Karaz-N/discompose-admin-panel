@@ -192,19 +192,6 @@ export default function Sidebar() {
               </li>
             </>
           ))}
-{/* 
-          <button
-            type="button"
-            onClick={() => {
-              console.log(
-                filteredImageFromMap.map((m) => {
-                  return { m: m.date };
-                })
-              );
-            }}
-          >
-            ciao
-          </button> */}
         </ul>
       </div>
     </aside>

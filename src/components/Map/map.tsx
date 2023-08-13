@@ -184,10 +184,6 @@ export default function Map() {
       >
         {!isSelectedDocument && !sidebarOpen && <Reverse />}
 
-        {/* <button type="submit" onClick={() => console.log(filteredManuscript)}>
-          ciao
-        </button> */}
-
         <GeoJSON
           key={countrySelected}
           style={country ? stileGeoJsonSelected : stileGeoJSON}
@@ -204,6 +200,7 @@ export default function Map() {
           !isSelectedEvent &&
           filteredEvents.map((event) => (
             <CustomMarker
+            key={event.id}
               position={[event.place.latitude, event.place.longitude]}
               eventType={event.type.toLowerCase()}
               onClick={() => {

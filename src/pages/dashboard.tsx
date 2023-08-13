@@ -74,7 +74,7 @@ export default function Home(props: HomeProps) {
   const { push } = useRouter();
   useEffect(() => {
     console.log(props.alloEvents);
-    if(!sessionStorage.getItem("CATALDO")){
+    if(!sessionStorage.getItem("acc_token")){
       
       push("/login");
     }

@@ -74,6 +74,7 @@ const CustomMarker = ({ position, eventType, onClick }) => {
 
 	return (
 		<Marker
+			key={`${eventType}${position.latitude}${position.longitude}`}
 			icon={customIcon}
 			position={position}
 			eventHandlers={eventHandlers}
