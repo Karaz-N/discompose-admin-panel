@@ -3,6 +3,7 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 ARG db
+ARG secret
 
 COPY package.json package-lock.json ./
 RUN  npm install --production
@@ -15,6 +16,7 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED 1
 
 ENV DATABASE_URL=$db
+ENV JWT_SECRET=$secret
 
 RUN npx prisma generate
 
