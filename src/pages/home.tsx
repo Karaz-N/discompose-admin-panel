@@ -22,39 +22,9 @@ const Homepage = () => {
 				<h1>discompose</h1>
 				<h2>pathways</h2>
 				<img
-					src="/homepage_assets/header_img/volcano.svg"
+					src="/homepage_assets/complete_volcano.png"
 					alt="Background"
 					className={style.headerImg}
-				/>
-				<img
-					src="/homepage_assets/header_img/fog_1.svg"
-					alt="Background"
-					className={style.headerImgFog1}
-				/>
-				<img
-					src="/homepage_assets/header_img/fog_2.svg"
-					alt="Background"
-					className={style.headerImgFog2}
-				/>
-				<img
-					src="/homepage_assets/header_img/fog_3.svg"
-					alt="Background"
-					className={style.headerImgFog3}
-				/>
-				<img
-					src="/homepage_assets/header_img/fog_4.svg"
-					alt="Background"
-					className={style.headerImgFog4}
-				/>
-				<img
-					src="/homepage_assets/header_img/fog_5.svg"
-					alt="Background"
-					className={style.headerImgFog5}
-				/>
-				<img
-					src="/homepage_assets/header_img/fog_6.svg"
-					alt="Background"
-					className={style.headerImgFog6}
 				/>
 			</header>
 			<article ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`}>
@@ -90,11 +60,6 @@ const Homepage = () => {
 						non-scholarly individuals with a more immersive and interactive
 						display of the findings of their research.
 					</p>
-					{/* <img
-						className={style.firstImg}
-						src="/homepage_assets/arms.svg"
-						alt="Prova"
-					/> */}
 					<img
 						className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`}
 						src="/homepage_assets/arrow_dx.svg"
@@ -139,7 +104,7 @@ const Homepage = () => {
 				height={2158}
 			/>
 			<article className={`${style.article} ${secondArticleIsVisible ? style.articleAnimated : ""}`}>
-				<h1 ref={secondArticleRef}  style={{ alignSelf: "center", marginTop: "10%" }}>the news</h1>
+				<h1 style={{ alignSelf: "center", marginTop: "10%" }}>the news</h1>
 				<h2 className={`${secondArticleIsVisible ? style.articleH2Animated : ""}`} style={{ alignSelf: "flex-end" }}>circulation</h2>
 				<div className={`${style.thirdContainer} ${secondArticleIsVisible ? style.articleContainerAnimated : ""}`}>
 					<p>
@@ -161,8 +126,7 @@ const Homepage = () => {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					{/* <img className={`${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/documents.svg" alt="Prova" /> */}
-					<img className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_1.svg" alt="Prova" />
+					<img ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_1.svg" alt="Prova" />
 					<img className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_2.svg" alt="Prova" />
 					<img className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_3.svg" alt="Prova" />
 				</div>

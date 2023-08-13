@@ -240,7 +240,7 @@
 }
 
 .arrowDxAnimated{
-    animation: rotation 3s;
+    animation: rotation 4s;
 }
 
 .arrow_sx{
@@ -254,7 +254,7 @@
 }
 
 .arrowSxAnimated{
-    animation: anti_rotation 3s;
+    animation: anti_rotation 4s;
 }
 
 .crown{
@@ -594,11 +594,12 @@
 @keyframes from-s-to-l {
     0% {
         opacity: 0;
-        transform: scale(0) translateY(0px) translateX(0px);
+        transform: translateY(300px);
     }
 
     100% {
-        transform: scale(0.8) translateY(0px) translateX(0px);
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
