@@ -93,7 +93,7 @@ const addPlace = async (place: string): Promise<Place | null> => {
 				data: placeObj,
 			});
 		} catch (e: unknown) {
-			console.log(`${place} could not be geocoded`);
+			// console.log(`${place} could not be geocoded`);
 
 			return null;
 		}
@@ -310,7 +310,7 @@ const parse = <T extends RawContentType>(contents: string): T[] => {
 	});
 
 	if (result.errors.length !== 0) {
-		console.log(result.errors);
+		// console.log(result.errors);
 
 		throw "Error parsing CSV file";
 	} else {

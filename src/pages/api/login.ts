@@ -61,7 +61,7 @@ export default async function handler(
 		algorithm: "HS256",
 	});
 
-	console.log("TOKEN", jwt)
+	// console.log("TOKEN", jwt)
 
 
 	res.setHeader('Set-Cookie', jwt)

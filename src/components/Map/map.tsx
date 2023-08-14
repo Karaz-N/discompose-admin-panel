@@ -128,7 +128,7 @@ export default function Map() {
       setCountry(countryCode);
       setSelectedCountry();
       filterByCountry(countryCode.toLowerCase());
-      console.log(countrySelected + "!!!");
+      // console.log(countrySelected + "!!!");
       map.flyTo(center.reverse(), 4.5); // Zoom al centro del paese (puoi regolare il livello di zoom desiderato)
     }
   };
@@ -152,7 +152,7 @@ export default function Map() {
                 deselectEvent();
                 setSidebarVisible(false);
               } else {
-                console.log("Un saluto da Asternox");
+                // console.log("Un saluto da Asternox");
               }
             }}
           >

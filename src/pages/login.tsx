@@ -27,7 +27,7 @@ export default function Login() {
 
             const jwt = (await result.json()) as { token?: string };
 
-            console.log(jwt.token);
+            // console.log(jwt.token);
 
             if (jwt.token !== undefined) {
               sessionStorage.setItem("acc_token", jwt.token);
