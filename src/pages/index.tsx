@@ -21,11 +21,7 @@ const Homepage = () => {
 			<header className={style.headerContainer}>
 				<h1>discompose</h1>
 				<h2>pathways</h2>
-				<img
-					src="/homepage_assets/complete_volcano.png"
-					alt="Background"
-					className={style.headerImg}
-				/>
+				<Image className={style.headerImg} src="/homepage_assets/complete_volcano.png" alt="Background" width={1018} height={725}  />
 			</header>
 			<article ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`}>
 				<h1>about the</h1>
@@ -60,26 +56,14 @@ const Homepage = () => {
 						non-scholarly individuals with a more immersive and interactive
 						display of the findings of their research.
 					</p>
-					<img
-						className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`}
-						src="/homepage_assets/arrow_dx.svg"
-						alt="Prova"
-					/>
-					<img
-						className={`${style.arrow_sx} ${articleIsVisible ? style.arrowSxAnimated : ""}`}
-						src="/homepage_assets/arrow_sx.svg"
-						alt="Prova"
-					/>
-					<img
-						className={style.crown}
-						src="/homepage_assets/crown.svg"
-						alt="Prova"
-					/>
-					<img
-						className={style.secondImg}
-						src="/homepage_assets/data.svg"
-						alt="Prova"
-					/>
+					<Image className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`} src="/homepage_assets/arrow_dx.svg" alt="Discompose Map" width={1920} height={2158} />
+					
+					<Image className={`${style.arrow_sx} ${articleIsVisible ? style.arrowSxAnimated : ""}`} src="/homepage_assets/arrow_sx.svg" alt="Discompose Map" width={1920} height={2158} />
+					
+					<Image className={style.crown} src="/homepage_assets/crown.svg" alt="Discompose Map" width={1920} height={2158} />
+					
+					<Image className={style.secondImg} src="/homepage_assets/data.svg" alt="Discompose Map" width={1920} height={2158} />
+					
 				</div>
 				<div className={style.secondaryContainer}>
 					<p className={style.secondaryTextContainer}>
@@ -126,9 +110,9 @@ const Homepage = () => {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					<img ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_1.svg" alt="Prova" />
-					<img className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_2.svg" alt="Prova" />
-					<img className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_3.svg" alt="Prova" />
+					<Image ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_1.svg" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_2.svg" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_3.svg" alt="Discompose Map" width={1920} height={2158} />
 				</div>
 
 				<p className={style.subArticle}>
