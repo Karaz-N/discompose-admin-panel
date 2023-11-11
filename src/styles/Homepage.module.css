@@ -3,7 +3,7 @@
 
 
 .boiler {
-    background-color: #EEEEEE;
+    background-color: var(--background-color);
 }
 
 .article {
@@ -16,7 +16,7 @@
 
 .article h1 {
     text-transform: uppercase;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
     font-size: 680%;
     font-style: normal;
@@ -30,7 +30,7 @@
 
 .article h2 {
     text-transform: uppercase;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: 'Cormorant Garamond', serif;
     font-size: 140px;
     font-style: normal;
@@ -59,7 +59,7 @@
     width: auto;
     max-width: calc(100vw / 2);
     height: auto;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -69,7 +69,7 @@
 }
 
 .specialContent {
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -94,7 +94,7 @@
 }
 
 .externalLink:hover {
-    border-bottom: 1px solid #323232;
+    border-bottom: 1px solid var(--primary-text-color);
 }
 
 
@@ -115,7 +115,7 @@
     width: auto;
     max-width: 100%;
     height: 235px;
-    color: #323232;
+    color: var(--primary-text-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 32px;
@@ -127,7 +127,7 @@
 }
 
 .highlitedText {
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
@@ -167,7 +167,7 @@
 }
 
 .data {
-    color: #A92820;
+    color: var(--primary-discompose-color);
     font-family: Montserrat;
     font-size: 77.518px;
     font-style: normal;
@@ -178,7 +178,7 @@
 
 .dataType {
     text-transform: uppercase;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Cormorant Garamond;
     font-size: 38.306px;
     font-style: normal;
@@ -193,7 +193,7 @@
     width: auto;
     max-width: calc(100vw / 2);
     height: 323px;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;

@@ -16,20 +16,20 @@ const Homepage = () => {
 				className={style.fixedMapButton}
 				onClick={() => push("/map")}
 			>
-				{"explore the pathways >"}
+				{"explore the routes >"}
 			</button>
 			<header className={style.headerContainer}>
 				<h1>discompose</h1>
-				<h2>pathways</h2>
-				<Image className={style.headerImg} src="/homepage_assets/complete_volcano.png" alt="Background" width={1018} height={725}  />
+				<h2>routes</h2>
+				<Image className={style.headerImg} src="/homepage_assets/optimized_images/complete_volcano.webp" alt="Background" width={1018} height={725}  />
 			</header>
 			<article ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`}>
 				<h1>about the</h1>
-				<h2 className={articleIsVisible ? style.articleH2Animated : ""}>pathways</h2>
+				<h2 className={articleIsVisible ? style.articleH2Animated : ""}>routes</h2>
 				<div className={`${style.articleContainer} ${articleIsVisible ? style.articleContainerAnimated : ""}`}>
 					<div>
 						<p>
-							<span className={style.specialContent}>DISCOMPOSE PATHWAYS</span>{" "}
+							<span className={style.specialContent}>DISCOMPOSE ROUTES</span>{" "}
 							is a digital platform that constitutes part of the outcomes of the
 							research conducted by the DisComPoSe project, a five-year project
 							financed by the European Research Council (ERC) and hosted by the{" "}
@@ -56,18 +56,18 @@ const Homepage = () => {
 						non-scholarly individuals with a more immersive and interactive
 						display of the findings of their research.
 					</p>
-					<Image className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`} src="/homepage_assets/arrow_dx.svg" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`} src="/homepage_assets/optimized_images/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
 					
-					<Image className={`${style.arrow_sx} ${articleIsVisible ? style.arrowSxAnimated : ""}`} src="/homepage_assets/arrow_sx.svg" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_sx} ${articleIsVisible ? style.arrowSxAnimated : ""}`} src="/homepage_assets/optimized_images/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
 					
-					<Image className={style.crown} src="/homepage_assets/crown.svg" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={style.crown} src="/homepage_assets/optimized_images/crown.webp" alt="Discompose Map" width={1920} height={2158} />
 					
-					<Image className={style.secondImg} src="/homepage_assets/data.svg" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={style.secondImg} src="/homepage_assets/optimized_images/data.webp" alt="Discompose Map" width={1920} height={2158} />
 					
 				</div>
 				<div className={style.secondaryContainer}>
 					<p className={style.secondaryTextContainer}>
-						Discompose Pathways offers{" "}
+						Discompose Routes offers{" "}
 						<span className={style.specialContent}>
 							a dynamic interactive map
 						</span>{" "}
@@ -82,7 +82,7 @@ const Homepage = () => {
 			</article>
 			<Image
 				className={style.mapImage}
-				src={"/homepage_assets/home_map.png"}
+				src={"/homepage_assets/optimized_images/home_map.webp"}
 				alt="Discompose Map"
 				width={1920}
 				height={2158}
@@ -110,9 +110,9 @@ const Homepage = () => {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					<Image ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_1.svg" alt="Discompose Map" width={1920} height={2158} />
-					<Image className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_2.svg" alt="Discompose Map" width={1920} height={2158} />
-					<Image className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_3.svg" alt="Discompose Map" width={1920} height={2158} />
+					<Image ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/optimized_images/document_1.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/optimized_images/document_2.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/optimized_images/document_3.webp" alt="Discompose Map" width={1920} height={2158} />
 				</div>
 
 				<p className={style.subArticle}>
@@ -123,21 +123,15 @@ const Homepage = () => {
 					documents, thus providing an idea of how news about natural disasters
 					circulated at the time.
 				</p>
-
-				<Image
-					className={style.circolationMap}
-					src={"/homepage_assets/circolation_map.svg"}
-					alt="Discompose Map"
-					width={1346}
-					height={690}
-				/>
+				
+				<img className={style.circolationMap} src="/homepage_assets/optimized_images/circolation_map.webp" alt=""/>
 
 				<div className={style.dataContainer}>
 					<div className={style.dataWrapper}>
 						<p className={style.data}>200</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/marker/document_marker/image_marker.svg"
+								src="/homepage_assets/optimized_images/image_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}
@@ -149,7 +143,7 @@ const Homepage = () => {
 						<p className={style.data}>200</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/marker/document_marker/manuscript_marker.svg"
+								src="/homepage_assets/optimized_images/manuscript_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}
@@ -161,7 +155,7 @@ const Homepage = () => {
 						<p className={style.data}>200</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/marker/document_marker/print_marker.svg"
+								src="/homepage_assets/optimized_images/print_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}
@@ -174,11 +168,11 @@ const Homepage = () => {
 
 			<footer className={style.footerContainer}>
 				<h1>explore</h1>
-				<h2>the pathways</h2>
+				<h2>the routes</h2>
 				<p>
 					Navigate the interactive map and discover the natural disasters that
 					affected the territories of the Spanish Empire beetween the 15th and
-					18th centuries. Discover the pathways traced by the spreading of the
+					18th centuries. Discover the routes traced by the spreading of the
 					news and collect insightful information about the registered
 					documents!
 				</p>

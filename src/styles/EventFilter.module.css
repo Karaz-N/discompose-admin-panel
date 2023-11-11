@@ -12,7 +12,7 @@
     cursor: pointer;
     height: 40px;
     width: 270px;
-    color: #323232;
+    color: var(--primary-text-color);
     font-size: 1.2rem;
     margin-bottom: 1rem;
     padding: 0.5rem;
@@ -35,53 +35,53 @@
 }
 
 .eventDivOverlay li.item0 {
-    background: #323232;
-    color: #EEEEEE;
+    background: var(--primary-text-color);
+    color: var(--background-color);
 }
 
 .eventDivOverlay li.item1 {
     background: #00770C;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li.item2 {
     background: #009ABC;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li.item3 {
     background: #203EA9;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li.item4 {
-    background: #A92820;
-    color: #EEEEEE;
+    background: var(--primary-discompose-color);
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(1):hover {
-    background: #323232;
-    color: #EEEEEE;
+    background: var(--primary-text-color);
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(2):hover {
     background: #00770C;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(3):hover {
     background: #009ABC;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(4):hover {
     background: #203EA9;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(5):hover {
-    background: #A92820;
-    color: #EEEEEE;
+    background: var(--primary-discompose-color);
+    color: var(--background-color);
 }
 
 .image1 {

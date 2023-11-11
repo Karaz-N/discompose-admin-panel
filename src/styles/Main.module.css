@@ -3,7 +3,7 @@
     width: 306px;
     height: 40px;
     box-sizing: border-box;
-    background: #323232;
+    background: var(--primary-text-color);
     border: 1px solid #f70505;
     right: 2rem;
     top: 10rem;
@@ -49,7 +49,7 @@
     list-style: none;
     cursor: pointer;
     height: 40px;
-    color: #323232;
+    color: var(--primary-text-color);
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     background: white;

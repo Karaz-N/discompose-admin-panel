@@ -6,8 +6,8 @@
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    background-color: #EEEEEE;
-    height: 100vh;
+    background-color: var(--background-color);
+    min-height: 100vh;
     position: relative;
 }
 
@@ -80,9 +80,9 @@
 }
 
 .headerContainer h1 {
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
-    font-size: 64px;
+    font-size: var(--title-text-section);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -95,11 +95,11 @@
 }
 
 .headerContainer h2 {
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Cormorant Garamond;
-    font-size: 64px;
+    font-size: var(--title-text-section);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 6.4px;
     text-transform: uppercase;
@@ -117,7 +117,7 @@
     width: 50%;
     /* Regola la lunghezza del bordo appuntito */
     height: 0;
-    border-top: 2px solid #323232;
+    border-top: 2px solid var(--primary-text-color);
     /* Colore e spessore del bordo */
     transform: skewX(91deg);
     /* Applica la trasformazione per ottenere l'effetto appuntito */
@@ -131,7 +131,7 @@
 
 
 .mainContainer {
-    background-color: #EEEEEE;
+    background-color: var(--background-color);
     overflow-x: hidden;
     height: 100vh;
 }
@@ -151,9 +151,9 @@
 .article h1 {
     text-transform: uppercase;
     align-self: flex-start;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
-    font-size: 680%;
+    font-size: var(--title-text-article);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -163,9 +163,9 @@
 
 .article h2 {
     text-transform: uppercase;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 140px;
+    font-size: var(--title-text-article);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -176,9 +176,9 @@
 .secondArticleH2Adjust{
     align-self: flex-end;
     text-transform: uppercase;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 140px;
+    font-size: var(--title-text-article);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -208,9 +208,9 @@
 .articleContainer p {
     width: 540px;
     max-width: calc(100vw / 2);
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--body-text);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -280,7 +280,7 @@
 }
 
 .articleContainer span {
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -290,9 +290,9 @@
 }
 
 .specialContent {
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--body-text);
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -303,9 +303,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--body-text);
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -314,7 +314,7 @@
 }
 
 .externalLink:hover {
-    border-bottom: 1px solid #323232;
+    border-bottom: 1px solid var(--primary-text-color);
 }
 
 .secondaryContainer {
@@ -325,9 +325,9 @@
 }
 
 .secondaryTextContainer {
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--body-text);
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -345,9 +345,9 @@
 }
 
 .thirdContainer p {
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--body-text);
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -400,13 +400,13 @@
 }
 
 .subArticle {
-    color: #323232;
+    color: var(--primary-text-color);
     text-align: center;
     margin-top: 30%;
     width: 70rem;
     text-align: center;
     font-family: Montserrat;
-    font-size: 2rem;
+    font-size: var(--cta-text);
     font-style: normal;
     font-weight: 300;
     line-height: 2.5rem;
@@ -445,9 +445,9 @@
 }
 
 .data {
-    color: #A92820;
+    color: var(--primary-discompose-color);
     font-family: Montserrat;
-    font-size: 77.518px;
+    font-size: var(--map-data-title);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -456,9 +456,9 @@
 
 .dataType {
     text-transform: uppercase;
-    color: #323232;
+    color: var(--primary-text-color);
     font-family: Cormorant Garamond;
-    font-size: 38.306px;
+    font-size: var(--map-data-text);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -471,7 +471,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('/homepage_assets/bg_footer.png');
+    background-image: url('/homepage_assets/optimized_images/bg_footer.webp');
     background-position: center bottom;
     background-repeat: no-repeat;
     padding: 10%;
@@ -479,9 +479,9 @@
 
 .footerContainer h1 {
     align-self: flex-start;
-    color: #EEEEEE;
+    color: var(--background-color);
     font-family: Montserrat;
-    font-size: 140.411px;
+    font-size: var(--footer-title);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -490,9 +490,9 @@
 }
 
 .footerContainer h2 {
-    color: #EEEEEE;
+    color: var(--background-color);
     font-family: Cormorant Garamond;
-    font-size: 140.411px;
+    font-size: var(--footer-title);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -503,9 +503,9 @@
 .footerContainer p {
     width: 866px;
     height: 96px;
-    color: #EEEEEE;
+    color: var(--background-color);
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(var(--title-text-article));
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -521,7 +521,7 @@
     width: 23rem;
     margin-top: 90px;
     padding: 1%;
-    color: #EEEEEE;
+    color: var(--background-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 20px;
@@ -535,7 +535,7 @@
 .fixedMapButton {
     width: auto;
     padding: 1%;
-    color: #323232;
+    color: var(--primary-text-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 20px;
@@ -549,8 +549,8 @@
     right: 20px;
     cursor: pointer;
     z-index: 9999;
-    background-color: #EEEEEE;
-    border: 1px solid #323232;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-text-color);
 }
 
 /*---ANIMATIONS---*/
@@ -643,7 +643,7 @@
     .article h1 {
         text-transform: uppercase;
         align-self: flex-start;
-        color: #323232;
+        color: var(--primary-text-color);
         font-family: Montserrat;
         font-size: 480%;
         font-style: normal;
@@ -655,7 +655,7 @@
 
     .article h2 {
         text-transform: uppercase;
-        color: #323232;
+        color: var(--primary-text-color);
         font-family: 'Cormorant Garamond', serif;
         font-size: 100px;
         font-style: normal;
@@ -679,7 +679,7 @@
     .articleContainer p {
         width: 440px;
         max-width: calc(100vw / 2);
-        color: #323232;
+        color: var(--primary-text-color);
         font-family: Montserrat;
         font-size: 16px;
         font-style: normal;
@@ -692,7 +692,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        color: #323232;
+        color: var(--primary-text-color);
         font-family: Montserrat;
         font-size: 16px;
         font-style: normal;

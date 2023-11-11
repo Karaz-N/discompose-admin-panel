@@ -6,6 +6,23 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 242, 242, 242;
   --background-end-rgb: 242, 242, 242;
+
+  --background-color: #EEEEEE;
+
+  --primary-text-color: #323232;
+
+  --primary-discompose-color: #A92820;
+
+  --title-text-section: clamp(2rem, 1.4902rem + 2.0915vw, 4rem);
+  --title-text-article: clamp(2rem, 0.2794rem + 7.0588vw, 8.75rem);
+
+  --body-text: clamp(0.875rem, 0.7794rem + 0.3922vw, 1.25rem);
+  --cta-text: clamp(0.875rem, 0.5882rem + 1.1765vw, 2rem);
+
+  --footer-title: clamp(1.911rem, 0.1611rem + 7.1791vw, 8.776rem);
+
+  --map-data-title: clamp(1.413rem, 0.5382rem + 3.5890vw, 4.845rem);
+  --map-data-text: clamp(0.698rem, 0.2657rem + 1.7736vw, 2.394rem);
 }
 
 @media (prefers-color-scheme: dark) {

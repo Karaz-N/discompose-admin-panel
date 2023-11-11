@@ -12,7 +12,7 @@
     cursor: pointer;
     height: 40px;
     width: 270px;
-    color: #323232;
+    color: var(--primary-text-color);
     font-size: 1.2rem;
     margin-bottom: 1rem;
     padding: 0.5rem;
@@ -34,41 +34,41 @@
 }
 
 .eventDivOverlay li.item0 {
-    background: #A92820;
-    color: #EEEEEE;
+    background: var(--primary-discompose-color);
+    color: var(--background-color);
 }
 
 .eventDivOverlay li.item1 {
-    background: #A92820;
-    color: #EEEEEE;
+    background: var(--primary-discompose-color);
+    color: var(--background-color);
 }
 
 .eventDivOverlay li.item2 {
-    background: #A92820;
-    color: #EEEEEE;
+    background: var(--primary-discompose-color);
+    color: var(--background-color);
 }
 
 .eventDivOverlay li.item3 {
-    background: #A92820;
-    color: #EEEEEE;
+    background: var(--primary-discompose-color);
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(1):hover {
     background: #DC251A;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(2):hover {
     background: #DC251A;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(3):hover {
     background: #DC251A;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
 
 .eventDivOverlay li:nth-child(4):hover {
     background: #DC251A;
-    color: #EEEEEE;
+    color: var(--background-color);
 }
