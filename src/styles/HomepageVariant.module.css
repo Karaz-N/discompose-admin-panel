@@ -157,7 +157,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 5px;
+    letter-spacing: var(--letter-spacing-scale);
     z-index: 3;
 }
 
@@ -169,7 +169,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 5px;
+    letter-spacing: var(--letter-spacing-scale);
     z-index: 2;
 }
 
@@ -182,7 +182,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 5px;
+    letter-spacing: var(--letter-spacing-scale);
     z-index: 2;
 }
 
@@ -282,7 +282,7 @@
 .articleContainer span {
     color: var(--primary-text-color);
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--body-text);;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -415,6 +415,8 @@
 }
 
 .circolationMap {
+    width: var(--grid-scale-width);
+    height: var(--grid-scale-height);
     margin-top: 10%;
     margin-bottom: 5%;
 }
@@ -467,13 +469,14 @@
 
 .footerContainer {
     display: flex;
+    height: clamp(34.625rem, 27.9020rem + 27.5817vw, 61rem);;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background-image: url('/homepage_assets/optimized_images/bg_footer.webp');
     background-position: center bottom;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 10%;
 }
 
@@ -485,7 +488,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 7.021px;
+    letter-spacing: var(--letter-spacing-scale);
     text-transform: uppercase;
 }
 
@@ -496,49 +499,50 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 7.021px;
+    letter-spacing: var(--letter-spacing-scale);
     text-transform: uppercase;
 }
 
 .footerContainer p {
-    width: 866px;
-    height: 96px;
+    /* width: 866px; */
+    /* height: 96px; */
     color: var(--background-color);
     font-family: Montserrat;
-    font-size: var(var(--title-text-article));
+    font-size: var(--body-text);
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     /* 120% */
     letter-spacing: 1px;
-    margin-top: 50px;
+    margin-top: clamp(1.25rem, 0.7721rem + 1.9608vw, 3.125rem);
 }
 
 .mapButton {
     background-image: url('/homepage_assets/button_homepage.png');
     background-position: center;
     background-repeat: no-repeat;
-    width: 23rem;
-    margin-top: 90px;
-    padding: 1%;
+    background-size: contain;
+    width: clamp(12.375rem, 9.6667rem + 11.1111vw, 23rem);
+    margin-top: clamp(1.25rem, 0.1348rem + 4.5752vw, 5.625rem);;
     color: var(--background-color);
     text-align: center;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--button-text);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding: 10px;
 }
 
 .fixedMapButton {
-    width: auto;
+    width: fit-content;
     padding: 1%;
     color: var(--primary-text-color);
     text-align: center;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--button-text);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -630,14 +634,14 @@
     }
 }
 
-/* Da 1440px a 1024px */
+/* 
 @media (max-width: 1639px) {
     .secondaryContainer {
         margin-right: -10%;
     }
-}
+} */
 
-/* Da 1024px a 768px */
+/* 
 @media (max-width: 1024px) {
 
     .article h1 {
@@ -729,9 +733,4 @@
         left: 4%;
         z-index: 1;
     }
-}
-
-/* Da 768px a 425px */
-@media (max-width: 767px) {
-    /* Inserisci qui le regole CSS per questo intervallo */
-}
+} */

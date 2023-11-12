@@ -23,6 +23,19 @@
 
   --map-data-title: clamp(1.413rem, 0.5382rem + 3.5890vw, 4.845rem);
   --map-data-text: clamp(0.698rem, 0.2657rem + 1.7736vw, 2.394rem);
+
+  --button-text: clamp(0.625rem, 0.4657rem + 0.6536vw, 1.25rem);
+
+  --letter-spacing-scale: clamp(0.1rem, 0.0136rem + 0.3545vw, 0.439rem);
+
+  --footer-scale: clamp(0.625rem, -2.2745rem + 11.8954vw, 12rem);;
+
+
+  /*------*/
+
+  --grid-scale-width: clamp(24.563rem, 9.3645rem + 62.3529vw, 84.188rem);
+
+  --grid-scale-height: clamp(12.625rem, 4.8344rem + 31.9613vw, 43.188rem);;
 }
 
 @media (prefers-color-scheme: dark) {
