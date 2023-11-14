@@ -36,7 +36,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <ul>
             <li>
               <Image
-                src="/logo_discompose.webp"
+                src="/assets/logo_discompose.webp"
                 alt="discompose-logo"
                 width={100}
                 height={100}

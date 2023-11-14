@@ -91,7 +91,7 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/admin-panel-asset/folder.webp"
+                  src="/assets/admin-panel/folder.webp"
                   height={17}
                   width={20}
                   alt="Event's Logo"
@@ -154,7 +154,7 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/admin-panel-asset/folder.webp"
+                  src="/assets/admin-panel/folder.webp"
                   height={17}
                   width={20}
                   alt="Document's Logo"
@@ -173,7 +173,7 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/admin-panel-asset/image.webp"
+                  src="/assets/admin-panel/image.webp"
                   height={17}
                   width={20}
                   alt="Image's Logo"
@@ -192,7 +192,7 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/admin-panel-asset/pen.webp"
+                  src="/assets/admin-panel/pen.webp"
                   height={17}
                   width={20}
                   alt="Manuscript's Logo"
@@ -211,7 +211,7 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/admin-panel-asset/text.webp"
+                  src="/assets/admin-panel/text.webp"
                   height={70}
                   width={20}
                   alt="Print's Logo"
