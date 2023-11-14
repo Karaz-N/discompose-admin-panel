@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import style from "../styles/HomepageVariant.module.css";
+import style from "../styles/HomePage.module.css";
 import { useRouter } from "next/router";
 import { useInView } from 'react-intersection-observer';
 

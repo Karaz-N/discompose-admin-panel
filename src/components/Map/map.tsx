@@ -9,7 +9,7 @@ import * as turf from "@turf/turf";
 
 import mapData from "../../data/countries.json";
 
-import style from "../../styles/Home.module.css";
+import style from "../../styles/MapPage.module.css";
 
 import { MapContainer, ZoomControl, GeoJSON, useMap } from "react-leaflet";
 
