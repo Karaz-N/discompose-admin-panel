@@ -21,7 +21,7 @@ const Homepage = () => {
 			<header className={style.headerContainer}>
 				<h1>discompose</h1>
 				<h2>routes</h2>
-				<Image className={style.headerImg} src="/homepage_assets/complete_volcano.webp" alt="Background" width={1018} height={725}  />
+				<Image className={style.headerImg} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725}  />
 			</header>
 			<article ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`}>
 				<h1>about the</h1>
@@ -56,13 +56,13 @@ const Homepage = () => {
 						non-scholarly individuals with a more immersive and interactive
 						display of the findings of their research.
 					</p>
-					<Image className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`} src="/homepage_assets/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`} src="/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
 					
-					<Image className={`${style.arrow_sx} ${articleIsVisible ? style.arrowSxAnimated : ""}`} src="/homepage_assets/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_sx} ${articleIsVisible ? style.arrowSxAnimated : ""}`} src="/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
 					
-					<Image className={style.crown} src="/homepage_assets/crown.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={style.crown} src="/assets/homepage/crown.webp" alt="Discompose Map" width={1920} height={2158} />
 					
-					<Image className={style.secondImg} src="/homepage_assets/data.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={style.secondImg} src="/assets/homepage/data.webp" alt="Discompose Map" width={1920} height={2158} />
 					
 				</div>
 				<div className={style.secondaryContainer}>
@@ -82,7 +82,7 @@ const Homepage = () => {
 			</article>
 			<Image
 				className={style.mapImage}
-				src={"/homepage_assets/home_map.webp"}
+				src={"/assets/homepage/home_map.webp"}
 				alt="Discompose Map"
 				width={1920}
 				height={2158}
@@ -110,9 +110,9 @@ const Homepage = () => {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					<Image ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_1.webp" alt="Discompose Map" width={1920} height={2158} />
-					<Image className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_2.webp" alt="Discompose Map" width={1920} height={2158} />
-					<Image className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/homepage_assets/document_3.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_1.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_2.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_3.webp" alt="Discompose Map" width={1920} height={2158} />
 				</div>
 
 				<p className={style.subArticle}>
@@ -124,14 +124,14 @@ const Homepage = () => {
 					circulated at the time.
 				</p>
 				
-				<img className={style.circolationMap} src="/homepage_assets/circolation_map.webp" alt=""/>
+				<img className={style.circolationMap} src="/assets/homepage/circolation_map.webp" alt=""/>
 
 				<div className={style.dataContainer}>
 					<div className={style.dataWrapper}>
 						<p className={style.data}>200</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/homepage_assets/image_marker.webp"
+								src="/assets/homepage/image_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}
@@ -143,7 +143,7 @@ const Homepage = () => {
 						<p className={style.data}>200</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/homepage_assets/manuscript_marker.webp"
+								src="/assets/homepage/manuscript_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}
@@ -155,7 +155,7 @@ const Homepage = () => {
 						<p className={style.data}>200</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/homepage_assets/print_marker.webp"
+								src="/assets/homepage/print_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}

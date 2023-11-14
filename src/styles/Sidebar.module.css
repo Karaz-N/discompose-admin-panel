@@ -9,7 +9,7 @@
     transform: translateY(-50%);
     height: 70px;
     width: 70px;
-    background-color: var(--background-color);
+    background-color: #FFFBFE;
     border-radius: 50%;
     display: inline-block;
 }
@@ -27,7 +27,7 @@
     width: 500px;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
-    background-color: var(--background-color);
+    background-color: #FFFBFE;
     height: 100%;
 
     animation-duration: 1s;
@@ -99,7 +99,7 @@
     height: auto;
     font-size: 20px;
     margin-top: 4%;
-    background-color: #FFFBFE;
+    background-color: #EEEEEE;
 }
 
 .contentItem p {

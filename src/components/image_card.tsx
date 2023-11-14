@@ -20,7 +20,7 @@ export default function ImageCard({ onClose, imageData } : ImageCardProps) {
         <nav className={style.lastColumn}>
           <button type="button">
             <Image
-              src={"/images/donwload.svg"}
+              src={"/assets/card/downloadDocument.webp"}
               height={26}
               width={26}
               alt="prova"
@@ -33,7 +33,7 @@ export default function ImageCard({ onClose, imageData } : ImageCardProps) {
             }}
           >
             <Image
-              src={"/images/closeDocument.svg"}
+              src={"/assets/card/closeDocument.webp"}
               width={14}
               height={14}
               alt="close document card"

@@ -66,42 +66,42 @@ export default function Sidebar() {
     <aside className={`${style.sidebar} ${sidebarClass}`}>
       <div className={`${style.sidebarContainer} ${sidebarContainerClass}`}>
         <Image
-          src="/images/decorations/decorations_UpSx.svg"
+          src="/assets/sidebar/decorations_UpSx.webp"
           alt="Decoration"
           width={80}
           height={80}
           className={style.decorationTL}
         />
         <Image
-          src="/images/decorations/decorations_UpDx.svg"
+          src="/assets/sidebar/decorations_UpDx.webp"
           alt="Decoration"
           width={80}
           height={80}
           className={style.decorationTR}
         />
         <Image
-          src="/images/decorations/decorations_CenterSx.svg"
+          src="/assets/sidebar/decorations_CenterSx.webp"
           alt="Decoration"
           width={28}
           height={100}
           className={style.decorationCL}
         />
         <Image
-          src="/images/decorations/decorations_CenterDx.svg"
+          src="/assets/sidebar/decorations_CenterDx.webp"
           alt="Decoration"
           width={28}
           height={100}
           className={style.decorationCR}
         />
         <Image
-          src="/images/decorations/decorations_BottomSx.svg"
+          src="/assets/sidebar/decorations_BottomSx.webp"
           alt="Decoration"
           width={80}
           height={80}
           className={style.decorationBL}
         />
         <Image
-          src="/images/decorations/decorations_BottomDx.svg"
+          src="/assets/sidebar/decorations_BottomDx.webp"
           alt="Decoration"
           width={80}
           height={80}
@@ -136,7 +136,7 @@ export default function Sidebar() {
         >
           <Image
             className={style.closeButtonImg}
-            src={"/images/closeSidebar.svg"}
+            src={"/assets/sidebar/closeSidebar.webp"}
             width={11}
             height={20}
             alt="Close Sidebar"
