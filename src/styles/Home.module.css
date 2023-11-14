@@ -17,7 +17,7 @@
 }
 
 .backDivOverlay {
-  background-image: url('/homepage_assets/optimized_images/back_button.webp');
+  background-image: url('/homepage_assets/back_button.webp');
   background-position: center;
   background-repeat: no-repeat;
   width: 55px;
@@ -31,7 +31,7 @@
 }
 
 .backDivOverlay:hover {
-  background-image: url('/homepage_assets/optimized_images/back_button_hover.webp');
+  background-image: url('/homepage_assets/back_button_hover.webp');
 }
 
 /*.overlay {
