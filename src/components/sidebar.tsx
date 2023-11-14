@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import style from "../styles/Sidebar.module.css";
 
-import Manus from "../../Test/manuscriptTest.json";
-
 import Modal from "./modal";
 
 import { useStore } from "../../Store/store";

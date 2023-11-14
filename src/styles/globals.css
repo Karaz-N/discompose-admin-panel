@@ -28,7 +28,7 @@
 
   --letter-spacing-scale: clamp(0.1rem, 0.0136rem + 0.3545vw, 0.439rem);
 
-  --footer-scale: clamp(0.625rem, -2.2745rem + 11.8954vw, 12rem);;
+  --footer-scale: clamp(0.625rem, -2.2745rem + 11.8954vw, 12rem);
 
 
   /*------*/

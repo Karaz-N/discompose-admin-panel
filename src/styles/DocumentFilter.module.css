@@ -16,12 +16,14 @@
     font-size: 1.2rem;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    background: white;
+    background: var(--background-color);
     align-items: center;
     display: flex;
 
     box-sizing: border-box;
-    border: 1px solid #000000;
+    border: 1px solid var(--primary-text-color);
+
+    transition: background-color 0.15s ease;
 }
 
 .eventDivOverlay li img{
@@ -34,41 +36,49 @@
 }
 
 .eventDivOverlay li.item0 {
-    background: var(--primary-discompose-color);
+    background: var(--primary-text-color);
     color: var(--background-color);
+    border: none;
 }
 
 .eventDivOverlay li.item1 {
-    background: var(--primary-discompose-color);
+    background: var(--primary-text-color);
     color: var(--background-color);
+    border: none;
 }
 
 .eventDivOverlay li.item2 {
-    background: var(--primary-discompose-color);
+    background: var(--primary-text-color);
     color: var(--background-color);
+    border: none;
 }
 
 .eventDivOverlay li.item3 {
-    background: var(--primary-discompose-color);
+    background: var(--primary-text-color);
     color: var(--background-color);
+    border: none;
 }
 
 .eventDivOverlay li:nth-child(1):hover {
-    background: #DC251A;
+    background: var(--primary-text-color);
     color: var(--background-color);
+    border: none;
 }
 
 .eventDivOverlay li:nth-child(2):hover {
-    background: #DC251A;
+    background: var(--primary-text-color);
     color: var(--background-color);
+    border: none;
 }
 
 .eventDivOverlay li:nth-child(3):hover {
-    background: #DC251A;
+    background: var(--primary-text-color);
     color: var(--background-color);
+    border: none;
 }
 
 .eventDivOverlay li:nth-child(4):hover {
-    background: #DC251A;
+    background: var(--primary-text-color);
     color: var(--background-color);
+    border: none;
 }

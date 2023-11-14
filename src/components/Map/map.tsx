@@ -18,8 +18,21 @@ import { useStore } from "../../../Store/store";
 import { useFilterStore } from "../../../Store/filterStore";
 
 import { useDocumentStore } from "../../../Store/documentStore";
+import { fromJSON } from "postcss";
+import { off } from "process";
 
 export default function Map() {
+  
+
+  // setTimeout(() => {
+  //   const classPath = document.querySelectorAll(".leaflet-interactive");
+  //   classPath.forEach((element) => {
+  //     // element.classList.remove("leaflet-interactive");
+  //     console.log("2");
+  //   })
+  // }, 1000);
+
+  
   //PARAMETRI INIZIALI DELLA MAPPA
   const [selectedLatLng, setSelectedLatLng] = useState([22, -10]);
   const [country, setCountry] = useState<string | undefined>();
@@ -27,8 +40,9 @@ export default function Map() {
 
   //Colors of Countries
   const includedCountries = "#A92820";
-  const notIncludedCountries = "white";
+  const notIncludedCountries = "#EEEEEE";
   const selectedCountries = "#D8D8D8";
+  const onMouseOver= "#323232";
 
   const defaultBorder = "#6E6E6E";
   const selectedBorder = "#D8D8D8";
@@ -76,7 +90,7 @@ export default function Map() {
       // Stile per i paesi non presenti nell'array, vuoti o con colorazione predefinita
       return {
         fillColor: notIncludedCountries,
-        fillOpacity: 0.1,
+        fillOpacity: 0,
         color: defaultBorder,
         weight: 0.5,
       };
@@ -96,7 +110,7 @@ export default function Map() {
       // Stile per i paesi non presenti nell'array, vuoti o con colorazione predefinita
       return {
         fillColor: notIncludedCountries,
-        fillOpacity: 0.1,
+        fillOpacity: 0,
         color: defaultBorder,
         weight: 0.5,
       };
@@ -179,6 +193,7 @@ export default function Map() {
         scrollWheelZoom={false}
         style={{
           position: "relative",
+          pointerEvents: "auto",
           zIndex: 0,
         }}
       >
@@ -190,6 +205,20 @@ export default function Map() {
           data={mapData.features}
           onEachFeature={(feature, layer) => {
             layer.on({
+              mouseover: (e) => {
+                country ? e.target.setStyle({  
+                  
+                }) : e.target.setStyle({
+                  fillColor: onMouseOver,
+                })
+              },
+              mouseout: (e) => {
+                country ? e.target.setStyle({
+                  
+                }) : e.target.setStyle({
+                  fillColor: includedCountries,
+                })
+              },
               click: handleCountryClick,
             });
           }}

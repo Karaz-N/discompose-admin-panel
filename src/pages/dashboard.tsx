@@ -91,10 +91,10 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/folder.svg"
+                  src="/admin-panel-asset/folder.webp"
                   height={17}
                   width={20}
-                  alt="Asternox Company Logo"
+                  alt="Event's Logo"
                 />
                 <h2 className="uppercase text-lg font-semibold text-item-admin-red">
                   All Events
@@ -154,10 +154,10 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/folder.svg"
+                  src="/admin-panel-asset/folder.webp"
                   height={17}
                   width={20}
-                  alt="Asternox Company Logo"
+                  alt="Document's Logo"
                 />
                 <h2 className="uppercase text-lg font-semibold text-item-admin-red">
                   All Documents
@@ -173,10 +173,10 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/image.svg"
+                  src="/admin-panel-asset/image.webp"
                   height={17}
                   width={20}
-                  alt="Asternox Company Logo"
+                  alt="Image's Logo"
                 />
                 <h2 className="uppercase text-lg font-semibold text-item-admin-red">
                   IMAGES
@@ -192,10 +192,10 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/pen.svg"
+                  src="/admin-panel-asset/pen.webp"
                   height={17}
                   width={20}
-                  alt="Asternox Company Logo"
+                  alt="Manuscript's Logo"
                 />
                 <h2 className="uppercase text-lg font-semibold text-item-admin-red">
                   MANUSCRIPTS
@@ -211,10 +211,10 @@ export default function Home(props: HomeProps) {
               <span className="flex">
                 <Image
                   className="mr-2"
-                  src="/text.svg"
+                  src="/admin-panel-asset/text.webp"
                   height={70}
                   width={20}
-                  alt="Asternox Company Logo"
+                  alt="Print's Logo"
                 />
                 <h2 className="uppercase text-lg font-semibold text-item-admin-red">
                   PRINTS

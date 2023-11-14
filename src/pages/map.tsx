@@ -86,7 +86,7 @@ export default function Home(props: MapProps) {
       {!isSelectedDocument && !sidebarOpen && (
         <Image
           className={style.logoDivOverlay}
-          src="/logo_discompose.svg"
+          src="/logo_discompose.webp"
           alt="Discompose Logo"
           width={100}
           height={100}
