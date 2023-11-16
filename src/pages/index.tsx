@@ -3,14 +3,21 @@ import Link from "next/link";
 import style from "../styles/HomePage.module.css";
 import { useRouter } from "next/router";
 import { useInView } from 'react-intersection-observer';
+import { useState, useEffect } from "react";
+
 
 const Homepage = () => {
+	const  [start, setStart] = useState(false);
 	const { push } = useRouter();
 	const { ref: firstArticleRef, inView: articleIsVisible } = useInView({triggerOnce: true})
 	const { ref: secondArticleRef, inView: secondArticleIsVisible } = useInView({triggerOnce: true})
 
+	setTimeout(() => {
+		setStart(true);
+	}, 7000);
+
 	return (
-		<div className={style.mainContainer}>
+		<div className={`${style.mainContainer} ${start ? style.mainContainerActive : ""}`}>
 			<button
 				type="button"
 				className={style.fixedMapButton}
@@ -21,9 +28,17 @@ const Homepage = () => {
 			<header className={style.headerContainer}>
 				<h1>discompose</h1>
 				<h2>routes</h2>
-				<Image className={style.headerImg} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725}  />
+				<Image className={style.headerImgMain} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725}  />
+				{/* <img className={style.headerImgMain} src="/assets/homepage/volcano/vulcano.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola1.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola2.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola3.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola4.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola5.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola6.webp" alt="" /> */}
 			</header>
-			<article ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`}>
+			{/* ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`} */}
+			<article className={`${style.articleFirst} ${start ? style.articleAnimated : ""}`}>
 				<h1>about the</h1>
 				<h2 className={articleIsVisible ? style.articleH2Animated : ""}>routes</h2>
 				<div className={`${style.articleContainer} ${articleIsVisible ? style.articleContainerAnimated : ""}`}>
@@ -81,7 +96,7 @@ const Homepage = () => {
 				</div>
 			</article>
 			<Image
-				className={style.mapImage}
+				className={style.mapImageContainer}
 				src={"/assets/homepage/home_map.webp"}
 				alt="Discompose Map"
 				width={1920}
