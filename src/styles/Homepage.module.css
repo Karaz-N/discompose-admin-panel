@@ -668,7 +668,7 @@ grid-row-gap: clamp(1.125rem, 0.6201rem + 2.2441vw, 3.313rem);
     letter-spacing: 2px;
     text-transform: uppercase;
     position: fixed;
-    top: 77px;
+    top: 70px;
     right: 20px;
     cursor: pointer;
     z-index: 9999;

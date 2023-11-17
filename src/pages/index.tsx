@@ -5,8 +5,74 @@ import { useRouter } from "next/router";
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from "react";
 
+import {
+  loadEventCount,
+  loadDocumentCount,
+  loadAllDocumentsCount,
+  loadAllEventsCount,
+  loadAllEvents,
+} from "../db/queries";
+import { DocumentCategory, EventType } from "@prisma/client";
 
-const Homepage = () => {
+export const getServerSideProps = async () => {
+  const allEventCount = loadAllEventsCount();
+
+  const allEarthquakesCount = loadEventCount(EventType.EARTHQUAKE);
+  const allFloodsCount = loadEventCount(EventType.FLOOD);
+  const allHurricanesCount = loadEventCount(EventType.HURRICANE);
+  const allEruptionsCount = loadEventCount(EventType.ERUPTION);
+
+  const allEvents = loadAllEvents();
+
+  const allDocumentCount = loadAllDocumentsCount();
+
+  const allImagesCount = loadDocumentCount(DocumentCategory.IMAGE);
+  const allManuscriptsCount = loadDocumentCount(DocumentCategory.MANUSCRIPT);
+  const allPrintsCount = loadDocumentCount(DocumentCategory.PRINT);
+
+  const [
+    events,
+    earthquakes,
+    floods,
+    hurricanes,
+    eruptions,
+    documents,
+    images,
+    manuscripts,
+    prints,
+    alloEvents,
+  ] = await Promise.all([
+    allEventCount,
+    allEarthquakesCount,
+    allFloodsCount,
+    allHurricanesCount,
+    allEruptionsCount,
+    allDocumentCount,
+    allImagesCount,
+    allManuscriptsCount,
+    allPrintsCount,
+    allEvents,
+  ]);
+
+  return {
+    props: {
+      events,
+      earthquakes,
+      floods,
+      hurricanes,
+      eruptions,
+
+      documents,
+      images,
+      manuscripts,
+      prints,
+      alloEvents,
+    },
+  };
+};
+
+type MainProps = Awaited<ReturnType<typeof getServerSideProps>>["props"];
+export default function Homepage(props: MainProps) {
 	const  [start, setStart] = useState(false);
 	const { push } = useRouter();
 	const { ref: firstArticleRef, inView: articleIsVisible } = useInView({triggerOnce: true})
@@ -137,7 +203,7 @@ const Homepage = () => {
 						alt=""
 						className={style.eventDataMarker}
 						/>
-						<p className={style.data}>200</p>
+						<p className={style.data}>{props.events}</p>
 						<p className={style.dataType}>events</p>
 					</div>
 					<div className={style.dataSubRow}>
@@ -147,7 +213,7 @@ const Homepage = () => {
 						alt=""
 						className={style.genericDataMarker}
 						/>
-						<p className={style.data}>200</p>
+						<p className={style.data}>{props.earthquakes}</p>
 						<p className={style.dataType}>earthquakes</p>
 					</div>
 					<div className={style.dataMapRow}>
@@ -156,7 +222,7 @@ const Homepage = () => {
 						alt=""
 						className={style.genericDataMarker}
 						/>
-						<p className={style.data}>200</p>
+						<p className={style.data}>{props.floods}</p>
 						<p className={style.dataType}>floods</p>
 					</div>
 					<div className={style.dataMapRow}>
@@ -165,7 +231,7 @@ const Homepage = () => {
 						alt=""
 						className={style.genericDataMarker}
 						/>
-						<p className={style.data}>200</p>
+						<p className={style.data}>{props.hurricanes}</p>
 						<p className={style.dataType}>hurricanes</p>
 					</div>
 					<div className={style.dataMapRow}>
@@ -174,7 +240,7 @@ const Homepage = () => {
 						alt=""
 						className={style.genericDataMarker}
 						/>
-						<p className={style.data}>200</p>
+						<p className={style.data}>{props.eruptions}</p>
 						<p className={style.dataType}>eruptions</p>
 					</div>
 					</div>
@@ -223,7 +289,7 @@ const Homepage = () => {
 
 				<div className={style.dataContainer}>
 					<div className={style.dataWrapper}>
-						<p className={style.data}>200</p>
+						<p className={style.data}>{props.images}</p>
 						<div className={style.dataRow}>
 							<Image
 								src="/assets/homepage/image_marker.webp"
@@ -235,7 +301,7 @@ const Homepage = () => {
 						</div>
 					</div>
 					<div className={style.dataWrapper}>
-						<p className={style.data}>200</p>
+						<p className={style.data}>{props.manuscripts}</p>
 						<div className={style.dataRow}>
 							<Image
 								src="/assets/homepage/manuscript_marker.webp"
@@ -247,7 +313,7 @@ const Homepage = () => {
 						</div>
 					</div>
 					<div className={style.dataWrapper}>
-						<p className={style.data}>200</p>
+						<p className={style.data}>{props.prints}</p>
 						<div className={style.dataRow}>
 							<Image
 								src="/assets/homepage/print_marker.webp"
@@ -282,5 +348,3 @@ const Homepage = () => {
 		</div>
 	);
 };
-
-export default Homepage;
