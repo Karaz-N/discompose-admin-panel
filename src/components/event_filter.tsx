@@ -53,7 +53,7 @@ export default function EventFilter() {
   return (
     <>
     <input  id={`${showCheck ? style.togg : style.displayCheck}`} type="checkbox"/>
-      <ul className={style.eventDivOverlay}>
+      <ul className={`${style.eventDivOverlay}`}>
         <li
           className={selectedItem === 0 ? style.item0 : ""}
           onClick={() => {
