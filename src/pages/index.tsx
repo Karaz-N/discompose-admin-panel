@@ -39,6 +39,13 @@ const Homepage = () => {
 			</header>
 			{/* ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`} */}
 			<article className={`${style.articleFirst} ${start ? style.articleAnimated : ""}`}>
+			<Image
+			style={{alignSelf: "start", marginBottom: "1rem"}}
+                src="/assets/logo_discompose.webp"
+                alt="discompose-logo"
+                width={83}
+                height={50}
+              />
 				<h1>about the</h1>
 				<h2 className={start ? style.articleH2Animated : ""}>routes</h2>
 				<div className={`${style.articleContainer} ${start ? style.articleContainerAnimated : ""}`}>
@@ -58,6 +65,7 @@ const Homepage = () => {
 							natural disasters, the processing of information about such events
 							and the development of emergency management policies.
 						</p>
+						<div className={style.linkContainer}>
 						<Link
 							className={style.externalLink}
 							href="http://discompose.unina.it/"
@@ -65,12 +73,32 @@ const Homepage = () => {
 						>
 							FIND OUT MORE ABOUT DISCOMPOSE
 						</Link>
+						<img
+						className={style.linkImage}
+						src="/assets/homepage/imageLink.webp"
+						alt=""
+						/>
+						</div>
 					</div>
 					<p>
 						With this platform, the researchers aim to provide scholars and
 						non-scholarly individuals with a more immersive and interactive
 						display of the findings of their research.
 					</p>
+					<div className={style.linkContainer2}>
+						<Link
+							className={style.externalLink}
+							href="http://discompose.unina.it/"
+							target="_blank"
+						>
+							FIND OUT MORE ABOUT DISCOMPOSE
+						</Link>
+						<img
+						className={style.linkImage}
+						src="/assets/homepage/imageLink.webp"
+						alt=""
+						/>
+						</div>
 					<Image className={`${style.arrow_dx} ${start ? style.arrowDxAnimated : ""}`} src="/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
 					
 					<Image className={`${style.arrow_sx} ${start ? style.arrowSxAnimated : ""}`} src="/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
@@ -95,13 +123,63 @@ const Homepage = () => {
 					</p>
 				</div>
 			</article>
+			<article className={style.mapImageContainer}>
 			<Image
-				className={style.mapImageContainer}
 				src={"/assets/homepage/home_map.webp"}
 				alt="Discompose Map"
 				width={1920}
 				height={2158}
 			/>
+				<section className={style.dataMap}>
+					<div id={style.firstBorder} className={style.dataMapRow}>
+						<img
+						src="/assets/homepage/event_marker_home.webp"
+						alt=""
+						className={style.eventDataMarker}
+						/>
+						<p className={style.data}>200</p>
+						<p className={style.dataType}>events</p>
+					</div>
+					<div className={style.dataSubRow}>
+					<div className={style.dataMapRow}>
+						<img
+						src="/assets/homepage/generic_marker.webp"
+						alt=""
+						className={style.genericDataMarker}
+						/>
+						<p className={style.data}>200</p>
+						<p className={style.dataType}>earthquakes</p>
+					</div>
+					<div className={style.dataMapRow}>
+						<img
+						src="/assets/homepage/generic_marker.webp"
+						alt=""
+						className={style.genericDataMarker}
+						/>
+						<p className={style.data}>200</p>
+						<p className={style.dataType}>floods</p>
+					</div>
+					<div className={style.dataMapRow}>
+						<img
+						src="/assets/homepage/generic_marker.webp"
+						alt=""
+						className={style.genericDataMarker}
+						/>
+						<p className={style.data}>200</p>
+						<p className={style.dataType}>hurricanes</p>
+					</div>
+					<div className={style.dataMapRow}>
+						<img
+						src="/assets/homepage/generic_marker.webp"
+						alt=""
+						className={style.genericDataMarker}
+						/>
+						<p className={style.data}>200</p>
+						<p className={style.dataType}>eruptions</p>
+					</div>
+					</div>
+				</section>
+			</article>
 			{/* style={{ alignSelf: "center", marginTop: "10%" }} */}
 			<article className={`${style.article} ${secondArticleIsVisible ? style.articleAnimated : ""}`}>
 				<h1 className={style.thirdConH1}>the news</h1>

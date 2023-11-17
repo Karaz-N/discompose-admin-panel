@@ -281,6 +281,20 @@
     letter-spacing: 1px;
 }
 
+.linkContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+.linkContainer2{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
 .externalLink {
     display: flex;
     flex-direction: row;
@@ -295,7 +309,18 @@
     margin-top: 10px;
 }
 
-.externalLink:hover {
+.linkImage{
+    width: clamp(1.031rem, 0.9805rem + 0.2246vw, 1.25rem);
+    height: clamp(1.031rem, 0.9805rem + 0.2246vw, 1.25rem);
+    margin-left: 10px;
+    align-self: flex-end;
+}
+
+.linkContainer:hover {
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.linkContainer2:hover {
     border-bottom: 1px solid var(--primary-text-color);
 }
 
@@ -431,7 +456,7 @@
 }
 
 .mapImageContainer{
-
+    position: relative;
 }
 
 .circolationMap {
@@ -439,6 +464,82 @@
     height: var(--grid-scale-height);
     margin-top: 10%;
     margin-bottom: 5%;
+}
+
+.dataMap{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 5%;
+    right: 0;
+    bottom: clamp(0.813rem, -2.9947rem + 16.9231vw, 17.313rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dataMapRow{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#firstBorder{
+    padding-bottom: 10px;
+}
+
+.dataMap #firstBorder::after{
+    content: "";
+    position: absolute;
+    bottom: 65%;
+    left: -40%;
+
+    width: 35%;
+
+    height: 0;
+    border-top: 2px solid #EEEEEE;
+
+    transform: translate(200%, 200%) skewX(91deg);
+
+}
+
+.dataMap #firstBorder::after{
+    right: 25%;
+}
+
+.dataMapRow p{
+    color: #EEEEEE;
+    font-family: Montserrat;
+font-size: clamp(0.75rem, 0.4615rem + 1.2821vw, 2rem);
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.186px;
+}
+
+.dataSubRow{
+    margin-top: clamp(0rem, -0.3750rem + 1.6667vw, 1.625rem);
+    display: grid;
+grid-template-columns: repeat(2, 1fr); 
+grid-template-rows: repeat(2, 0.70fr);
+grid-column-gap: clamp(0.75rem, 0.1154rem + 2.8205vw, 3.5rem);
+grid-row-gap: clamp(1.125rem, 0.6201rem + 2.2441vw, 3.313rem);
+}
+
+.eventDataMarker{
+    width: clamp(1.813rem, 1.5391rem + 1.2174vw, 3rem);
+    height: clamp(1.813rem, 1.5391rem + 1.2174vw, 3rem);
+}
+
+.genericDataMarker{
+    width: clamp(0.563rem, 0.4765rem + 0.3846vw, 0.938rem);
+    height: clamp(0.563rem, 0.4765rem + 0.3846vw, 0.938rem);
 }
 
 .dataContainer {
@@ -567,7 +668,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     position: fixed;
-    top: 20px;
+    top: 77px;
     right: 20px;
     cursor: pointer;
     z-index: 9999;
@@ -727,6 +828,14 @@
     }
 } */
 
+
+@media (max-width: 1280px) {
+    .secondaryContainer{
+        margin-top: 29%;
+        margin-right: -5%;
+    }
+}
+
 @media (max-width: 768px) {
     .articleContainer{
         flex-direction: column;
@@ -758,8 +867,14 @@
         align-self: center;
     }
 
-    .externalLink{
+    .linkContainer{
         display: none;
+    }
+
+    .linkContainer2{
+        display: flex;
+        align-self: flex-start;
+        margin-left: clamp(0.563rem, -8.9672rem + 28.4483vw, 4.688rem);
     }
 
     .articleAnimated h1{
@@ -890,6 +1005,12 @@
     .thirdDocument{
         top: 20%;
         left: 83%;
+    }
+}
+
+@media (max-width: 360px) {
+    .linkContainer2{
+        margin-left: 0;
     }
 }
 
