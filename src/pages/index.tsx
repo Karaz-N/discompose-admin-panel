@@ -26,22 +26,22 @@ const Homepage = () => {
 				{"explore the routes >"}
 			</button>
 			<header className={style.headerContainer}>
-				<h1>discompose</h1>
+				<h1 style={{ position: "relative" }}>discompose</h1>
 				<h2>routes</h2>
-				<Image className={style.headerImgMain} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725}  />
-				{/* <img className={style.headerImgMain} src="/assets/homepage/volcano/vulcano.webp" alt="" />
+				{/* <Image className={style.headerImgMain} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725}  /> */}
+				<img className={style.headerImgMain} src="/assets/homepage/volcano/vulcano.webp" alt="" />
 				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola1.webp" alt="" />
 				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola2.webp" alt="" />
 				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola3.webp" alt="" />
 				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola4.webp" alt="" />
 				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola5.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola6.webp" alt="" /> */}
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola6.webp" alt="" />
 			</header>
 			{/* ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`} */}
 			<article className={`${style.articleFirst} ${start ? style.articleAnimated : ""}`}>
 				<h1>about the</h1>
-				<h2 className={articleIsVisible ? style.articleH2Animated : ""}>routes</h2>
-				<div className={`${style.articleContainer} ${articleIsVisible ? style.articleContainerAnimated : ""}`}>
+				<h2 className={start ? style.articleH2Animated : ""}>routes</h2>
+				<div className={`${style.articleContainer} ${start ? style.articleContainerAnimated : ""}`}>
 					<div>
 						<p>
 							<span className={style.specialContent}>DISCOMPOSE ROUTES</span>{" "}
@@ -71,13 +71,13 @@ const Homepage = () => {
 						non-scholarly individuals with a more immersive and interactive
 						display of the findings of their research.
 					</p>
-					<Image className={`${style.arrow_dx} ${articleIsVisible ? style.arrowDxAnimated : ""}`} src="/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_dx} ${start ? style.arrowDxAnimated : ""}`} src="/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
 					
-					<Image className={`${style.arrow_sx} ${articleIsVisible ? style.arrowSxAnimated : ""}`} src="/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_sx} ${start ? style.arrowSxAnimated : ""}`} src="/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
 					
-					<Image className={style.crown} src="/assets/homepage/crown.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={style.crown} src="/assets/homepage/crown.webp" alt="" width={1920} height={2158} />
 					
-					<Image className={style.secondImg} src="/assets/homepage/data.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={style.secondImg} src="/assets/homepage/data.webp" alt="" width={1920} height={2158} />
 					
 				</div>
 				<div className={style.secondaryContainer}>
@@ -102,9 +102,10 @@ const Homepage = () => {
 				width={1920}
 				height={2158}
 			/>
+			{/* style={{ alignSelf: "center", marginTop: "10%" }} */}
 			<article className={`${style.article} ${secondArticleIsVisible ? style.articleAnimated : ""}`}>
-				<h1 style={{ alignSelf: "center", marginTop: "10%" }}>the news</h1>
-				<h2 className={`${secondArticleIsVisible ? style.articleH2Animated : ""}`} style={{ alignSelf: "flex-end" }}>circulation</h2>
+				<h1 className={style.thirdConH1}>the news</h1>
+				<h2 className={`${style.thirdConH2} ${secondArticleIsVisible ? style.articleH2Animated : ""}`}>circulation</h2>
 				<div className={`${style.thirdContainer} ${secondArticleIsVisible ? style.articleContainerAnimated : ""}`}>
 					<p>
 						What was a disaster for women and men in early modern Europe? What
@@ -125,9 +126,10 @@ const Homepage = () => {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					<Image ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_1.webp" alt="Discompose Map" width={1920} height={2158} />
-					<Image className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_2.webp" alt="Discompose Map" width={1920} height={2158} />
-					<Image className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_3.webp" alt="Discompose Map" width={1920} height={2158} />
+					<img ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_1.webp" alt="Discompose Map" />
+					<img className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_2.webp" alt="Discompose Map" />
+					<img className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_3.webp" alt="Discompose Map" />
+					
 				</div>
 
 				<p className={style.subArticle}>
