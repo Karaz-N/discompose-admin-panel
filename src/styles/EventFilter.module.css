@@ -26,11 +26,6 @@
     transition: background-color 0.15s ease;
 }
 
-/* .eventDivOverlay img{
-    background-color: aqua;
-    width: 10%;
-} */
-
 .eventDivOverlay li img{
     margin-right: 10px;
     width: 8%;
@@ -99,3 +94,28 @@
 .image1 {
     content: url("/marker/earthquake_marker.svg");
 }
+
+  #displayCheck{
+    display: none;
+  } 
+
+  #togg {
+    position: absolute;
+    right: 33.5px;
+    top: 16px;
+    height: 40px;
+    width: 40px;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 10001;
+  }
+
+  #togg:checked ~ ul {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  #togg:not(:checked) ~ ul {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }

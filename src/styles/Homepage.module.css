@@ -676,8 +676,13 @@ grid-row-gap: clamp(1.125rem, 0.6201rem + 2.2441vw, 3.313rem);
     border: 1px solid var(--primary-text-color);
 
     animation: showButton 9s;
+    transition: all 0.3s ease;
 }
 
+.fixedMapButton:hover {
+    background-color: var(--primary-text-color);
+    color: var(--background-color);
+}
 /*---ANIMATIONS---*/
 
 @keyframes fade-up {

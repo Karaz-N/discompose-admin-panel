@@ -20,14 +20,14 @@
   background-image: url('/assets/homepage/back_button.webp');
   background-position: center;
   background-repeat: no-repeat;
-  width: 55px;
-  height: 55px;
+  background-size: contain;
+  width: clamp(1.875rem, 1.7308rem + 0.6410vw, 2.5rem);
+  height: clamp(1.875rem, 1.7308rem + 0.6410vw, 2.5rem);
   position: absolute;
   top: 6rem;
   left: 2rem;
   cursor: pointer;
   z-index: 10000;
-
 }
 
 .backDivOverlay:hover {
