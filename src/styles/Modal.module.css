@@ -22,8 +22,9 @@
 .modal {
   position: relative;
   transform: translateY(100%);
-  width: 900px;
-  max-width: 900px;
+  width: clamp(22.375rem, 15.3077rem + 31.4103vw, 53rem);
+  height: fit-content;
+  min-height: clamp(30.438rem, 28.5258rem + 4.2493vw, 33.625rem);
   background-color: white;
   padding: 0;
   border-radius: 10px;

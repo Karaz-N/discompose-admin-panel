@@ -42,21 +42,21 @@ export default function PrintCard({ onClose, print } : PrintCardProps) {
         </nav>
 
         <ul className={`${style.wideItem}`}>
+        <li className={style.summary}>
+            <p>Summary</p>
+            <p>{print.summary || "-"}</p>
+          </li>
           <li>
-            <p>Author</p>
+            <p>Artist</p>
             <p>{print.author || "-"}</p>
           </li>
           <li>
-            <p>Writer</p>
-            <p>{print.writer || "-"}</p>
+            <p>Date</p>
+            <p>{print.year || "-"}</p>
           </li>
           <li>
             <p>Title</p>
             <p>{print.title || "-"}</p>
-          </li>
-          <li>
-            <p>Summary</p>
-            <p>{print.summary || "-"}</p>
           </li>
           <li>
             <p>Information</p>
