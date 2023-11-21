@@ -43,7 +43,7 @@ export default function PrintCard({ onClose, print } : PrintCardProps) {
 
         <ul className={`${style.wideItem}`}>
         <li className={style.summary}>
-            <p>Summary</p>
+            <p>Content</p>
             <p>{print.summary || "-"}</p>
           </li>
           <li>

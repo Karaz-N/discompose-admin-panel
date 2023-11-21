@@ -1,9 +1,15 @@
 .container {
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    row-gap: 20px;
+    grid-template-rows: 0.1fr 1fr;
     margin: 1%;
+
+    row-gap: 15px;
+}
+
+.summary{
+    grid-column: 1 / span 3;
 }
 
 .container h1 {
@@ -34,28 +40,49 @@
 }
 
 .wideItem {
+    height: clamp(30.438rem, 28.5258rem + 4.2493vw, 33.625rem);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-column: span 5;
 
     column-gap: 25px;
-    row-gap: 20px;
+    row-gap: 25px;
 }
 
 .container li {
     display: flex;
     flex-direction: column;
-    max-width: 230px;
+    justify-content: center;
+    height: fit-content;
+    overflow-x: hidden;
 }
 
 .container li p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-bottom: 10px;
+    text-align: start;
 }
 
 .container li p:nth-child(2) {
+    padding: 10px 15px;
     background-color: var(--background-color);
-    padding-left: 5px;
+}
+
+@media screen and (max-width: 393px) {
+    .container{
+        overflow-y: scroll;
+    }
+
+    .wideItem{
+        overflow-y: scroll;
+        display: block;
+    }
+
+    .container li p:nth-child(2) {
+        padding: 0;
+        background-color: var(--background-color);
+    }
 }

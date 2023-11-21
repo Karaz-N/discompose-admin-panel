@@ -42,6 +42,10 @@ export default function ImageCard({ onClose, imageData } : ImageCardProps) {
         </nav>
 
         <ul className={`${style.wideItem}`}>
+        <li className={style.summary}>
+            <p>Content</p>
+            <p>{imageData.summary || "-"}</p>
+          </li>
           <li>
             <p>Author</p>
             <p>{imageData.author || "-"}</p>
@@ -69,10 +73,6 @@ export default function ImageCard({ onClose, imageData } : ImageCardProps) {
           <li>
             <p>Content</p>
             <p>{imageData.content || "-"}</p>
-          </li>
-          <li>
-            <p>Summary</p>
-            <p>{imageData.summary || "-"}</p>
           </li>
           <li>
             <p>Link</p>

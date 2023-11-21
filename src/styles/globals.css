@@ -35,7 +35,11 @@
 
   --grid-scale-width: clamp(24.563rem, 9.3645rem + 62.3529vw, 84.188rem);
 
-  --grid-scale-height: clamp(12.625rem, 4.8344rem + 31.9613vw, 43.188rem);;
+  --grid-scale-height: clamp(12.625rem, 4.8344rem + 31.9613vw, 43.188rem);
+
+  /*------*/
+
+  --sidebar-container-width: clamp(35.938rem, 30.7300rem + 10.8500vw, 43.75rem);
 }
 
 @media (prefers-color-scheme: dark) {

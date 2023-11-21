@@ -78,7 +78,7 @@ export default function Home(props: MapProps) {
   }, []);
 
   return (
-    <div className={style.container}>
+    <div className={style.container} style={{ overflow: "hidden" }}>
       {sidebarVisible && <Sidebar open={false} />}
 
       {!isSelectedCountry && <BannerText />}

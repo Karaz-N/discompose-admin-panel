@@ -63,9 +63,26 @@
     overflow: hidden;
     text-overflow: ellipsis;
     padding-bottom: 10px;
+    text-align: start;
 }
 
 .container li p:nth-child(2) {
     padding: 10px 15px;
     background-color: var(--background-color);
+}
+
+@media screen and (max-width: 393px) {
+    .container{
+        overflow-y: scroll;
+    }
+
+    .wideItem{
+        overflow-y: scroll;
+        display: block;
+    }
+
+    .container li p:nth-child(2) {
+        padding: 0;
+        background-color: var(--background-color);
+    }
 }

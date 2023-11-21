@@ -42,6 +42,10 @@ export default function ManuscriptCard({ onClose, manuscript } : ManuscriptCardP
         </nav>
 
         <ul className={`${style.wideItem}`}>
+        <li className={style.summary}>
+            <p>Content</p>
+            <p>{manuscript.summary || "-"}</p>
+          </li>
           <li>
             <p>Author</p>
             <p>{manuscript.author || "-"}</p>

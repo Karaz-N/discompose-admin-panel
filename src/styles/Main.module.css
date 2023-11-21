@@ -11,6 +11,8 @@
 }
 
 .logoDivOverlay {
+    width: clamp(4.125rem, 3.8514rem + 1.1138vw, 5.188rem);
+    height: clamp(2.5rem, 2.3391rem + 0.6549vw, 3.125rem);
     position: absolute;
     top: 1rem;
     left: 2rem;
@@ -19,7 +21,7 @@
 
 .backDivOverlay {
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     left: 2rem;
     cursor: pointer;
     z-index: 10000;
