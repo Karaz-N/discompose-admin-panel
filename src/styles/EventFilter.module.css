@@ -10,10 +10,10 @@
 .eventDivOverlay li {
     list-style: none;
     cursor: pointer;
-    height: clamp(1.875rem, 1.7141rem + 0.6549vw, 2.5rem);
     width: clamp(12.5rem, 10.7949rem + 6.9417vw, 19.125rem);
+    height: clamp(1.875rem, 1.7141rem + 0.6549vw, 2.5rem);
     color: var(--primary-text-color);
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 0.9357rem + 0.2620vw, 1.25rem);
     margin-bottom: 1rem;
     padding: 0.5rem;
     background: var(--background-color);
@@ -95,28 +95,47 @@
     content: url("/marker/earthquake_marker.svg");
 }
 
-  #displayCheck{
+#displayCheck{
     display: none;
   } 
 
   #togg {
     position: absolute;
-    right: 33.5px;
-    top: 16px;
+    right: 10px;
+    top: 50px;
     height: 30px;
     width: 30px;
     opacity: 1;
     cursor: pointer;
+
+    appearance: none;
     z-index: 10001;
-  }
+}
+
+    #togg:hover {
+        background-image: url("/assets/map/hamb_menu_hover.webp");
+        background-size: contain;
+    }  
+
+    #togg:not(:checked) {
+        background-image: url("/assets/map/hamb_menu.webp");
+        background-size: contain;
+    }
+    
+    #togg:checked {
+        background-image: url("/assets/map/hamb_menu_hover.webp");
+        background-size: contain;
+    }
 
   #togg:checked ~ ul {
     /* visibility: hidden; */
     opacity: 1;
+    z-index: 10000;
     transition: opacity 0.2s ease-in-out;
   }
   
   #togg:not(:checked) ~ ul {
     opacity: 0;
+    z-index: -1;
     transition: opacity 0.2s ease-in-out;
   }

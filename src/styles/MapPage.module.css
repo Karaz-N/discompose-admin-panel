@@ -24,8 +24,8 @@
   width: clamp(1.875rem, 1.7308rem + 0.6410vw, 2.5rem);
   height: clamp(1.875rem, 1.7308rem + 0.6410vw, 2.5rem);
   position: absolute;
-  top: 6rem;
-  left: 2rem;
+  top: 5rem;
+  left: 1rem;
   cursor: pointer;
   z-index: 10000;
 }
@@ -61,4 +61,10 @@
   padding: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   /* Aggiungi altre regole CSS per personalizzarlo ulteriormente */
+}
+
+@media screen and (max-width: 393px) {
+  .backDivOverlay {
+    top: 4rem;
+  }
 }

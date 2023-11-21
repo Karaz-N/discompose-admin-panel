@@ -15,7 +15,7 @@
     height: clamp(2.5rem, 2.3391rem + 0.6549vw, 3.125rem);
     position: absolute;
     top: 1rem;
-    left: 2rem;
+    left: 1rem;
     z-index: 10000;
 }
 

@@ -20,16 +20,38 @@ export default function DocumentFilter() {
 	const selectedImage = useDocumentStore((state) => state.selectedImage);
 	const deselectFilter = useDocumentStore((state) => state.deselectFilter);
 
-	const eventType = ["all documents", "images", "manuscripts", "prints"];
+	const eventType = ["all", "images", "manuscripts", "prints"];
 
 	const [selectedItem, setSelectedItem] = useState(0);
+
+	const [showCheck, setShowCheck] = useState(false);
 
 	const handleItemClick = (index) => {
 		setSelectedItem(index);
 	};
 
+	useEffect(() => {
+		if(window.innerWidth <= 834){
+		  setShowCheck(true);
+		  console.log("runno")
+		}
+	  }, [])
+	
+	  addEventListener("resize", (event) => {
+		if(!showCheck){
+		  if(window.innerWidth <= 834){
+			setShowCheck(true);
+		  }
+		}else{
+		  if(window.innerWidth > 834){
+			setShowCheck(false);
+		  }
+		}
+	  });
+
 	return (
 		<>
+		<input  id={`${showCheck ? style.togg : style.displayCheck}`} type="checkbox"/>
 			<ul className={style.eventDivOverlay}>
 				<li
 					className={selectedItem === 0 ? style.item0 : ""}

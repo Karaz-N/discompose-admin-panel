@@ -23,7 +23,7 @@ export default function ManuscriptCard({ onClose, manuscript } : ManuscriptCardP
               src={"/assets/card/downloadDocument.webp"}
               height={26}
               width={26}
-              alt="prova"
+              alt="Download Document"
             />
           </button>
           <button
