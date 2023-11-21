@@ -63,7 +63,7 @@
   /* Aggiungi altre regole CSS per personalizzarlo ulteriormente */
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 616px) {
   .backDivOverlay {
     top: 4rem;
   }
