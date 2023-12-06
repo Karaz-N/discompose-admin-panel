@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from 'react';
+import { useReactToPrint } from 'react-to-print';
 import style from "../styles/ManuscriptCard.module.css";
 import Image from "next/image";
 
@@ -11,6 +12,67 @@ type ManuscriptCardProps = {
   onClose: () => void;
 }
 
+class ManuscriptView extends React.Component<{manuscript: Manuscript}, {}> {
+  render() {
+    return (
+      <ul className={`${style.wideItem}`}>
+        <li className={style.summary}>
+            <p>Content</p>
+            <p>{this.props.manuscript.summary || "-"}</p>
+          </li>
+          <li>
+            <p>Author</p>
+            <p>{this.props.manuscript.author || "-"}</p>
+          </li>
+          <li>
+            <p>Departure Place</p>
+            <p>{this.props.manuscript.from?.name || "-"}</p>
+          </li>
+          <li>
+            <p>Date of Writing</p>
+            <p>{this.props.manuscript.writtenAt || "-"}</p>
+          </li>
+          <li>
+            <p>Recipient</p>
+            <p>{this.props.manuscript.recipient || "-"}</p>
+          </li>
+          <li>
+            <p>Language</p>
+            <p>{this.props.manuscript.language || "-"}</p>
+          </li>
+          <li>
+            <p>Archive</p>
+            <p>{this.props.manuscript.archive || "-"}</p>
+          </li>
+          <li>
+            <p>Arrival Place</p>
+            <p>{this.props.manuscript.to?.name || "-"}</p>
+          </li>
+          <li>
+            <p>Date of Receipt</p>
+            <p>{this.props.manuscript.receivedAt || "-"}</p>
+          </li>
+          <li>
+            <p>Link</p>
+            <p>{this.props.manuscript.link || "-"}</p>
+          </li>
+        </ul>
+    );
+  }
+}
+
+const ManuscriptViewExport = ({manuscript}: {manuscript: Manuscript}) => {
+  const componentRef = useRef(null);
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
+  return (<>
+    <ManuscriptView manuscript={manuscript} ref={componentRef}/>
+    <button onClick={handlePrint}>Di grazia</button>
+    </>
+  );
+}
+
 export default function ManuscriptCard({ onClose, manuscript } : ManuscriptCardProps) {
   return (
     <>
@@ -18,7 +80,7 @@ export default function ManuscriptCard({ onClose, manuscript } : ManuscriptCardP
         <h1>{`Manuscript from ${manuscript.author || "-"}`}</h1>
 
         <nav className={style.lastColumn}>
-          <button type="button">
+          <button type="button" onClick={() => {}}>
             <Image
               src={"/assets/card/downloadDocument.webp"}
               height={26}
@@ -40,49 +102,8 @@ export default function ManuscriptCard({ onClose, manuscript } : ManuscriptCardP
             />
           </button>
         </nav>
-
-        <ul className={`${style.wideItem}`}>
-        <li className={style.summary}>
-            <p>Content</p>
-            <p>{manuscript.summary || "-"}</p>
-          </li>
-          <li>
-            <p>Author</p>
-            <p>{manuscript.author || "-"}</p>
-          </li>
-          <li>
-            <p>Departure Place</p>
-            <p>{manuscript.from?.name || "-"}</p>
-          </li>
-          <li>
-            <p>Date of Writing</p>
-            <p>{manuscript.writtenAt || "-"}</p>
-          </li>
-          <li>
-            <p>Recipient</p>
-            <p>{manuscript.recipient || "-"}</p>
-          </li>
-          <li>
-            <p>Language</p>
-            <p>{manuscript.language || "-"}</p>
-          </li>
-          <li>
-            <p>Archive</p>
-            <p>{manuscript.archive || "-"}</p>
-          </li>
-          <li>
-            <p>Arrival Place</p>
-            <p>{manuscript.to?.name || "-"}</p>
-          </li>
-          <li>
-            <p>Date of Receipt</p>
-            <p>{manuscript.receivedAt || "-"}</p>
-          </li>
-          <li>
-            <p>Link</p>
-            <p>{manuscript.link || "-"}</p>
-          </li>
-        </ul>
+        <ManuscriptViewExport manuscript={manuscript} />
+        
       </article>
     </>
   );

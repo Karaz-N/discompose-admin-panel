@@ -4,7 +4,7 @@ import style from "../styles/HomePage.module.css";
 import { useRouter } from "next/router";
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from "react";
-
+import { Example } from "../components/pdfView";
 import {
   loadEventCount,
   loadDocumentCount,
@@ -325,6 +325,7 @@ export default function Homepage(props: MainProps) {
 						</div>
 					</div>
 				</div>
+				<Example />
 			</article>
 
 			<footer className={style.footerContainer}>
