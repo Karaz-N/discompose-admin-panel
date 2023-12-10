@@ -6,81 +6,81 @@ import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from "react";
 import { Example } from "../components/pdfView";
 import {
-  loadEventCount,
-  loadDocumentCount,
-  loadAllDocumentsCount,
-  loadAllEventsCount,
-  loadAllEvents,
+	loadEventCount,
+	loadDocumentCount,
+	loadAllDocumentsCount,
+	loadAllEventsCount,
+	loadAllEvents,
 } from "../db/queries";
 import { DocumentCategory, EventType } from "@prisma/client";
 
 export const getServerSideProps = async () => {
-  const allEventCount = loadAllEventsCount();
+	const allEventCount = loadAllEventsCount();
 
-  const allEarthquakesCount = loadEventCount(EventType.EARTHQUAKE);
-  const allFloodsCount = loadEventCount(EventType.FLOOD);
-  const allHurricanesCount = loadEventCount(EventType.HURRICANE);
-  const allEruptionsCount = loadEventCount(EventType.ERUPTION);
+	const allEarthquakesCount = loadEventCount(EventType.EARTHQUAKE);
+	const allFloodsCount = loadEventCount(EventType.FLOOD);
+	const allHurricanesCount = loadEventCount(EventType.HURRICANE);
+	const allEruptionsCount = loadEventCount(EventType.ERUPTION);
 
-  const allEvents = loadAllEvents();
+	const allEvents = loadAllEvents();
 
-  const allDocumentCount = loadAllDocumentsCount();
+	const allDocumentCount = loadAllDocumentsCount();
 
-  const allImagesCount = loadDocumentCount(DocumentCategory.IMAGE);
-  const allManuscriptsCount = loadDocumentCount(DocumentCategory.MANUSCRIPT);
-  const allPrintsCount = loadDocumentCount(DocumentCategory.PRINT);
+	const allImagesCount = loadDocumentCount(DocumentCategory.IMAGE);
+	const allManuscriptsCount = loadDocumentCount(DocumentCategory.MANUSCRIPT);
+	const allPrintsCount = loadDocumentCount(DocumentCategory.PRINT);
 
-  const [
-    events,
-    earthquakes,
-    floods,
-    hurricanes,
-    eruptions,
-    documents,
-    images,
-    manuscripts,
-    prints,
-    alloEvents,
-  ] = await Promise.all([
-    allEventCount,
-    allEarthquakesCount,
-    allFloodsCount,
-    allHurricanesCount,
-    allEruptionsCount,
-    allDocumentCount,
-    allImagesCount,
-    allManuscriptsCount,
-    allPrintsCount,
-    allEvents,
-  ]);
+	const [
+		events,
+		earthquakes,
+		floods,
+		hurricanes,
+		eruptions,
+		documents,
+		images,
+		manuscripts,
+		prints,
+		alloEvents,
+	] = await Promise.all([
+		allEventCount,
+		allEarthquakesCount,
+		allFloodsCount,
+		allHurricanesCount,
+		allEruptionsCount,
+		allDocumentCount,
+		allImagesCount,
+		allManuscriptsCount,
+		allPrintsCount,
+		allEvents,
+	]);
 
-  return {
-    props: {
-      events,
-      earthquakes,
-      floods,
-      hurricanes,
-      eruptions,
+	return {
+		props: {
+			events,
+			earthquakes,
+			floods,
+			hurricanes,
+			eruptions,
 
-      documents,
-      images,
-      manuscripts,
-      prints,
-      alloEvents,
-    },
-  };
+			documents,
+			images,
+			manuscripts,
+			prints,
+			alloEvents,
+		},
+	};
 };
 
 type MainProps = Awaited<ReturnType<typeof getServerSideProps>>["props"];
 export default function Homepage(props: MainProps) {
-	const  [start, setStart] = useState(false);
+	const [start, setStart] = useState(false);
 	const { push } = useRouter();
-	const { ref: firstArticleRef, inView: articleIsVisible } = useInView({triggerOnce: true})
-	const { ref: secondArticleRef, inView: secondArticleIsVisible } = useInView({triggerOnce: true})
+	const { ref: firstArticleRef, inView: articleIsVisible } = useInView({ triggerOnce: true })
+	const { ref: secondArticleRef, inView: secondArticleIsVisible } = useInView({ triggerOnce: true })
 
 	setTimeout(() => {
 		setStart(true);
-	}, 7000);
+	}, 3500);
 
 	return (
 		<div className={`${style.mainContainer} ${start ? style.mainContainerActive : ""}`}>
@@ -94,24 +94,17 @@ export default function Homepage(props: MainProps) {
 			<header className={style.headerContainer}>
 				<h1 style={{ position: "relative" }}>discompose</h1>
 				<h2>routes</h2>
-				{/* <Image className={style.headerImgMain} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725}  /> */}
-				<img className={style.headerImgMain} src="/assets/homepage/volcano/vulcano.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola1.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola2.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola3.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola4.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola5.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola6.webp" alt="" />
+				<Image className={style.headerImgMain} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725} />
 			</header>
 			{/* ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`} */}
 			<article className={`${style.articleFirst} ${start ? style.articleAnimated : ""}`}>
-			<Image
-			style={{alignSelf: "start", marginBottom: "1rem"}}
-                src="/assets/logo_discompose.webp"
-                alt="discompose-logo"
-                width={83}
-                height={50}
-              />
+				<Image
+					style={{ alignSelf: "start", marginBottom: "1rem" }}
+					src="/assets/logo_discompose.webp"
+					alt="discompose-logo"
+					width={83}
+					height={50}
+				/>
 				<h1>about the</h1>
 				<h2 className={start ? style.articleH2Animated : ""}>routes</h2>
 				<div className={`${style.articleContainer} ${start ? style.articleContainerAnimated : ""}`}>
@@ -132,18 +125,18 @@ export default function Homepage(props: MainProps) {
 							and the development of emergency management policies.
 						</p>
 						<div className={style.linkContainer}>
-						<Link
-							className={style.externalLink}
-							href="http://discompose.unina.it/"
-							target="_blank"
-						>
-							FIND OUT MORE ABOUT DISCOMPOSE
-						</Link>
-						<img
-						className={style.linkImage}
-						src="/assets/homepage/imageLink.webp"
-						alt=""
-						/>
+							<Link
+								className={style.externalLink}
+								href="http://discompose.unina.it/"
+								target="_blank"
+							>
+								FIND OUT MORE ABOUT DISCOMPOSE
+							</Link>
+							<img
+								className={style.linkImage}
+								src="/assets/homepage/imageLink.webp"
+								alt=""
+							/>
 						</div>
 					</div>
 					<p>
@@ -160,19 +153,19 @@ export default function Homepage(props: MainProps) {
 							FIND OUT MORE ABOUT DISCOMPOSE
 						</Link>
 						<img
-						className={style.linkImage}
-						src="/assets/homepage/imageLink.webp"
-						alt=""
+							className={style.linkImage}
+							src="/assets/homepage/imageLink.webp"
+							alt=""
 						/>
-						</div>
+					</div>
 					<Image className={`${style.arrow_dx} ${start ? style.arrowDxAnimated : ""}`} src="/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
-					
+
 					<Image className={`${style.arrow_sx} ${start ? style.arrowSxAnimated : ""}`} src="/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
-					
+
 					<Image className={style.crown} src="/assets/homepage/crown.webp" alt="" width={1920} height={2158} />
-					
+
 					<Image className={style.secondImg} src="/assets/homepage/data.webp" alt="" width={1920} height={2158} />
-					
+
 				</div>
 				<div className={style.secondaryContainer}>
 					<p className={style.secondaryTextContainer}>
@@ -190,59 +183,59 @@ export default function Homepage(props: MainProps) {
 				</div>
 			</article>
 			<article className={style.mapImageContainer}>
-			<Image
-				src={"/assets/homepage/home_map.webp"}
-				alt="Discompose Map"
-				width={1920}
-				height={2158}
-			/>
+				<Image
+					src={"/assets/homepage/home_map.webp"}
+					alt="Discompose Map"
+					width={1920}
+					height={2158}
+				/>
 				<section className={style.dataMap}>
 					<div id={style.firstBorder} className={style.dataMapRow}>
 						<img
-						src="/assets/homepage/event_marker_home.webp"
-						alt=""
-						className={style.eventDataMarker}
+							src="/assets/homepage/event_marker_home.webp"
+							alt=""
+							className={style.eventDataMarker}
 						/>
 						<p className={style.data}>{props.events}</p>
 						<p className={style.dataType}>events</p>
 					</div>
 					<div className={style.dataSubRow}>
-					<div className={style.dataMapRow}>
-						<img
-						src="/assets/homepage/generic_marker.webp"
-						alt=""
-						className={style.genericDataMarker}
-						/>
-						<p className={style.data}>{props.earthquakes}</p>
-						<p className={style.dataType}>earthquakes</p>
-					</div>
-					<div className={style.dataMapRow}>
-						<img
-						src="/assets/homepage/generic_marker.webp"
-						alt=""
-						className={style.genericDataMarker}
-						/>
-						<p className={style.data}>{props.floods}</p>
-						<p className={style.dataType}>floods</p>
-					</div>
-					<div className={style.dataMapRow}>
-						<img
-						src="/assets/homepage/generic_marker.webp"
-						alt=""
-						className={style.genericDataMarker}
-						/>
-						<p className={style.data}>{props.hurricanes}</p>
-						<p className={style.dataType}>hurricanes</p>
-					</div>
-					<div className={style.dataMapRow}>
-						<img
-						src="/assets/homepage/generic_marker.webp"
-						alt=""
-						className={style.genericDataMarker}
-						/>
-						<p className={style.data}>{props.eruptions}</p>
-						<p className={style.dataType}>eruptions</p>
-					</div>
+						<div className={style.dataMapRow}>
+							<img
+								src="/assets/homepage/generic_marker.webp"
+								alt=""
+								className={style.genericDataMarker}
+							/>
+							<p className={style.data}>{props.earthquakes}</p>
+							<p className={style.dataType}>earthquakes</p>
+						</div>
+						<div className={style.dataMapRow}>
+							<img
+								src="/assets/homepage/generic_marker.webp"
+								alt=""
+								className={style.genericDataMarker}
+							/>
+							<p className={style.data}>{props.floods}</p>
+							<p className={style.dataType}>floods</p>
+						</div>
+						<div className={style.dataMapRow}>
+							<img
+								src="/assets/homepage/generic_marker.webp"
+								alt=""
+								className={style.genericDataMarker}
+							/>
+							<p className={style.data}>{props.hurricanes}</p>
+							<p className={style.dataType}>hurricanes</p>
+						</div>
+						<div className={style.dataMapRow}>
+							<img
+								src="/assets/homepage/generic_marker.webp"
+								alt=""
+								className={style.genericDataMarker}
+							/>
+							<p className={style.data}>{props.eruptions}</p>
+							<p className={style.dataType}>eruptions</p>
+						</div>
 					</div>
 				</section>
 			</article>
@@ -273,7 +266,7 @@ export default function Homepage(props: MainProps) {
 					<img ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_1.webp" alt="Discompose Map" />
 					<img className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_2.webp" alt="Discompose Map" />
 					<img className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_3.webp" alt="Discompose Map" />
-					
+
 				</div>
 
 				<p className={style.subArticle}>
@@ -284,8 +277,8 @@ export default function Homepage(props: MainProps) {
 					documents, thus providing an idea of how news about natural disasters
 					circulated at the time.
 				</p>
-				
-				<img className={style.circolationMap} src="/assets/homepage/circolation_map.webp" alt=""/>
+
+				<img className={style.circolationMap} src="/assets/homepage/circolation_map.webp" alt="" />
 
 				<div className={style.dataContainer}>
 					<div className={style.dataWrapper}>
@@ -294,8 +287,8 @@ export default function Homepage(props: MainProps) {
 							<Image
 								src="/assets/homepage/image_marker.webp"
 								alt="arrow"
-								width={22}
-								height={22}
+								width={18}
+								height={18}
 							/>
 							<p className={style.dataType}>images</p>
 						</div>
@@ -325,7 +318,6 @@ export default function Homepage(props: MainProps) {
 						</div>
 					</div>
 				</div>
-				<Example />
 			</article>
 
 			<footer className={style.footerContainer}>
@@ -343,7 +335,9 @@ export default function Homepage(props: MainProps) {
 					className={style.mapButton}
 					onClick={() => push("/map")}
 				>
-					visit interactive map
+					<div className={style.innerMapButton}>
+						visit interactive map
+					</div>
 				</button>
 			</footer>
 		</div>
