@@ -106,7 +106,6 @@
 /* Regola la posizione del bordo per h1 */
 .headerContainer h1::after {
     right: 25%;
-    /* Sposta il bordo a destra */
 }
 
 .article {
