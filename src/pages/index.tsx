@@ -80,7 +80,7 @@ export default function Homepage(props: MainProps) {
 
 	setTimeout(() => {
 		setStart(true);
-	}, 3500);
+	}, 3200);
 
 	return (
 		<div className={`${style.mainContainer} ${start ? style.mainContainerActive : ""}`}>
@@ -95,6 +95,13 @@ export default function Homepage(props: MainProps) {
 				<h1 style={{ position: "relative" }}>discompose</h1>
 				<h2>routes</h2>
 				<Image className={style.headerImgMain} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725} />
+				{/* <img className={style.headerImgMain} src="/assets/homepage/volcano/vulcano.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola1.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola2.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola3.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola4.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola5.webp" alt="" />
+				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola6.webp" alt="" /> */}
 			</header>
 			{/* ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`} */}
 			<article className={`${style.articleFirst} ${start ? style.articleAnimated : ""}`}>

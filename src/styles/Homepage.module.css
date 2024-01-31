@@ -8,7 +8,7 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    animation: scroll 1s linear 7s forwards;
+    animation: scroll 1s linear 4s forwards;
 }
 
 .mainContainerActive {
@@ -30,6 +30,8 @@
     animation: showVolcano 2s ease 2s forwards;
     -webkit-animation: showVolcano 2s ease 2s forwards
 }
+
+
 
 .headerImgMain {
     width: clamp(25rem, 15.1923rem + 43.5897vw, 67.5rem);
