@@ -6,7 +6,6 @@
   "author": "Asternox",
   "description": "Discompose Routes",
   "type": "module",
-  "module": "nodenext",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

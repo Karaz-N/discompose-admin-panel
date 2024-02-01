@@ -1,0 +1,1311 @@
+[
+    {
+        "id": "clif1en6r0001o3mcb8jne0z9",
+        "name": "Naples",
+        "latitude": 40.8358846,
+        "longitude": 14.2487679,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0002o3mcpw7qd082",
+        "name": "Venice",
+        "latitude": 45.4371908,
+        "longitude": 12.3345898,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0003o3mcztm6ccv0",
+        "name": "Palermo",
+        "latitude": 38.1112268,
+        "longitude": 13.3524434,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0004o3mcmwelxqsd",
+        "name": "Valencia",
+        "latitude": 39.4697065,
+        "longitude": -0.3763353,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r0006o3mcj4kxopx0",
+        "name": "Messina",
+        "latitude": 38.1937571,
+        "longitude": 15.5542082,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0007o3mczespm49j",
+        "name": "Lima",
+        "latitude": -12.0621065,
+        "longitude": -77.0365256,
+        "countryCode": "pe"
+    },
+    {
+        "id": "clif1en6r0008o3mcgd1yxu4l",
+        "name": "Valladolid",
+        "latitude": 41.6521328,
+        "longitude": -4.728562,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r0009o3mcupkip1qb",
+        "name": "Logroño",
+        "latitude": -2.9074147,
+        "longitude": -79.0360451,
+        "countryCode": "ec"
+    },
+    {
+        "id": "clif1en6r000ao3mcs3vlb9j5",
+        "name": "Granada",
+        "latitude": 37.1734995,
+        "longitude": -3.5995337,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000bo3mcsf5ar264",
+        "name": "Padua",
+        "latitude": 45.4077172,
+        "longitude": 11.8734455,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000do3mcxkfvnp8w",
+        "name": "Viterbo",
+        "latitude": 42.49368885,
+        "longitude": 11.94506782980769,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000eo3mcuz7fp7gk",
+        "name": "Florence",
+        "latitude": 43.7698712,
+        "longitude": 11.2555757,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000fo3mchqb985td",
+        "name": "Milan",
+        "latitude": 45.4641943,
+        "longitude": 9.1896346,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000go3mcncfa2ob5",
+        "name": "Lanciano",
+        "latitude": 42.2305316,
+        "longitude": 14.3907794,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000ho3mcuc3zjmdj",
+        "name": "Jesi",
+        "latitude": 43.5219801,
+        "longitude": 13.2443764,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000io3mcvi8ft578",
+        "name": "Mallorca",
+        "latitude": 39.613432,
+        "longitude": 2.882918452943963,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000jo3mcf6cst4d7",
+        "name": "Rome",
+        "latitude": 41.8933203,
+        "longitude": 12.4829321,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000lo3mc7z8s6r6j",
+        "name": "Cesena",
+        "latitude": 44.136352,
+        "longitude": 12.2422442,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000mo3mcgqnlkh8r",
+        "name": "Bologna",
+        "latitude": 44.4938203,
+        "longitude": 11.3426327,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000no3mc4n1z2xvu",
+        "name": "Salamanca",
+        "latitude": 40.9651572,
+        "longitude": -5.6640182,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000oo3mcwivnjm82",
+        "name": "Malaga",
+        "latitude": 36.7213028,
+        "longitude": -4.4216366,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000po3mc5ydd12u0",
+        "name": "Modena",
+        "latitude": 44.5384728,
+        "longitude": 10.93596087053074,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000qo3mcmcgbb8ja",
+        "name": "Ferrara",
+        "latitude": 44.76676424999999,
+        "longitude": 11.82793899564017,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000ro3mc70a4avi5",
+        "name": "Verona",
+        "latitude": 45.4384958,
+        "longitude": 10.9924122,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000to3mcdrbsmwdb",
+        "name": "Mexico City",
+        "latitude": 19.4326296,
+        "longitude": -99.1331785,
+        "countryCode": "mx"
+    },
+    {
+        "id": "clif1en6r000uo3mcm54j1yrx",
+        "name": "Lyon",
+        "latitude": 45.7578137,
+        "longitude": 4.8320114,
+        "countryCode": "fr"
+    },
+    {
+        "id": "clif1en6r000vo3mcmhgv7e8s",
+        "name": "Ascoli",
+        "latitude": 12.3,
+        "longitude": 41.1,
+        "countryCode": "et"
+    },
+    {
+        "id": "clif1en6r000wo3mcf6ukj9kt",
+        "name": "Calatayud",
+        "latitude": 41.3527628,
+        "longitude": -1.6422977,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000xo3mcx5u5u7a1",
+        "name": "Trani",
+        "latitude": 41.275088,
+        "longitude": 16.4162585,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r000yo3mchmeper7g",
+        "name": "Bari",
+        "latitude": 41.1257843,
+        "longitude": 16.8620293,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0010o3mcvc4938fz",
+        "name": "Munich",
+        "latitude": 48.1371079,
+        "longitude": 11.5753822,
+        "countryCode": "de"
+    },
+    {
+        "id": "clif1en6r0011o3mc69ed8syl",
+        "name": "Urbino",
+        "latitude": 43.7262608,
+        "longitude": 12.6363135,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0012o3mcok2dqcjo",
+        "name": "Livorno",
+        "latitude": 42.79021659999999,
+        "longitude": 10.34027867873503,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0013o3mcf4n5keqf",
+        "name": "Reggio Calabria",
+        "latitude": 38.1035389,
+        "longitude": 15.6397556,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0014o3mcemg9savv",
+        "name": "Girona",
+        "latitude": 41.9793006,
+        "longitude": 2.8199439,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r0015o3mcpdm71kn2",
+        "name": "Lerida",
+        "latitude": 41.6147605,
+        "longitude": 0.6267842,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r0016o3mctd6auy0q",
+        "name": "Catania",
+        "latitude": 37.5023612,
+        "longitude": 15.0873718,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0018o3mcwrtlllyf",
+        "name": "Cuenca",
+        "latitude": 40.0661031,
+        "longitude": -2.1313528,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r0019o3mcq5g7pva7",
+        "name": "Macerata",
+        "latitude": 43.15297805,
+        "longitude": 13.15088221750202,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r001ao3mcns34159v",
+        "name": "Ronciglione",
+        "latitude": 42.2902415,
+        "longitude": 12.2138064,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r001bo3mcmphhxynw",
+        "name": "Lisbon",
+        "latitude": 38.7077507,
+        "longitude": -9.1365919,
+        "countryCode": "pt"
+    },
+    {
+        "id": "clif1en6r001co3mc3busudm9",
+        "name": "Olot",
+        "latitude": 42.1822177,
+        "longitude": 2.4890211,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r001do3mckue6yxhn",
+        "name": "Tortosa",
+        "latitude": 40.8110158,
+        "longitude": 0.5209333,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r001eo3mc3zakczut",
+        "name": "Mantua",
+        "latitude": 45.1692628,
+        "longitude": 10.67083651567388,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r001go3mc6okmbd8b",
+        "name": "Leipzig",
+        "latitude": 51.3406321,
+        "longitude": 12.3747329,
+        "countryCode": "de"
+    },
+    {
+        "id": "clif1en6r001ho3mcy90ns2tt",
+        "name": "Reus",
+        "latitude": 41.1555564,
+        "longitude": 1.1076133,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r001io3mc0gbfjtoy",
+        "name": "Antwerp",
+        "latitude": 51.2211097,
+        "longitude": 4.3997081,
+        "countryCode": "be"
+    },
+    {
+        "id": "clif1rml40000o3v0dy4wzo8t",
+        "name": "Martín Muñoz de las Posadas",
+        "latitude": 40.9943499,
+        "longitude": -4.5976807,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif2ba1d0000o3hagjvs4fr4",
+        "name": "Todi",
+        "latitude": 42.7824434,
+        "longitude": 12.4062554,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif2ba1d0001o3haozmd57gx",
+        "name": "Bilbao",
+        "latitude": 43.2630018,
+        "longitude": -2.9350039,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif2ba1d0002o3haa97ycwb6",
+        "name": "Rimini",
+        "latitude": 43.9470982,
+        "longitude": 12.630768610516,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif2ba1d0003o3hajurrrc7m",
+        "name": "Cadiz",
+        "latitude": 36.5297438,
+        "longitude": -6.2928976,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif2ba1d0004o3hah86da1cy",
+        "name": "Genoa",
+        "latitude": 44.40726,
+        "longitude": 8.9338624,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif2ba1d0005o3hap48qr6h5",
+        "name": "Zaragoza",
+        "latitude": 41.6521342,
+        "longitude": -0.8809428,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif2ba1d0006o3haikb2umfu",
+        "name": "Lecce",
+        "latitude": 40.1522173,
+        "longitude": 18.2260628338229,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihvlpox0000o3bqvce67tnq",
+        "name": "Calabria",
+        "latitude": 39.0565974,
+        "longitude": 16.5249864,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihvzfxr0000o3wssxtpcjbh",
+        "name": "Monte Nuovo",
+        "latitude": 40.8352584,
+        "longitude": 14.0877959,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihvzh2y0002o3wsw5zgjp86",
+        "name": "Annaba",
+        "latitude": 36.8982165,
+        "longitude": 7.7549272,
+        "countryCode": "dz"
+    },
+    {
+        "id": "clihvzj300006o3ws25z13dn6",
+        "name": "Catalonia",
+        "latitude": 41.8523094,
+        "longitude": 1.5745043,
+        "countryCode": "es"
+    },
+    {
+        "id": "clihvzk000008o3ws3rw5h8cs",
+        "name": "New Galicia",
+        "latitude": 32.3573913,
+        "longitude": -106.7338721,
+        "countryCode": "us"
+    },
+    {
+        "id": "clihvzkys000ao3wslcnmw1b4",
+        "name": "Valdivia",
+        "latitude": -39.8141262,
+        "longitude": -73.2459859,
+        "countryCode": "cl"
+    },
+    {
+        "id": "clihvzlwl000co3wswn9a9q52",
+        "name": "Arequipa",
+        "latitude": -16,
+        "longitude": -72.25,
+        "countryCode": "pe"
+    },
+    {
+        "id": "clihvzmpv000eo3wscgubn3al",
+        "name": "Pozzuoli",
+        "latitude": 40.822643,
+        "longitude": 14.1219109,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihvznj0000go3wsw0nhjgoi",
+        "name": "Antigua",
+        "latitude": 17.10371515,
+        "longitude": -61.79045045805584,
+        "countryCode": "ag"
+    },
+    {
+        "id": "clihvzoio000io3ws96q9bf5n",
+        "name": "Quito",
+        "latitude": -0.2201641,
+        "longitude": -78.5123274,
+        "countryCode": "ec"
+    },
+    {
+        "id": "clihvzqb0000mo3ws6z5be6j5",
+        "name": "San Mateo Atenco",
+        "latitude": 19.26211685,
+        "longitude": -99.53700897682504,
+        "countryCode": "mx"
+    },
+    {
+        "id": "clihvzr6p000oo3wsq49uj8ik",
+        "name": "San Salvador",
+        "latitude": 13.6989939,
+        "longitude": -89.1914249,
+        "countryCode": "sv"
+    },
+    {
+        "id": "clihvzsbp000qo3ws3sq5jgrr",
+        "name": "Camaná",
+        "latitude": -16.6248458,
+        "longitude": -72.7114514,
+        "countryCode": "pe"
+    },
+    {
+        "id": "clihvzt49000so3ws4kg7tot9",
+        "name": "Huaynaputina",
+        "latitude": -16.6158333,
+        "longitude": -70.85,
+        "countryCode": "pe"
+    },
+    {
+        "id": "clihvztyi000uo3wsftji3jvx",
+        "name": "Arica",
+        "latitude": -18.4785288,
+        "longitude": -70.3211394,
+        "countryCode": "cl"
+    },
+    {
+        "id": "clihvzusa000wo3wska8mau3p",
+        "name": "Momotombo",
+        "latitude": 14.6647325,
+        "longitude": -87.5650134,
+        "countryCode": "hn"
+    },
+    {
+        "id": "clihvzvr7000yo3wsswx8n9m1",
+        "name": "Rhodes",
+        "latitude": 48.7584377,
+        "longitude": 6.8985177,
+        "countryCode": "fr"
+    },
+    {
+        "id": "clihvzxih0012o3wsmfvs5qp5",
+        "name": "Gargano",
+        "latitude": 41.7227442,
+        "longitude": 15.82437386034206,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihvzyki0014o3ws2zh157ex",
+        "name": "Mexico",
+        "latitude": 23.6585116,
+        "longitude": -102.0077097,
+        "countryCode": "mx"
+    },
+    {
+        "id": "clihvzzea0016o3wsucnj2dls",
+        "name": "Vesuvius",
+        "latitude": 40.8213963,
+        "longitude": 14.4261967,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihw009k0018o3wsbmqkaviy",
+        "name": "San Miguel",
+        "latitude": 38.0292476,
+        "longitude": -108.4712533,
+        "countryCode": "us"
+    },
+    {
+        "id": "clihw014q001ao3wsq3otkwdq",
+        "name": "Central Italy",
+        "latitude": 46.0097187,
+        "longitude": 9.2820212,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihw022t001co3wsrzgvdyk3",
+        "name": "Alcoy",
+        "latitude": 38.6982275,
+        "longitude": -0.4747767,
+        "countryCode": "es"
+    },
+    {
+        "id": "clihw046x001go3wszm1kalkh",
+        "name": "Santiago",
+        "latitude": 9.8694792,
+        "longitude": -83.7980749,
+        "countryCode": "cr"
+    },
+    {
+        "id": "clihw055p001io3wsu1lj4npa",
+        "name": "Cuzco",
+        "latitude": -13.5169353,
+        "longitude": -71.97927381639681,
+        "countryCode": "pe"
+    },
+    {
+        "id": "clihw06pc001ko3wslypjec2j",
+        "name": "Concepción",
+        "latitude": -36.8270795,
+        "longitude": -73.0502399,
+        "countryCode": "cl"
+    },
+    {
+        "id": "clihw07tq001mo3wsthiwj42j",
+        "name": "Pichincha",
+        "latitude": -0.0584893,
+        "longitude": -78.3284371,
+        "countryCode": "ec"
+    },
+    {
+        "id": "clihw094d001oo3wsj4wurega",
+        "name": "Ragusa",
+        "latitude": 36.9219828,
+        "longitude": 14.7213455,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihw09yb001qo3ws6j1u1bcd",
+        "name": "Etna",
+        "latitude": 37.7510251,
+        "longitude": 14.9940321,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihw0arb001so3ws8qt0vbhu",
+        "name": "Lorca",
+        "latitude": 37.6712139,
+        "longitude": -1.6990431,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r0000o3mc2f9l0git",
+        "name": "Seville",
+        "latitude": 37.3886303,
+        "longitude": -5.9953403,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r0005o3mc3jla8a87",
+        "name": "Barcelona",
+        "latitude": 41.3828939,
+        "longitude": 2.1774322,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000co3mc8gvh3e3h",
+        "name": "Burgos",
+        "latitude": 42.343926,
+        "longitude": -3.696977,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000ko3mciyg8p705",
+        "name": "Madrid",
+        "latitude": 40.4167047,
+        "longitude": -3.7035825,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000so3mcubogp653",
+        "name": "Écija",
+        "latitude": 38.3440558,
+        "longitude": -0.7700418,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r000zo3mc830xxofz",
+        "name": "Perugia",
+        "latitude": 43.1070321,
+        "longitude": 12.40299620990649,
+        "countryCode": "it"
+    },
+    {
+        "id": "clif1en6r0017o3mcwk3y3alp",
+        "name": "Cordoba",
+        "latitude": 37.8845813,
+        "longitude": -4.7760138,
+        "countryCode": "es"
+    },
+    {
+        "id": "clif1en6r001fo3mct5viinh5",
+        "name": "Peru",
+        "latitude": -6.8699697,
+        "longitude": -75.0458515,
+        "countryCode": "pe"
+    },
+    {
+        "id": "clif1rml40001o3v0v36frket",
+        "name": "Puerto de Santa María",
+        "latitude": 38.0420693,
+        "longitude": -6.1835772,
+        "countryCode": "es"
+    },
+    {
+        "id": "clihvzi3f0004o3wsiifxm9tf",
+        "name": "Eastern Sicily",
+        "latitude": 44.2370707,
+        "longitude": -76.4573698,
+        "countryCode": "ca"
+    },
+    {
+        "id": "clihvzpce000ko3wss9pzrhue",
+        "name": "Manila",
+        "latitude": 14.5948914,
+        "longitude": 120.9782618,
+        "countryCode": "ph"
+    },
+    {
+        "id": "clihvzwp00010o3wsvr0ldsmu",
+        "name": "Trujillo",
+        "latitude": 39.4605657,
+        "longitude": -5.8816626,
+        "countryCode": "es"
+    },
+    {
+        "id": "clihw02wv001eo3ws2vxe32yt",
+        "name": "Pamplona",
+        "latitude": 42.8182536,
+        "longitude": -1.6440304,
+        "countryCode": "es"
+    },
+    {
+        "id": "clihw0buv001uo3wsglmhe5p9",
+        "name": "Beijing",
+        "latitude": 39.9057136,
+        "longitude": 116.3912972,
+        "countryCode": "cn"
+    },
+    {
+        "id": "clihw0cov001wo3wskcbzt0j3",
+        "name": "Andalusia",
+        "latitude": 37.3399964,
+        "longitude": -4.5811614,
+        "countryCode": "es"
+    },
+    {
+        "id": "clihw0dnn001yo3wsge2f3i49",
+        "name": "Cumaná",
+        "latitude": 10.4495706,
+        "longitude": -64.1578046,
+        "countryCode": "ve"
+    },
+    {
+        "id": "clihw0em10020o3ws853o8o8s",
+        "name": "Sannio",
+        "latitude": 14.3788321,
+        "longitude": 121.003335,
+        "countryCode": "ph"
+    },
+    {
+        "id": "clihw0fgk0022o3wsqygan7fs",
+        "name": "Flanders",
+        "latitude": 51.0962462,
+        "longitude": 4.178629103169916,
+        "countryCode": "be"
+    },
+    {
+        "id": "clihw0ga60024o3wsh4ax1d0c",
+        "name": "Jamaica",
+        "latitude": 18.1850507,
+        "longitude": -77.3947693,
+        "countryCode": "jm"
+    },
+    {
+        "id": "clihw0h3f0026o3ws3dtaewje",
+        "name": "Cazorla",
+        "latitude": 37.9128927,
+        "longitude": -3.0038873,
+        "countryCode": "es"
+    },
+    {
+        "id": "clihw0iac0028o3wshtxf3a0t",
+        "name": "Tarragona",
+        "latitude": 41.1172364,
+        "longitude": 1.2546057,
+        "countryCode": "es"
+    },
+    {
+        "id": "clihwii9a0000o3k1jmrihkx9",
+        "name": "Italy",
+        "latitude": 42.6384261,
+        "longitude": 12.674297,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihwipvq0002o3k1z8c7jby2",
+        "name": "Marsica",
+        "latitude": 41.9171594,
+        "longitude": 12.5258097,
+        "countryCode": "it"
+    },
+    {
+        "id": "clihwiu2p0004o3k1z3k2j70r",
+        "name": "Basilicata",
+        "latitude": 40.500571,
+        "longitude": 16.081953,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijarc640000o3j9sx7swm9c",
+        "name": "Guatemala",
+        "latitude": 15.5855545,
+        "longitude": -90.345759,
+        "countryCode": "gt"
+    },
+    {
+        "id": "clijardg50002o3j9fwnkerbo",
+        "name": "Seville Fire",
+        "latitude": 29.3149766,
+        "longitude": -81.4922376,
+        "countryCode": "us"
+    },
+    {
+        "id": "clijarf3h0004o3j91do3m5fa",
+        "name": "La Paz",
+        "latitude": -16.4955455,
+        "longitude": -68.1336229,
+        "countryCode": "bo"
+    },
+    {
+        "id": "clijargju0006o3j90vcax773",
+        "name": "Cordova",
+        "latitude": 37.8845813,
+        "longitude": -4.7760138,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijarhd90008o3j9w9atdimu",
+        "name": "Pastrana",
+        "latitude": 40.4178968,
+        "longitude": -2.9225859,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijarj8c000ao3j9m67poijn",
+        "name": "Guissona",
+        "latitude": 41.785242,
+        "longitude": 1.289032,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijarl1f000co3j9joqxh9hu",
+        "name": "Terceira Island",
+        "latitude": 38.72116535,
+        "longitude": -27.21763798876822,
+        "countryCode": "pt"
+    },
+    {
+        "id": "clijarn2f000eo3j9p538pulm",
+        "name": "Mantova",
+        "latitude": 45.1692628,
+        "longitude": 10.67083651567388,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijarof6000go3j9kpiml9l1",
+        "name": "Flandes Snow",
+        "latitude": 51.12332895,
+        "longitude": 5.469327958126408,
+        "countryCode": "be"
+    },
+    {
+        "id": "clijarp7u000io3j9a20xu36i",
+        "name": "Zafra",
+        "latitude": 38.4253489,
+        "longitude": -6.4193627,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijarr4l000ko3j97a9as2zm",
+        "name": "San Sebastian",
+        "latitude": 43.3224219,
+        "longitude": -1.9838889,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijarsmm000mo3j9dx8nz0gj",
+        "name": "Burgo",
+        "latitude": 40.9152125,
+        "longitude": -8.258491541567626,
+        "countryCode": "pt"
+    },
+    {
+        "id": "clijaru1a000oo3j9mmctrht1",
+        "name": "Ronda",
+        "latitude": 36.7421339,
+        "longitude": -5.1665916,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijarvbm000qo3j9cn9ftufl",
+        "name": "Llaima",
+        "latitude": -38.5974606,
+        "longitude": -72.1904876,
+        "countryCode": "cl"
+    },
+    {
+        "id": "clijarw4w000so3j9gdfv37iw",
+        "name": "Earthquake",
+        "latitude": 51.17761775,
+        "longitude": -4.675986232144825,
+        "countryCode": "gb"
+    },
+    {
+        "id": "clijarx3a000uo3j9vyf178ef",
+        "name": "Troina",
+        "latitude": 37.7852205,
+        "longitude": 14.6004464,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijary8q000wo3j9phwedkun",
+        "name": "La Palma",
+        "latitude": 28.6552318,
+        "longitude": -17.85732257444997,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijarzdj000yo3j98bdxr594",
+        "name": "East Indies",
+        "latitude": 9.9647989,
+        "longitude": 76.2388846,
+        "countryCode": "in"
+    },
+    {
+        "id": "clijas0nx0010o3j9mi736wuj",
+        "name": "Murcia",
+        "latitude": 37.9923795,
+        "longitude": -1.1305431,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijas2ld0012o3j9kz3etbir",
+        "name": "Tevere",
+        "latitude": 42.760123,
+        "longitude": 12.3467594,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijas4jk0014o3j9a7xm430j",
+        "name": "San Lorenzo del Escorial",
+        "latitude": 13.7260609,
+        "longitude": -89.2185548,
+        "countryCode": "sv"
+    },
+    {
+        "id": "clijas5ci0016o3j9obfcajq5",
+        "name": "Abruzzo",
+        "latitude": 42.227681,
+        "longitude": 13.854983,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijas6r20018o3j9xh9shh3p",
+        "name": "Guadix",
+        "latitude": 37.3006914,
+        "longitude": -3.1351956,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijas8id001ao3j921zmw9ff",
+        "name": "Osuna",
+        "latitude": 37.2373532,
+        "longitude": -5.1033306,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijas9es001co3j9wo0pic14",
+        "name": "Santo Domingo",
+        "latitude": 18.4801972,
+        "longitude": -69.942111,
+        "countryCode": "do"
+    },
+    {
+        "id": "clijasae7001eo3j9kky6bfbk",
+        "name": "Tortorice",
+        "latitude": 40.386698,
+        "longitude": -74.357743,
+        "countryCode": "us"
+    },
+    {
+        "id": "clijasdqe001go3j9whi833jx",
+        "name": "Belmonte",
+        "latitude": 39.5592831,
+        "longitude": -2.7038117,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijasfe7001io3j9wykvr0ll",
+        "name": "Jaen",
+        "latitude": 37.9557275,
+        "longitude": -3.492055612037218,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijashrc001ko3j9sp78r482",
+        "name": "Irpinia",
+        "latitude": 39.2278067,
+        "longitude": 9.1185486,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijasj0c001mo3j9on3ngydp",
+        "name": "Xativa",
+        "latitude": 38.9880871,
+        "longitude": -0.5200052,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijaskk7001oo3j9yfbiqh7q",
+        "name": "Montesa",
+        "latitude": 38.9481556,
+        "longitude": -0.6492732,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijasldc001qo3j9r8m86a3r",
+        "name": "Elche",
+        "latitude": 38.2653307,
+        "longitude": -0.6988391,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijasn4q001so3j99vop11d4",
+        "name": "Valencia Locust",
+        "latitude": 34.7261653,
+        "longitude": -106.6764109,
+        "countryCode": "us"
+    },
+    {
+        "id": "clijaspxw001uo3j9xeluu8i2",
+        "name": "Sanguesa",
+        "latitude": 42.5754899,
+        "longitude": -1.283336,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijasr5k001wo3j9c2uio5k0",
+        "name": "Orán",
+        "latitude": 35.7044415,
+        "longitude": -0.6502981,
+        "countryCode": "dz"
+    },
+    {
+        "id": "clijb7zd60000o3wx9i275ce9",
+        "name": "Pico",
+        "latitude": 38.4717536,
+        "longitude": -28.36425619602198,
+        "countryCode": "pt"
+    },
+    {
+        "id": "clijb84jc0002o3wxwqjlwr8a",
+        "name": "La Mamora",
+        "latitude": -22.1790575,
+        "longitude": -64.6643455,
+        "countryCode": "bo"
+    },
+    {
+        "id": "clijb8iuk0004o3wxs8vg1bs8",
+        "name": "Campania",
+        "latitude": 40.860672,
+        "longitude": 14.843984,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijbxapm0000o3ssh7qxouya",
+        "name": "Ciociaria",
+        "latitude": 41.9160972,
+        "longitude": 12.5269707,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijbxcwm0002o3ssyeoe67qi",
+        "name": "Volturno",
+        "latitude": 41.3258468,
+        "longitude": 14.2295618,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijdagya0000o3s6z8p3z17x",
+        "name": "Sicily",
+        "latitude": 37.587794,
+        "longitude": 14.155048,
+        "countryCode": "it"
+    },
+    {
+        "id": "clijdak7u0002o3s65ffr76oa",
+        "name": "Castille",
+        "latitude": 43.5326397,
+        "longitude": 0.2429911,
+        "countryCode": "fr"
+    },
+    {
+        "id": "clijdapa10004o3s6jzc3dzxd",
+        "name": "Fuencaliente",
+        "latitude": 38.405028,
+        "longitude": -4.3049563,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijdaw5z0006o3s6a89u4qqx",
+        "name": "Spain",
+        "latitude": 39.3260685,
+        "longitude": -4.8379791,
+        "countryCode": "es"
+    },
+    {
+        "id": "clijdaxek0008o3s6kne8u3ra",
+        "name": "Tungurahua",
+        "latitude": -1.2765895,
+        "longitude": -78.4754667,
+        "countryCode": "ec"
+    },
+    {
+        "id": "clijdaycs000ao3s6wwlj1ujz",
+        "name": "Pacaya",
+        "latitude": 14.3821115,
+        "longitude": -90.6016566,
+        "countryCode": "gt"
+    },
+    {
+        "id": "clijdaztv000co3s6686hp6sm",
+        "name": "Bogotá",
+        "latitude": 4.6529539,
+        "longitude": -74.0835643,
+        "countryCode": "co"
+    },
+    {
+        "id": "clilx0hxh014uo3zqophqniy8",
+        "name": "Pico Island",
+        "latitude": 31.3599482,
+        "longitude": -81.4176006,
+        "countryCode": "us"
+    },
+    {
+        "id": "clilx0hx7014so3zq3vdtl3c2",
+        "name": "Caracas",
+        "latitude": 10.5060934,
+        "longitude": -66.9146008,
+        "countryCode": "ve"
+    },
+    {
+        "id": "cls3azuku00yb2fskvgxf0gms",
+        "name": "Mugello",
+        "latitude": 43.9889984,
+        "longitude": 11.46597280280634,
+        "countryCode": "it"
+    },
+    {
+        "id": "cls3b1t3l00yl2f36fr69m4y9",
+        "name": "Maritime Alpes",
+        "latitude": 43.9210587,
+        "longitude": 7.1790785,
+        "countryCode": "it"
+    },
+    {
+        "id": "cls3azumt00yi2fskwkzqedqi",
+        "name": "Cile",
+        "latitude": -31.7613365,
+        "longitude": -71.3187697,
+        "countryCode": "ch"
+    },
+    {
+        "id": "cls3b1t1z00yh2f361jxb9dk5",
+        "name": "Mount Vesuvius",
+        "latitude": 40.8213963,
+        "longitude": 14.4261967,
+        "countryCode": "it"
+    },
+    {
+        "id": "cls3b2lwhfdjny224cvvvfes1",
+        "name": "Tajuya",
+        "latitude": 28.63839029712146,
+        "longitude": -17.89538551592847,
+        "countryCode": "es"
+    },
+    {
+        "id": "cls3azukm00ya2fskrfh47y95",
+        "name": "Vesuvio",
+        "latitude": 40.8213963,
+        "longitude": 14.4261967,
+        "countryCode": "it"
+    },
+    {
+        "id": "cls3b2lw4011p2fainnysfes1",
+        "name": "Plasencia",
+        "latitude": 40.029921,
+        "longitude": -6.090168,
+        "countryCode": "es"
+    },
+    {
+        "id": "cls3b2lwk011q2fai7ctbwk6r",
+        "name": "Málaga",
+        "latitude": 36.7213028,
+        "longitude": -4.4216366,
+        "countryCode": "es"
+    },
+    {
+        "id": "cls3b2lu5011n2faiplih98by",
+        "name": "Crete",
+        "latitude": 41.4445334,
+        "longitude": -87.6313829,
+        "countryCode": "gr"
+    },
+    {
+        "id": "cls3b2lu4011m2faihyq3tgme",
+        "name": "Foggia",
+        "latitude": 41.50281055,
+        "longitude": 15.45289960962773,
+        "countryCode": "it"
+    },
+    {
+        "id": "cls3b2lu4011l2fai35lfjfl1",
+        "name": "Cartagena",
+        "latitude": 10.4266746,
+        "longitude": -75.5443419,
+        "countryCode": "es"
+    },
+    {
+        "id": "cls3b2lu4011k2faih45goncu",
+        "name": "Santo Domingo Island",
+        "latitude": 18.77858115,
+        "longitude": -70.5427697709766,
+        "countryCode": "do"
+    },
+    {
+        "id": "cls3r2ma40150pmjj88qov45n",
+        "name": "Empordà",
+        "latitude": 42.29024945,
+        "longitude": 2.975109894854852,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2ma50153pmjjlmjx0dh6",
+        "name": "Roses",
+        "latitude": 42.2632018,
+        "longitude": 3.1755328,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2ma50152pmjjfwlkcvcy",
+        "name": "Aragon",
+        "latitude": 41.3787291,
+        "longitude": -0.7639373,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2maa0156pmjjp77h53m5",
+        "name": "Antisana",
+        "latitude": -0.4847751,
+        "longitude": -78.13639057626483,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2ma90154pmjjnbsyuvth",
+        "name": "Cotopaxi",
+        "latitude": -0.8268521,
+        "longitude": -78.8937757,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mai0158pmjjjhb551m0",
+        "name": "Cauca",
+        "latitude": 2.715645,
+        "longitude": -76.662665,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mai0157pmjjlt6xst7i",
+        "name": "Pals",
+        "latitude": 41.9709891,
+        "longitude": 3.1460371,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mb9015apmjjpawsqgxd",
+        "name": "Flix",
+        "latitude": 41.2340447,
+        "longitude": 0.5560861,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mbg015cpmjjcgjb2i6i",
+        "name": "Lanzarote",
+        "latitude": 29.03970805,
+        "longitude": -13.63629160860414,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mbg015bpmjjmj3183f6",
+        "name": "Ter",
+        "latitude": 41.9918642,
+        "longitude": 2.5568024,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mbk015dpmjjkdnybpik",
+        "name": "El Prat",
+        "latitude": 41.3246333,
+        "longitude": 2.0952568,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mbo015fpmjjrudv89wk",
+        "name": "Cornellà",
+        "latitude": -36.686842,
+        "longitude": 144.777504011145,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mk8015ipmjj0cg9c4ov",
+        "name": "Sangay",
+        "latitude": -2.0049377,
+        "longitude": -78.3416774,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mk8015kpmjjufppx863",
+        "name": "Rosselló",
+        "latitude": 42.67188065,
+        "longitude": 2.7991322657613,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r2mrx016dpmjjvw79mwn4",
+        "name": "Colliure",
+        "latitude": 42.5322674,
+        "longitude": 3.075002033333333,
+        "countryCode": null
+    },
+    {
+        "id": "cls3r83en0154pmt9dnxtmczw",
+        "name": "Arbúcies",
+        "latitude": 41.8160629,
+        "longitude": 2.5141453,
+        "countryCode": null
+    },
+    {
+        "id": "cls3scq0u0000pm103f6xrqq1",
+        "name": "La Mámora",
+        "latitude": -22.1790575,
+        "longitude": -64.6643455,
+        "countryCode": null
+    }
+]

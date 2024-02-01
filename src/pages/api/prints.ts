@@ -1,4 +1,4 @@
-import { uploadPrints } from "../../db/parser";
+import { uploadPrints } from "../../db/parser.js";
 import { NextApiRequest, NextApiResponse } from "next";
 import formidable from "formidable";
 

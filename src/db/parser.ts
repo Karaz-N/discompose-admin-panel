@@ -118,10 +118,12 @@ const addEvent = async (eventString: string): Promise<Event> => {
 	const place = await addPlace(event.place);
 
 	if (place === null) {
+		console.log("Sbaglio ciò: " + event.place);
 		throw "Internal server error.\nDescription: Place could not be geocoded.";
 	}
 
 	// Check if event exists in db, in any case you get it at the end
+	await new Promise((resolve) => setTimeout(resolve, 5000));
 	const dbEvent = await client.event.upsert({
 		create: {
 			year: event.year,
@@ -436,12 +438,3 @@ export const uploadPrints = async (filename: string): Promise<void> => {
 		skipDuplicates: true,
 	});
 };
-
-
-uploadPrints("src/db/printed(mod).csv").then(() => {
-	console.log("Printed uploaded");
- }).catch((err) => {
-	console.log(err);
- }).finally(() => {
-	console.log("Hai assunto comunque cataldo e pallenza, ma la tua vita non finisca in questa");
- });
