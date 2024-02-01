@@ -93,17 +93,16 @@
     content: "";
     position: absolute;
     bottom: -10px;
-    /* Regola questa proprietà per spostare il bordo in alto o in basso */
+
     width: 50%;
-    /* Regola la lunghezza del bordo appuntito */
+
     height: 0;
     border-top: 2px solid var(--primary-text-color);
-    /* Colore e spessore del bordo */
+
     transform: skewX(91deg);
-    /* Applica la trasformazione per ottenere l'effetto appuntito */
+
 }
 
-/* Regola la posizione del bordo per h1 */
 .headerContainer h1::after {
     right: 25%;
 }
