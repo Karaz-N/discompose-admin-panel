@@ -93,7 +93,7 @@ const addPlace = async (place: string): Promise<Place | null> => {
 				data: placeObj,
 			});
 		} catch (e: unknown) {
-			// console.log(`${place} could not be geocoded`);
+			console.log(`${place} could not be geocoded`);
 
 			return null;
 		}
@@ -436,3 +436,12 @@ export const uploadPrints = async (filename: string): Promise<void> => {
 		skipDuplicates: true,
 	});
 };
+
+
+uploadPrints("src/db/printed(mod).csv").then(() => {
+	console.log("Printed uploaded");
+ }).catch((err) => {
+	console.log(err);
+ }).finally(() => {
+	console.log("Hai assunto comunque cataldo e pallenza, ma la tua vita non finisca in questa");
+ });

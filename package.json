@@ -1,7 +1,12 @@
 {
-  "name": "discompose-admin-panel",
+  "name": "discompose-routes",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": "Asternox",
+  "description": "Discompose Routes",
+  "type": "module",
+  "module": "nodenext",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
