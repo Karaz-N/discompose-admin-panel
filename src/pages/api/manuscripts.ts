@@ -1,4 +1,4 @@
-import { uploadManuscripts } from "../../db/parser.js";
+import { uploadManuscripts } from "../../db/parser";
 import { NextApiRequest, NextApiResponse } from "next";
 import formidable from "formidable";
 

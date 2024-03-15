@@ -2,44 +2,43 @@ FROM node:current-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-ARG db
-ARG secret
-
 COPY package.json package-lock.json ./
 RUN  npm install --production
 
 FROM node:current-alpine AS builder
+
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
-ENV DATABASE_URL=$db
-ENV JWT_SECRET=$secret
-
 RUN npx prisma generate
+COPY migrate-and-start.sh .
+RUN chmod +x migrate-and-start.sh
 
 RUN npm run build
 
-FROM node:current-alpine AS runner
+FROM node:current-alpine AS deploy
+
 WORKDIR /app
 
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
-
-USER nextjs
+COPY --from=builder /app/prisma ./prisma
+COPY --from=builder /app/migrate-and-start.sh .
 
 EXPOSE 3000
 
 ENV PORT 3000
 
-CMD ["npm", "start"]
+# ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.12.1/wait /wait
+# 
+# RUN chmod +x /wait
+
+CMD source migrate-and-start.sh

@@ -1,4 +1,4 @@
-import { uploadImages } from "../../db/parser.js";
+import { uploadImages } from "../../db/parser";
 import { NextApiRequest, NextApiResponse } from "next";
 import { verify } from "jsonwebtoken";
 import formidable from "formidable";

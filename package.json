@@ -5,7 +5,6 @@
   "license": "MIT",
   "author": "Asternox",
   "description": "Discompose Routes",
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
