@@ -145,3 +145,20 @@ export const uploadDocumentdata = async () => {
 }
 
 // await uploadDocumentdata()
+
+const concat = list => Array.prototype.concat.bind(list)
+const promiseConcat = f => x => f().then(concat(x))
+const promiseReduce = (acc, x) => acc.then(promiseConcat(x))
+
+const serial = funcs => funcs.reduce(promiseReduce, Promise.resolve([]))
+
+await serial(
+    [
+        uploadPlaces,
+        uploadEvents,
+        uploadManuscripts,
+        uploadImages,
+        uploadPrints,
+        uploadDocumentdata
+    ]
+)
