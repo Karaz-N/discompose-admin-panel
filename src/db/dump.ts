@@ -154,11 +154,11 @@ const serial = funcs => funcs.reduce(promiseReduce, Promise.resolve([]))
 
 await serial(
     [
-        uploadPlaces,
-        uploadEvents,
-        uploadManuscripts,
-        uploadImages,
-        uploadPrints,
-        uploadDocumentdata
+        dumpPlaces,
+        dumpEvents,
+        dumpManuscripts,
+        dumpImages,
+        dumpPrints,
+        dumpDocumentdata
     ]
 )

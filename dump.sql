@@ -55,7 +55,7 @@ CREATE TYPE public."DocumentCategory" AS ENUM (
 );
 
 
-ALTER TYPE public."DocumentCategory" OWNER TO postgres;
+ALTER TYPE public."DocumentCategory" OWNER TO root;
 
 --
 -- Name: EventType; Type: TYPE; Schema: public; Owner: postgres
@@ -75,7 +75,7 @@ CREATE TYPE public."EventType" AS ENUM (
 );
 
 
-ALTER TYPE public."EventType" OWNER TO postgres;
+ALTER TYPE public."EventType" OWNER TO root;
 
 SET default_tablespace = '';
 
@@ -94,7 +94,7 @@ CREATE TABLE public."DocumentData" (
 );
 
 
-ALTER TABLE public."DocumentData" OWNER TO postgres;
+ALTER TABLE public."DocumentData" OWNER TO root;
 
 --
 -- Name: _prisma_migrations; Type: TABLE; Schema: public; Owner: postgres
@@ -112,7 +112,7 @@ CREATE TABLE public._prisma_migrations (
 );
 
 
-ALTER TABLE public._prisma_migrations OWNER TO postgres;
+ALTER TABLE public._prisma_migrations OWNER TO root;
 
 --
 -- Name: events; Type: TABLE; Schema: public; Owner: postgres
@@ -126,7 +126,7 @@ CREATE TABLE public.events (
 );
 
 
-ALTER TABLE public.events OWNER TO postgres;
+ALTER TABLE public.events OWNER TO root;
 
 --
 -- Name: images; Type: TABLE; Schema: public; Owner: postgres
@@ -147,7 +147,7 @@ CREATE TABLE public.images (
 );
 
 
-ALTER TABLE public.images OWNER TO postgres;
+ALTER TABLE public.images OWNER TO root;
 
 --
 -- Name: manuscripts; Type: TABLE; Schema: public; Owner: postgres
@@ -169,7 +169,7 @@ CREATE TABLE public.manuscripts (
 );
 
 
-ALTER TABLE public.manuscripts OWNER TO postgres;
+ALTER TABLE public.manuscripts OWNER TO root;
 
 --
 -- Name: places; Type: TABLE; Schema: public; Owner: postgres
@@ -184,7 +184,7 @@ CREATE TABLE public.places (
 );
 
 
-ALTER TABLE public.places OWNER TO postgres;
+ALTER TABLE public.places OWNER TO root;
 
 --
 -- Name: prints; Type: TABLE; Schema: public; Owner: postgres
@@ -209,7 +209,7 @@ CREATE TABLE public.prints (
 );
 
 
-ALTER TABLE public.prints OWNER TO postgres;
+ALTER TABLE public.prints OWNER TO root;
 
 --
 -- Name: sessions; Type: TABLE; Schema: public; Owner: postgres
@@ -224,7 +224,7 @@ CREATE TABLE public.sessions (
 );
 
 
-ALTER TABLE public.sessions OWNER TO postgres;
+ALTER TABLE public.sessions OWNER TO root;
 
 --
 -- Name: users; Type: TABLE; Schema: public; Owner: postgres
@@ -239,7 +239,7 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO postgres;
+ALTER TABLE public.users OWNER TO root;
 
 --
 -- Data for Name: cache_inval_bgw_job; Type: TABLE DATA; Schema: _timescaledb_cache; Owner: postgres
@@ -269,7 +269,7 @@ COPY _timescaledb_cache.cache_inval_hypertable  FROM stdin;
 -- Data for Name: hypertable; Type: TABLE DATA; Schema: _timescaledb_catalog; Owner: postgres
 --
 
-COPY _timescaledb_catalog.hypertable (id, schema_name, table_name, associated_schema_name, associated_table_prefix, num_dimensions, chunk_sizing_func_schema, chunk_sizing_func_name, chunk_target_size, compression_state, compressed_hypertable_id, replication_factor, status) FROM stdin;
+COPY _timescaledb_catalog.hypertable (id, schema_name, table_name, associated_schema_name, associated_table_prefix, num_dimensions, chunk_sizing_func_schema, chunk_sizing_func_name, chunk_target_size, compression_state, compressed_hypertable_id, status) FROM stdin;
 \.
 
 
@@ -302,14 +302,6 @@ COPY _timescaledb_catalog.dimension_slice (id, dimension_id, range_start, range_
 --
 
 COPY _timescaledb_catalog.chunk_constraint (chunk_id, dimension_slice_id, constraint_name, hypertable_constraint_name) FROM stdin;
-\.
-
-
---
--- Data for Name: chunk_data_node; Type: TABLE DATA; Schema: _timescaledb_catalog; Owner: postgres
---
-
-COPY _timescaledb_catalog.chunk_data_node (chunk_id, node_chunk_id, node_name) FROM stdin;
 \.
 
 
@@ -394,43 +386,11 @@ COPY _timescaledb_catalog.continuous_aggs_watermark (mat_hypertable_id, watermar
 
 
 --
--- Data for Name: dimension_partition; Type: TABLE DATA; Schema: _timescaledb_catalog; Owner: postgres
---
-
-COPY _timescaledb_catalog.dimension_partition (dimension_id, range_start, data_nodes) FROM stdin;
-\.
-
-
---
--- Data for Name: hypertable_compression; Type: TABLE DATA; Schema: _timescaledb_catalog; Owner: postgres
---
-
-COPY _timescaledb_catalog.hypertable_compression (hypertable_id, attname, compression_algorithm_id, segmentby_column_index, orderby_column_index, orderby_asc, orderby_nullsfirst) FROM stdin;
-\.
-
-
---
--- Data for Name: hypertable_data_node; Type: TABLE DATA; Schema: _timescaledb_catalog; Owner: postgres
---
-
-COPY _timescaledb_catalog.hypertable_data_node (hypertable_id, node_hypertable_id, node_name, block_chunks) FROM stdin;
-\.
-
-
---
 -- Data for Name: metadata; Type: TABLE DATA; Schema: _timescaledb_catalog; Owner: postgres
 --
 
 COPY _timescaledb_catalog.metadata (key, value, include_in_telemetry) FROM stdin;
 exported_uuid	5fd3931d-7ae4-4eb7-97a5-c5ad68cc1b4b	t
-\.
-
-
---
--- Data for Name: remote_txn; Type: TABLE DATA; Schema: _timescaledb_catalog; Owner: postgres
---
-
-COPY _timescaledb_catalog.remote_txn (data_node_name, remote_transaction_id) FROM stdin;
 \.
 
 
