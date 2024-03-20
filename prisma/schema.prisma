@@ -1,153 +1,174 @@
 generator client {
-    provider        = "prisma-client-js"
-    previewFeatures = ["fullTextSearch"]
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch"]
 }
 
 datasource db {
-    provider = "postgres"
-    url      = env("DATABASE_URL")
-}
-
-model DocumentData {
-    id           String           @id
-    type         DocumentCategory
-    imageId      String?
-    manuscriptId String?
-    printId      String?
-    images       Image?           @relation(fields: [imageId], references: [id], onDelete: Cascade)
-    manuscripts  Manuscript?      @relation(fields: [manuscriptId], references: [id], onDelete: Cascade)
-    prints       Print?           @relation(fields: [printId], references: [id], onDelete: Cascade)
-}
-
-model Event {
-    id          String       @id
-    year        Int?
-    type        EventType
-    placeId     String
-    places      Place        @relation(fields: [placeId], references: [id])
-    images      Image[]
-    manuscripts Manuscript[]
-    prints      Print[]
-
-    @@unique([year, type, placeId])
-    @@map("events")
-}
-
-model Image {
-    id           String         @id
-    artist       String?
-    author       String?
-    title        String?
-    museum       String?
-    content      String?
-    date         String?
-    summary      String?
-    link         String?
-    eventId      String?
-    placeId      String?
-    DocumentData DocumentData[]
-    events       Event?         @relation(fields: [eventId], references: [id])
-    places       Place?         @relation(fields: [placeId], references: [id])
-
-    @@map("images")
-}
-
-model Manuscript {
-    id                                     String         @id
-    author                                 String?
-    recipient                              String?
-    language                               String?
-    summary                                String?
-    link                                   String?
-    archive                                String?
-    writtenAt                              String?
-    receivedAt                             String?
-    fromPlaceId                            String?
-    toPlaceId                              String?
-    eventId                                String?
-    DocumentData                           DocumentData[]
-    events                                 Event?         @relation(fields: [eventId], references: [id])
-    places_manuscripts_fromPlaceIdToplaces Place?         @relation("manuscripts_fromPlaceIdToplaces", fields: [fromPlaceId], references: [id])
-    places_manuscripts_toPlaceIdToplaces   Place?         @relation("manuscripts_toPlaceIdToplaces", fields: [toPlaceId], references: [id])
-
-    @@map("manuscripts")
-}
-
-model Place {
-    id                                          String       @id(map: "Place_pkey")
-    name                                        String       @unique(map: "Place_name_key")
-    latitude                                    Float?
-    longitude                                   Float?
-    countryCode                                 String?
-    events                                      Event[]
-    images                                      Image[]
-    manuscripts_manuscripts_fromPlaceIdToplaces Manuscript[] @relation("manuscripts_fromPlaceIdToplaces")
-    manuscripts_manuscripts_toPlaceIdToplaces   Manuscript[] @relation("manuscripts_toPlaceIdToplaces")
-    prints                                      Print[]
-
-    @@map("places")
-}
-
-model Print {
-    id           String         @id
-    language     String?
-    title        String?
-    year         String?
-    notes        String?
-    USTC         String?
-    writer       String?
-    information  String?
-    dedicatee    String?
-    summary      String?
-    author       String?
-    link         String?
-    eventId      String?
-    placeId      String?
-    otherPlaces  String[]
-    DocumentData DocumentData[]
-    events       Event?         @relation(fields: [eventId], references: [id])
-    places       Place?         @relation(fields: [placeId], references: [id])
-
-    @@map("prints")
-}
-
-model Session {
-    id        String   @id
-    createdAt DateTime @default(now())
-    updatedAt DateTime
-    duration  Int      @default(7200)
-    userId    String
-    users     User     @relation(fields: [userId], references: [id])
-
-    @@map("sessions")
+  provider = "postgres"
+  url      = env("DATABASE_URL")
 }
 
 model User {
-    id        String    @id
-    email     String    @unique
-    name      String
-    password  String
-    createdAt DateTime  @default(now())
-    sessions  Session[]
+  id        String    @id @default(cuid())
+  email     String    @unique
+  name      String
+  password  String
+  createdAt DateTime  @default(now())
+  Session   Session[]
 
-    @@map("users")
+  @@map("users")
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  duration  Int      @default(7200)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@map("sessions")
+}
+
+model Place {
+  id String @id(map: "Place_pkey") @default(cuid())
+
+  name            String       @unique(map: "Place_name_key")
+  latitude        Float?
+  longitude       Float?
+  countryCode     String?
+  events          Event[]
+  images          Image[]
+  manuscriptsFrom Manuscript[] @relation("sent-from")
+  manuscriptsTo   Manuscript[] @relation("received-to")
+  prints          Print[]
+
+  @@map("places")
+}
+
+model Event {
+  id String @id @default(cuid())
+
+  year        Int?
+  type        EventType
+  placeId     String
+  place       Place        @relation(fields: [placeId], references: [id])
+  images      Image[]
+  manuscripts Manuscript[]
+  prints      Print[]
+
+  @@unique([year, type, placeId])
+  @@map("events")
+}
+
+model DocumentData {
+  id   String           @id
+  type DocumentCategory
+
+  image        Image?      @relation(fields: [imageId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  imageId      String?
+  manuscript   Manuscript? @relation(fields: [manuscriptId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  manuscriptId String?
+  print        Print?      @relation(fields: [printId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  printId      String?
+}
+
+model Image {
+  id String @id @default(cuid())
+
+  artist  String?
+  author  String?
+  title   String?
+  museum  String?
+  content String?
+  date    String?
+
+  summary String?
+  link    String?
+
+  event   Event?  @relation(fields: [eventId], references: [id])
+  eventId String?
+
+  place   Place?  @relation(fields: [placeId], references: [id])
+  placeId String?
+
+  // Contains the ids of associated documents
+  associatedDocuments DocumentData[]
+
+  @@map("images")
+}
+
+model Manuscript {
+  id String @id @default(cuid())
+
+  author    String?
+  recipient String?
+  language  String?
+
+  summary String?
+  link    String?
+  archive String?
+
+  writtenAt  String?
+  receivedAt String?
+
+  from        Place?  @relation("sent-from", fields: [fromPlaceId], references: [id])
+  fromPlaceId String?
+  to          Place?  @relation("received-to", fields: [toPlaceId], references: [id])
+  toPlaceId   String?
+
+  event   Event?  @relation(fields: [eventId], references: [id])
+  eventId String?
+
+  associatedDocuments DocumentData[]
+
+  @@map("manuscripts")
+}
+
+model Print {
+  id String @id @default(cuid())
+
+  language    String?
+  title       String?
+  year        String?
+  notes       String?
+  USTC        String?
+  writer      String?
+  information String?
+  dedicatee   String?
+
+  summary String?
+  author  String?
+  link    String?
+
+  event   Event?  @relation(fields: [eventId], references: [id])
+  eventId String?
+
+  placeId String?
+  place   Place?  @relation(fields: [placeId], references: [id])
+
+  otherPlaces String[]
+
+  associatedDocuments DocumentData[]
+
+  @@map("prints")
 }
 
 enum DocumentCategory {
-    MANUSCRIPT
-    PRINT
-    IMAGE
+  MANUSCRIPT
+  PRINT
+  IMAGE
 }
 
 enum EventType {
-    EARTHQUAKE
-    FLOOD
-    HURRICANE
-    ERUPTION
-    FIRE
-    STORM
-    DROUGHT
-    PLAGUE
-    DELUGE
-    TORNADO
+  EARTHQUAKE
+  FLOOD
+  HURRICANE
+  ERUPTION
+  FIRE
+  STORM
+  DROUGHT
+  PLAGUE
+  DELUGE
+  TORNADO
 }
