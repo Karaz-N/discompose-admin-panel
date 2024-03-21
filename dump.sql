@@ -2656,18 +2656,6 @@ P-1638-CA-0A91	PRINT	\N	\N	P-1638-CA-0A91
 
 
 --
--- Data for Name: _prisma_migrations; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public._prisma_migrations (id, checksum, finished_at, migration_name, logs, rolled_back_at, started_at, applied_steps_count) FROM stdin;
-56ff263d-36db-45eb-9d11-bb6d562b7e15	a77ae90de0c32837da7b8e27f1c5cc5bbf5338852ed926c435a627d324f56c7e	2023-06-07 15:34:10.445168+00	20230607153408_updated_fields	\N	\N	2023-06-07 15:34:09.267964+00	1
-94ce5439-e521-4ce3-a6d8-06ec028e8023	5c7175d7ddf176e347bbc087d5ab34a0f5524c4fb1a18d04d84a09cbac07e066	2023-06-07 16:18:37.198759+00	20230607161835_updated_enums_caracas	\N	\N	2023-06-07 16:18:36.148984+00	1
-4e0a3d1b-b1b2-4749-94c1-10bd805d1cbb	a391480f0d0d2888eff26f26090cd040a2fbbbe5c18b207de5e2574858d6d70f	2023-06-09 20:03:38.158999+00	20230609200336_cascades	\N	\N	2023-06-09 20:03:37.165019+00	1
-9942ae92-6025-4dcd-bfff-79f3dbcd7794	17f52273470d467e9974ee3da47c3c602cddd53cd2a32eefd995b00e578620ef	2023-06-22 20:25:00.619326+00	20230622202458_auth_v0_1	\N	\N	2023-06-22 20:24:59.303711+00	1
-\.
-
-
---
 -- Data for Name: events; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -2694,7 +2682,7 @@ clilx4zvw00ixo38rzswmfuyf	1756	PLAGUE	clif1en6r0004o3mcmwelxqsd
 clilwaspt00hbo3nuiskk6isp	1679	EARTHQUAKE	clihw0buv001uo3wsglmhe5p9
 clilx0akt0023o3zqauz4mfm5	1599	PLAGUE	clif1en6r0009o3mcupkip1qb
 clilwarfs00dbo3nu9fsnjx7b	1655	EARTHQUAKE	clif1en6r0007o3mczespm49j
-clilwankr0015o3num2nvz6u9	1542	EARTHQUAKE	clihvzi3f0004o3wsiifxm9tf
+clilwankr0015o3num2nvz6u9	1542	EARTHQUAKE	clijdagya0000o3s6z8p3z17x
 cls3r2fkj000xpmjj77cnt4vy	1505	FLOOD	clif1en6r0005o3mc3jla8a87
 clilx4wgw0021o38rd68p7wyu	1621	DROUGHT	clihvzoio000io3ws96q9bf5n
 clilx4y0t0097o38rqqo073jl	1636	DELUGE	clif1en6r000ko3mciyg8p705
@@ -2838,7 +2826,7 @@ clilx0gtd00yto3zq03053hq0	1737	PLAGUE	clihvzyki0014o3ws2zh157ex
 clilx0gyz00zno3zqudh5miej	1743	STORM	clif1en6r000ko3mciyg8p705
 clilx0hlv012wo3zqrpsfct7r	1755	FIRE	clif1en6r0000o3mc2f9l0git
 clilx4yiw00c3o38re4wr5ctc	1677	ERUPTION	clijdapa10004o3s6jzc3dzxd
-clilx0fmm00szo3zq0612s5fo	1693	EARTHQUAKE	clihvzi3f0004o3wsiifxm9tf
+clilx0fmm00szo3zq0612s5fo	1693	EARTHQUAKE	clijdagya0000o3s6z8p3z17x
 clilweh9100ofo3s57207288d	1703	EARTHQUAKE	clihw014q001ao3wsq3otkwdq
 clilx4zcc00fvo38rdb222a44	1737	DROUGHT	clif1en6r0000o3mc2f9l0git
 clilwaoup005bo3nu53qvx5zy	1609	EARTHQUAKE	clif1en6r0007o3mczespm49j
@@ -2910,7 +2898,6 @@ cls3r2hjt009lpmjjjr122ozi	1586	FLOOD	clif1en6r001co3mc3busudm9
 cls3r2hiv009dpmjjdq2btxz1	1607	FLOOD	clif1en6r0005o3mc3jla8a87
 clilwarvu00ejo3nusbvmydz8	1669	ERUPTION	clihw09yb001qo3ws6j1u1bcd
 clilwaod0003mo3nu9nl5v2c0	1587	EARTHQUAKE	clihvzoio000io3ws96q9bf5n
-clilwankr0015o3num2nvz6u9	1542	EARTHQUAKE	clijdagya0000o3s6z8p3z17x
 clilwaprt007yo3nunf6bx37d	1628	FLOOD	clif1en6r000oo3mcwivnjm82
 clilwap3t005xo3nunofpytmn	1627	EARTHQUAKE	clihvzxih0012o3wsmfvs5qp5
 clilwaogt003vo3nuklsunvr2	1594	EARTHQUAKE	clihvzr6p000oo3wsq49uj8ik
@@ -2925,7 +2912,6 @@ cls3r2mpa016apmjjxp55n91e	1689	ERUPTION	cls3r2mk8015ipmjj0cg9c4ov
 cls3r2mlp0168pmjjcn8keu11	1696	FLOOD	cls3r2mbo015fpmjjrudv89wk
 cls3b2m52011t2fai96zfea30	1704	FLOOD	cls3b2lu4011l2fai35lfjfl1
 clilx0axq0045o3zqetu4kk32	1626	FLOOD	clif1en6r000no3mc4n1z2xvu
-clilx0fmm00szo3zq0612s5fo	1693	EARTHQUAKE	clijdagya0000o3s6z8p3z17x
 clilwark400dho3nus43tpg4z	1659	EARTHQUAKE	clihvlpox0000o3bqvce67tnq
 clilwaprt007zo3nuii2pwaus	1631	ERUPTION	clihvzzea0016o3wsucnj2dls
 clilx0gq300yjo3zqjzjg7fug	1736	FLOOD	clif1en6r0000o3mc2f9l0git
@@ -4332,7 +4318,7 @@ clihw02wv001eo3ws2vxe32yt	Pamplona	42.8182536	-1.6440304	es
 clihw0buv001uo3wsglmhe5p9	Beijing	39.9057136	116.3912972	cn
 clihw0cov001wo3wskcbzt0j3	Andalusia	37.3399964	-4.5811614	es
 clihw0dnn001yo3wsge2f3i49	Cumaná	10.4495706	-64.1578046	ve
-clihw0em10020o3ws853o8o8s	Sannio	14.3788321	121.003335	ph
+clihw0em10020o3ws853o8o8s	Sannio	41.27905512239012	15.72135598475539	it
 clihw0fgk0022o3wsqygan7fs	Flanders	51.0962462	4.178629103169916	be
 clihw0ga60024o3wsh4ax1d0c	Jamaica	18.1850507	-77.3947693	jm
 clihw0h3f0026o3ws3dtaewje	Cazorla	37.9128927	-3.0038873	es
@@ -4393,7 +4379,7 @@ cls3azuku00yb2fskvgxf0gms	Mugello	43.9889984	11.46597280280634	it
 cls3b1t3l00yl2f36fr69m4y9	Maritime Alpes	43.9210587	7.1790785	it
 cls3azumt00yi2fskwkzqedqi	Cile	-31.7613365	-71.3187697	ch
 cls3b1t1z00yh2f361jxb9dk5	Mount Vesuvius	40.8213963	14.4261967	it
-cls3b2lwhfdjny224cvvvfes1	Tajuya	28.63839029712146	-17.895385515928467	es
+cls3b2lwhfdjny224cvvvfes1	Tajuya	28.63839029712146	-17.89538551592847	es
 cls3azukm00ya2fskrfh47y95	Vesuvio	40.8213963	14.4261967	it
 cls3b2lw4011p2fainnysfes1	Plasencia	40.029921	-6.090168	es
 cls3b2lwk011q2fai7ctbwk6r	Málaga	36.7213028	-4.4216366	es
@@ -5440,11 +5426,6 @@ P-1638-CA-0A91	Spanish	Discurso sobre la imagen de Santo Domingo de Soriano	1649
 --
 
 COPY public.sessions (id, "createdAt", "updatedAt", duration, "userId") FROM stdin;
-cllauu3p50001mc1fnll2eyoi	2023-08-14 12:32:09.785	2023-08-14 12:32:09.785	7200	cllaunpl70000pml37old8smv
-cllca6ay70002mc1fefg5qfwa	2023-08-15 12:29:19.471	2023-08-15 12:29:19.471	7200	cllaunq0t0002pml38n3bpc7l
-clm4ybv090003mc1fa54sxiwt	2023-09-04 14:03:02.457	2023-09-04 14:03:02.457	7200	cllaunpl70000pml37old8smv
-clmgbfx450004mc1fr41kgfbi	2023-09-12 12:55:34.758	2023-09-12 12:55:34.758	7200	cllaunpl70000pml37old8smv
-clmgc0ki70005mc1f0dkf1tr2	2023-09-12 13:11:38.192	2023-09-12 13:11:38.192	7200	cllaunq0t0002pml38n3bpc7l
 \.
 
 
@@ -5453,10 +5434,6 @@ clmgc0ki70005mc1f0dkf1tr2	2023-09-12 13:11:38.192	2023-09-12 13:11:38.192	7200	c
 --
 
 COPY public.users (id, email, name, password, "createdAt") FROM stdin;
-cllaunpl70000pml37old8smv	dome.cec@gmail.com	Domenico	a4c18fe9969a6996fb2bb5d74875379720306943c2d24b454e88dce219ebff17	2023-08-14 12:27:11.561
-cllaunpvf0001pml3ddrzp4lt	manuela.pittera@unina.it	Manuela	c38ab006843603d8a6c6d2bc88a01aef0a156ff51183df468310d6eb7e597622	2023-08-14 12:27:11.932
-cllaunq0t0002pml38n3bpc7l	antonello.mori@gmail.com	Antonello	fc30ec6880e94693dc33138aac5835f3a2df7e197984a64302de63eeadbf0a2e	2023-08-14 12:27:12.125
-clkxax9tf0004o3guwsu26lno	kody74@gmail.com	Kody	67d2760f23f76243fe9cc2b05af610bd320d555c0d4630f54a05f020476b0bcf	2023-08-05 02:53:45
 \.
 
 
@@ -5523,14 +5500,6 @@ ALTER TABLE ONLY public."DocumentData"
 
 ALTER TABLE ONLY public.places
     ADD CONSTRAINT "Place_pkey" PRIMARY KEY (id);
-
-
---
--- Name: _prisma_migrations _prisma_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public._prisma_migrations
-    ADD CONSTRAINT _prisma_migrations_pkey PRIMARY KEY (id);
 
 
 --
