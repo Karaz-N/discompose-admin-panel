@@ -152,13 +152,24 @@ const promiseReduce = (acc, x) => acc.then(promiseConcat(x))
 
 const serial = funcs => funcs.reduce(promiseReduce, Promise.resolve([]))
 
+// await serial(
+//     [
+//         dumpPlaces,
+//         dumpEvents,
+//         dumpManuscripts,
+//         dumpImages,
+//         dumpPrints,
+//         dumpDocumentdata
+//     ]
+// )
+
 await serial(
     [
-        dumpPlaces,
-        dumpEvents,
-        dumpManuscripts,
-        dumpImages,
-        dumpPrints,
-        dumpDocumentdata
+        uploadPlaces,
+        uploadEvents,
+        uploadManuscripts,
+        uploadImages,
+        uploadPrints,
+        uploadDocumentdata
     ]
 )
