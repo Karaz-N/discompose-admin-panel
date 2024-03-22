@@ -1,5 +1,5 @@
-docker build . -t discompose -f ./Dockerfile.deploy \
-    && docker run \
+sudo docker build . -t discompose -f ./Dockerfile.deploy \
+    && sudo docker run \
         --name discompose \
         -d -p 3000:3000 \
         -e DATABASE_URL="postgresql://root:password@172.17.0.2:5432/discompose?schema=public&connect_timeout=60" \
