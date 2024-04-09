@@ -6,7 +6,7 @@
     flex-direction: column;
     height: 100vh;
     background-color: var(--background-color);
-    background-image: url('/assets/homepage/complete_volcano.webp');
+    background-image: url('http://localhost:3000/assets/homepage/complete_volcano.webp');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;

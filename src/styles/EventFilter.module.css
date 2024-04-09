@@ -26,7 +26,7 @@
     transition: background-color 0.15s ease;
 }
 
-.eventDivOverlay li img{
+.eventDivOverlay li img {
     margin-right: 10px;
     width: 8%;
 }
@@ -95,11 +95,11 @@
     content: url("/marker/earthquake_marker.svg");
 }
 
-#displayCheck{
+#displayCheck {
     display: none;
-  } 
+}
 
-  #togg {
+#togg {
     position: absolute;
     right: 10px;
     top: 50px;
@@ -112,30 +112,30 @@
     z-index: 10001;
 }
 
-    #togg:hover {
-        background-image: url("/assets/map/hamb_menu_hover.webp");
-        background-size: contain;
-    }  
+#togg:hover {
+    background-image: url("http://localhost:3000/assets/map/hamb_menu_hover.webp");
+    background-size: contain;
+}
 
-    #togg:not(:checked) {
-        background-image: url("/assets/map/hamb_menu.webp");
-        background-size: contain;
-    }
-    
-    #togg:checked {
-        background-image: url("/assets/map/hamb_menu_hover.webp");
-        background-size: contain;
-    }
+#togg:not(:checked) {
+    background-image: url("http://localhost:3000/assets/map/hamb_menu.webp");
+    background-size: contain;
+}
 
-  #togg:checked ~ ul {
+#togg:checked {
+    background-image: url("http://localhost:3000/assets/map/hamb_menu_hover.webp");
+    background-size: contain;
+}
+
+#togg:checked~ul {
     /* visibility: hidden; */
     opacity: 1;
     z-index: 10000;
     transition: opacity 0.2s ease-in-out;
-  }
-  
-  #togg:not(:checked) ~ ul {
+}
+
+#togg:not(:checked)~ul {
     opacity: 0;
     z-index: -1;
     transition: opacity 0.2s ease-in-out;
-  }
+}

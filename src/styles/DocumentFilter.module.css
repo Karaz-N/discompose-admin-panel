@@ -105,17 +105,17 @@
 }
 
 #togg:hover {
-    background-image: url("/assets/map/hamb_menu_hover.webp");
+    background-image: url("http://localhost:3000/assets/map/hamb_menu_hover.webp");
     background-size: contain;
 }
 
 #togg:not(:checked) {
-    background-image: url("/assets/map/hamb_menu.webp");
+    background-image: url("http://localhost:3000/assets/map/hamb_menu.webp");
     background-size: contain;
 }
 
 #togg:checked {
-    background-image: url("/assets/map/hamb_menu_hover.webp");
+    background-image: url("http://localhost:3000/assets/map/hamb_menu_hover.webp");
     background-size: contain;
 }
 

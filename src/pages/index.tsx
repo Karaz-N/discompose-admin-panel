@@ -94,20 +94,20 @@ export default function Homepage(props: MainProps) {
 			<header className={style.headerContainer}>
 				<h1 style={{ position: "relative" }}>discompose</h1>
 				<h2>routes</h2>
-				<Image className={style.headerImgMain} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725} />
-				{/* <img className={style.headerImgMain} src="/assets/homepage/volcano/vulcano.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola1.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola2.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola3.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola4.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola5.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola6.webp" alt="" /> */}
+				<Image className={style.headerImgMain} src="http://localhost:3000/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725} />
+				{/* <img className={style.headerImgMain} src="http://localhost:3000/assets/homepage/volcano/vulcano.webp" alt="" />
+				<img className={style.headerImgSub} src="http://localhost:3000/assets/homepage/volcano/nuvola1.webp" alt="" />
+				<img className={style.headerImgSub} src="http://localhost:3000/assets/homepage/volcano/nuvola2.webp" alt="" />
+				<img className={style.headerImgSub} src="http://localhost:3000/assets/homepage/volcano/nuvola3.webp" alt="" />
+				<img className={style.headerImgSub} src="http://localhost:3000/assets/homepage/volcano/nuvola4.webp" alt="" />
+				<img className={style.headerImgSub} src="http://localhost:3000/assets/homepage/volcano/nuvola5.webp" alt="" />
+				<img className={style.headerImgSub} src="http://localhost:3000/assets/homepage/volcano/nuvola6.webp" alt="" /> */}
 			</header>
 			{/* ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`} */}
 			<article className={`${style.articleFirst} ${start ? style.articleAnimated : ""}`}>
 				<Image
 					style={{ alignSelf: "start", marginBottom: "1rem" }}
-					src="/assets/logo_discompose.webp"
+					src="http://localhost:3000/assets/logo_discompose.webp"
 					alt="discompose-logo"
 					width={83}
 					height={50}
@@ -141,7 +141,7 @@ export default function Homepage(props: MainProps) {
 							</Link>
 							<img
 								className={style.linkImage}
-								src="/assets/homepage/imageLink.webp"
+								src="http://localhost:3000/assets/homepage/imageLink.webp"
 								alt=""
 							/>
 						</div>
@@ -161,17 +161,17 @@ export default function Homepage(props: MainProps) {
 						</Link>
 						<img
 							className={style.linkImage}
-							src="/assets/homepage/imageLink.webp"
+							src="http://localhost:3000/assets/homepage/imageLink.webp"
 							alt=""
 						/>
 					</div>
-					<Image className={`${style.arrow_dx} ${start ? style.arrowDxAnimated : ""}`} src="/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_dx} ${start ? style.arrowDxAnimated : ""}`} src="http://localhost:3000/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
 
-					<Image className={`${style.arrow_sx} ${start ? style.arrowSxAnimated : ""}`} src="/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_sx} ${start ? style.arrowSxAnimated : ""}`} src="http://localhost:3000/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
 
-					<Image className={style.crown} src="/assets/homepage/crown.webp" alt="" width={1920} height={2158} />
+					<Image className={style.crown} src="http://localhost:3000/assets/homepage/crown.webp" alt="" width={1920} height={2158} />
 
-					<Image className={style.secondImg} src="/assets/homepage/data.webp" alt="" width={1920} height={2158} />
+					<Image className={style.secondImg} src="http://localhost:3000/assets/homepage/data.webp" alt="" width={1920} height={2158} />
 
 				</div>
 				<div className={style.secondaryContainer}>
@@ -191,7 +191,7 @@ export default function Homepage(props: MainProps) {
 			</article>
 			<article className={style.mapImageContainer}>
 				<Image
-					src={"/assets/homepage/home_map.webp"}
+					src={"http://localhost:3000/assets/homepage/home_map.webp"}
 					alt="Discompose Map"
 					width={1920}
 					height={2158}
@@ -199,7 +199,7 @@ export default function Homepage(props: MainProps) {
 				<section className={style.dataMap}>
 					<div id={style.firstBorder} className={style.dataMapRow}>
 						<img
-							src="/assets/homepage/event_marker_home.webp"
+							src="http://localhost:3000/assets/homepage/event_marker_home.webp"
 							alt=""
 							className={style.eventDataMarker}
 						/>
@@ -209,7 +209,7 @@ export default function Homepage(props: MainProps) {
 					<div className={style.dataSubRow}>
 						<div className={style.dataMapRow}>
 							<img
-								src="/assets/homepage/generic_marker.webp"
+								src="http://localhost:3000/assets/homepage/generic_marker.webp"
 								alt=""
 								className={style.genericDataMarker}
 							/>
@@ -218,7 +218,7 @@ export default function Homepage(props: MainProps) {
 						</div>
 						<div className={style.dataMapRow}>
 							<img
-								src="/assets/homepage/generic_marker.webp"
+								src="http://localhost:3000/assets/homepage/generic_marker.webp"
 								alt=""
 								className={style.genericDataMarker}
 							/>
@@ -227,7 +227,7 @@ export default function Homepage(props: MainProps) {
 						</div>
 						<div className={style.dataMapRow}>
 							<img
-								src="/assets/homepage/generic_marker.webp"
+								src="http://localhost:3000/assets/homepage/generic_marker.webp"
 								alt=""
 								className={style.genericDataMarker}
 							/>
@@ -236,7 +236,7 @@ export default function Homepage(props: MainProps) {
 						</div>
 						<div className={style.dataMapRow}>
 							<img
-								src="/assets/homepage/generic_marker.webp"
+								src="http://localhost:3000/assets/homepage/generic_marker.webp"
 								alt=""
 								className={style.genericDataMarker}
 							/>
@@ -270,9 +270,9 @@ export default function Homepage(props: MainProps) {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					<img ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_1.webp" alt="Discompose Map" />
-					<img className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_2.webp" alt="Discompose Map" />
-					<img className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_3.webp" alt="Discompose Map" />
+					<img ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="http://localhost:3000/assets/homepage/document_1.webp" alt="Discompose Map" />
+					<img className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="http://localhost:3000/assets/homepage/document_2.webp" alt="Discompose Map" />
+					<img className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="http://localhost:3000/assets/homepage/document_3.webp" alt="Discompose Map" />
 
 				</div>
 
@@ -285,14 +285,14 @@ export default function Homepage(props: MainProps) {
 					circulated at the time.
 				</p>
 
-				<img className={style.circolationMap} src="/assets/homepage/circolation_map.webp" alt="" />
+				<img className={style.circolationMap} src="http://localhost:3000/assets/homepage/circolation_map.webp" alt="" />
 
 				<div className={style.dataContainer}>
 					<div className={style.dataWrapper}>
 						<p className={style.data}>{props.images}</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/assets/homepage/image_marker.webp"
+								src="http://localhost:3000/assets/homepage/image_marker.webp"
 								alt="arrow"
 								width={18}
 								height={18}
@@ -304,7 +304,7 @@ export default function Homepage(props: MainProps) {
 						<p className={style.data}>{props.manuscripts}</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/assets/homepage/manuscript_marker.webp"
+								src="http://localhost:3000/assets/homepage/manuscript_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}
@@ -316,7 +316,7 @@ export default function Homepage(props: MainProps) {
 						<p className={style.data}>{props.prints}</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/assets/homepage/print_marker.webp"
+								src="http://localhost:3000/assets/homepage/print_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}

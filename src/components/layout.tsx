@@ -36,7 +36,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <ul>
             <li>
               <Image
-                src="/assets/logo_discompose.webp"
+                src="http://localhost:3000/assets/logo_discompose.webp"
                 alt="discompose-logo"
                 width={100}
                 height={100}
@@ -46,9 +46,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </header>
         <div className="flex flex-col md:flex-row flex-1">
           <aside
-            className={` bg-primary-admin w-full ${
-              open ? "md:w-60" : "md:w-12"
-            } duration-300`}
+            className={` bg-primary-admin w-full ${open ? "md:w-60" : "md:w-12"
+              } duration-300`}
           >
             <nav>
               <div className=" text-menu-admin flex justify-end m-2 pb-5">
@@ -76,22 +75,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <li className="mb-2" key={menu.title}>
                     <Link
                       href={menu.href}
-                      className={`group flex p-1 cursor-pointer hover:bg-menu-admin ${
-                        router.asPath === menu.href &&
+                      className={`group flex p-1 cursor-pointer hover:bg-menu-admin ${router.asPath === menu.href &&
                         " bg-menu-admin text-primary-admin"
-                      }`}
+                        }`}
                     >
                       <span
-                        className={`p-1 text-3xl text-menu-admin group-hover:text-primary-admin flex justify-center items-center ${
-                          router.asPath === menu.href && "text-primary-admin"
-                        }`}
+                        className={`p-1 text-3xl text-menu-admin group-hover:text-primary-admin flex justify-center items-center ${router.asPath === menu.href && "text-primary-admin"
+                          }`}
                       >
                         {menu.icon ? menu.icon : <MdDashboard />}
                       </span>
                       <span
-                        className={`pl-2 origin-left text-menu-admin group-hover:text-primary-admin flex justify-center items-center duration-300 ${
-                          router.asPath === menu.href && "text-primary-admin"
-                        } ${!open && "scale-0"}`}
+                        className={`pl-2 origin-left text-menu-admin group-hover:text-primary-admin flex justify-center items-center duration-300 ${router.asPath === menu.href && "text-primary-admin"
+                          } ${!open && "scale-0"}`}
                       >
                         {menu.title}
                       </span>
