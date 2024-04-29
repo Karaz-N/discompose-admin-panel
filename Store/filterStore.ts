@@ -66,7 +66,7 @@ export const useFilterStore = create<FilterStore>((set) => ({
 
 	filterByYear: (year) => {
 		set((state) => ({
-			filteredEvents: state.events.filter((evento) => evento.luogo === year),
+			filteredEvents: state.events.filter((evento) => true),
 		}));
 	},
 

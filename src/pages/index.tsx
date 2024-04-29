@@ -107,7 +107,7 @@ export default function Homepage(props: MainProps) {
 			<article className={`${style.articleFirst} ${start ? style.articleAnimated : ""}`}>
 				<Image
 					style={{ alignSelf: "start", marginBottom: "1rem" }}
-					src="/assets/logo_discompose.webp"
+					src="http://localhost:3000/assets/logo_discompose.webp"
 					alt="discompose-logo"
 					width={83}
 					height={50}
@@ -141,7 +141,7 @@ export default function Homepage(props: MainProps) {
 							</Link>
 							<Image
 								className={style.linkImage}
-								src="/assets/homepage/imageLink.webp"
+								src="http://localhost:3000/assets/homepage/imageLink.webp"
 								alt=""
 							/>
 						</div>
@@ -161,17 +161,17 @@ export default function Homepage(props: MainProps) {
 						</Link>
 						<Image
 							className={style.linkImage}
-							src="/assets/homepage/imageLink.webp"
+							src="http://localhost:3000/assets/homepage/imageLink.webp"
 							alt=""
 						/>
 					</div>
-					<Image className={`${style.arrow_dx} ${start ? style.arrowDxAnimated : ""}`} src="/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_dx} ${start ? style.arrowDxAnimated : ""}`} src="http://localhost:3000/assets/homepage/arrow_dx.webp" alt="Discompose Map" width={1920} height={2158} />
 
-					<Image className={`${style.arrow_sx} ${start ? style.arrowSxAnimated : ""}`} src="/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
+					<Image className={`${style.arrow_sx} ${start ? style.arrowSxAnimated : ""}`} src="http://localhost:3000/assets/homepage/arrow_sx.webp" alt="Discompose Map" width={1920} height={2158} />
 
-					<Image className={style.crown} src="/assets/homepage/crown.webp" alt="" width={1920} height={2158} />
+					<Image className={style.crown} src="http://localhost:3000/assets/homepage/crown.webp" alt="" width={1920} height={2158} />
 
-					<Image className={style.secondImg} src="/assets/homepage/data.webp" alt="" width={1920} height={2158} />
+					<Image className={style.secondImg} src="http://localhost:3000/assets/homepage/data.webp" alt="" width={1920} height={2158} />
 
 				</div>
 				<div className={style.secondaryContainer}>
@@ -191,7 +191,7 @@ export default function Homepage(props: MainProps) {
 			</article>
 			<article className={style.mapImageContainer}>
 				<Image
-					src={"/assets/homepage/home_map.webp"}
+					src={"http://localhost:3000/assets/homepage/home_map.webp"}
 					alt="Discompose Map"
 					width={1920}
 					height={2158}
@@ -292,7 +292,7 @@ export default function Homepage(props: MainProps) {
 						<p className={style.data}>{props.images}</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/assets/homepage/image_marker.webp"
+								src="http://localhost:3000/assets/homepage/image_marker.webp"
 								alt="arrow"
 								width={18}
 								height={18}
@@ -304,7 +304,7 @@ export default function Homepage(props: MainProps) {
 						<p className={style.data}>{props.manuscripts}</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/assets/homepage/manuscript_marker.webp"
+								src="http://localhost:3000/assets/homepage/manuscript_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}
@@ -316,7 +316,7 @@ export default function Homepage(props: MainProps) {
 						<p className={style.data}>{props.prints}</p>
 						<div className={style.dataRow}>
 							<Image
-								src="/assets/homepage/print_marker.webp"
+								src="http://localhost:3000/assets/homepage/print_marker.webp"
 								alt="arrow"
 								width={22}
 								height={22}

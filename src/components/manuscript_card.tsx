@@ -87,7 +87,7 @@ export default function ManuscriptCard({ onClose, manuscript }: ManuscriptCardPr
         <nav className={style.lastColumn}>
           <button type="button" onClick={handlePrint}>
             <Image
-              src={"/assets/card/downloadDocument.webp"}
+              src={"http://localhost:3000/assets/card/downloadDocument.webp"}
               height={26}
               width={26}
               alt="Download Document"
@@ -100,7 +100,7 @@ export default function ManuscriptCard({ onClose, manuscript }: ManuscriptCardPr
             }}
           >
             <Image
-              src={"/assets/card/closeDocument.webp"}
+              src={"http://localhost:3000/assets/card/closeDocument.webp"}
               width={14}
               height={14}
               alt="close document card"

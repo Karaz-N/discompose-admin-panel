@@ -1,3 +1,3 @@
-FROM timescale/timescaledb-ha:pg14-all
+FROM timescale/timescaledb-ha:pg16-all
 
 ADD ./dump.sql /docker-entrypoint-initdb.d/dump.sql

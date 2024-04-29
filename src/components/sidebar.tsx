@@ -66,266 +66,260 @@ export default function Sidebar() {
 
   return (
     <>
-    <aside className={`${style.mobileSidebar} ${sidebarOpen ? style.mobileOpen : style.mobileClose}`}>
-    <Image
-          src="/assets/sidebar/decorations_UpSx.webp"
+      <aside className={`${style.mobileSidebar} ${sidebarOpen ? style.mobileOpen : style.mobileClose}`}>
+        <Image
+          src="http://localhost:3000/assets/sidebar/decorations_UpSx.webp"
           alt="Decoration"
           width={80}
           height={80}
           className={`${style.decorationTL} ${sidebarOpen ? style.decorationShow : style.decorationHide}`}
         />
         <Image
-          src="/assets/sidebar/decorations_UpDx.webp"
+          src="http://localhost:3000/assets/sidebar/decorations_UpDx.webp"
           alt="Decoration"
           width={80}
           height={80}
           className={`${style.decorationTR} ${sidebarOpen ? style.decorationShow : style.decorationHide}`}
         />
         <Image
-          src="/assets/sidebar/decorations_CenterSx.webp"
+          src="http://localhost:3000/assets/sidebar/decorations_CenterSx.webp"
           alt="Decoration"
           width={28}
           height={100}
           className={`${style.decorationCL} ${sidebarOpen ? style.decorationShow : style.decorationHide}`}
         />
         <Image
-          src="/assets/sidebar/decorations_CenterDx.webp"
+          src="http://localhost:3000/assets/sidebar/decorations_CenterDx.webp"
           alt="Decoration"
           width={28}
           height={100}
           className={`${style.decorationCR} ${sidebarOpen ? style.decorationShow : style.decorationHide}`}
         />
         <Image
-          src="/assets/sidebar/decorations_BottomSx.webp"
+          src="http://localhost:3000/assets/sidebar/decorations_BottomSx.webp"
           alt="Decoration"
           width={80}
           height={80}
           className={`${style.decorationBL} ${sidebarOpen ? style.decorationShow : style.decorationHide}`}
         />
         <Image
-          src="/assets/sidebar/decorations_BottomDx.webp"
+          src="http://localhost:3000/assets/sidebar/decorations_BottomDx.webp"
           alt="Decoration"
           width={80}
           height={80}
           className={`${style.decorationBR} ${sidebarOpen ? style.decorationShow : style.decorationHide}`}
         />
-    <div className={`${style.sidebarMobileInner}`}>
+        <div className={`${style.sidebarMobileInner}`}>
           <h2>
-            {`${
-              filteredImageFromMap.length +
+            {`${filteredImageFromMap.length +
               filteredPrintFromMap.length +
               filteredManuscriptFromMap.length
-            } DOCUMENTS IN ${
-              concatenated.length > 0
+              } DOCUMENTS IN ${concatenated.length > 0
                 ? concatenated[0].place.name.toUpperCase()
                 : filteredManuscriptFromMap[0]?.from.name.toUpperCase() ??
-                  filteredManuscriptFromMap[0]?.to.name.toUpperCase()
-            }`}
+                filteredManuscriptFromMap[0]?.to.name.toUpperCase()
+              }`}
           </h2>
           <p>
-            {`RELATED TO ${
-              eventData.type
-            } IN ${eventData.place.name.toUpperCase()}`}
+            {`RELATED TO ${eventData.type
+              } IN ${eventData.place.name.toUpperCase()}`}
           </p>
 
-        <button
-          type="button"
-          className={style.mobileCloseButton}
-          onClick={() => {
-            setSidebarOpen(!sidebarOpen);
-          }}
-        >
-          <Image
-            className={`${style.mobileCloseButtonImg} ${sidebarOpen ? "" : style.mobileOpenSideImg}`}
-            src={"/assets/sidebar/closeSidebar.webp"}
-            width={11}
-            height={20}
-            alt="Close Sidebar"
-          />
-        </button>
+          <button
+            type="button"
+            className={style.mobileCloseButton}
+            onClick={() => {
+              setSidebarOpen(!sidebarOpen);
+            }}
+          >
+            <Image
+              className={`${style.mobileCloseButtonImg} ${sidebarOpen ? "" : style.mobileOpenSideImg}`}
+              src={"http://localhost:3000/assets/sidebar/closeSidebar.webp"}
+              width={11}
+              height={20}
+              alt="Close Sidebar"
+            />
+          </button>
 
-        {(doc !== undefined) && <Modal isOpen={isModalOpen} onClose={closeModal} data={doc} />}
-        <ul className={style.contentContainer}>
-          {filteredImageFromMap.map((image) => (
-            <>
-              <li
-                className={style.contentItem}
-                onClick={() => {openModal(); setDoc(image)}}
-                onKeyUp={() => {openModal(); setDoc(image)}}
-              >
-                <p>{`Image from ${image.author}`}</p>
-                <div className={style.contentItemDetails}>
-                  <p>{image.author}</p>
-                  <p>{image.date}</p>
-                </div>
-              </li>
-            </>
-          ))}
-          {filteredManuscriptFromMap.map((manuscript) => (
-            <>
-              <li
-                className={style.contentItem}
-                onClick={() => {openModal(); setDoc(manuscript)}}
-                onKeyUp={() => {openModal(); setDoc(manuscript)}}
-              >
-                <p>{`Manuscript from ${manuscript.author}`}</p>
-                <div className={style.contentItemDetails}>
-                  <p>{manuscript.author}</p>
-                  <p>{manuscript.writtenAt}</p>
-                </div>
-              </li>
-            </>
-          ))}
-          {filteredPrintFromMap.map((print) => (
-            <>
-              <li
-                className={style.contentItem}
-                onClick={() => {openModal(); setDoc(print)}}
-                onKeyUp={() => {openModal(); setDoc(print)}}
-              >
-                <p>{`Print from ${print.author}`}</p>
-                <div className={style.contentItemDetails}>
-                  <p>{print.author}</p>
-                  <p>{print.year}</p>
-                </div>
-              </li>
-            </>
-          ))}
-        </ul>
-      </div>
-    </aside>
-
-
-    <aside className={`${style.sidebar} ${sidebarClass}`}>
-      <div className={`${style.sidebarContainer} ${sidebarContainerClass}`}>
-        <Image
-          src="/assets/sidebar/decorations_UpSx.webp"
-          alt="Decoration"
-          width={80}
-          height={80}
-          className={style.decorationTL}
-        />
-        <Image
-          src="/assets/sidebar/decorations_UpDx.webp"
-          alt="Decoration"
-          width={80}
-          height={80}
-          className={style.decorationTR}
-        />
-        <Image
-          src="/assets/sidebar/decorations_CenterSx.webp"
-          alt="Decoration"
-          width={28}
-          height={100}
-          className={style.decorationCL}
-        />
-        <Image
-          src="/assets/sidebar/decorations_CenterDx.webp"
-          alt="Decoration"
-          width={28}
-          height={100}
-          className={style.decorationCR}
-        />
-        <Image
-          src="/assets/sidebar/decorations_BottomSx.webp"
-          alt="Decoration"
-          width={80}
-          height={80}
-          className={style.decorationBL}
-        />
-        <Image
-          src="/assets/sidebar/decorations_BottomDx.webp"
-          alt="Decoration"
-          width={80}
-          height={80}
-          className={style.decorationBR}
-        />
-        <div className={style.headContainer}>
-          <h2>
-            {`${
-              filteredImageFromMap.length +
-              filteredPrintFromMap.length +
-              filteredManuscriptFromMap.length
-            } DOCUMENTS IN ${
-              concatenated.length > 0
-                ? concatenated[0].place.name.toUpperCase()
-                : filteredManuscriptFromMap[0]?.from.name.toUpperCase() ??
-                  filteredManuscriptFromMap[0]?.to.name.toUpperCase()
-            }`}
-          </h2>
-          <p>
-            {`RELATED TO ${
-              eventData.type
-            } IN ${eventData.place.name.toUpperCase()}`}
-          </p>
+          {(doc !== undefined) && <Modal isOpen={isModalOpen} onClose={closeModal} data={doc} />}
+          <ul className={style.contentContainer}>
+            {filteredImageFromMap.map((image) => (
+              <>
+                <li
+                  className={style.contentItem}
+                  onClick={() => { openModal(); setDoc(image) }}
+                  onKeyUp={() => { openModal(); setDoc(image) }}
+                >
+                  <p>{`Image from ${image.author}`}</p>
+                  <div className={style.contentItemDetails}>
+                    <p>{image.author}</p>
+                    <p>{image.date}</p>
+                  </div>
+                </li>
+              </>
+            ))}
+            {filteredManuscriptFromMap.map((manuscript) => (
+              <>
+                <li
+                  className={style.contentItem}
+                  onClick={() => { openModal(); setDoc(manuscript) }}
+                  onKeyUp={() => { openModal(); setDoc(manuscript) }}
+                >
+                  <p>{`Manuscript from ${manuscript.author}`}</p>
+                  <div className={style.contentItemDetails}>
+                    <p>{manuscript.author}</p>
+                    <p>{manuscript.writtenAt}</p>
+                  </div>
+                </li>
+              </>
+            ))}
+            {filteredPrintFromMap.map((print) => (
+              <>
+                <li
+                  className={style.contentItem}
+                  onClick={() => { openModal(); setDoc(print) }}
+                  onKeyUp={() => { openModal(); setDoc(print) }}
+                >
+                  <p>{`Print from ${print.author}`}</p>
+                  <div className={style.contentItemDetails}>
+                    <p>{print.author}</p>
+                    <p>{print.year}</p>
+                  </div>
+                </li>
+              </>
+            ))}
+          </ul>
         </div>
+      </aside>
 
-        <button
-          type="button"
-          className={`${style.closeButton}`}
-          onClick={() => {
-            setSidebarOpen(!sidebarOpen);
-          }}
-        >
+
+      <aside className={`${style.sidebar} ${sidebarClass}`}>
+        <div className={`${style.sidebarContainer} ${sidebarContainerClass}`}>
           <Image
-            className={`${style.closeButtonImg}`}
-            src={"/assets/sidebar/closeSidebar.webp"}
-            width={11}
-            height={20}
-            alt="Close Sidebar"
+            src="http://localhost:3000/assets/sidebar/decorations_UpSx.webp"
+            alt="Decoration"
+            width={80}
+            height={80}
+            className={style.decorationTL}
           />
-        </button>
+          <Image
+            src="http://localhost:3000/assets/sidebar/decorations_UpDx.webp"
+            alt="Decoration"
+            width={80}
+            height={80}
+            className={style.decorationTR}
+          />
+          <Image
+            src="http://localhost:3000/assets/sidebar/decorations_CenterSx.webp"
+            alt="Decoration"
+            width={28}
+            height={100}
+            className={style.decorationCL}
+          />
+          <Image
+            src="http://localhost:3000/assets/sidebar/decorations_CenterDx.webp"
+            alt="Decoration"
+            width={28}
+            height={100}
+            className={style.decorationCR}
+          />
+          <Image
+            src="http://localhost:3000/assets/sidebar/decorations_BottomSx.webp"
+            alt="Decoration"
+            width={80}
+            height={80}
+            className={style.decorationBL}
+          />
+          <Image
+            src="http://localhost:3000/assets/sidebar/decorations_BottomDx.webp"
+            alt="Decoration"
+            width={80}
+            height={80}
+            className={style.decorationBR}
+          />
+          <div className={style.headContainer}>
+            <h2>
+              {`${filteredImageFromMap.length +
+                filteredPrintFromMap.length +
+                filteredManuscriptFromMap.length
+                } DOCUMENTS IN ${concatenated.length > 0
+                  ? concatenated[0].place.name.toUpperCase()
+                  : filteredManuscriptFromMap[0]?.from.name.toUpperCase() ??
+                  filteredManuscriptFromMap[0]?.to.name.toUpperCase()
+                }`}
+            </h2>
+            <p>
+              {`RELATED TO ${eventData.type
+                } IN ${eventData.place.name.toUpperCase()}`}
+            </p>
+          </div>
 
-        {(doc !== undefined) && <Modal isOpen={isModalOpen} onClose={closeModal} data={doc} />}
-        <ul className={style.contentContainer}>
-          {filteredImageFromMap.map((image) => (
-            <>
-              <li
-                className={style.contentItem}
-                onClick={() => {openModal(); setDoc(image)}}
-                onKeyUp={() => {openModal(); setDoc(image)}}
-              >
-                <p>{`Image from ${image.author}`}</p>
-                <div className={style.contentItemDetails}>
-                  <p>{image.author}</p>
-                  <p>{image.date}</p>
-                </div>
-              </li>
-            </>
-          ))}
-          {filteredManuscriptFromMap.map((manuscript) => (
-            <>
-              <li
-                className={style.contentItem}
-                onClick={() => {openModal(); setDoc(manuscript)}}
-                onKeyUp={() => {openModal(); setDoc(manuscript)}}
-              >
-                <p>{`Manuscript from ${manuscript.author}`}</p>
-                <div className={style.contentItemDetails}>
-                  <p>{manuscript.author}</p>
-                  <p>{manuscript.writtenAt}</p>
-                </div>
-              </li>
-            </>
-          ))}
-          {filteredPrintFromMap.map((print) => (
-            <>
-              <li
-                className={style.contentItem}
-                onClick={() => {openModal(); setDoc(print)}}
-                onKeyUp={() => {openModal(); setDoc(print)}}
-              >
-                <p>{`Print from ${print.author}`}</p>
-                <div className={style.contentItemDetails}>
-                  <p>{print.author}</p>
-                  <p>{print.year}</p>
-                </div>
-              </li>
-            </>
-          ))}
-        </ul>
-      </div>
-    </aside>
+          <button
+            type="button"
+            className={`${style.closeButton}`}
+            onClick={() => {
+              setSidebarOpen(!sidebarOpen);
+            }}
+          >
+            <Image
+              className={`${style.closeButtonImg}`}
+              src={"http://localhost:3000/assets/sidebar/closeSidebar.webp"}
+              width={11}
+              height={20}
+              alt="Close Sidebar"
+            />
+          </button>
+
+          {(doc !== undefined) && <Modal isOpen={isModalOpen} onClose={closeModal} data={doc} />}
+          <ul className={style.contentContainer}>
+            {filteredImageFromMap.map((image) => (
+              <>
+                <li
+                  className={style.contentItem}
+                  onClick={() => { openModal(); setDoc(image) }}
+                  onKeyUp={() => { openModal(); setDoc(image) }}
+                >
+                  <p>{`Image from ${image.author}`}</p>
+                  <div className={style.contentItemDetails}>
+                    <p>{image.author}</p>
+                    <p>{image.date}</p>
+                  </div>
+                </li>
+              </>
+            ))}
+            {filteredManuscriptFromMap.map((manuscript) => (
+              <>
+                <li
+                  className={style.contentItem}
+                  onClick={() => { openModal(); setDoc(manuscript) }}
+                  onKeyUp={() => { openModal(); setDoc(manuscript) }}
+                >
+                  <p>{`Manuscript from ${manuscript.author}`}</p>
+                  <div className={style.contentItemDetails}>
+                    <p>{manuscript.author}</p>
+                    <p>{manuscript.writtenAt}</p>
+                  </div>
+                </li>
+              </>
+            ))}
+            {filteredPrintFromMap.map((print) => (
+              <>
+                <li
+                  className={style.contentItem}
+                  onClick={() => { openModal(); setDoc(print) }}
+                  onKeyUp={() => { openModal(); setDoc(print) }}
+                >
+                  <p>{`Print from ${print.author}`}</p>
+                  <div className={style.contentItemDetails}>
+                    <p>{print.author}</p>
+                    <p>{print.year}</p>
+                  </div>
+                </li>
+              </>
+            ))}
+          </ul>
+        </div>
+      </aside>
     </>
   );
 }
