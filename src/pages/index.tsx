@@ -95,13 +95,13 @@ export default function Homepage(props: MainProps) {
 				<h1 style={{ position: "relative" }}>discompose</h1>
 				<h2>routes</h2>
 				<Image className={style.headerImgMain} src="/assets/homepage/complete_volcano.webp" alt="Background" width={1018} height={725} />
-				{/* <img className={style.headerImgMain} src="/assets/homepage/volcano/vulcano.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola1.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola2.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola3.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola4.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola5.webp" alt="" />
-				<img className={style.headerImgSub} src="/assets/homepage/volcano/nuvola6.webp" alt="" /> */}
+				{/* <Image className={style.headerImgMain} src="/assets/homepage/volcano/vulcano.webp" alt="" />
+				<Image className={style.headerImgSub} src="/assets/homepage/volcano/nuvola1.webp" alt="" />
+				<Image className={style.headerImgSub} src="/assets/homepage/volcano/nuvola2.webp" alt="" />
+				<Image className={style.headerImgSub} src="/assets/homepage/volcano/nuvola3.webp" alt="" />
+				<Image className={style.headerImgSub} src="/assets/homepage/volcano/nuvola4.webp" alt="" />
+				<Image className={style.headerImgSub} src="/assets/homepage/volcano/nuvola5.webp" alt="" />
+				<Image className={style.headerImgSub} src="/assets/homepage/volcano/nuvola6.webp" alt="" /> */}
 			</header>
 			{/* ref={firstArticleRef} className={`${style.article} ${articleIsVisible ? style.articleAnimated : ""}`} */}
 			<article className={`${style.articleFirst} ${start ? style.articleAnimated : ""}`}>
@@ -139,7 +139,7 @@ export default function Homepage(props: MainProps) {
 							>
 								FIND OUT MORE ABOUT DISCOMPOSE
 							</Link>
-							<img
+							<Image
 								className={style.linkImage}
 								src="/assets/homepage/imageLink.webp"
 								alt=""
@@ -159,7 +159,7 @@ export default function Homepage(props: MainProps) {
 						>
 							FIND OUT MORE ABOUT DISCOMPOSE
 						</Link>
-						<img
+						<Image
 							className={style.linkImage}
 							src="/assets/homepage/imageLink.webp"
 							alt=""
@@ -198,7 +198,7 @@ export default function Homepage(props: MainProps) {
 				/>
 				<section className={style.dataMap}>
 					<div id={style.firstBorder} className={style.dataMapRow}>
-						<img
+						<Image
 							src="/assets/homepage/event_marker_home.webp"
 							alt=""
 							className={style.eventDataMarker}
@@ -208,7 +208,7 @@ export default function Homepage(props: MainProps) {
 					</div>
 					<div className={style.dataSubRow}>
 						<div className={style.dataMapRow}>
-							<img
+							<Image
 								src="/assets/homepage/generic_marker.webp"
 								alt=""
 								className={style.genericDataMarker}
@@ -217,7 +217,7 @@ export default function Homepage(props: MainProps) {
 							<p className={style.dataType}>earthquakes</p>
 						</div>
 						<div className={style.dataMapRow}>
-							<img
+							<Image
 								src="/assets/homepage/generic_marker.webp"
 								alt=""
 								className={style.genericDataMarker}
@@ -226,7 +226,7 @@ export default function Homepage(props: MainProps) {
 							<p className={style.dataType}>floods</p>
 						</div>
 						<div className={style.dataMapRow}>
-							<img
+							<Image
 								src="/assets/homepage/generic_marker.webp"
 								alt=""
 								className={style.genericDataMarker}
@@ -235,7 +235,7 @@ export default function Homepage(props: MainProps) {
 							<p className={style.dataType}>hurricanes</p>
 						</div>
 						<div className={style.dataMapRow}>
-							<img
+							<Image
 								src="/assets/homepage/generic_marker.webp"
 								alt=""
 								className={style.genericDataMarker}
@@ -270,9 +270,9 @@ export default function Homepage(props: MainProps) {
 						role in the management of the crisis and in the initiation of
 						reconstruction.
 					</p>
-					<img ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_1.webp" alt="Discompose Map" />
-					<img className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_2.webp" alt="Discompose Map" />
-					<img className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_3.webp" alt="Discompose Map" />
+					<Image ref={secondArticleRef} className={`${style.firstDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_1.webp" alt="Discompose Map" />
+					<Image className={`${style.secondDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_2.webp" alt="Discompose Map" />
+					<Image className={`${style.thirdDocument} ${secondArticleIsVisible ? style.animatedDocument : ""}`} src="/assets/homepage/document_3.webp" alt="Discompose Map" />
 
 				</div>
 
@@ -285,7 +285,7 @@ export default function Homepage(props: MainProps) {
 					circulated at the time.
 				</p>
 
-				<img className={style.circolationMap} src="/assets/homepage/circolation_map.webp" alt="" />
+				<Image className={style.circolationMap} src="/assets/homepage/circolation_map.webp" alt="" />
 
 				<div className={style.dataContainer}>
 					<div className={style.dataWrapper}>
