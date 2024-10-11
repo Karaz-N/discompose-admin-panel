@@ -595,7 +595,6 @@
 .footerContainer {
     display: flex;
     height: clamp(34.625rem, 27.9020rem + 27.5817vw, 61rem);
-    ;
     flex-direction: column;
     align-items: center;
     justify-content: center;
